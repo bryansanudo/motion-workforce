@@ -28,10 +28,10 @@ const IServices = () => {
         <IServicesCard />
 
         {/*Timeline  Process */}
-
+        {/* 
         <TitleContent title="Timeline of the proccess">
           <img src={proccessImg} alt="" />
-        </TitleContent>
+        </TitleContent> */}
 
         <IFormContact />
 
@@ -110,7 +110,7 @@ const IServices = () => {
         </div>
 
         {/* What does the process entail? */}
-        <div className="flex items-center justify-center gap-6 md:gap-20 flex-col md:flex-row px-6">
+        {/*  <div className="flex items-center justify-center gap-6 md:gap-20 flex-col md:flex-row px-6">
           <div className="md:w-1/2 max-w-[500px]">
             <div className="flex items-center justify-center flex-col ">
               <p className={styles.titleText}>What does the process entail?</p>
@@ -201,7 +201,7 @@ const IServices = () => {
               className="rounded-3xl w-[500px] object-contain mask mask-parallelogram"
             />
           </div>
-        </div>
+        </div> */}
 
         {/* Why work with an agency */}
         {/* <div className="mt-20">
@@ -379,7 +379,7 @@ const IServices = () => {
             </p>
           </div>
         </ImgContent>
-        <Divider />
+
         {/* Our expertise */}
         <ImgContent
           img={especialistImg}
@@ -399,6 +399,9 @@ const IServices = () => {
             timetable and procedure.
           </p>
         </ImgContent>
+        <IFormContact />
+
+        <Divider />
       </ISection>
     </>
   );
