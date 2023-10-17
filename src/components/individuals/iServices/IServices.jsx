@@ -67,9 +67,7 @@ const IServices = () => {
           </div>
           <div className="md:w-1/2 max-w-[500px]">
             <div className="flex items-center justify-center flex-col ">
-              <p className="font-bold text-3xl text-center text-transparent bg-clip-text  bg-gradient-to-r from-primary to-gray-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 md:text-5xl  ">
-                Who is eligible for EB3?
-              </p>
+              <p className={styles.titleText}>Who is eligible for EB3?</p>
             </div>
 
             <div className="flex items-center justify-start text-left gap-2 mt-5">
@@ -115,9 +113,7 @@ const IServices = () => {
         <div className="flex items-center justify-center gap-6 md:gap-20 flex-col md:flex-row px-6">
           <div className="md:w-1/2 max-w-[500px]">
             <div className="flex items-center justify-center flex-col ">
-              <p className="font-bold text-3xl text-center text-transparent bg-clip-text  bg-gradient-to-r from-primary to-gray-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 md:text-5xl  ">
-                What does the process entail?
-              </p>
+              <p className={styles.titleText}>What does the process entail?</p>
             </div>
 
             <div className="flex items-center justify-start gap-4 mt-5">
