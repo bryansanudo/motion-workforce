@@ -1,12 +1,26 @@
 import { styles } from "@/styles";
+import { motion } from "framer-motion";
+import { staggerContainer, slideIn } from "@/utils/motion";
 
 const ImgContent = ({ img, title1, title2, children }) => {
   return (
-    <div className="flex items-center justify-center gap-6 md:gap-20 flex-col md:flex-row my-10">
-      <div className="md:w-1/2 flex items-center justify-center mx-6 ">
+    <motion.div
+      variants={staggerContainer()}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.25 }}
+      className="flex items-center justify-center gap-6 md:gap-20 flex-col md:flex-row my-10  mx-6 max-w-7xl"
+    >
+      <motion.div
+        className="md:w-1/2 flex items-center justify-center"
+        variants={slideIn("left", "tween", 0.2, 1)}
+      >
         <img src={img} className="rounded-3xl w-[500px] object-contain  " />
-      </div>
-      <div className="md:w-1/2 max-w-[500px] mx-6">
+      </motion.div>
+      <motion.div
+        className="md:w-1/2 max-w-[500px] "
+        variants={slideIn("right", "tween", 0.2, 1)}
+      >
         <div className="text-center mb-10">
           <p className="md:text-2xl text-xl text-gray-400 font-bold">
             {title1}
@@ -14,8 +28,8 @@ const ImgContent = ({ img, title1, title2, children }) => {
           <p className={`${styles.cTitleText}`}>{title2}</p>
         </div>
         {children}
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 

@@ -26,6 +26,7 @@ const CHome = () => {
       <CHeroHome />
       <ISection>
         {/* James */}
+
         <ImgContent
           img={JamesBg}
           title1="Meet The Founder"
@@ -96,7 +97,7 @@ const CHome = () => {
 
         {/* EB-3 Worfkforce Solutions */}
         <TitleContent title="EB-3 Workfoce Solutions">
-          <p className={`${styles.sectionText} px-4`}>
+          <p className={`${styles.sectionTitleText}`}>
             At EB3 Workforce Solutions, we understand the importance of finding
             reliable and dedicated employees. That's why we offer a unique
             solution to your staffing needs - EB3 visa workers. Our team is
@@ -124,7 +125,6 @@ const CHome = () => {
         </ImgContent>
 
         <CFormContact />
-        <CPartners />
 
         <Divider />
       </ISection>

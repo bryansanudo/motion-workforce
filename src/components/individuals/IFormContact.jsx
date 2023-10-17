@@ -8,7 +8,7 @@ const IFormContact = () => {
       <p className={`${styles.sectionTitleText}`}>
         Fill out the form below and we'll get back to you as soon as possible.
       </p>
-      <div className="flex flex-col md:gap-10 gap-4 md:p-10 p-6 rounded-3xl shadow-black shadow-md xl:w-[1080px] lg:w-[900px] md:w-[700px] w-full bg-red-500">
+      <div className="flex flex-col md:gap-10 gap-4 md:p-10 p-6 rounded-3xl shadow-black shadow-md xl:w-[1080px] lg:w-[900px] md:w-[700px] w-full ">
         <div className="flex flex-col md:flex-row items-center  justify-center gap-4">
           <input
             type="text"
