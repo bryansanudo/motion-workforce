@@ -33,8 +33,6 @@ const IServices = () => {
           <img src={proccessImg} alt="" />
         </TitleContent> */}
 
-        <IFormContact />
-
         {/* Longstanding Success */}
         <TitleContent title="Longstanding Success">
           <p className={`${styles.sectionTitleText}`}>
