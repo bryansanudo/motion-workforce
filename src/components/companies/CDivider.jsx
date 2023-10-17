@@ -14,7 +14,7 @@ const CDivider = () => {
         </div>
       </div> */}
 
-      <div className="md:text-3xl text-xl flex  flex-col md:flex-row items-center justify-center w-full bg-gradient-to-r from-secondary to-gray-500 ">
+      <div className="md:text-3xl text-xl flex  flex-col md:flex-row items-center justify-center w-full bg-gradient-to-r from-secondary to-gray-500 mt-8 ">
         <div className=" w-full md:py-8 py-4 flex items-center justify-center ">
           <p className="text-white font-bold">GET IN TOUCH TODAY!</p>
         </div>
