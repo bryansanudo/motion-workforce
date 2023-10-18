@@ -15,6 +15,9 @@ import { GiConversation } from "react-icons/gi";
 import { BsPersonVcard } from "react-icons/bs";
 
 import Interview from "@/components/icons/Interview";
+import ListCheck from "@/components/icons/ListCheck";
+import FillForm from "@/components/icons/FillForm";
+import Approved from "@/components/icons/Approved";
 
 const content = {
   borderRadius: "1.5rem",
@@ -104,6 +107,7 @@ const Process = () => {
           icon="5"
         ></VerticalTimelineElement>
         {/* 6 content */}
+
         <VerticalTimelineElement
           className="vertical-timeline-element--work "
           contentStyle={content}
@@ -118,7 +122,7 @@ const Process = () => {
           icon="6"
         >
           <div className="flex flex-col  items-center justify-center">
-            <VscChecklist className="text-7xl" />
+            <ListCheck className="w-[50px] h-[50px]" />
 
             <div className="text-lg mt-2">Labor Certification Approved</div>
             <div className="text-lg mt-2">+</div>
@@ -140,7 +144,7 @@ const Process = () => {
           icon="7"
         >
           <div className="flex flex-col  items-center justify-center">
-            <LuFileSignature className="text-6xl mb-3" />
+            <FillForm className="w-[70px] mb-3" />
 
             <div className="text-lg mt-2">Fill L-140 Form</div>
             <div className="text-lg mt-2">Fill L-485 Form</div>
@@ -162,7 +166,7 @@ const Process = () => {
           icon="8"
         >
           <div className="flex flex-col  items-center justify-center">
-            <AiOutlineFileDone className="text-6xl mb-2" />
+            {/* <Approved className="text-6xl mb-2" /> */}
 
             <div className="text-lg mt-2">L-140 Approved</div>
           </div>

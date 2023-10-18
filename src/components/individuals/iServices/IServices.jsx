@@ -17,6 +17,7 @@ import Divider from "@/components/individuals/IDivider";
 import ImgContent from "@/components/individuals/ImgContent";
 import { styles } from "@/styles";
 import Process from "@/components/individuals/iServices/Process";
+import HorizontalProcess from "@/components/individuals/iServices/HorizontalProcess";
 
 const IServices = () => {
   useEffect(() => {
@@ -25,9 +26,10 @@ const IServices = () => {
   return (
     <>
       <IHeroServices />
+      <TitleContent title="Adjustment of status typical timeline"></TitleContent>
+      <HorizontalProcess />
       <ISection>
         <IServicesCard />
-        <Process />
 
         {/*Timeline  Process */}
         {/* 
