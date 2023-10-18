@@ -38,7 +38,7 @@ const HorizontalProcess = () => {
         <li className="step step-primary">
           <div className="dropdown  dropdown-bottom hover:scale-110 duration-700 dropdown-end">
             <label tabIndex={0} className=" m-1">
-              <FillForm className="mx-auto w-[50px] animate-pulse " />
+              <FillForm className="mx-auto w-[50px]  " />
             </label>
             <ul
               tabIndex={0}
@@ -54,7 +54,7 @@ const HorizontalProcess = () => {
         <li className="step step-primary">
           <div className="dropdown  dropdown-bottom hover:scale-110 duration-700 dropdown-end">
             <label tabIndex={0} className=" m-1">
-              <FillForm className="mx-auto w-[50px] animate-pulse " />
+              <FillForm className="mx-auto w-[50px] 0 " />
             </label>
             <ul
               tabIndex={0}
@@ -70,7 +70,7 @@ const HorizontalProcess = () => {
         <li className="step step-primary">
           <div className="dropdown  dropdown-bottom hover:scale-110 duration-700 dropdown-end">
             <label tabIndex={0} className=" m-1">
-              <FillForm className="mx-auto w-[50px] animate-pulse " />
+              <FillForm className="mx-auto w-[50px]  " />
             </label>
             <ul
               tabIndex={0}
@@ -86,7 +86,7 @@ const HorizontalProcess = () => {
         <li className="step step-primary">
           <div className="dropdown  dropdown-bottom hover:scale-110 duration-700 dropdown-end">
             <label tabIndex={0} className=" m-1">
-              <FillForm className="mx-auto animate-pulse w-[50px] " />
+              <FillForm className="mx-auto  w-[50px] " />
             </label>
             <ul
               tabIndex={0}
