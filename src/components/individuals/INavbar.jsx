@@ -29,11 +29,11 @@ const INavbar = ({ setContent }) => {
       link: "/individuals/services",
       name: "services",
     },
-    {
+    /* {
       id: 4,
       link: "/individuals/histories",
       name: "success histories",
-    },
+    }, */
     {
       id: 5,
       link: "/individuals/resources",

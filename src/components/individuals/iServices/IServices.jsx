@@ -16,6 +16,7 @@ import TitleContent from "@/components/individuals/TitleContent";
 import Divider from "@/components/individuals/IDivider";
 import ImgContent from "@/components/individuals/ImgContent";
 import { styles } from "@/styles";
+import Process from "@/components/individuals/iServices/Process";
 
 const IServices = () => {
   useEffect(() => {
@@ -26,6 +27,7 @@ const IServices = () => {
       <IHeroServices />
       <ISection>
         <IServicesCard />
+        <Process />
 
         {/*Timeline  Process */}
         {/* 
