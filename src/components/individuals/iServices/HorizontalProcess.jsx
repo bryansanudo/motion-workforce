@@ -36,7 +36,7 @@ const HorizontalProcess = () => {
         <li className="step "></li>
         {/* 6 content */}
         <li className="step step-primary">
-          <div className="dropdown dropdown-hover dropdown-right">
+          <div className="dropdown dropdown-hover dropdown-left">
             <label tabIndex={0} className=" m-1">
               <FillForm className="mx-auto w-[50px] animate-pulse " />
             </label>
@@ -52,7 +52,7 @@ const HorizontalProcess = () => {
         </li>
         {/* 7 content */}
         <li className="step step-primary">
-          <div className="dropdown dropdown-hover dropdown-right">
+          <div className="dropdown dropdown-hover dropdown-left">
             <label tabIndex={0} className=" m-1">
               <FillForm className="mx-auto w-[50px] animate-pulse " />
             </label>
@@ -68,7 +68,7 @@ const HorizontalProcess = () => {
         </li>
         {/* 8 content */}
         <li className="step step-primary">
-          <div className="dropdown dropdown-hover dropdown-right">
+          <div className="dropdown dropdown-hover dropdown-left">
             <label tabIndex={0} className=" m-1">
               <FillForm className="mx-auto w-[50px] animate-pulse " />
             </label>
@@ -84,7 +84,7 @@ const HorizontalProcess = () => {
         <li className="step "></li>
         {/* 10 content */}
         <li className="step step-primary">
-          <div className="dropdown dropdown-hover dropdown-right">
+          <div className="dropdown dropdown-hover dropdown-left">
             <label tabIndex={0} className=" m-1">
               <FillForm className="mx-auto animate-pulse w-[50px] " />
             </label>
@@ -104,7 +104,7 @@ const HorizontalProcess = () => {
         <li className="step "></li>
         {/* 13 content */}
         <li className="step step-primary">
-          <div className="dropdown dropdown-hover dropdown-right">
+          <div className="dropdown dropdown-hover dropdown-left">
             <label tabIndex={0} className=" m-1">
               <Interview className="mx-auto w-[50px] " />
             </label>
@@ -118,7 +118,7 @@ const HorizontalProcess = () => {
         </li>
         {/* 14 content */}
         <li className="step step-primary">
-          <div className="dropdown dropdown-hover dropdown-right">
+          <div className="dropdown dropdown-hover dropdown-left">
             <label tabIndex={0} className=" m-1">
               <FillForm className="mx-auto w-[50px] " />
             </label>
