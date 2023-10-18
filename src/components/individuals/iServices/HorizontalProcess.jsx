@@ -1,9 +1,13 @@
 import React from "react";
 import FillForm from "@/components/icons/FillForm";
+import Interview from "@/components/icons/Interview";
+import ListCheck from "@/components/icons/ListCheck";
+
+import Approved from "@/components/icons/Approved";
 
 const HorizontalProcess = () => {
   return (
-    <div className="overflow-x-auto mx-20 flex items-center justify-center   ">
+    <div className="overflow-x-auto mx-6 flex items-center justify-center   ">
       <ul className="steps h-60 ">
         {/* 1 content */}
         <li className="step step-primary">
@@ -102,7 +106,7 @@ const HorizontalProcess = () => {
         <li className="step step-primary">
           <div className="dropdown dropdown-hover dropdown-right">
             <label tabIndex={0} className=" m-1">
-              <FillForm className="mx-auto w-[50px] " />
+              <Interview className="mx-auto w-[50px] " />
             </label>
             <ul
               tabIndex={0}
