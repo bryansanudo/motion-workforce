@@ -14,6 +14,8 @@ import { GrWorkshop } from "react-icons/gr";
 import { GiConversation } from "react-icons/gi";
 import { BsPersonVcard } from "react-icons/bs";
 
+import Interview from "@/components/icons/Interview";
+
 const content = {
   borderRadius: "1.5rem",
   boxShadow:
@@ -238,7 +240,7 @@ const Process = () => {
           icon="13"
         >
           <div className="flex flex-col  items-center justify-center">
-            <GiConversation className="text-7xl" />
+            <Interview className="w-[70px]" />
 
             <div className="text-lg mt-2">L-485 Interview</div>
           </div>
