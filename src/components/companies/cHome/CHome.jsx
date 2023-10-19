@@ -15,6 +15,7 @@ import TitleContent from "@/components/companies/TitleContent";
 import { styles } from "@/styles";
 import { useEffect } from "react";
 import CPartners from "@/components/companies/CPartners";
+import CHorizontalProcess from "@/components/companies/cHome/CHorizontalProcess";
 
 const CHome = () => {
   useEffect(() => {
@@ -24,6 +25,7 @@ const CHome = () => {
   return (
     <>
       <CHeroHome />
+      <CHorizontalProcess />
       <ISection>
         {/* James */}
 
