@@ -13,15 +13,15 @@ const IHeroHome = () => {
         <div className="hero-overlay bg-black opacity-50" />
         <div className="hero-content text-center text-white">
           <div className="max-w-5xl">
-            <h1 className="my-5 lg:text-5xl md:text-3xl text-2xl font-bold">
+            <h1 className="my-5 lg:text-5xl md:text-3xl text-2xl font-bold tracking-wider">
               The Better FREE Way To Connect With The Right Manpower For Your
               Business
             </h1>
-            <p className="mb-5 md:text-3xl text-lg">
+            <p className="mb-5 md:text-3xl text-lg tracking-wider">
               No Cost, No Hassle, No Brainer
             </p>
-            <button className="btn hover:scale-105 btn-primary">
-              YES !TEACH ME HOW
+            <button className="btn hover:scale-105 btn-primary tracking-wider">
+              YES! TEACH ME HOW
             </button>
           </div>
         </div>

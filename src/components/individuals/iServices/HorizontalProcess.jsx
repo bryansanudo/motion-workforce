@@ -15,25 +15,24 @@ import process8 from "@/assets/process/process8.png";
 import process10 from "@/assets/process/process10.png";
 import process14 from "@/assets/process/process14.png";
 
+import { styles } from "@/styles";
+
 const HorizontalProcess = () => {
   return (
     <div className="overflow-x-auto mx-6 flex items-center justify-center   ">
       <ul className="steps pb-40 ">
         {/* 1 content */}
         <li className="step step-primary">
-          <div className="dropdown  dropdown-bottom   ">
+          <div className="dropdown dropdown-open dropdown-bottom   ">
             <label tabIndex={0} className=" m-1">
-              <img
-                src={process1}
-                className="mx-auto w-[50px] hover:scale-110 duration-700 "
-                alt=""
-              />
+              <img src={process1} className="mx-auto w-[50px]  " alt="" />
             </label>
             <ul
               tabIndex={0}
               className="dropdown-content z-[1] menu p-6 shadow-md shadow-black bg-base-100  rounded-box w-52"
             >
-              <p className="mx-auto">
+              <p className="tracking-wider font-bold">Month 1</p>
+              <p className="tracking-wider">
                 Labor Certification filed once employer obtains DOL prevaling
                 wage
               </p>
@@ -55,7 +54,7 @@ const HorizontalProcess = () => {
               {/* <FillForm className="mx-auto w-[50px]  " /> */}
               <img
                 src={process6}
-                className="w-[60px] hover:scale-110 duration-700 "
+                className="w-[65px] hover:scale-110 duration-700 "
                 alt=""
               />
             </label>
@@ -63,7 +62,8 @@ const HorizontalProcess = () => {
               tabIndex={0}
               className="dropdown-content z-[1] menu p-6 shadow-md shadow-black bg-base-100  rounded-box w-52"
             >
-              <p className="mx-auto">
+              <p className="tracking-wider font-bold">Month 6</p>
+              <p className="tracking-wider">
                 Labor Certification Approved + Consular fees
               </p>
             </ul>
@@ -83,9 +83,10 @@ const HorizontalProcess = () => {
               tabIndex={0}
               className="dropdown-content z-[1] menu p-6 shadow-md shadow-black bg-base-100  rounded-box w-52"
             >
-              <p className="mx-auto">I-140 Filed</p>
-              <p className="mx-auto">I-485 Filed</p>
-              <p className="mx-auto">I-765 Filed</p>
+              <p className="tracking-wider font-bold">Month 7</p>
+              <p className="tracking-wider">I-140 Filed</p>
+              <p className="tracking-wider">I-485 Filed</p>
+              <p className="tracking-wider">I-765 Filed</p>
             </ul>
           </div>
         </li>
@@ -103,7 +104,8 @@ const HorizontalProcess = () => {
               tabIndex={0}
               className="dropdown-content z-[1] menu p-6 shadow-md shadow-black bg-base-100  rounded-box w-52"
             >
-              <p className="mx-auto">I-140 Approved</p>
+              <p className="tracking-wider font-bold">Month 8</p>
+              <p className="tracking-wider">I-140 Approved</p>
             </ul>
           </div>
         </li>
@@ -123,7 +125,8 @@ const HorizontalProcess = () => {
               tabIndex={0}
               className="dropdown-content z-[1] menu p-6 shadow-md shadow-black bg-base-100  rounded-box w-52"
             >
-              <p className="mx-auto">
+              <p className="font-bold tracking-wider">Month 10 </p>
+              <p className="tracking-wider">
                 Employee can begin working for the employer sponsor
               </p>
             </ul>
@@ -143,7 +146,8 @@ const HorizontalProcess = () => {
               tabIndex={0}
               className="dropdown-content z-[1] menu p-6 shadow-md shadow-black bg-base-100  rounded-box w-52"
             >
-              <p className="mx-auto">I-485 Interview</p>
+              <p className="font-bold tracking-wider">Month 13</p>
+              <p className="tracking-wider">I-485 Interview</p>
             </ul>
           </div>
         </li>
@@ -161,7 +165,8 @@ const HorizontalProcess = () => {
               tabIndex={0}
               className="dropdown-content z-[1] menu p-6 shadow-md shadow-black bg-base-100  rounded-box w-52"
             >
-              <p className="mx-auto">Green Card Issued</p>
+              <p className="font-bold tracking-wider">Month 14</p>
+              <p className="tracking-wider">Green Card Issued</p>
             </ul>
           </div>
         </li>

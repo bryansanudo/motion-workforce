@@ -12,7 +12,7 @@ const IHeroServices = () => {
       <div className="hero-overlay bg-black opacity-50" />
       <div className="hero-content text-center text-white">
         <div className="max-w-5xl">
-          <h2 className="my-5 lg:text-5xl md:text-3xl text-2xl font-bold">
+          <h2 className="my-5 lg:text-5xl md:text-3xl text-2xl font-bold tracking-wider">
             SERVICES
           </h2>
         </div>

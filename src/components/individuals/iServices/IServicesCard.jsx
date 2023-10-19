@@ -25,8 +25,10 @@ const IServicesCard = () => {
             <div className="flex flex-col items-center justify-between flex-1 p-6 bg-white lg:py-8 lg:px-7 gap-4">
               <img src={success} alt="" />
 
-              <p className="font-bold text-2xl">Historic Success</p>
-              <p>
+              <p className="font-bold text-2xl tracking-wider">
+                Historic Success
+              </p>
+              <p className="tracking-wider">
                 The Immigration and Nationality Act, passed in 1990, created the
                 EB-3 Unskilled Visa program.
               </p>
@@ -36,8 +38,10 @@ const IServicesCard = () => {
           <div className="flex flex-col overflow-hidden shadow-md shadow-black rounded-3xl">
             <div className="flex flex-col items-center justify-between flex-1 p-6 bg-white lg:py-8 lg:px-7 gap-4">
               <img src={opportunity} alt="" />
-              <p className="font-bold text-2xl">Opportunity Awaits</p>
-              <p>
+              <p className="font-bold text-2xl tracking-wider">
+                Opportunity Awaits
+              </p>
+              <p className="tracking-wider">
                 Anyone can participate in this program. There are no educational
                 or skill prerequisites for applying.
               </p>
@@ -47,8 +51,10 @@ const IServicesCard = () => {
           <div className="flex flex-col overflow-hidden shadow-md shadow-black rounded-3xl">
             <div className="flex flex-col items-center justify-between flex-1 p-6 bg-white lg:py-8 lg:px-7 gap-4">
               <img src={versatile} alt="" />
-              <p className="font-bold text-2xl">Versatile Process</p>
-              <p>
+              <p className="font-bold text-2xl tracking-wider">
+                Versatile Process
+              </p>
+              <p className="tracking-wider">
                 Applicants can complete this procedure either from within the
                 United States, if they live in the US on a different type of
                 visa, or from their country of origin or where they currently

@@ -47,7 +47,7 @@ const FourIcons = () => {
           variants={fadeIn("down", "spring", id * 0.5, 2)}
           className="shadow-md shadow-black rounded-3xl w-[200px] h-[200px] flex flex-col items-center justify-between py-10"
         >
-          <p className="font-bold mb-4">{title}</p>
+          <p className="font-bold mb-4 tracking-wider">{title}</p>
           <img src={icon} className="object-contain " alt="" />
         </motion.div>
       ))}
