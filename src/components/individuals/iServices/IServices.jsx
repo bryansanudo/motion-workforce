@@ -18,6 +18,7 @@ import ImgContent from "@/components/individuals/ImgContent";
 import { styles } from "@/styles";
 import Process from "@/components/individuals/iServices/Process";
 import HorizontalProcess from "@/components/individuals/iServices/HorizontalProcess";
+import FourIcons from "@/components/individuals/iServices/FourIcons";
 
 const IServices = () => {
   useEffect(() => {
@@ -319,36 +320,8 @@ const IServices = () => {
           </p>
         </TitleContent>
 
+        <FourIcons />
         {/* 4 Emojis */}
-        <div className="stats stats-vertical lg:stats-horizontal shadow my-10 mx-6">
-          <div className="stat">
-            <div className="stat-title">
-              <FaFileContract className="text-7xl mx-auto" />
-            </div>
-            <div className="mt-2">Recruit and vet employer sponsors</div>
-          </div>
-
-          <div className="stat">
-            <div className="stat-title">
-              <FaFileContract className="text-7xl mx-auto" />
-            </div>
-            <div className="mt-2">Case management services</div>
-          </div>
-
-          <div className="stat">
-            <div className="stat-title">
-              <FaFileContract className="text-7xl mx-auto" />
-            </div>
-            <div className="mt-2">Attorney pairing</div>
-          </div>
-
-          <div className="stat">
-            <div className="stat-title">
-              <FaFileContract className="text-7xl mx-auto" />
-            </div>
-            <div className="mt-2">Relocation services</div>
-          </div>
-        </div>
 
         {/* How it works */}
         <ImgContent img={coWorkersImg} title2="How It Works">
