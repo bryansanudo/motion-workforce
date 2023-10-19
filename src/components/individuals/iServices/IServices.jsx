@@ -29,7 +29,9 @@ const IServices = () => {
       <TitleContent title="Adjustment of status typical timeline"></TitleContent>
       <HorizontalProcess />
       <ISection>
-        <IServicesCard />
+        <TitleContent title="EB-3 Unskilled Visa">
+          <IServicesCard />
+        </TitleContent>
 
         {/*Timeline  Process */}
         {/* 

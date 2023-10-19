@@ -5,6 +5,8 @@ import ListCheck from "@/components/icons/ListCheck";
 
 import Approved from "@/components/icons/Approved";
 
+import checklist from "@/assets/checklist.svg";
+import approved from "@/assets/approved.svg";
 const HorizontalProcess = () => {
   return (
     <div className="overflow-x-auto mx-6 flex items-center justify-center   ">
@@ -38,7 +40,8 @@ const HorizontalProcess = () => {
         <li className="step step-primary">
           <div className="dropdown  dropdown-bottom hover:scale-110 duration-700 dropdown-end">
             <label tabIndex={0} className=" m-1">
-              <FillForm className="mx-auto w-[50px]  " />
+              {/* <FillForm className="mx-auto w-[50px]  " /> */}
+              <img src={checklist} className="w-[45px]" alt="" />
             </label>
             <ul
               tabIndex={0}
