@@ -10,7 +10,7 @@ const IServicesCard = () => {
             className="w-full h-full max-w-5xl mx-auto rounded-3xl opacity-30 blur-lg filter"
             style={{
               background:
-                "linear-gradient(90deg, #94171A -0.55%, #ffffff 22.86%, #263D72 48.36%, #ffffff 73.33%, #94171A 99.34%)",
+                "linear-gradient(90deg, #94171A -0.55%, #ffffff 22.86%, #000000 48.36%, #ffffff 73.33%, #94171A 99.34%)",
             }}
           ></div>
         </div>
