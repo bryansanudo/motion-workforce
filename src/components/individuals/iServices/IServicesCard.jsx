@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import { AiFillAlert } from "react-icons/ai";
 
+import opportunity from "@/assets/opportunity.webp";
+import success from "@/assets/success.webp";
+import versatile from "@/assets/versatile.webp";
+
 const IServicesCard = () => {
   return (
     <div className="flex flex-col items-center  p-2 mb-6 xl:w-[1080px] lg:w-[900px] md:w-[700px] w-full">
@@ -18,8 +22,9 @@ const IServicesCard = () => {
         <div className="relative grid max-w-lg grid-cols-1 gap-6 mx-auto md:max-w-none lg:gap-10 md:grid-cols-3">
           {/* Card one */}
           <div className="flex flex-col overflow-hidden shadow-md shadow-black rounded-3xl">
-            <div className="flex flex-col items-center justify-center flex-1 p-6 bg-white lg:py-8 lg:px-7 gap-4">
-              <AiFillAlert className="text-7xl" />
+            <div className="flex flex-col items-center justify-between flex-1 p-6 bg-white lg:py-8 lg:px-7 gap-4">
+              <img src={success} alt="" />
+
               <p className="font-bold text-2xl">Historic Success</p>
               <p>
                 The Immigration and Nationality Act, passed in 1990, created the
@@ -29,8 +34,8 @@ const IServicesCard = () => {
           </div>
           {/* Card two */}
           <div className="flex flex-col overflow-hidden shadow-md shadow-black rounded-3xl">
-            <div className="flex flex-col items-center justify-center flex-1 p-6 bg-white lg:py-8 lg:px-7 gap-4">
-              <AiFillAlert className="text-7xl" />
+            <div className="flex flex-col items-center justify-between flex-1 p-6 bg-white lg:py-8 lg:px-7 gap-4">
+              <img src={opportunity} alt="" />
               <p className="font-bold text-2xl">Opportunity Awaits</p>
               <p>
                 Anyone can participate in this program. There are no educational
@@ -40,8 +45,8 @@ const IServicesCard = () => {
           </div>
           {/* Card three */}
           <div className="flex flex-col overflow-hidden shadow-md shadow-black rounded-3xl">
-            <div className="flex flex-col items-center justify-center flex-1 p-6 bg-white lg:py-8 lg:px-7 gap-4">
-              <AiFillAlert className="text-7xl" />
+            <div className="flex flex-col items-center justify-between flex-1 p-6 bg-white lg:py-8 lg:px-7 gap-4">
+              <img src={versatile} alt="" />
               <p className="font-bold text-2xl">Versatile Process</p>
               <p>
                 Applicants can complete this procedure either from within the
