@@ -125,7 +125,7 @@ const IContact = () => {
                     onClick={() =>
                       document.getElementById(uniqueId).showModal()
                     }
-                    className="btn btn-outline btn-primary"
+                    className="btn btn-outline px-1  btn-md btn-primary tracking-wider capitalize "
                   >
                     {title}
                   </span>
@@ -142,10 +142,8 @@ const IContact = () => {
                           ✕
                         </button>
                       </form>
-                      <h3 className="font-bold text-2xl mb-4">{title}</h3>
-                      <p className="text-md text-gray-400 font-normal">
-                        {subtitle}
-                      </p>
+                      <h3 className="font-bold tracking-wider mb-4">{title}</h3>
+                      <p className="tracking-wider font-normal">{subtitle}</p>
                     </div>
                   </dialog>
                 </li>

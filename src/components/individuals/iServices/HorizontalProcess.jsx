@@ -19,7 +19,7 @@ import { styles } from "@/styles";
 
 const HorizontalProcess = () => {
   return (
-    <div className="overflow-x-auto mx-6 flex items-center justify-center   ">
+    <div className="overflow-x-auto  flex items-center justify-center   ">
       <ul className="steps pb-40 ">
         {/* 1 content */}
         <li className="step step-primary">
@@ -49,7 +49,7 @@ const HorizontalProcess = () => {
         <li className="step "></li>
         {/* 6 content */}
         <li className="step step-primary">
-          <div className="dropdown  dropdown-bottom   dropdown-end">
+          <div className="dropdown  dropdown-bottom   ">
             <label tabIndex={0} className=" m-1">
               {/* <FillForm className="mx-auto w-[50px]  " /> */}
               <img
@@ -71,7 +71,7 @@ const HorizontalProcess = () => {
         </li>
         {/* 7 content */}
         <li className="step step-primary">
-          <div className="dropdown  dropdown-bottom   dropdown-end">
+          <div className="dropdown  dropdown-bottom   ">
             <label tabIndex={0} className=" m-1">
               <img
                 src={process7}
@@ -92,7 +92,7 @@ const HorizontalProcess = () => {
         </li>
         {/* 8 content */}
         <li className="step step-primary">
-          <div className="dropdown  dropdown-bottom   dropdown-end">
+          <div className="dropdown  dropdown-bottom   ">
             <label tabIndex={0} className=" m-1">
               <img
                 src={process8}
@@ -113,7 +113,7 @@ const HorizontalProcess = () => {
         <li className="step "></li>
         {/* 10 content */}
         <li className="step step-primary">
-          <div className="dropdown  dropdown-bottom  dropdown-end">
+          <div className="dropdown  dropdown-bottom  ">
             <label tabIndex={0} className=" m-1">
               <img
                 src={process10}
@@ -138,7 +138,7 @@ const HorizontalProcess = () => {
         <li className="step "></li>
         {/* 13 content */}
         <li className="step step-primary">
-          <div className="dropdown  dropdown-bottom   dropdown-end">
+          <div className="dropdown  dropdown-bottom   ">
             <label tabIndex={0} className=" m-1">
               <Interview className="mx-auto w-[50px] hover:scale-110 duration-700 " />
             </label>
@@ -153,7 +153,7 @@ const HorizontalProcess = () => {
         </li>
         {/* 14 content */}
         <li className="step step-primary">
-          <div className="dropdown  dropdown-bottom   dropdown-end">
+          <div className="dropdown  dropdown-bottom   ">
             <label tabIndex={0} className=" m-1">
               <img
                 src={process14}
