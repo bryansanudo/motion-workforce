@@ -16,10 +16,11 @@ import TitleContent from "@/components/individuals/TitleContent";
 import Divider from "@/components/individuals/IDivider";
 import ImgContent from "@/components/individuals/ImgContent";
 import { styles } from "@/styles";
-import Process from "@/components/individuals/iServices/Process";
-import HorizontalProcess from "@/components/individuals/iServices/HorizontalProcess";
-import CHorizontalProcess from "@/components/companies/cHome/CHorizontalProcess";
+
 import FourIcons from "@/components/individuals/iServices/FourIcons";
+
+import IAdjustmentProcess from "@/components/individuals/iServices/IAdjustmentProcess";
+import IConsularProcess from "@/components/individuals/iServices/IConsularProcess";
 
 const IServices = () => {
   useEffect(() => {
@@ -301,7 +302,14 @@ const IServices = () => {
             other ways to get there.
           </p>
         </TitleContent>
+      </ISection>
 
+      <TitleContent title="Consular Processing Typical Timeline"></TitleContent>
+      <IConsularProcess />
+      <TitleContent title="Adjustment of Status Typical Timeline"></TitleContent>
+      <IAdjustmentProcess />
+
+      <ISection>
         <Divider />
 
         {/* ***OUR SERVICES *** */}

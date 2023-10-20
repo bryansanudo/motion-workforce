@@ -16,8 +16,8 @@ import { styles } from "@/styles";
 import { useEffect } from "react";
 import CPartners from "@/components/companies/CPartners";
 import CHorizontalProcess from "@/components/companies/cHome/CHorizontalProcess";
+import HorizontalProcess from "@/components/companies/cHome/HorizontalProcess";
 import IFormContact from "@/components/individuals/IFormContact";
-import HorizontalProcess from "@/components/individuals/iServices/HorizontalProcess";
 
 const CHome = () => {
   useEffect(() => {
