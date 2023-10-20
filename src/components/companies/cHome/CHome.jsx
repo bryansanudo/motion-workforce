@@ -30,6 +30,7 @@ const CHome = () => {
       <ISection>
         {/* James */}
 
+        <div name="teach me s" className="pt-20" />
         <ImgContent
           img={JamesBg}
           title1="Meet The Founder"

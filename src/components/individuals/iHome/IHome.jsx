@@ -45,7 +45,7 @@ const IHome = () => {
 
         {/* Divider committed workers */}
         <div className="flex items-center justify-center gap-6 md:gap-40 p-6 flex-col md:flex-row bg-gray-100 w-full ">
-          <h1 className="text-4xl font-bold">Get Committed Workers!</h1>
+          <h1 className="text-4xl font-bold">Start Your Journey!</h1>
           <div className="flex flex-col items-center justify-center gap-4 text-xl font-bold">
             <div className="flex items-center justify-center gap-4">
               <div className="bg-white p-3 rounded-full ">
@@ -91,7 +91,7 @@ const IHome = () => {
 
         {/* EB-3 VISA */}
 
-        <EbTwoCol />
+        {/*  <EbTwoCol /> */}
 
         <Divider />
 

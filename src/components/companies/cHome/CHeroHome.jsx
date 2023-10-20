@@ -1,3 +1,4 @@
+import { Link } from "react-scroll";
 const CHeroHome = () => {
   return (
     <>
@@ -17,9 +18,11 @@ const CHeroHome = () => {
             <p className="mb-5 md:text-3xl text-lg">
               No Cost, No Hassle, No Brainer
             </p>
-            <button className="btn hover:scale-105 btn-secondary">
-              YES !TEACH ME HOW
-            </button>
+            <Link to="teach me s" smooth duration={500}>
+              <button className="btn hover:scale-105 btn-secondary tracking-wider">
+                Yes, teach me how!
+              </button>
+            </Link>
           </div>
         </div>
       </div>
