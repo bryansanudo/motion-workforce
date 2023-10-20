@@ -13,6 +13,7 @@ const IFormContact = ({ color }) => {
       <p className={`${styles.sectionTitleText}`}>
         Fill out the form below and we'll get back to you as soon as possible.
       </p>
+
       <form
         action="https://getform.io/f/975c0d04-11b3-406f-9eb7-782df43a99ca"
         method="POST"
@@ -23,13 +24,13 @@ const IFormContact = ({ color }) => {
               type="text"
               name="Name"
               placeholder="First name"
-              className={`input-${color} input input-bordered w-full`}
+              className={`  input input-bordered w-full`}
             />
             <input
               type="text"
               name="Last Name"
               placeholder="Last name"
-              className={`input-${color} input input-bordered  w-full`}
+              className={` input input-bordered  w-full`}
             />
           </div>
           <div className="flex flex-col md:flex-row items-center  justify-center gap-4 ">
@@ -37,18 +38,18 @@ const IFormContact = ({ color }) => {
               type="text"
               name="Email"
               placeholder="Email"
-              className={`input-${color} input input-bordered  w-full`}
+              className={` input input-bordered  w-full`}
             />
             <input
               type="text"
               name="Phone"
               placeholder="Phone"
-              className={`input-${color} input input-bordered  w-full`}
+              className={` input input-bordered  w-full`}
             />
           </div>
           <textarea
             name="Questions"
-            className={`textarea-${color} textarea w-auto`}
+            className={` textarea textarea-bordered w-auto`}
             placeholder="Your questions"
           />
           <button className={`btn btn-${color}`}>SUBMIT NOW</button>

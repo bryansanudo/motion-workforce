@@ -124,7 +124,7 @@ const IHome = () => {
         </ImgContent>
 
         <IFormContact color="primary" />
-
+        <IFormContact color="secondary" />
         <Divider />
       </ISection>
     </>
