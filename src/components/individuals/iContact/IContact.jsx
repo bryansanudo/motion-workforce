@@ -169,9 +169,8 @@ const IContact = () => {
 
         <TitleContent title="We are open Monday through Friday from 9:00am-5:00pm">
           <p className={`${styles.sectionTitleText}`}>
-            Although we don’t have international or other national offices, you
-            are welcome to schedule a call with our team by signing up for a
-            free account.
+            You can contact us through multiple channels, including phone,
+            email, live chat, and our website's contact form
           </p>
         </TitleContent>
 
