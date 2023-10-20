@@ -21,11 +21,13 @@ const IFormContact = ({ color }) => {
           <div className="flex flex-col md:flex-row items-center  justify-center gap-4">
             <input
               type="text"
+              name="Name"
               placeholder="First name"
               className={`input-${color} input input-bordered w-full`}
             />
             <input
               type="text"
+              name="Last Name"
               placeholder="Last name"
               className={`input-${color} input input-bordered  w-full`}
             />
@@ -33,16 +35,19 @@ const IFormContact = ({ color }) => {
           <div className="flex flex-col md:flex-row items-center  justify-center gap-4 ">
             <input
               type="text"
+              name="Email"
               placeholder="Email"
               className={`input-${color} input input-bordered  w-full`}
             />
             <input
               type="text"
+              name="Phone"
               placeholder="Phone"
               className={`input-${color} input input-bordered  w-full`}
             />
           </div>
           <textarea
+            name="Questions"
             className={`textarea-${color} textarea w-auto`}
             placeholder="Your questions"
           />
