@@ -2,6 +2,7 @@ import React from "react";
 import logoImg from "@/assets/logo.png";
 import { motion } from "framer-motion";
 import { staggerContainer, slideIn, zoomIn } from "@/utils/motion";
+import { Link } from "react-router-dom";
 
 const IFooter = () => {
   return (
@@ -42,7 +43,7 @@ const IFooter = () => {
             Contact Us
           </header>
           <p className="">(305) 564-1311</p>
-          <p className="">recruier@eb3wfs.com</p>
+          <p className="">recruiter@eb3wfs.com</p>
           <p className="">American Dream Recruiting</p>
           <p className="">777 Brickell Avenue Suite 500</p>
           <p className="">Miami, FL 33131</p>
@@ -52,8 +53,12 @@ const IFooter = () => {
             Legal
           </header>
           <a className="link link-hover">Copyright © 2023 All Right Reserved</a>
-          <a className="link link-hover">Privacy Policy</a>
-          <a className="link link-hover">Terms of Services</a>
+          <Link to="/privacy-policy">
+            <div className="link link-hover">Privacy Policy</div>
+          </Link>
+          <Link to="/terms-services">
+            <div className="link link-hover">Terms of Services</div>
+          </Link>
         </motion.nav>
       </motion.footer>
     </motion.div>

@@ -21,6 +21,8 @@ import Mult from "@/components/individuals/iVacancies/partners/Mult";
 import Stoughton from "@/components/individuals/iVacancies/partners/Stoughton";
 import Wilderness from "@/components/individuals/iVacancies/partners/Wilderness";
 import CHome from "@/components/companies/cHome/CHome";
+import PrivacyPolicy from "@/components/individuals/PrivacyPolicy";
+import TermsOfService from "@/components/individuals/TermsOfServices";
 
 const Individuals = ({ content, setContent }) => {
   const navigate = useNavigate();
@@ -81,6 +83,8 @@ const Individuals = ({ content, setContent }) => {
           path="/individuals/vacancies/wilderness"
           element={<Wilderness />}
         />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms-services" element={<TermsOfService />} />
       </Routes>
       <IFooter />
     </>
