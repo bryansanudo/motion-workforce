@@ -117,11 +117,12 @@ const IHome = () => {
           title2="Struggling to Find Commited Workers?"
         >
           <p className={`${styles.sectionText}`}>
-            Discover the solution to your staffing needs with our company! Say
-            goodbye to the hassle of unreliable workers and hello to a team of
-            dedicated and committed professionals. Our EB3 visa workers are
-            handpicked to ensure top-notch performance and complete commitment
-            to your projects. Trust us to provide the workforce you deserve."
+            Discover the pathway to your American dream with our company! Say
+            goodbye to the uncertainty of the immigration journey and hello to a
+            dedicated team of professionals eager to assist you. Our partners
+            are carefully selected to ensure a smooth process and unwavering
+            commitment to your immigration goals. Trust us to guide you on the
+            path to the American Dream.
           </p>
         </ImgContent>
 
