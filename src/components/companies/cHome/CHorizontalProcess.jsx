@@ -125,7 +125,7 @@ const CHorizontalProcess = () => {
               className="dropdown-content z-[1] menu p-6 shadow-md shadow-black bg-base-100  rounded-box w-52"
             >
               <p className="font-bold tracking-wider">Month 10 </p>
-              <p className="tracking-wider">DS 260</p>
+              <p className="tracking-wider">DS-260</p>
             </ul>
           </div>
         </li>
@@ -162,13 +162,14 @@ const CHorizontalProcess = () => {
             <label tabIndex={0} className=" m-1">
               <Interview className="mx-auto w-[50px] hover:scale-110 duration-700 " />
             </label>
+
             <ul
               tabIndex={0}
               className="dropdown-content z-[1] menu p-6 shadow-md shadow-black bg-base-100  rounded-box w-52"
             >
               <p className="font-bold tracking-wider">Month 16 </p>
               <p className="tracking-wider">
-                EW3 vida interview at usconsulate in your home country
+                EB-3 visa interview at usconsulate in your home country
               </p>
             </ul>
           </div>

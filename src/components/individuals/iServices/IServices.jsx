@@ -72,7 +72,7 @@ const IServices = () => {
           </div>
           <div className="md:w-1/2 max-w-[500px]">
             <div className="flex items-center justify-center flex-col ">
-              <p className={styles.titleText}>Who is eligible for EB3?</p>
+              <p className={styles.titleText}>Who is eligible for EB-3?</p>
             </div>
 
             <div className="flex items-center justify-start text-left gap-2 mt-5">
@@ -309,7 +309,7 @@ const IServices = () => {
         {/* What we do */}
         <TitleContent title="What We Do">
           <p className={`${styles.sectionTitleText}`}>
-            Experience a seamless process in securing EB3 visa workers with our
+            Experience a seamless process in securing EB-3 visa workers with our
             comprehensive support. From the very beginning, our team is
             dedicated to finding and vetting potential candidates, and preparing
             your company for sponsorship. And we don't stop there - even after
@@ -327,7 +327,7 @@ const IServices = () => {
         <ImgContent img={coWorkersImg} title2="How It Works">
           <p className={`${styles.sectionText}`}>
             Join the growing list of satisfied clients who have benefited from
-            our expertise in the EB3 Unskilled Visa process. We specialize in
+            our expertise in the EB-3 Unskilled Visa process. We specialize in
             connecting employers with highly skilled foreign nationals, bridging
             the gap in the American workforce and helping to drive your business
             forward. Trust us to simplify the process and deliver the results
