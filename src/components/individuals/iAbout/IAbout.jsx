@@ -62,11 +62,11 @@ const IAbout = () => {
 
         <TitleContent title="History of EB-3 Solutions">
           <p className={`${styles.sectionTitleText}`}>
-            History of EB-3 Solutions The corporation EB-3 Workforce Solutions
-            has had a substantial effect on the American labor market. By
-            concentrating on offering U.S. companies alternatives for hiring
-            entry-level workers, EB-3 Workforce Solutions strives to become a
-            top supplier of unskilled labor solutions to American firms.
+            The corporation EB-3 Workforce Solutions has had a substantial
+            effect on the American labor market. By concentrating on offering
+            U.S. companies alternatives for hiring entry-level workers, EB-3
+            Workforce Solutions strives to become a top supplier of unskilled
+            labor solutions to American firms.
           </p>
           <p className={`${styles.sectionTitleText}`}>
             To help non-immigrant visa holders change their visa status, and

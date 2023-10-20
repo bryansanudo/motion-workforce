@@ -18,6 +18,7 @@ import ImgContent from "@/components/individuals/ImgContent";
 import { styles } from "@/styles";
 import Process from "@/components/individuals/iServices/Process";
 import HorizontalProcess from "@/components/individuals/iServices/HorizontalProcess";
+import CHorizontalProcess from "@/components/companies/cHome/CHorizontalProcess";
 import FourIcons from "@/components/individuals/iServices/FourIcons";
 
 const IServices = () => {
@@ -27,7 +28,9 @@ const IServices = () => {
   return (
     <>
       <IHeroServices />
-      <TitleContent title="Adjustment of status typical timeline"></TitleContent>
+      <TitleContent title="Consular Processing Typical Timeline"></TitleContent>
+      <CHorizontalProcess />
+      <TitleContent title="Adjustment of Status Typical Timeline"></TitleContent>
       <HorizontalProcess />
       <ISection>
         <TitleContent title="EB-3 Unskilled Visa">

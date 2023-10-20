@@ -15,7 +15,7 @@ const IFormContact = ({ color }) => {
       </p>
 
       <form
-        action="https://getform.io/f/975c0d04-11b3-406f-9eb7-782df43a99ca"
+        action="https://getform.io/f/068ccdd9-21a2-46f7-8dbf-e73b0f28eade"
         method="POST"
       >
         <div className="flex flex-col md:gap-10 gap-4 md:p-10 p-6 rounded-3xl shadow-black shadow-md xl:w-[1080px] lg:w-[900px] md:w-[700px] w-full mb-4 ">
