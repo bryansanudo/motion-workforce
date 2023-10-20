@@ -14,6 +14,8 @@ import process7 from "@/assets/process/process7.png";
 import process8 from "@/assets/process/process8.png";
 import process10 from "@/assets/process/process10.png";
 import process18 from "@/assets/process/process14.png";
+import process15 from "@/assets/process/process15.png";
+import process17 from "@/assets/process/process17.png";
 
 import { styles } from "@/styles";
 
@@ -140,7 +142,7 @@ const CHorizontalProcess = () => {
           <div className="dropdown  dropdown-bottom  ">
             <label tabIndex={0} className=" m-1">
               <img
-                src={process10}
+                src={process15}
                 className="w-[70px] hover:scale-110 duration-700 pb-2"
                 alt=""
               />
@@ -158,11 +160,7 @@ const CHorizontalProcess = () => {
         <li className="step ">
           <div className="dropdown  dropdown-bottom  ">
             <label tabIndex={0} className=" m-1">
-              <img
-                src={process10}
-                className="w-[70px] hover:scale-110 duration-700 pb-2"
-                alt=""
-              />
+              <Interview className="mx-auto w-[50px] hover:scale-110 duration-700 " />
             </label>
             <ul
               tabIndex={0}
@@ -180,7 +178,7 @@ const CHorizontalProcess = () => {
           <div className="dropdown  dropdown-bottom  ">
             <label tabIndex={0} className=" m-1">
               <img
-                src={process10}
+                src={process17}
                 className="w-[70px] hover:scale-110 duration-700 pb-2"
                 alt=""
               />
