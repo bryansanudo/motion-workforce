@@ -175,7 +175,7 @@ const IContact = () => {
           </p>
         </TitleContent>
 
-        <IFormContact />
+        <IFormContact color="primary" />
         {/* <div className="mb-16" /> */}
       </ISection>
     </>

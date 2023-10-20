@@ -123,7 +123,7 @@ const IHome = () => {
           </p>
         </ImgContent>
 
-        <IFormContact />
+        <IFormContact color="primary" />
 
         <Divider />
       </ISection>

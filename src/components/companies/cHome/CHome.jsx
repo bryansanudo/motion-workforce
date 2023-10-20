@@ -16,6 +16,7 @@ import { styles } from "@/styles";
 import { useEffect } from "react";
 import CPartners from "@/components/companies/CPartners";
 import CHorizontalProcess from "@/components/companies/cHome/CHorizontalProcess";
+import IFormContact from "@/components/individuals/IFormContact";
 
 const CHome = () => {
   useEffect(() => {
@@ -126,7 +127,7 @@ const CHome = () => {
           </p>
         </ImgContent>
 
-        <CFormContact />
+        <IFormContact color="secondary" />
 
         <Divider />
       </ISection>

@@ -376,7 +376,7 @@ const IServices = () => {
             timetable and procedure.
           </p>
         </ImgContent>
-        <IFormContact />
+        <IFormContact color="primary" />
 
         <Divider />
       </ISection>
