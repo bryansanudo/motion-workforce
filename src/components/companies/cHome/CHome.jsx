@@ -26,7 +26,7 @@ const CHome = () => {
   return (
     <>
       <CHeroHome />
-      <CHorizontalProcess />
+
       <ISection>
         {/* James */}
 
