@@ -60,32 +60,31 @@ const IAbout = () => {
 
         {/* History of EB-3 Solutions */}
 
-        <TitleContent title="History of EB-3 Solutions">
+        <TitleContent title="History of EB-3 ">
           <p className={`${styles.sectionTitleText}`}>
-            The corporation EB-3 Workforce Solutions has had a substantial
-            effect on the American labor market. By concentrating on offering
-            U.S. companies alternatives for hiring entry-level workers, EB-3
-            Workforce Solutions strives to become a top supplier of unskilled
-            labor solutions to American firms.
+            The EB-3 Green Card Program has had a substantial effect on the
+            American labor market. By concentrating on offering U.S. companies
+            alternatives for hiring entry-level workers, the EB-3 Green Card
+            Program strives to become a top supplier of unskilled labor
+            solutions to American firms.
           </p>
           <p className={`${styles.sectionTitleText}`}>
             To help non-immigrant visa holders change their visa status, and
-            assist immigrants in achieving a EB-3 permanent residence Green
-            Card, EB-3 Workforce Solutions collaborates with some of the leading
-            immigration law firms in the nation. By offering these services,
-            EB-3 Workforce Solutions is essential in assisting foreign nationals
-            and those with non-immigrant visas to become lawful permanent
-            residents of the United States.
+            assist immigrants in achieving an EB-3 permanent residence Green
+            Card, the program collaborates with some of the leading immigration
+            law firms in the nation. By offering these services, the EB-3 Green
+            Card Program hes been essential in assisting foreign nationals and
+            those with non-immigrant visas to become lawful permanent residents
+            of the United States.
           </p>
           <p className={`${styles.sectionTitleText}`}>
-            EB-3 Workforce Solutions assists American companies in hiring the
-            qualified personnel they require to expand and prosper. EB-3
-            Workforce Solutions has assisted in addressing the persistent lack
-            of unskilled employees in the American labor market by acting as a
-            link between American firms and overseas workers. We have
-            established a solid reputation as a reliable source of talent
-            acquisition due to our commitment to quality and our desire to see
-            U.S. businesses prosper.
+            The EB-3 Green Card Program assists American companies in hiring the
+            qualified personnel they require to expand and prosper. It has
+            assisted in addressing the persistent lack of unskilled employees in
+            the American labor market by acting as a link between American firms
+            and overseas workers. The program has established a solid reputation
+            as a reliable source of talent acquisition due to its commitment to
+            quality and its desire to see U.S. businesses prosper.
           </p>
         </TitleContent>
 
