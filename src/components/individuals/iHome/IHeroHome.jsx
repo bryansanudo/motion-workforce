@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 
 const IHeroHome = () => {
   return (
@@ -20,9 +21,12 @@ const IHeroHome = () => {
             <p className="mb-5 md:text-3xl text-lg tracking-wider">
               No Cost, No Hassle, No Brainer
             </p>
-            <button className="btn hover:scale-105 btn-primary tracking-wider">
-              YES! TEACH ME HOW
-            </button>
+
+            <Link to="teach me" smooth duration={500}>
+              <button className="btn hover:scale-105 btn-primary tracking-wider">
+                Yes, teach me how!
+              </button>
+            </Link>
           </div>
         </div>
       </div>

@@ -26,6 +26,7 @@ const IHome = () => {
       <ISection>
         {/* James */}
 
+        <div name="teach me" className="pt-20" />
         <ImgContent
           img={JamesBg}
           title1="Meet The Founder"
