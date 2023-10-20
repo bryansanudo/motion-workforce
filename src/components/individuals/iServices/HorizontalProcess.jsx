@@ -20,7 +20,7 @@ import { styles } from "@/styles";
 const HorizontalProcess = () => {
   return (
     <div className="overflow-x-auto  flex items-center justify-center    ">
-      <ul className="steps pb-40 xl:w-[1080px] lg:w-[900px] md:w-[700px] w-full  ">
+      <ul className="steps pb-40 w-full  ">
         {/* 1 content */}
         <li className="step step-secondary">
           <div className="dropdown dropdown-open dropdown-bottom   ">
