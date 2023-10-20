@@ -19,7 +19,7 @@ const CHeroHome = () => {
               No Cost, No Hassle, No Brainer
             </p>
             <Link to="teach me s" smooth duration={500}>
-              <button className="btn hover:scale-105 btn-secondary tracking-wider">
+              <button className="btn hover:scale-105 btn-secondary capitalize tracking-wider">
                 Yes, teach me how!
               </button>
             </Link>

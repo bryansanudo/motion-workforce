@@ -23,7 +23,7 @@ const IHeroHome = () => {
             </p>
 
             <Link to="teach me" smooth duration={500}>
-              <button className="btn hover:scale-105 btn-primary tracking-wider">
+              <button className="btn hover:scale-105 capitalize btn-primary tracking-wider">
                 Yes, teach me how!
               </button>
             </Link>

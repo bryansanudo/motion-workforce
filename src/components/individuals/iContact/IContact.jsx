@@ -36,7 +36,7 @@ const IContact = () => {
     },
     {
       id: 5,
-      title: "Check Progress through Portal",
+      title: "Get Updates on your Process",
       subtitle:
         "As the employer processes your applications, your BDV portal will be updated.",
     },
