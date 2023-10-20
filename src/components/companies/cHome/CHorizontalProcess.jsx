@@ -22,7 +22,7 @@ import { styles } from "@/styles";
 const CHorizontalProcess = () => {
   return (
     <div className="overflow-x-auto  flex items-center justify-center my-20  ">
-      <ul className="steps pb-40 w-full   ">
+      <ul className="steps pb-40 w-full xl:overflow-x-hidden  ">
         {/* 1 content */}
         <li className="step step-secondary">
           <div className="dropdown dropdown-open dropdown-bottom">
