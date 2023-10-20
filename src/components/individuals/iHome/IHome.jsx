@@ -74,18 +74,18 @@ const IHome = () => {
           title2="Want to Know More?"
         >
           <p className={`${styles.sectionText} mb-6`}>
-            If you find yourself in a situation where you are struggling to find
-            a significant number of qualified, accessible, and highly motivated
-            U.S. employees to fill various entry-level positions, or if you are
-            facing challenges with relentless turnover and overwhelming HR
-            responsibilities and charges, then we have the perfect solution for
-            you.
+            If you find yourself in a situation where you are seeking a
+            significant opportunity for a better life and career in the United
+            States, or if you are facing challenges in navigating the complex
+            immigration process and associated costs, then we have the perfect
+            solution for you.
           </p>
           <p className={`${styles.sectionText}`}>
-            Introducing the EB-3 Visa Program, a long-term staffing solution
-            specifically designed for U.S. employers like yourself. This
-            employment-based Green Card option is tailored to address your
-            staffing needs and provide the qualified workforce you require.
+            Introducing the EB-3 Visa Program, a long-term immigration solution
+            specifically designed for individuals like yourself. This
+            employment-based Green Card option is crafted to address your
+            immigration goals and provide the pathway you need to the United
+            States.
           </p>
         </ImgContent>
 
@@ -111,10 +111,12 @@ const IHome = () => {
           </p>
         </TitleContent>
 
-        {/* Struggling to Find Commited Workers? */}
+        {/* Looking to Start
+your American Dream?*/}
         <ImgContent
           img={contactImg}
-          title2="Struggling to Find Commited Workers?"
+          title2="Looking to Start
+          your American Dream?"
         >
           <p className={`${styles.sectionText}`}>
             Discover the pathway to your American dream with our company! Say

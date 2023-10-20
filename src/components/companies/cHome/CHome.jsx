@@ -17,6 +17,7 @@ import { useEffect } from "react";
 import CPartners from "@/components/companies/CPartners";
 import CHorizontalProcess from "@/components/companies/cHome/CHorizontalProcess";
 import IFormContact from "@/components/individuals/IFormContact";
+import HorizontalProcess from "@/components/individuals/iServices/HorizontalProcess";
 
 const CHome = () => {
   useEffect(() => {
@@ -127,7 +128,12 @@ const CHome = () => {
             to your projects. Trust us to provide the workforce you deserve."
           </p>
         </ImgContent>
-
+      </ISection>
+      <TitleContent title="Consular Processing Typical Timeline"></TitleContent>
+      <CHorizontalProcess />
+      <TitleContent title="Adjustment of Status Typical Timeline"></TitleContent>
+      <HorizontalProcess />
+      <ISection>
         <IFormContact color="secondary" />
 
         <Divider />

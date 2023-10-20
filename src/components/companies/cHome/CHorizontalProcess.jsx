@@ -24,7 +24,7 @@ const CHorizontalProcess = () => {
     <div className="overflow-x-auto  flex items-center justify-center my-20  ">
       <ul className="steps pb-40   xl:w-[1080px] lg:w-[900px] md:w-[700px] w-full ">
         {/* 1 content */}
-        <li className="step step-primary">
+        <li className="step step-secondary">
           <div className="dropdown dropdown-open dropdown-bottom">
             <label tabIndex={0} className=" m-1">
               <img src={process1} className="mx-auto w-[50px]" alt="" />
@@ -50,7 +50,7 @@ const CHorizontalProcess = () => {
         {/* 5 */}
         <li className="step "></li>
         {/* 6 content */}
-        <li className="step step-primary">
+        <li className="step step-secondary">
           <div className="dropdown  dropdown-bottom   ">
             <label tabIndex={0} className=" m-1">
               {/* <FillForm className="mx-auto w-[50px]  " /> */}
@@ -70,7 +70,7 @@ const CHorizontalProcess = () => {
           </div>
         </li>
         {/* 7 content */}
-        <li className="step step-primary">
+        <li className="step step-secondary">
           <div className="dropdown  dropdown-bottom   ">
             <label tabIndex={0} className=" m-1">
               <img
@@ -90,7 +90,7 @@ const CHorizontalProcess = () => {
           </div>
         </li>
         {/* 8 content */}
-        <li className="step step-primary">
+        <li className="step step-secondary">
           <div className="dropdown  dropdown-bottom   ">
             <label tabIndex={0} className=" m-1">
               <img
@@ -111,7 +111,7 @@ const CHorizontalProcess = () => {
         {/* 9 */}
         <li className="step "></li>
         {/* 10 content */}
-        <li className="step step-primary">
+        <li className="step step-secondary">
           <div className="dropdown  dropdown-bottom  ">
             <label tabIndex={0} className=" m-1">
               <img
@@ -134,9 +134,9 @@ const CHorizontalProcess = () => {
         {/* 12 */}
         <li className="step "></li>
         {/* 13  */}
-        <li className="step step-primary"></li>
+        <li className="step step-secondary"></li>
         {/* 14  */}
-        <li className="step step-primary"></li>
+        <li className="step step-secondary"></li>
         {/* 15 content */}
         <li className="step ">
           <div className="dropdown  dropdown-bottom  ">

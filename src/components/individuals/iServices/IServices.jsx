@@ -28,10 +28,7 @@ const IServices = () => {
   return (
     <>
       <IHeroServices />
-      <TitleContent title="Consular Processing Typical Timeline"></TitleContent>
-      <CHorizontalProcess />
-      <TitleContent title="Adjustment of Status Typical Timeline"></TitleContent>
-      <HorizontalProcess />
+
       <ISection>
         <TitleContent title="EB-3 Unskilled Visa">
           <IServicesCard />
