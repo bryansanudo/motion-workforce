@@ -98,15 +98,16 @@ const IHome = () => {
         {/* EB-3 Worfkforce Solutions */}
         <TitleContent title="EB-3 Workfoce Solutions">
           <p className={`${styles.sectionTitleText}`}>
-            At EB3 Workforce Solutions, we understand the importance of finding
-            reliable and dedicated employees. That's why we offer a unique
-            solution to your staffing needs - EB3 visa workers. Our team is
-            dedicated to finding and placing highly qualified personnel who are
-            committed to making a positive impact on your business. With a
-            rigorous screening process and a network of top-notch talent, we
-            ensure that you receive the highest quality workforce available. Say
-            goodbye to the struggles of finding committed workers and hello to a
-            bright future with EB3 Workforce Solutions.
+            At EB-3 Workforce Solutions, we understand the significance of
+            pursuing a better life and career opportunities in the United
+            States. That's why we provide a unique solution to your immigration
+            dreams - the EB-3 Visa program. Our dedicated team is committed to
+            assisting interested individuals who are eager to contribute
+            positively to the U.S. With a meticulous application process and a
+            network of top-notch immigration experts, we ensure that you have
+            the best support available for your EB-3 Visa journey. Say goodbye
+            to the uncertainties of the immigration process and hello to a
+            brighter future with EB-3 Workforce Solutions.
           </p>
         </TitleContent>
 
