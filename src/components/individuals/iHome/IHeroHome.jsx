@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 
 const messages = [
-  "The Better FREE Way To Connect With The Right Manpower For Your Business",
   "Unlock Your American Dream: Choose the EB-3 Visa Path Today!",
   "Why Settle for Less? Elevate Your Future with an EB-3 Visa.",
   "Open Doors in the U.S. – Make the EB-3 Visa Your Key.",

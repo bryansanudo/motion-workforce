@@ -493,7 +493,7 @@
     }
 
     .wcs_popup_input_offline{
-        color: #f1a528;
+        color: #000000;
     }
 
     .wcs_eligibility{
@@ -503,7 +503,7 @@
         display: block; /* Hace que el botón ocupe todo el ancho disponible */
         margin: 0 auto; /* Centra horizontalmente el botón */
         padding: 10px 20px; /* Espaciado interno del botón */
-        background-color: #007bff; /* Color de fondo del botón (puedes cambiarlo) */
+        background-color: #94171A; /* Color de fondo del botón (puedes cambiarlo) */
         color: #fff; /* Color del texto del botón (puedes cambiarlo) */
         border: none; /* Quita el borde del botón */
         border-radius: 5px; /* Agrega bordes redondeados al botón */
@@ -513,12 +513,12 @@
       
       /* Estilos para el botón al pasar el mouse por encima */
       .button:hover {
-        background-color: #0056b3; /* Cambia el color de fondo al pasar el mouse (puedes cambiarlo) */
+        background-color: #94171A; /* Cambia el color de fondo al pasar el mouse (puedes cambiarlo) */
       }
       
       /* Estilos para el botón al hacer clic */
       .button:active {
-        background-color: #003c80; /* Cambia el color de fondo al hacer clic (puedes cambiarlo) */
+        background-color: #94171A; /* Cambia el color de fondo al hacer clic (puedes cambiarlo) */
       }
 
     .wcs_popup_input_offline+.wcs_popup_avatar{
