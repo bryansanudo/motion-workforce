@@ -44,7 +44,7 @@ const IFooter = () => {
           </header>
           <p className="">(305) 564-1311</p>
           <p className="">recruiter@eb3wfs.com</p>
-          <p className="">Get rid of the American dream and put EB3WFS LLC</p>
+          <p className="">EB3WFS LLC</p>
           <p className="">777 Brickell Avenue Suite 500</p>
           <p className="">Miami, FL 33131</p>
         </motion.nav>
