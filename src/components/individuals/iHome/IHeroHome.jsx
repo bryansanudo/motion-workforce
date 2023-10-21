@@ -1,7 +1,30 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 
+const messages = [
+  "The Better FREE Way To Connect With The Right Manpower For Your Business",
+  "Unlock Your American Dream: Choose the EB3 Visa Path Today!",
+  "Why Settle for Less? Elevate Your Future with an EB3 Visa.",
+  "Open Doors in the U.S. – Make the EB3 Visa Your Key.",
+  "Step into a World of Opportunities: Get Your EB3 Visa Now.",
+  "EB3 Visa: Your Gateway to Permanent Residency and Beyond.",
+  "Discover the Fastest Path to Your American Life with an EB3 Visa.",
+  "Chart Your Course to Success: The EB3 Visa Awaits.",
+  "Be Part of America's Growth Story with an EB3 Visa.",
+  "Achieve the Unthinkable: U.S. Residency Through the EB3 Visa.",
+  "Your Journey to a Better Future Begins with an EB3 Visa.",
+  // Agrega más mensajes según tus necesidades
+];
+
 const IHeroHome = () => {
+  const [randomMessage, setRandomMessage] = useState("");
+
+  useEffect(() => {
+    // Genera un índice aleatorio para seleccionar un mensaje de la lista
+    const randomIndex = Math.floor(Math.random() * messages.length);
+    setRandomMessage(messages[randomIndex]);
+  }, []);
+
   return (
     <>
       <div
@@ -15,8 +38,7 @@ const IHeroHome = () => {
         <div className="hero-content text-center text-white">
           <div className="max-w-5xl">
             <h1 className="my-5 lg:text-5xl md:text-3xl text-2xl font-bold tracking-wider">
-              The Better FREE Way To Connect With The Right Manpower For Your
-              Business
+              {randomMessage}
             </h1>
             <p className="mb-5 md:text-3xl text-lg tracking-wider">
               No Cost, No Hassle, No Brainer
