@@ -39,12 +39,16 @@
     popupFx: "1", // The popup effect from 0 till 14
     now: "", // When empty it will use the date and time from the user browser if not you can assign it with PHP maybe (which will be the date of the server) format: YYYY-MM-DD HH:mm:ss (2019-12-30 18:30:00)
     timezone: "America/Bogota", // When using the date and time from the user browser you can transform it to your current timezone (in case your user is in a different timezone)
-    notAvailableMsg: "We are after hours ", // message when its not an available day or once the available hours have passed
-    almostAvailableMsg: "I will be available soon", // if today is an available day and before the time starts
+    notAvailableMsg:
+      "We are currently outside of our regular business hours. Please utilize the form below to check your eligibility for our program, or feel free to email us at recruiter@eb3wfs.com with any questions you may have. <br /> <a href='https://form.jotform.com/EB3_Recruiter/eligibility-eb3wfs' target='_blank'> <button class='button'>Check My Eligibility</button></a>", // message when its not an available day or once the available hours have passed
+    almostAvailableMsg:
+      "We are currently outside of our regular business hours. Please utilize the form below to check your eligibility for our program, or feel free to email us at recruiter@eb3wfs.com with any questions you may have. <br /> <a href='https://form.jotform.com/EB3_Recruiter/eligibility-eb3wfs' target='_blank'> <button class='button'>Check My Eligibility</button></a>", // if today is an available day and before the time starts
     dialogNotAvailableMsg:
       "We are currently outside of our regular business hours. Please utilize the form below to check your eligibility for our program, or feel free to email us at recruiter@eb3wfs.com with any questions you may have. <br /> <a href='https://form.jotform.com/EB3_Recruiter/eligibility-eb3wfs' target='_blank'> <button class='button'>Check My Eligibility</button></a>", // message when its not an available day or once the available hours have passed
-    dialogAlmostAvailableMsg: "I will be available soon", // if today is an available day and before the time starts
-    defaultMsg: "I will be available soon", // default support msg
+    dialogAlmostAvailableMsg:
+      "We are currently outside of our regular business hours. Please utilize the form below to check your eligibility for our program, or feel free to email us at recruiter@eb3wfs.com with any questions you may have. <br /> <a href='https://form.jotform.com/EB3_Recruiter/eligibility-eb3wfs' target='_blank'> <button class='button'>Check My Eligibility</button></a>", // if today is an available day and before the time starts
+    defaultMsg:
+      "We are currently outside of our regular business hours. Please utilize the form below to check your eligibility for our program, or feel free to email us at recruiter@eb3wfs.com with any questions you may have. <br /> <a href='https://form.jotform.com/EB3_Recruiter/eligibility-eb3wfs' target='_blank'> <button class='button'>Check My Eligibility</button></a>", // default support msg
     debug: false, // some messages for debug purposes
 
     // Events
