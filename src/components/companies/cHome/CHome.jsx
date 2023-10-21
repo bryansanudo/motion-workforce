@@ -103,15 +103,15 @@ const CHome = () => {
         {/* EB-3 Worfkforce Solutions */}
         <TitleContent title="EB-3 Workfoce Solutions">
           <p className={`${styles.sectionTitleText}`}>
-            At EB3 Workforce Solutions, we understand the importance of finding
+            At EB-3 Workforce Solutions, we understand the importance of finding
             reliable and dedicated employees. That's why we offer a unique
-            solution to your staffing needs - EB3 visa workers. Our team is
+            solution to your staffing needs - EB-3 visa workers. Our team is
             dedicated to finding and placing highly qualified personnel who are
             committed to making a positive impact on your business. With a
             rigorous screening process and a network of top-notch talent, we
             ensure that you receive the highest quality workforce available. Say
             goodbye to the struggles of finding committed workers and hello to a
-            bright future with EB3 Workforce Solutions.
+            bright future with EB-3 Workforce Solutions.
           </p>
         </TitleContent>
 
@@ -123,7 +123,7 @@ const CHome = () => {
           <p className={`${styles.sectionText}`}>
             Discover the solution to your staffing needs with our company! Say
             goodbye to the hassle of unreliable workers and hello to a team of
-            dedicated and committed professionals. Our EB3 visa workers are
+            dedicated and committed professionals. Our EB-3 visa workers are
             handpicked to ensure top-notch performance and complete commitment
             to your projects. Trust us to provide the workforce you deserve."
           </p>

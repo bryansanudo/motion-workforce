@@ -1,7 +1,11 @@
 import ISection from "@/components/individuals/ISection";
 import TitleContent from "@/components/individuals/TitleContent";
 import { styles } from "@/styles";
+import { useEffect } from "react";
 const PrivacyPolicy = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <ISection>
       <div className="mt-20">
@@ -179,6 +183,8 @@ const PrivacyPolicy = () => {
             obtain a withdrawal or modification of the demand, before complying
             with the demand.
           </div>
+        </TitleContent>
+        <TitleContent>
           <div className={`${styles.sectionTitleText} `}>
             <p className="font-bold">3.5. Business Transfers</p>
             Your Personal Information may be included in the event that some or
