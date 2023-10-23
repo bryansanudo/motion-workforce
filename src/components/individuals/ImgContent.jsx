@@ -18,7 +18,8 @@ const ImgContent = ({ img, title1, title2, children }) => {
         <img
           src={img}
           width={500}
-          height={0}
+          height={300}
+          alt="image description"
           className="rounded-3xl  object-contain  "
         />
       </motion.div>

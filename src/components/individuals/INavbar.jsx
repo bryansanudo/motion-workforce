@@ -59,10 +59,10 @@ const INavbar = ({ setContent }) => {
           <Link to="/individuals/home">
             <img
               src={logo}
-              alt=""
-              className="object-contain   hidden lg:block "
+              alt="logo navbar"
+              className="object-contain hidden lg:block "
               width={250}
-              height={0}
+              height={300}
             />
           </Link>
           <div className="hidden lg:flex items-center mr-24 gap-20">
