@@ -34,27 +34,12 @@ const Individuals = ({ content, setContent }) => {
     setContent(2);
   };
 
-  useEffect(() => {
+  /*  useEffect(() => {
     navigate("/individuals/home");
-  }, []);
+  }, []); */
 
   return (
     <>
-      {/* <div className="flex flex-col md:flex-row items-center justify-center  gap-4 mx-20 my-2">
-        <button
-          className="btn btn-outline  btn-primary"
-          onClick={btnIndividuals}
-        >
-          If you are Individual
-        </button>
-        <button
-          className="btn btn-outline  btn-secondary"
-          onClick={btnCompanies}
-        >
-          If you are Companie
-        </button>
-      </div> */}
-
       <INavbar setContent={setContent} />
       <Routes>
         <Route path="/" element={<IHome />} />
