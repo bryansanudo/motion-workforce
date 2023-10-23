@@ -12,10 +12,15 @@ const ImgContent = ({ img, title1, title2, children }) => {
       className="flex items-center justify-center gap-6 md:gap-20 flex-col md:flex-row my-10  mx-6 max-w-7xl"
     >
       <motion.div
-        className="md:w-1/2 flex items-center justify-center"
+        className="md:w-1/2  flex items-center justify-center"
         variants={slideIn("left", "tween", 0.2, 1)}
       >
-        <img src={img} className="rounded-3xl w-[500px] object-contain  " />
+        <img
+          src={img}
+          width={500}
+          height={0}
+          className="rounded-3xl  object-contain  "
+        />
       </motion.div>
       <motion.div
         className="md:w-1/2 max-w-[500px] "

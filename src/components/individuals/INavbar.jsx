@@ -60,7 +60,9 @@ const INavbar = ({ setContent }) => {
             <img
               src={logo}
               alt=""
-              className="object-contain h-20 hidden lg:block "
+              className="object-contain   hidden lg:block "
+              width={250}
+              height={0}
             />
           </Link>
           <div className="hidden lg:flex items-center mr-24 gap-20">
