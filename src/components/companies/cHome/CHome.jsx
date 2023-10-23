@@ -125,15 +125,18 @@ const CHome = () => {
             goodbye to the hassle of unreliable workers and hello to a team of
             dedicated and committed professionals. Our EB-3 visa workers are
             handpicked to ensure top-notch performance and complete commitment
-            to your projects. Trust us to provide the workforce you deserve."
+            to your projects. Trust us to provide the workforce you deserve.
           </p>
         </ImgContent>
       </ISection>
+
       <TitleContent title="Consular Processing Typical Timeline"></TitleContent>
       <CHorizontalProcess />
       <TitleContent title="Adjustment of Status Typical Timeline"></TitleContent>
       <HorizontalProcess />
+      <Divider />
       <ISection>
+        <CPartners />
         <IFormContact color="secondary" />
 
         <Divider />
