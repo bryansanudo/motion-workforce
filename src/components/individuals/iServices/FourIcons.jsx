@@ -1,8 +1,8 @@
 import React from "react";
-import attorney from "@/assets/attorney.webp";
-import caseImg from "@/assets/case.webp";
-import recruit from "@/assets/recruit.webp";
-import relocation from "@/assets/relocation.webp";
+import attorney from "@/assets/icons/attorney.jpg";
+import caseImg from "@/assets/icons/case.jpg";
+import recruit from "@/assets/icons/recruit.jpg";
+import relocation from "@/assets/icons/relocation.jpg";
 
 import { motion } from "framer-motion";
 

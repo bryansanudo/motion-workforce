@@ -1,12 +1,6 @@
 import React from "react";
-import FillForm from "@/components/icons/FillForm";
+
 import Interview from "@/components/icons/Interview";
-import ListCheck from "@/components/icons/ListCheck";
-
-import Approved from "@/components/icons/Approved";
-
-import checklist from "@/assets/checklist.svg";
-import approved from "@/assets/approved.svg";
 
 import process1 from "@/assets/process/process1.png";
 import process6 from "@/assets/process/process6.png";

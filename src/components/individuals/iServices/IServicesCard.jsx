@@ -1,9 +1,8 @@
-import React, { useState } from "react";
-import { AiFillAlert } from "react-icons/ai";
+import React from "react";
 
-import opportunity from "@/assets/opportunity.webp";
-import success from "@/assets/success.webp";
-import versatile from "@/assets/versatile.webp";
+import opportunity from "@/assets/icons/opportunity.jpg";
+import success from "@/assets/icons/success.jpg";
+import versatile from "@/assets/icons/versatile.jpg";
 
 const IServicesCard = () => {
   return (
