@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import ISection from "@/components/individuals/ISection";
 import EmployerTimeline from "@/components/individuals/iSuccessHistories/EmployerTimeline";
 import LifeTimeline from "@/components/individuals/iSuccessHistories/LifeTimeline";
-import ISliderTestimonials from "@/components/individuals/iSuccessHistories/ISliderTestimonials";
+
 import IHeroHistories from "@/components/individuals/iSuccessHistories/IHeroHistories";
 import TitleContent from "@/components/individuals/TitleContent";
 import { styles } from "@/styles";

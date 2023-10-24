@@ -4,12 +4,12 @@ import ISection from "@/components/individuals/ISection";
 import IFormContact from "@/components/individuals/IFormContact";
 
 import IServicesCard from "@/components/individuals/iServices/IServicesCard";
-import proccessImg from "@/assets/proccess.jpg";
+
 import IHeroServices from "@/components/individuals/iServices/IHeroServices";
 import jobImg from "@/assets/job.jpg";
-import writingImg from "@/assets/writing.jpg";
+
 import { GoDotFill } from "react-icons/go";
-import { FaFileContract } from "react-icons/fa";
+
 import coWorkersImg from "@/assets/coworkers.jpg";
 import especialistImg from "@/assets/especialist.jpg";
 import TitleContent from "@/components/individuals/TitleContent";
