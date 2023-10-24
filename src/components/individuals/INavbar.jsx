@@ -4,15 +4,13 @@ import { Link, NavLink } from "react-router-dom";
 
 import logo from "@/assets/logo.png";
 
-const INavbar = ({ setContent }) => {
+const INavbar = () => {
   const activeLink = ({ isActive }) =>
     isActive
       ? " relative after:content-[''] after:absolute after:left-0 after:bottom-[-3px] after:w-full after:h-[2px] after:bg-primary"
       : ``;
   const [isMenuShown, setIsMenuShown] = useState(false);
-  const btnCompanies = () => {
-    setContent(2);
-  };
+
   const links = [
     {
       id: 1,

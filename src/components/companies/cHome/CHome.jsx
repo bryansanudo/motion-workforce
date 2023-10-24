@@ -6,7 +6,7 @@ import { AiOutlineMail } from "react-icons/ai";
 import { BiPhoneCall } from "react-icons/bi";
 import ITestimonials from "@/components/individuals/iHome/ITestimonials";
 import { RxGear } from "react-icons/rx";
-import CFormContact from "@/components/companies/CFormContact";
+
 import contactImg from "@/assets/contact2.jpg";
 import Divider from "@/components/companies/CDivider";
 import ImgContent from "@/components/companies/ImgContent";

@@ -12,35 +12,14 @@ import IResources from "@/components/individuals/iResources/IResources";
 import IContact from "@/components/individuals/iContact/IContact";
 import IVacancies from "@/components/individuals/iVacancies/IVacancies";
 
-import Subway from "@/components/individuals/iVacancies/partners/Subway";
-import Chula from "@/components/individuals/iVacancies/partners/Chula";
-import Karst from "@/components/individuals/iVacancies/partners/Karst";
-import Kuz from "@/components/individuals/iVacancies/partners/Kuz";
-import Midnight from "@/components/individuals/iVacancies/partners/Midnight";
-import Mult from "@/components/individuals/iVacancies/partners/Mult";
-import Stoughton from "@/components/individuals/iVacancies/partners/Stoughton";
-import Wilderness from "@/components/individuals/iVacancies/partners/Wilderness";
 import CHome from "@/components/companies/cHome/CHome";
 import PrivacyPolicy from "@/components/individuals/PrivacyPolicy";
 import TermsOfService from "@/components/individuals/TermsOfServices";
 
-const Individuals = ({ content, setContent }) => {
-  const navigate = useNavigate();
-  const btnIndividuals = () => {
-    setContent(1);
-  };
-
-  const btnCompanies = () => {
-    setContent(2);
-  };
-
-  /*  useEffect(() => {
-    navigate("/individuals/home");
-  }, []); */
-
+const Individuals = () => {
   return (
     <>
-      <INavbar setContent={setContent} />
+      <INavbar />
       <Routes>
         <Route path="/" element={<IHome />} />
 
@@ -54,7 +33,7 @@ const Individuals = ({ content, setContent }) => {
 
         <Route path="/individuals/vacancies" element={<IVacancies />} />
 
-        <Route path="/individuals/vacancies/subway" element={<Subway />} />
+        {/*  <Route path="/individuals/vacancies/subway" element={<Subway />} />
         <Route path="/individuals/vacancies/chula" element={<Chula />} />
         <Route path="/individuals/vacancies/karst" element={<Karst />} />
         <Route path="/individuals/vacancies/kuz" element={<Kuz />} />
@@ -67,7 +46,7 @@ const Individuals = ({ content, setContent }) => {
         <Route
           path="/individuals/vacancies/wilderness"
           element={<Wilderness />}
-        />
+        /> */}
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms-services" element={<TermsOfService />} />
       </Routes>
