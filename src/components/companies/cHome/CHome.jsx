@@ -51,28 +51,28 @@ const CHome = () => {
         {/* Divider committed workers */}
         <div className="flex items-center justify-center gap-6 md:gap-40 p-6 flex-col md:flex-row bg-gray-100 w-full ">
           <h1 className="text-4xl font-bold">Get Committed Workers!</h1>
-          <div className="flex flex-col items-center justify-center gap-4 text-xl font-bold">
-            <div className="flex items-center justify-center gap-4">
-              <div className="bg-white p-3 rounded-full hover:scale-110 duration-500 ">
-                <a href="tel:+573055641311">
+          <a href="tel:+573055641311">
+            <div className="flex flex-col items-center justify-center gap-4 text-xl font-bold hover:scale-110 duration-500 ">
+              <div className="flex items-center justify-center gap-4">
+                <div className="bg-white p-3 rounded-full ">
                   <BiPhoneCall className="text-4xl text-secondary" />
-                </a>
+                </div>
+                <p>Call Us </p>
               </div>
-              <p>Call Us </p>
+              <p>(305) 564-1311</p>
             </div>
-            <p>(305) 564-1311</p>
-          </div>
-          <div className="flex flex-col items-center justify-center gap-4 font-bold text-xl">
-            <div className="flex items-center justify-center gap-4">
-              <div className="bg-white p-3 rounded-full hover:scale-110 duration-500">
-                <a href="mailto:recruiter@eb3wfs.com">
+          </a>
+          <a href="mailto:recruiter@eb3wfs.com">
+            <div className="flex flex-col items-center justify-center gap-4 font-bold text-xl hover:scale-110 duration-500">
+              <div className="flex items-center justify-center gap-4">
+                <div className="bg-white p-3 rounded-full ">
                   <AiOutlineMail className="text-secondary text-4xl" />
-                </a>
+                </div>
+                <p>Email</p>
               </div>
-              <p>Email</p>
+              <p>recruiter@eb3wfs.com</p>
             </div>
-            <p>recruiter@eb3wfs.com</p>
-          </div>
+          </a>
         </div>
 
         {/* Want to know more */}
