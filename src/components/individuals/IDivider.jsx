@@ -18,9 +18,11 @@ const IDivider = () => {
         <div className=" w-full md:py-8 py-4 flex items-center justify-center ">
           <p className="text-white font-bold">GET IN TOUCH TODAY!</p>
         </div>
-        <div className=" w-full md:py-8 py-4">
-          <p className="text-white font-bold">(305) 564-1311</p>
-          <p className="text-sm font-normal text-white">AVAILABLE 24/7</p>
+        <div className=" w-full md:py-8 py-4 hover:scale-110 duration-500">
+          <a href="tel:+573055641311">
+            <p className="text-white font-bold">(305) 564-1311</p>
+            <p className="text-sm font-normal text-white">AVAILABLE 24/7</p>
+          </a>
         </div>
       </div>
     </>

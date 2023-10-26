@@ -53,8 +53,10 @@ const CHome = () => {
           <h1 className="text-4xl font-bold">Get Committed Workers!</h1>
           <div className="flex flex-col items-center justify-center gap-4 text-xl font-bold">
             <div className="flex items-center justify-center gap-4">
-              <div className="bg-white p-3 rounded-full ">
-                <BiPhoneCall className="text-4xl text-secondary" />
+              <div className="bg-white p-3 rounded-full hover:scale-110 duration-500 ">
+                <a href="tel:+573055641311">
+                  <BiPhoneCall className="text-4xl text-secondary" />
+                </a>
               </div>
               <p>Call Us </p>
             </div>
@@ -62,8 +64,10 @@ const CHome = () => {
           </div>
           <div className="flex flex-col items-center justify-center gap-4 font-bold text-xl">
             <div className="flex items-center justify-center gap-4">
-              <div className="bg-white p-3 rounded-full">
-                <AiOutlineMail className="text-secondary text-4xl" />
+              <div className="bg-white p-3 rounded-full hover:scale-110 duration-500">
+                <a href="mailto:recruiter@eb3wfs.com">
+                  <AiOutlineMail className="text-secondary text-4xl" />
+                </a>
               </div>
               <p>Email</p>
             </div>
@@ -134,8 +138,8 @@ const CHome = () => {
       <CHorizontalProcess />
       <TitleContent title="Adjustment of Status Typical Timeline"></TitleContent>
       <HorizontalProcess />
-      <Divider />
       <ISection>
+        <Divider />
         <CPartners />
         <IFormContact color="secondary" />
 

@@ -48,8 +48,10 @@ const IHome = () => {
           <h1 className="text-4xl font-bold">Start Your Journey!</h1>
           <div className="flex flex-col items-center justify-center gap-4 text-xl font-bold">
             <div className="flex items-center justify-center gap-4">
-              <div className="bg-white p-3 rounded-full ">
-                <BiPhoneCall className="text-4xl text-primary" />
+              <div className="bg-white p-3 rounded-full hover:scale-110 duration-500 ">
+                <a href="tel:+573055641311">
+                  <BiPhoneCall className="text-4xl text-primary" />
+                </a>
               </div>
               <p>Call Us </p>
             </div>
@@ -57,8 +59,10 @@ const IHome = () => {
           </div>
           <div className="flex flex-col items-center justify-center gap-4 font-bold text-xl">
             <div className="flex items-center justify-center gap-4">
-              <div className="bg-white p-3 rounded-full">
-                <AiOutlineMail className="text-primary text-4xl" />
+              <div className="bg-white p-3 rounded-full hover:scale-110 duration-500">
+                <a href="mailto:recruiter@eb3wfs.com">
+                  <AiOutlineMail className="text-primary text-4xl" />
+                </a>
               </div>
               <p>Email</p>
             </div>
