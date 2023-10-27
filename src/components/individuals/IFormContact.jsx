@@ -13,6 +13,7 @@ const IFormContact = ({ color, language = "en" }) => {
       email: "Email",
       phone: "Phone",
       questions: "Your questions",
+      submit: "submit now",
     },
     es: {
       title1: "¡Póngase en contacto hoy mismo!",
@@ -23,6 +24,7 @@ const IFormContact = ({ color, language = "en" }) => {
       email: "Correo electrónico",
       phone: "Teléfono",
       questions: "Sus preguntas",
+      submit: "enviar ahora",
     },
     por: {
       title1: "Entre em contacto hoje!",
@@ -33,6 +35,7 @@ const IFormContact = ({ color, language = "en" }) => {
       email: "Email",
       phone: "Telefone",
       questions: "As suas perguntas",
+      submit: "enviar agora",
     },
   };
   const formContent = form[language];
@@ -88,7 +91,7 @@ const IFormContact = ({ color, language = "en" }) => {
             className={` textarea textarea-bordered w-auto`}
             placeholder={formContent.questions}
           />
-          <button className={`btn btn-${color}`}>SUBMIT NOW</button>
+          <button className={`btn btn-${color}`}>{formContent.submit}</button>
         </div>
       </form>
     </TitleContent>
