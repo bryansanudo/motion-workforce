@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
+import { motion } from "framer-motion";
 
 const messages = {
   en: [
@@ -69,10 +70,30 @@ const IHeroHome = ({ language }) => {
               {randomMessage}
             </h1>
 
-            <Link to="teach me" smooth duration={500}>
+            <a
+              href="https://form.jotform.com/EB3_Recruiter/eligibility-eb3wfs"
+              target="_blank"
+            >
               <button className="btn hover:scale-105 capitalize btn-primary tracking-wider">
-                Yes, teach me how!
+                Check if I'm elegible
               </button>
+            </a>
+          </div>
+          <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center cursor-pointer">
+            <Link to="teach me" smooth duration={500}>
+              <div className="w-[35px] h-[64px] rounded-3xl border-4 border-white flex justify-center items-start p-2">
+                <motion.div
+                  animate={{
+                    y: [0, 24, 0],
+                  }}
+                  transition={{
+                    duration: 1.5,
+                    repeat: Infinity,
+                    repeatType: "loop",
+                  }}
+                  className="w-3 h-3 rounded-full bg-white mb-1"
+                />
+              </div>
             </Link>
           </div>
         </div>
