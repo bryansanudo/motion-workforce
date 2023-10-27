@@ -58,7 +58,7 @@ const INavbar = ({ setLanguage }) => {
   const [showLoader, setShowLoader] = useState(false);
   const [iconLoader, setIconLoader] = useState(giphy);
 
-  const smoothScroll = () => {
+  /*  const smoothScroll = () => {
     const currentScroll =
       document.documentElement.scrollTop || document.body.scrollTop;
 
@@ -66,7 +66,7 @@ const INavbar = ({ setLanguage }) => {
       window.requestAnimationFrame(smoothScroll);
       window.scrollTo(0, currentScroll - currentScroll / 35); // Ajusta la velocidad de desplazamiento dividiendo por un número mayor o menor
     }
-  };
+  }; */
 
   const en = () => {
     setLanguage("en");

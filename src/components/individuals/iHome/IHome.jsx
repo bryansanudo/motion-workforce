@@ -77,6 +77,31 @@ const IHome = ({ language }) => {
   };
   const wantContent = want[language];
 
+  const eb3 = {
+    en: {
+      p1: "At EB-3 Workforce Solutions, we understand the significance of pursuing a better life and career opportunities in the United States. That's why we provide a unique solution to your immigration dreams - the EB-3 Visa program. Our dedicated team is committed to assisting interested individuals who are eager to contribute positively to the U.S. With a meticulous application process and a network of top-notch immigration experts, we ensure that you have the best support available for your EB-3 Visa journey. Say goodbye to the uncertainties of the immigration process and hello to a brighter future with EB-3 Workforce Solutions.",
+    },
+    es: {
+      p1: "En EB-3 Workforce Solutions, entendemos la importancia de buscar una vida mejor y oportunidades de carrera en los Estados Unidos. Es por eso que ofrecemos una solución única a sus sueños de inmigración - el programa de Visa EB-3. Nuestro equipo dedicado está comprometido a ayudar a las personas interesadas que están deseosas de contribuir positivamente a los EE.UU. Con un meticuloso proceso de solicitud y una red de expertos en inmigración de primera categoría, nos aseguramos de que usted tenga el mejor apoyo disponible para su viaje de Visa EB-3. Diga adiós a las incertidumbres del proceso de inmigración y hola a un futuro más brillante con EB-3 Workforce Solutions.",
+    },
+    por: {
+      p1: "Na EB-3 Workforce Solutions, compreendemos a importância de procurar uma vida melhor e oportunidades de carreira nos Estados Unidos. É por isso que oferecemos uma solução única para os seus sonhos de imigração - o programa de vistos EB-3. A nossa equipa dedicada está empenhada em ajudar os indivíduos interessados que estão ansiosos por contribuir positivamente para os EUA. Com um processo de candidatura meticuloso e uma rede de especialistas de imigração de topo, garantimos que tem o melhor apoio disponível para a sua viagem com o Visto EB-3. Diga adeus às incertezas do processo de imigração e olá a um futuro mais brilhante com a EB-3 Workforce Solutions.",
+    },
+  };
+  const eb3Content = eb3[language];
+  const looking = {
+    en: {
+      p1: "Discover the pathway to your American dream with our company! Say goodbye to the uncertainty of the immigration journey and hello to a dedicated team of professionals eager to assist you. Our partners are carefully selected to ensure a smooth process and unwavering commitment to your immigration goals. Trust us to guide you on the path to the American Dream.",
+    },
+    es: {
+      p1: "¡Descubra el camino hacia su sueño americano con nuestra empresa! Diga adiós a la incertidumbre del viaje de la inmigración y hola a un equipo dedicado de profesionales deseosos de ayudarle. Nuestros socios son cuidadosamente seleccionados para garantizar un proceso fluido y un compromiso inquebrantable con sus objetivos de inmigración. Confíe en nosotros para guiarle en el camino hacia el sueño americano.",
+    },
+    por: {
+      p1: "Descubra o caminho para o seu sonho americano com a nossa empresa! Diga adeus à incerteza da viagem de imigração e olá a uma equipa dedicada de profissionais ansiosos por o ajudar. Os nossos parceiros são cuidadosamente seleccionados para garantir um processo tranquilo e um compromisso inabalável com os seus objectivos de imigração. Confie em nós para o guiarmos no caminho para o sonho americano.",
+    },
+  };
+  const lookingContent = looking[language];
+
   return (
     <>
       <IHeroHome language={language} />
@@ -136,18 +161,7 @@ const IHome = ({ language }) => {
 
         {/* EB-3 Worfkforce Solutions */}
         <TitleContent title="EB-3 Workfoce Solutions">
-          <p className={`${styles.sectionTitleText}`}>
-            At EB-3 Workforce Solutions, we understand the significance of
-            pursuing a better life and career opportunities in the United
-            States. That's why we provide a unique solution to your immigration
-            dreams - the EB-3 Visa program. Our dedicated team is committed to
-            assisting interested individuals who are eager to contribute
-            positively to the U.S. With a meticulous application process and a
-            network of top-notch immigration experts, we ensure that you have
-            the best support available for your EB-3 Visa journey. Say goodbye
-            to the uncertainties of the immigration process and hello to a
-            brighter future with EB-3 Workforce Solutions.
-          </p>
+          <p className={`${styles.sectionTitleText}`}>{eb3Content.p1}</p>
         </TitleContent>
 
         {/* Looking to Start
@@ -157,17 +171,10 @@ your American Dream?*/}
           title2="Looking to Start
           your American Dream?"
         >
-          <p className={`${styles.sectionText}`}>
-            Discover the pathway to your American dream with our company! Say
-            goodbye to the uncertainty of the immigration journey and hello to a
-            dedicated team of professionals eager to assist you. Our partners
-            are carefully selected to ensure a smooth process and unwavering
-            commitment to your immigration goals. Trust us to guide you on the
-            path to the American Dream.
-          </p>
+          <p className={`${styles.sectionText}`}>{lookingContent.p1}</p>
         </ImgContent>
 
-        <IFormContact color="primary" />
+        <IFormContact color="primary" language={language} />
 
         <Divider language={language} />
       </ISection>
