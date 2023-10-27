@@ -16,14 +16,12 @@ import CHome from "@/components/companies/cHome/CHome";
 import PrivacyPolicy from "@/components/individuals/PrivacyPolicy";
 import TermsOfService from "@/components/individuals/TermsOfServices";
 
-const Individuals = () => {
-  const [language, setLanguage] = useState("en");
-
+const Individuals = ({ language, setLanguage }) => {
   return (
     <>
       <INavbar setLanguage={setLanguage} />
       <Routes>
-        <Route path="/" element={<IHome />} />
+        <Route path="/" element={<IHome language={language} />} />
 
         <Route
           path="/individuals/home"
