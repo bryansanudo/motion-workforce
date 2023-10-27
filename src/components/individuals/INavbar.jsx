@@ -104,7 +104,7 @@ const INavbar = ({ setLanguage }) => {
               height={300}
             />
           </Link>
-          {/* <div className="dropdown dropdown-bottom dropdown-end dropdown-hover">
+          <div className="dropdown dropdown-bottom dropdown-end dropdown-hover">
             <label tabIndex={0} className="">
               Language
             </label>
@@ -131,7 +131,7 @@ const INavbar = ({ setLanguage }) => {
                 </button>
               </li>
             </ul>
-          </div> */}
+          </div>
           <div className="hidden lg:flex items-center mr-24 gap-20">
             <ul className="flex gap-6 ">
               {links.map(({ id, link, name }) => (
