@@ -15,10 +15,46 @@ import TitleContent from "@/components/individuals/TitleContent";
 import { styles } from "@/styles";
 import { useEffect } from "react";
 
-const IHome = () => {
+const IHome = ({ language }) => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const james = {
+    en: {
+      title1: "Meet The Founder",
+      title2: "James Baker, CPA",
+      p1: "James is the head of different companies around the US, serving international Corporations and international entrepreneurs with different services and companies. James allied with silent investors to create EB-3 Workforce solutions, a company that connects employers which are facing a chronic shortage of unskilled workers with immigrant employees willing to apply for a US Green Card through the EB-3 Visa program.",
+    },
+    es: {
+      title1: "Conozca al fundador",
+      title2: "James Baker, CPA",
+      p1: "James dirige diferentes empresas en EE.UU. que prestan servicios a corporaciones y empresarios internacionales. James se alió con inversores silenciosos para crear EB-3 Workforce solutions, una empresa que pone en contacto a empresarios que se enfrentan a una escasez crónica de trabajadores no cualificados con empleados inmigrantes dispuestos a solicitar una tarjeta verde estadounidense a través del programa de visados EB-3.",
+    },
+    por: {
+      title1: "Conheça o fundador",
+      title2: "James Baker, CPA",
+      p1: "James está à frente de diferentes empresas nos EUA, servindo corporações internacionais e empresários internacionais com diferentes serviços e empresas. James aliou-se a investidores silenciosos para criar a EB-3 Workforce Solutions, uma empresa que liga empregadores que enfrentam uma escassez crónica de trabalhadores não qualificados a trabalhadores imigrantes dispostos a candidatar-se a um Green Card dos EUA através do programa de vistos EB-3.",
+    },
+  };
+  const jamesContent = james[language];
+
+  const dividerStart = {
+    en: {
+      h1: "Start Your Journey!",
+      p: "Call Us",
+    },
+    es: {
+      h1: "Comience su viaje",
+      p: "Llámanos",
+    },
+    por: {
+      h1: "Comece a sua viagem!",
+      p: "Contactar-nos",
+    },
+  };
+
+  const dividerStartContent = dividerStart[language];
 
   return (
     <>
@@ -27,25 +63,18 @@ const IHome = () => {
         {/* James */}
 
         <div name="teach me" className="pt-20" />
+
         <ImgContent
           img={JamesBg}
-          title1="Meet The Founder"
-          title2="James Baker, CPA"
+          title1={jamesContent.title1}
+          title2={jamesContent.title2}
         >
-          <p className={`${styles.sectionText}`}>
-            James is the head of different companies around the US, serving
-            international Corporations and international entrepreneurs with
-            different services and companies. ​ James allied with silent
-            investors to create EB-3 Workforce solutions, a company that
-            connects employers which are facing a chronic shortage of unskilled
-            workers with immigrant employees willing to apply for a US Green
-            Card through the EB-3 Visa program.
-          </p>
+          <p className={`${styles.sectionText}`}>{jamesContent.p1}</p>
         </ImgContent>
 
         {/* Divider committed workers */}
         <div className="flex items-center justify-center gap-6 md:gap-40 p-6 flex-col md:flex-row bg-gray-100 w-full ">
-          <h1 className="text-4xl font-bold">Start Your Journey!</h1>
+          <h1 className="text-4xl font-bold">{dividerStartContent.h1}</h1>
 
           <a href="tel:+573055641311">
             <div className="flex flex-col items-center justify-center gap-4 text-xl font-bold hover:scale-110 duration-500">
@@ -53,7 +82,7 @@ const IHome = () => {
                 <div className="bg-white p-3 rounded-full  ">
                   <BiPhoneCall className="text-4xl text-primary" />
                 </div>
-                <p>Call Us </p>
+                <p>{dividerStartContent.p}</p>
               </div>
               <p>(305) 564-1311</p>
             </div>

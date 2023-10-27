@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useState } from "react";
 import { Routes, Route, useNavigate } from "react-router-dom";
 
 import INavbar from "@/components/individuals/INavbar";
@@ -17,13 +17,18 @@ import PrivacyPolicy from "@/components/individuals/PrivacyPolicy";
 import TermsOfService from "@/components/individuals/TermsOfServices";
 
 const Individuals = () => {
+  const [language, setLanguage] = useState("en");
+
   return (
     <>
-      <INavbar />
+      <INavbar setLanguage={setLanguage} />
       <Routes>
         <Route path="/" element={<IHome />} />
 
-        <Route path="/individuals/home" element={<IHome />} />
+        <Route
+          path="/individuals/home"
+          element={<IHome language={language} />}
+        />
         <Route path="/companies/home" element={<CHome />} />
         <Route path="/individuals/about" element={<IAbout />} />
         <Route path="/individuals/services" element={<IServices />} />
