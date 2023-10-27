@@ -53,12 +53,33 @@ const IHome = ({ language }) => {
       p: "Contactar-nos",
     },
   };
-
   const dividerStartContent = dividerStart[language];
+
+  const want = {
+    en: {
+      title1: "Contact Us",
+      title2: "Want to Know More?",
+      p1: "If you find yourself in a situation where you are seeking a significant opportunity for a better life and career in the United States, or if you are facing challenges in navigating the complex immigration process and associated costs, then we have the perfect solution for you.",
+      p2: "Introducing the EB-3 Visa Program, a long-term immigration solution specifically designed for individuals like yourself. This employment-based Green Card option is crafted to address your immigration goals and provide the pathway you need to the United States.",
+    },
+    es: {
+      title1: "Contacte con nosotros",
+      title2: "¿Quiere saber más?",
+      p1: "Si usted se encuentra en una situación en la que está buscando una oportunidad significativa para una vida mejor y una carrera en los Estados Unidos, o si se enfrentan a desafíos en la navegación por el complejo proceso de inmigración y los costos asociados, entonces tenemos la solución perfecta para usted",
+      p2: "Presentamos el programa de visados EB-3, una solución de inmigración a largo plazo diseñada específicamente para personas como usted. Esta opción de Tarjeta Verde basada en el empleo está diseñada para abordar sus objetivos de inmigración y proporcionarle el camino que necesita hacia los Estados Unidos.",
+    },
+    por: {
+      title1: "Contactar-nos",
+      title2: "Quer saber mais?",
+      p1: "Se se encontrar numa situação em que procura uma oportunidade significativa para uma vida e uma carreira melhores nos Estados Unidos, ou se estiver a enfrentar desafios para navegar no complexo processo de imigração e nos custos associados, então temos a solução perfeita para si.",
+      p2: "Apresentamos o Programa de Vistos EB-3, uma solução de imigração a longo prazo concebida especificamente para pessoas como você. Esta opção de Green Card baseada no emprego foi concebida para responder aos seus objectivos de imigração e proporcionar-lhe o caminho que necessita para os Estados Unidos.",
+    },
+  };
+  const wantContent = want[language];
 
   return (
     <>
-      <IHeroHome />
+      <IHeroHome language={language} />
       <ISection>
         {/* James */}
 
@@ -104,30 +125,14 @@ const IHome = ({ language }) => {
 
         <ImgContent
           img={homeImg}
-          title1="Contact Us"
-          title2="Want to Know More?"
+          title1={wantContent.title1}
+          title2={wantContent.title2}
         >
-          <p className={`${styles.sectionText} mb-6`}>
-            If you find yourself in a situation where you are seeking a
-            significant opportunity for a better life and career in the United
-            States, or if you are facing challenges in navigating the complex
-            immigration process and associated costs, then we have the perfect
-            solution for you.
-          </p>
-          <p className={`${styles.sectionText}`}>
-            Introducing the EB-3 Visa Program, a long-term immigration solution
-            specifically designed for individuals like yourself. This
-            employment-based Green Card option is crafted to address your
-            immigration goals and provide the pathway you need to the United
-            States.
-          </p>
+          <p className={`${styles.sectionText} mb-6`}>{wantContent.p1}</p>
+          <p className={`${styles.sectionText}`}>{wantContent.p2}</p>
         </ImgContent>
 
-        {/* EB-3 VISA */}
-
-        {/*  <EbTwoCol /> */}
-
-        <Divider />
+        <Divider language={language} />
 
         {/* EB-3 Worfkforce Solutions */}
         <TitleContent title="EB-3 Workfoce Solutions">
@@ -164,7 +169,7 @@ your American Dream?*/}
 
         <IFormContact color="primary" />
 
-        <Divider />
+        <Divider language={language} />
       </ISection>
     </>
   );

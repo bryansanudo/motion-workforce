@@ -1,11 +1,14 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link, NavLink } from "react-router-dom";
 import enImg from "@/assets/icons/en.png";
 import esImg from "@/assets/icons/es.png";
 import porImg from "@/assets/icons/por.png";
+import giphy from "@/assets/icons/giphy.gif";
 
 import logo from "@/assets/logo.png";
+
+import FullScreenLoader from "@/components/individuals/FullScreenLoader";
 
 const INavbar = ({ setLanguage }) => {
   const activeLink = ({ isActive }) =>
@@ -52,20 +55,43 @@ const INavbar = ({ setLanguage }) => {
     },
   ];
 
+  const [showLoader, setShowLoader] = useState(false);
+  const [iconLoader, setIconLoader] = useState(giphy);
+
+  const smoothScroll = () => {
+    const currentScroll =
+      document.documentElement.scrollTop || document.body.scrollTop;
+
+    if (currentScroll > 0) {
+      window.requestAnimationFrame(smoothScroll);
+      window.scrollTo(0, currentScroll - currentScroll / 35); // Ajusta la velocidad de desplazamiento dividiendo por un número mayor o menor
+    }
+  };
+
   const en = () => {
     setLanguage("en");
+    /* setShowLoader(true); // Mostrar el loader al hacer clic en el botón
+
+    // Simular una acción que toma tiempo (por ejemplo, una solicitud a una API)
+    setTimeout(() => {
+      setShowLoader(false); // Ocultar el loader cuando termine la acción
+    }, 1000); */
+    /* smoothScroll(); */
   };
 
   const es = () => {
     setLanguage("es");
+    /*  smoothScroll(); */
   };
 
   const por = () => {
     setLanguage("por");
+    /* smoothScroll(); */
   };
 
   return (
     <>
+      {/* {showLoader && <FullScreenLoader gifSrc={iconLoader} duration={500} />} */}
       <div className="fixed w-full h-24 bg-gray-400 text-white z-20  ">
         <div className="flex justify-between gap-4 items-center  lg:mx-10  px-3 h-full">
           {/* <div className="hidden lg:flex items-center flex-row justify-center bg-white rounded-lg p-1 "></div> */}
@@ -78,7 +104,7 @@ const INavbar = ({ setLanguage }) => {
               height={300}
             />
           </Link>
-          <div className="dropdown dropdown-bottom dropdown-end dropdown-hover">
+          {/* <div className="dropdown dropdown-bottom dropdown-end dropdown-hover">
             <label tabIndex={0} className="">
               Language
             </label>
@@ -105,7 +131,7 @@ const INavbar = ({ setLanguage }) => {
                 </button>
               </li>
             </ul>
-          </div>
+          </div> */}
           <div className="hidden lg:flex items-center mr-24 gap-20">
             <ul className="flex gap-6 ">
               {links.map(({ id, link, name }) => (
