@@ -78,7 +78,7 @@ const INavbar = ({ setLanguage }) => {
               height={300}
             />
           </Link>
-          <div className="dropdown dropdown-bottom dropdown-end">
+          <div className="dropdown dropdown-bottom dropdown-end dropdown-hover">
             <label tabIndex={0} className="">
               Language
             </label>
