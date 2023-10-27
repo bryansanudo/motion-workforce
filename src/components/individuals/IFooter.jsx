@@ -58,7 +58,7 @@ const IFooter = () => {
           <header className="footer-title text-black font-extrabold">
             Legal
           </header>
-          <a className="link link-hover">Copyright © 2023 All Right Reserved</a>
+          <div className="">Copyright © 2023 All Right Reserved</div>
           <Link to="/privacy-policy">
             <div className="link link-hover">Privacy Policy</div>
           </Link>

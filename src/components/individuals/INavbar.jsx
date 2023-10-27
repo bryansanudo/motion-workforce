@@ -10,28 +10,63 @@ import logo from "@/assets/logo.png";
 
 import FullScreenLoader from "@/components/individuals/FullScreenLoader";
 
-const INavbar = ({ setLanguage }) => {
+const INavbar = ({ setLanguage, language }) => {
+  const navbar = {
+    en: {
+      home: "home",
+      about: "about",
+      services: "services",
+      resources: "resources",
+      contact: "contact",
+      vacancies: "vacancies",
+      language: "Language",
+      looking: "Looking For Employees",
+    },
+    es: {
+      home: "Inicio",
+      about: "acerca de",
+      services: "servicios",
+      resources: "recursos",
+      contact: "contacto",
+      vacancies: "vacantes",
+      language: "Idioma",
+      looking: "En busca de Empleados",
+    },
+    por: {
+      home: "casa",
+      about: "sobre",
+      services: "serviços",
+      resources: "recursos",
+      contact: "contacto",
+      vacancies: "vagas",
+      language: "língua",
+      looking: "à procura de empregados",
+    },
+  };
+  const navbarContent = navbar[language];
+
   const activeLink = ({ isActive }) =>
     isActive
       ? " relative after:content-[''] after:absolute after:left-0 after:bottom-[-3px] after:w-full after:h-[2px] after:bg-primary"
       : ``;
+
   const [isMenuShown, setIsMenuShown] = useState(false);
 
   const links = [
     {
       id: 1,
       link: "/individuals/home",
-      name: "Home",
+      name: navbarContent.home,
     },
     {
       id: 2,
       link: "/individuals/about",
-      name: "about",
+      name: navbarContent.about,
     },
     {
       id: 3,
       link: "/individuals/services",
-      name: "services",
+      name: navbarContent.services,
     },
     /* {
       id: 4,
@@ -41,17 +76,17 @@ const INavbar = ({ setLanguage }) => {
     {
       id: 5,
       link: "/individuals/resources",
-      name: "resources",
+      name: navbarContent.resources,
     },
     {
       id: 6,
       link: "/individuals/contact",
-      name: "contact",
+      name: navbarContent.contact,
     },
     {
       id: 7,
       link: "/individuals/vacancies",
-      name: "vacancies",
+      name: navbarContent.vacancies,
     },
   ];
 
@@ -106,7 +141,7 @@ const INavbar = ({ setLanguage }) => {
           </Link>
           <div className="dropdown dropdown-bottom dropdown-end dropdown-hover">
             <label tabIndex={0} className="">
-              Language
+              {navbarContent.language}
             </label>
             <ul
               tabIndex={0}
@@ -162,7 +197,7 @@ const INavbar = ({ setLanguage }) => {
               className="btn btn-secondary text-[12px] p-2 btn-outline capitalize hover:scale-105 duration-700 "
               /* onClick={btnCompanies} */
             >
-              Looking For Employees?
+              {navbarContent.looking}
             </button>
           </Link>
         </div>

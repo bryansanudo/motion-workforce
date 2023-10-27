@@ -19,7 +19,7 @@ import TermsOfService from "@/components/individuals/TermsOfServices";
 const Individuals = ({ language, setLanguage }) => {
   return (
     <>
-      <INavbar setLanguage={setLanguage} />
+      <INavbar setLanguage={setLanguage} language={language} />
       <Routes>
         <Route path="/" element={<IHome language={language} />} />
 
