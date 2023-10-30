@@ -13,10 +13,74 @@ import process17 from "@/assets/process/process17.png";
 
 import { styles } from "@/styles";
 
-const CHorizontalProcess = () => {
+const CHorizontalProcess = ({ language }) => {
+  const consular = {
+    en: {
+      m1: "Month 1",
+      p1: "Labor Certification filed once employer obtains DOL prevailing wage",
+      m6: "Month 6",
+      p6: "Labor Certification Approved",
+      m7: "Month 7",
+      p7: "Dependent fees due I-140 Filed",
+      m8: "Month 8",
+      p8: "I-140 Approved",
+      m10: "Month 10",
+      p10: "DS-260",
+      m15: "Month 15",
+      p15: "Interview scheduled",
+      m16: "Month 16",
+      p16: "EB-3 visa interview at usconsulate in your home country",
+      m17: "Month 17",
+      p17: "Received visa and travel to us",
+      m18: "Month 18",
+      p18: "Green Card Issued",
+    },
+    es: {
+      m1: "Mes 1",
+      p1: "Certificación laboral presentada una vez que el empleador obtiene el salario predominante del DOL",
+      m6: "Mes 6",
+      p6: "Certificación laboral aprobada",
+      m7: "Mes 7",
+      p7: "Tasas debidas dependientes I-140 Presentado",
+      m8: "Mes 8",
+      p8: "I-140 Aprobado",
+      m10: "Mes 10",
+      p10: "DS-260",
+      m15: "Mes 15",
+      p15: "Entrevista programada",
+      m16: "Mes 16",
+      p16: "Entrevista para visado EB-3 en el consulado de los EE.UU. en su país de origen",
+      m17: "Mes 17",
+      p17: "Recibimos el visado y viajamos",
+      m18: "Mes 18",
+      p18: "Tarjeta verde expedida",
+    },
+    por: {
+      m1: "Mês 1",
+      p1: "Certificação de Trabalho apresentada quando o empregador obtém o salário prevalecente do DOL",
+      m6: "Mês 6",
+      p6: "Certificação de trabalho aprovada",
+      m7: "Mês 7",
+      p7: "Taxas de dependentes devidas I-140 Arquivado",
+      m8: "Mês 8",
+      p8: "I-140 aprovado",
+      m10: "Mês 10",
+      p10: "DS-260",
+      m15: "Mês 15",
+      p15: "Entrevista marcada",
+      m16: "Mês 16",
+      p16: "Entrevista para obtenção de visto EB-3 no consulado dos EUA no seu país de origem",
+      m17: "Mês 17",
+      p17: "Visto recebido e viagem até nós",
+      m18: "Mês 18",
+      p18: "Carta verde emitida",
+    },
+  };
+  const consularContent = consular[language];
+
   return (
     <div className="overflow-x-auto  flex items-center justify-center my-20  ">
-      <ul className="steps pb-40 w-full xl:overflow-x-hidden  ">
+      <ul className="steps pb-52 w-full xl:overflow-x-hidden  ">
         {/* 1 content */}
         <li className="step step-secondary">
           <div className="dropdown dropdown-open dropdown-bottom">
@@ -27,11 +91,8 @@ const CHorizontalProcess = () => {
               tabIndex={0}
               className="dropdown-content z-[1] menu p-6 shadow-md shadow-black bg-base-100  rounded-box w-52"
             >
-              <p className="tracking-wider font-bold">Month 1</p>
-              <p className="tracking-wider">
-                Labor Certification filed once employer obtains DOL prevailing
-                wage
-              </p>
+              <p className="tracking-wider font-bold">{consularContent.m1}</p>
+              <p className="tracking-wider">{consularContent.p1}</p>
             </ul>
           </div>
         </li>
@@ -58,8 +119,8 @@ const CHorizontalProcess = () => {
               tabIndex={0}
               className="dropdown-content z-[1] menu p-6 shadow-md shadow-black bg-base-100  rounded-box w-52"
             >
-              <p className="tracking-wider font-bold">Month 6</p>
-              <p className="tracking-wider">Labor Certification Approved</p>
+              <p className="tracking-wider font-bold">{consularContent.m6}</p>
+              <p className="tracking-wider">{consularContent.p6}</p>
             </ul>
           </div>
         </li>
@@ -77,9 +138,8 @@ const CHorizontalProcess = () => {
               tabIndex={0}
               className="dropdown-content z-[1] menu p-6 shadow-md shadow-black bg-base-100  rounded-box w-52"
             >
-              <p className="tracking-wider font-bold">Month 7</p>
-              <p className="Dependent fees due">Dependent fees due</p>
-              <p className="tracking-wider">I-140 Filed</p>
+              <p className="tracking-wider font-bold">{consularContent.m7}</p>
+              <p className="tracking-wider">{consularContent.p7}</p>
             </ul>
           </div>
         </li>
@@ -97,8 +157,8 @@ const CHorizontalProcess = () => {
               tabIndex={0}
               className="dropdown-content z-[1] menu p-6 shadow-md shadow-black bg-base-100  rounded-box w-52"
             >
-              <p className="tracking-wider font-bold">Month 8</p>
-              <p className="tracking-wider">I-140 Approved</p>
+              <p className="tracking-wider font-bold">{consularContent.m8}</p>
+              <p className="tracking-wider">{consularContent.p8}</p>
             </ul>
           </div>
         </li>
@@ -118,8 +178,8 @@ const CHorizontalProcess = () => {
               tabIndex={0}
               className="dropdown-content z-[1] menu p-6 shadow-md shadow-black bg-base-100  rounded-box w-52"
             >
-              <p className="font-bold tracking-wider">Month 10 </p>
-              <p className="tracking-wider">DS-260</p>
+              <p className="font-bold tracking-wider">{consularContent.m10}</p>
+              <p className="tracking-wider">{consularContent.p10}</p>
             </ul>
           </div>
         </li>
@@ -128,11 +188,11 @@ const CHorizontalProcess = () => {
         {/* 12 */}
         <li className="step "></li>
         {/* 13  */}
-        <li className="step step-secondary"></li>
+        <li className="step "></li>
         {/* 14  */}
-        <li className="step step-secondary"></li>
+        <li className="step "></li>
         {/* 15 content */}
-        <li className="step ">
+        <li className="step step-secondary ">
           <div className="dropdown  dropdown-bottom  ">
             <label tabIndex={0} className=" m-1">
               <img
@@ -145,13 +205,13 @@ const CHorizontalProcess = () => {
               tabIndex={0}
               className="dropdown-content z-[1] menu p-6 shadow-md shadow-black bg-base-100  rounded-box w-52"
             >
-              <p className="font-bold tracking-wider">Month 15 </p>
-              <p className="tracking-wider">Interview scheduled</p>
+              <p className="font-bold tracking-wider">{consularContent.m15}</p>
+              <p className="tracking-wider">{consularContent.p15}</p>
             </ul>
           </div>
         </li>
         {/* 16 content */}
-        <li className="step ">
+        <li className="step step-secondary ">
           <div className="dropdown  dropdown-bottom  ">
             <label tabIndex={0} className=" m-1">
               <Interview className="mx-auto w-[50px] hover:scale-110 duration-700 " />
@@ -161,16 +221,14 @@ const CHorizontalProcess = () => {
               tabIndex={0}
               className="dropdown-content z-[1] menu p-6 shadow-md shadow-black bg-base-100  rounded-box w-52"
             >
-              <p className="font-bold tracking-wider">Month 16 </p>
-              <p className="tracking-wider">
-                EB-3 visa interview at usconsulate in your home country
-              </p>
+              <p className="font-bold tracking-wider">{consularContent.m16} </p>
+              <p className="tracking-wider">{consularContent.p16}</p>
             </ul>
           </div>
         </li>
-        {/* 17 content */}
-        <li className="step ">
-          <div className="dropdown  dropdown-bottom  ">
+        {/* 17 content  */}
+        <li className="step step-secondary ">
+          <div className="dropdown  dropdown-bottom dropdown-end  ">
             <label tabIndex={0} className=" m-1">
               <img
                 src={process17}
@@ -182,13 +240,13 @@ const CHorizontalProcess = () => {
               tabIndex={0}
               className="dropdown-content z-[1] menu p-6 shadow-md shadow-black bg-base-100  rounded-box w-52"
             >
-              <p className="font-bold tracking-wider">Month 17 </p>
-              <p className="tracking-wider">Received vida and travel to Us</p>
+              <p className="font-bold tracking-wider">{consularContent.m17}</p>
+              <p className="tracking-wider">{consularContent.p17}</p>
             </ul>
           </div>
         </li>
         {/* 18 content */}
-        <li className="step ">
+        <li className="step step-secondary ">
           <div className="dropdown  dropdown-bottom dropdown-end ">
             <label tabIndex={0} className=" m-1">
               <img
@@ -201,8 +259,8 @@ const CHorizontalProcess = () => {
               tabIndex={0}
               className="dropdown-content z-[1] menu p-6 shadow-md shadow-black bg-base-100  rounded-box w-52"
             >
-              <p className="font-bold tracking-wider">Month 18 </p>
-              <p className="tracking-wider">Green Card Issued</p>
+              <p className="font-bold tracking-wider">{consularContent.m18} </p>
+              <p className="tracking-wider">{consularContent.p18}</p>
             </ul>
           </div>
         </li>

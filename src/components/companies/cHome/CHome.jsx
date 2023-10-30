@@ -19,10 +19,124 @@ import CHorizontalProcess from "@/components/companies/cHome/CHorizontalProcess"
 import HorizontalProcess from "@/components/companies/cHome/HorizontalProcess";
 import IFormContact from "@/components/individuals/IFormContact";
 
-const CHome = () => {
+const CHome = ({ language }) => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const james = {
+    en: {
+      title1: "Meet The Founder",
+      title2: "James Baker, CPA",
+      p1: "James is the head of different companies around the US, serving international Corporations and international entrepreneurs with different services and companies. ​ James allied with silent investors to create EB-3 Workforce solutions, a company that connects employers which are facing a chronic shortage of unskilled workers with immigrant employees willing to apply for a US Green Card through the EB-3 Visa program.",
+    },
+    es: {
+      title1: "Conozca al fundador",
+      title2: "James Baker, CPA",
+      p1: "James dirige diferentes empresas en EE.UU. que prestan servicios a corporaciones y empresarios internacionales. James se alió con inversores silenciosos para crear EB-3 Workforce solutions, una empresa que pone en contacto a empresarios que se enfrentan a una escasez crónica de trabajadores no cualificados con empleados inmigrantes dispuestos a solicitar una tarjeta verde estadounidense a través del programa de visados EB-3.",
+    },
+    por: {
+      title1: "Conheça o fundador",
+      title2: "James Baker, CPA",
+      p1: "James está à frente de diferentes empresas nos EUA, servindo corporações internacionais e empresários internacionais com diferentes serviços e empresas. James aliou-se a investidores silenciosos para criar a EB-3 Workforce Solutions, uma empresa que liga empregadores que enfrentam uma escassez crónica de trabalhadores não qualificados a trabalhadores imigrantes dispostos a candidatar-se a um Green Card dos EUA através do programa de vistos EB-3.",
+    },
+  };
+  const jamesContent = james[language];
+
+  const dividerGet = {
+    en: {
+      h1: "Get Committed Workers!",
+      p: "Call Us",
+    },
+    es: {
+      h1: "Consigue trabajadores comprometidos",
+      p: "Llámanos",
+    },
+    por: {
+      h1: "Obter trabalhadores empenhados!",
+      p: "Contactar-nos",
+    },
+  };
+  const dividerGetContent = dividerGet[language];
+
+  const want = {
+    en: {
+      title1: "Contact Us",
+      title2: "Want to Know More?",
+      p1: "If you find yourself in a situation where you are struggling to find a significant number of qualified, accessible, and highly motivated U.S. employees to fill various entry-level positions, or if you are facing challenges with relentless turnover and overwhelming HR responsibilities and charges, then we have the perfect solution for you.",
+      p2: "Introducing the EB-3 Visa Program, a long-term staffing solution specifically designed for U.S. employers like yourself. This employment-based Green Card option is tailored to address your staffing needs and provide the qualified workforce you require.",
+    },
+    es: {
+      title1: "Contacte con nosotros",
+      title2: "¿Quiere saber más?",
+      p1: "Si se encuentra en una situación en la que está luchando por encontrar un número significativo de empleados estadounidenses cualificados, accesibles y altamente motivados para cubrir varios puestos de nivel inicial, o si se enfrenta a retos con una rotación implacable y unas responsabilidades y cargas de RRHH abrumadoras, entonces tenemos la solución perfecta para usted.",
+      p2: "Presentamos el Programa de Visados EB-3, una solución de dotación de personal a largo plazo diseñada específicamente para empresarios estadounidenses como usted. Esta opción de Tarjeta Verde basada en el empleo está diseñada para satisfacer sus necesidades de personal y proporcionarle la mano de obra cualificada que necesita.",
+    },
+    por: {
+      title1: "Contactar-nos",
+      title2: "Quer saber mais?",
+      p1: "Se se encontra numa situação em que está a lutar para encontrar um número significativo de funcionários americanos qualificados, acessíveis e altamente motivados para preencher várias posições de nível de entrada, ou se está a enfrentar desafios com uma rotatividade implacável e responsabilidades e encargos de RH esmagadores, então temos a solução perfeita para si.",
+      p2: "Apresentamos o Programa de Vistos EB-3, uma solução de recrutamento a longo prazo especificamente concebida para empregadores americanos como o seu. Esta opção de Green Card baseada no emprego foi concebida para responder às suas necessidades de pessoal e fornecer a mão de obra qualificada de que necessita.",
+    },
+  };
+  const wantContent = want[language];
+
+  const eb3 = {
+    en: {
+      title1: "EB-3 Workforce Solutions",
+
+      p1: "At EB-3 Workforce Solutions, we understand the importance of finding reliable and dedicated employees. That's why we offer a unique solution to your staffing needs - EB-3 visa workers. Our team is dedicated to finding and placing highly qualified personnel who are committed to making a positive impact on your business. With a rigorous screening process and a network of top-notch talent, we ensure that you receive the highest quality workforce available. Say goodbye to the struggles of finding committed workers and hello to a bright future with EB-3 Workforce Solutions.",
+    },
+    es: {
+      title1: "EB-3 Workforce Solutions",
+
+      p1: "En EB-3 Workforce Solutions, entendemos la importancia de encontrar empleados confiables y dedicados. Es por eso que ofrecemos una solución única a sus necesidades de personal - trabajadores con visa EB-3. Nuestro equipo está dedicado a encontrar y colocar personal altamente calificado que esté comprometido a tener un impacto positivo en su negocio. Con un riguroso proceso de selección y una red de talentos de primera categoría, nos aseguramos de que usted reciba la mano de obra de la más alta calidad disponible. Diga adiós a las luchas por encontrar trabajadores comprometidos y hola a un futuro brillante con EB-3 Workforce Solutions.",
+    },
+    por: {
+      title1: "EB-3 Workforce Solutions",
+
+      p1: "Na EB-3 Workforce Solutions, compreendemos a importância de encontrar trabalhadores fiáveis e dedicados. É por isso que oferecemos uma solução única para as suas necessidades de pessoal - trabalhadores com visto EB-3. A nossa equipa dedica-se a encontrar e colocar pessoal altamente qualificado que esteja empenhado em ter um impacto positivo na sua empresa. Com um rigoroso processo de seleção e uma rede de talentos de topo, garantimos que recebe a mão de obra de maior qualidade disponível. Diga adeus às dificuldades de encontrar trabalhadores empenhados e olá a um futuro brilhante com a EB-3 Workforce Solutions.",
+    },
+  };
+  const eb3Content = eb3[language];
+
+  const struggling = {
+    en: {
+      title1: "Struggling to Find Commited Workers?",
+
+      p1: "Discover the solution to your staffing needs with our company! Say goodbye to the hassle of unreliable workers and hello to a team of dedicated and committed professionals. Our EB-3 visa workers are handpicked to ensure top-notch performance and complete commitment to your projects. Trust us to provide the workforce you deserve.",
+    },
+    es: {
+      title1: "¿Le cuesta encontrar trabajadores comprometidos?",
+
+      p1: "Descubra la solución a sus necesidades de personal con nuestra empresa. Diga adiós a las molestias de los trabajadores poco fiables y hola a un equipo de profesionales dedicados y comprometidos. Nuestros trabajadores con visado EB-3 son seleccionados cuidadosamente para garantizar un rendimiento de primera clase y un compromiso total con sus proyectos. Confíe en nosotros para proporcionarle la mano de obra que se merece.",
+    },
+    por: {
+      title1: "Está a ter dificuldades em encontrar trabalhadores empenhados?",
+
+      p1: "Descubra a solução para as suas necessidades de pessoal com a nossa empresa! Diga adeus ao incómodo de trabalhadores pouco fiáveis e olá a uma equipa de profissionais dedicados e empenhados. Os nossos trabalhadores com visto EB-3 são escolhidos a dedo para garantir um desempenho de alto nível e um empenho total nos seus projectos. Confie em nós para fornecer a força de trabalho que você merece.",
+    },
+  };
+  const strugglingContent = struggling[language];
+
+  const timeline = {
+    en: {
+      title1: "EB-3 Unskilled Visa",
+      title2: "Consular Processing Typical Timeline",
+      title3: "Adjustment of Status Typical Timeline",
+    },
+    es: {
+      title1: "EB-3 Visado no cualificado",
+      title2: "Plazos habituales de la tramitación consular",
+      title3: "Plazos habituales para el ajuste de estatus",
+    },
+    por: {
+      title1: "Visto EB-3 não qualificado",
+      title2: "Cronograma típico do processamento consular",
+      title3: "Calendário típico de ajustamento do estatuto",
+    },
+  };
+  const timelineContent = timeline[language];
 
   return (
     <>
@@ -34,30 +148,22 @@ const CHome = () => {
         <div name="teach me s" className="pt-20" />
         <ImgContent
           img={JamesBg}
-          title1="Meet The Founder"
-          title2="James Baker, CPA"
+          title1={jamesContent.title1}
+          title2={jamesContent.title2}
         >
-          <p className={`${styles.sectionText}`}>
-            James is the head of different companies around the US, serving
-            international Corporations and international entrepreneurs with
-            different services and companies. ​ James allied with silent
-            investors to create EB-3 Workforce solutions, a company that
-            connects employers which are facing a chronic shortage of unskilled
-            workers with immigrant employees willing to apply for a US Green
-            Card through the EB-3 Visa program.
-          </p>
+          <p className={`${styles.sectionText}`}>{jamesContent.p1}</p>
         </ImgContent>
 
         {/* Divider committed workers */}
         <div className="flex items-center justify-center gap-6 md:gap-40 p-6 flex-col md:flex-row bg-gray-100 w-full ">
-          <h1 className="text-4xl font-bold">Get Committed Workers!</h1>
+          <h1 className="text-4xl font-bold">{dividerGetContent.h1}</h1>
           <a href="tel:+573055641311">
             <div className="flex flex-col items-center justify-center gap-4 text-xl font-bold hover:scale-110 duration-500 ">
               <div className="flex items-center justify-center gap-4">
                 <div className="bg-white p-3 rounded-full ">
                   <BiPhoneCall className="text-4xl text-secondary" />
                 </div>
-                <p>Call Us </p>
+                <p>{dividerGetContent.p}</p>
               </div>
               <p>(305) 564-1311</p>
             </div>
@@ -79,71 +185,41 @@ const CHome = () => {
 
         <ImgContent
           img={homeImg}
-          title1="Contact Us"
-          title2="Want to Know More?"
+          title1={wantContent.title1}
+          title2={wantContent.title2}
         >
-          <p className={`${styles.sectionText} mb-6`}>
-            If you find yourself in a situation where you are struggling to find
-            a significant number of qualified, accessible, and highly motivated
-            U.S. employees to fill various entry-level positions, or if you are
-            facing challenges with relentless turnover and overwhelming HR
-            responsibilities and charges, then we have the perfect solution for
-            you.
-          </p>
-          <p className={`${styles.sectionText}`}>
-            Introducing the EB-3 Visa Program, a long-term staffing solution
-            specifically designed for U.S. employers like yourself. This
-            employment-based Green Card option is tailored to address your
-            staffing needs and provide the qualified workforce you require.
-          </p>
+          <p className={`${styles.sectionText} mb-6`}>{wantContent.p1}</p>
+          <p className={`${styles.sectionText}`}>{wantContent.p2}</p>
         </ImgContent>
 
         {/* EB-3 VISA */}
 
-        <EbTwoCol />
+        <EbTwoCol language={language} />
 
-        <Divider />
+        <Divider language={language} />
 
         {/* EB-3 Worfkforce Solutions */}
-        <TitleContent title="EB-3 Workfoce Solutions">
-          <p className={`${styles.sectionTitleText}`}>
-            At EB-3 Workforce Solutions, we understand the importance of finding
-            reliable and dedicated employees. That's why we offer a unique
-            solution to your staffing needs - EB-3 visa workers. Our team is
-            dedicated to finding and placing highly qualified personnel who are
-            committed to making a positive impact on your business. With a
-            rigorous screening process and a network of top-notch talent, we
-            ensure that you receive the highest quality workforce available. Say
-            goodbye to the struggles of finding committed workers and hello to a
-            bright future with EB-3 Workforce Solutions.
-          </p>
+        <TitleContent title={eb3Content.title1}>
+          <p className={`${styles.sectionTitleText}`}>{eb3Content.p1}</p>
         </TitleContent>
 
         {/* Struggling to Find Commited Workers? */}
-        <ImgContent
-          img={contactImg}
-          title2="Struggling to Find Commited Workers?"
-        >
-          <p className={`${styles.sectionText}`}>
-            Discover the solution to your staffing needs with our company! Say
-            goodbye to the hassle of unreliable workers and hello to a team of
-            dedicated and committed professionals. Our EB-3 visa workers are
-            handpicked to ensure top-notch performance and complete commitment
-            to your projects. Trust us to provide the workforce you deserve.
-          </p>
+        <ImgContent img={contactImg} title2={strugglingContent.title1}>
+          <p className={`${styles.sectionText}`}>{strugglingContent.p1}</p>
         </ImgContent>
       </ISection>
 
-      <TitleContent title="Consular Processing Typical Timeline"></TitleContent>
-      <CHorizontalProcess />
-      <TitleContent title="Adjustment of Status Typical Timeline"></TitleContent>
-      <HorizontalProcess />
-      <ISection>
-        <Divider />
-        <CPartners />
-        <IFormContact color="secondary" />
+      <TitleContent title={timelineContent.title2}></TitleContent>
+      <CHorizontalProcess language={language} />
+      <TitleContent title={timelineContent.title3}></TitleContent>
+      <HorizontalProcess language={language} />
 
-        <Divider />
+      <ISection>
+        <Divider language={language} />
+        <CPartners language={language} />
+        <IFormContact color="secondary" language={language} />
+
+        <Divider language={language} />
       </ISection>
     </>
   );
