@@ -4,7 +4,35 @@ import opportunity from "@/assets/icons/opportunity.jpg";
 import success from "@/assets/icons/success.jpg";
 import versatile from "@/assets/icons/versatile.jpg";
 
-const IServicesCard = () => {
+const IServicesCard = ({ language }) => {
+  const services = {
+    en: {
+      title1: "Historic Success",
+      p1: "The Immigration and Nationality Act, passed in 1990, created the EB-3 Unskilled Visa program.",
+      title2: "Opportunity Awaits",
+      p2: "Anyone can participate in this program. There are no educational or skill prerequisites for applying.",
+      title3: "Versatile Process",
+      p3: "Applicants can complete this procedure either from within the United States, if they live in the US on a different type of visa, or from their country of origin or where they currently reside.",
+    },
+    es: {
+      title1: "Éxito histórico",
+      p1: "La Ley de Inmigración y Nacionalidad, aprobada en 1990, creó el programa de visados no cualificados EB-3.",
+      title2: "La oportunidad aguarda",
+      p2: "Cualquiera puede participar en este programa. No hay requisitos previos de educación o cualificación para solicitarlo.",
+      title3: "Proceso versátil",
+      p3: "Los solicitantes pueden realizar este trámite tanto desde Estados Unidos, si viven en el país con otro tipo de visado, como desde su país de origen o donde residan actualmente.",
+    },
+    por: {
+      title1: "Sucesso histórico",
+      p1: "A Lei de Imigração e Nacionalidade, aprovada em 1990, criou o programa de vistos EB-3 não qualificados.",
+      title2: "A oportunidade está à espera",
+      p2: "Qualquer pessoa pode participar neste programa. Não há pré-requisitos educacionais ou de habilidades para se candidatar.",
+      title3: "Processo versátil",
+      p3: "Os candidatos podem completar este processo a partir dos Estados Unidos, se viverem nos EUA com um tipo de visto diferente, ou a partir do seu país de origem ou onde residem atualmente.",
+    },
+  };
+  const servicesContent = services[language];
+
   return (
     <div className="flex flex-col items-center  p-2 mb-6 xl:w-[1080px] lg:w-[900px] md:w-[700px] w-full">
       <div className="relative  md:order-2">
@@ -25,12 +53,9 @@ const IServicesCard = () => {
               <img src={success} alt="" />
 
               <p className="font-bold text-2xl tracking-wider">
-                Historic Success
+                {servicesContent.title1}
               </p>
-              <p className="tracking-wider">
-                The Immigration and Nationality Act, passed in 1990, created the
-                EB-3 Unskilled Visa program.
-              </p>
+              <p className="tracking-wider">{servicesContent.p1}</p>
             </div>
           </div>
           {/* Card two */}
@@ -38,12 +63,9 @@ const IServicesCard = () => {
             <div className="flex flex-col items-center justify-between flex-1 p-6 bg-white lg:py-8 lg:px-7 gap-4">
               <img src={opportunity} alt="" />
               <p className="font-bold text-2xl tracking-wider">
-                Opportunity Awaits
+                {servicesContent.title2}
               </p>
-              <p className="tracking-wider">
-                Anyone can participate in this program. There are no educational
-                or skill prerequisites for applying.
-              </p>
+              <p className="tracking-wider">{servicesContent.p2}</p>
             </div>
           </div>
           {/* Card three */}
@@ -51,14 +73,9 @@ const IServicesCard = () => {
             <div className="flex flex-col items-center justify-between flex-1 p-6 bg-white lg:py-8 lg:px-7 gap-4">
               <img src={versatile} alt="" />
               <p className="font-bold text-2xl tracking-wider">
-                Versatile Process
+                {servicesContent.title3}
               </p>
-              <p className="tracking-wider">
-                Applicants can complete this procedure either from within the
-                United States, if they live in the US on a different type of
-                visa, or from their country of origin or where they currently
-                reside.
-              </p>
+              <p className="tracking-wider">{servicesContent.p3}</p>
             </div>
           </div>
         </div>
