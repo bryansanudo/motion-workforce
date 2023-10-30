@@ -134,6 +134,59 @@ const IServices = ({ language }) => {
   };
   const whatContent = what[language];
 
+  const how = {
+    en: {
+      title1: "How It Works",
+      p1: "Join the growing list of satisfied clients who have benefited from our expertise in the EB-3 Unskilled Visa process. We specialize in connecting employers with highly skilled foreign nationals, bridging the gap in the American workforce and helping to drive your business forward. Trust us to simplify the process and deliver the results you need to succeed.",
+      dot1: "Determine your eligibility and select an employer sponsor",
+      dot2: "File and apply for the process with our partner attorneys",
+      dot3: "Get your Green Card or work authorization",
+      dot4: "Begin working for your employer",
+      dot5: "Live in the U.S.A as an immigrant visa holder!",
+    },
+    es: {
+      title1: "Cómo funciona",
+      p1: "Únase a la creciente lista de clientes satisfechos que se han beneficiado de nuestra experiencia en el proceso del visado EB-3 no cualificado. Nos especializamos en poner en contacto a empleadores con extranjeros altamente calificados, cubriendo la brecha en la fuerza laboral estadounidense y ayudando a impulsar su negocio. Confíe en nosotros para simplificar el proceso y obtener los resultados que necesita para tener éxito.",
+      dot1: "Determine su elegibilidad y seleccione un empleador patrocinador",
+      dot2: "Presentar y solicitar el proceso con nuestros abogados asociados",
+      dot3: "Obtenga su Tarjeta Verde o autorización de trabajo",
+      dot4: "Comience a trabajar para su empleador",
+      dot5: "Viva en los EE.UU. como titular de un visado de inmigrante",
+    },
+    por: {
+      title1: "Como funciona",
+      p1: "Junte-se à lista crescente de clientes satisfeitos que beneficiaram da nossa experiência no processo do visto EB-3 não qualificado. Somos especializados em ligar empregadores a cidadãos estrangeiros altamente qualificados, colmatando a lacuna na força de trabalho americana e ajudando a impulsionar o seu negócio. Confie em nós para simplificar o processo e obter os resultados de que necessita para ter sucesso.",
+      dot1: "Determinar a sua elegibilidade e selecionar um empregador patrocinador",
+      dot2: "Arquivar e solicitar o processo com os nossos advogados parceiros",
+      dot3: "Obter o seu Green Card ou autorização de trabalho",
+      dot4: "Começar a trabalhar para o seu empregador",
+      dot5: "Viver nos EUA como portador de um visto de imigrante!",
+    },
+  };
+  const howContent = how[language];
+  const our = {
+    en: {
+      title1: "Successful EB-3 Cases with EB-3 Workforce Solutions",
+      title2: "Our Expertise",
+      p1: "Our goal is the same as our clients: for them to receive their U.S. Green Card through the EB-3 Unskilled Visa program.",
+      p2: "We have had several instances that were successful. In order to showcase the diverse experiences of someone going through this procedure, EB-3 Workforce Solutions has analyzed the best course of action for the different staffing needs that your business might have. Everybody who goes through this process will have a different timetable and procedure.",
+    },
+    es: {
+      title1: "Casos EB-3 exitosos con EB-3 Workforce Solutions",
+      title2: "Nuestra Experiencia",
+      p1: "Nuestro objetivo es el mismo que el de nuestros clientes: que reciban su Tarjeta Verde de los EE.UU. a través del programa de Visa EB-3 No Calificada.",
+      p2: "Hemos tenido varios casos que fueron exitosos. Con el fin de mostrar las diversas experiencias de alguien que pasa por este procedimiento, EB-3 Workforce Solutions ha analizado el mejor curso de acción para las diferentes necesidades de personal que su empresa pueda tener. Cada persona que pasa por este proceso tendrá un calendario y procedimiento diferente.",
+    },
+    por: {
+      title1:
+        "Casos de EB-3 bem sucedidos com as Soluções de Força de Trabalho EB-3",
+      title2: "A nossa experiência",
+      p1: "O nosso objetivo é o mesmo que o dos nossos clientes: que eles recebam o seu Green Card dos EUA através do programa de vistos EB-3 Unskilled.",
+      p2: "Tivemos vários casos que foram bem sucedidos. A fim de mostrar as diversas experiências de alguém que passa por este procedimento, a EB-3 Workforce Solutions analisou o melhor curso de ação para as diferentes necessidades de pessoal que a sua empresa possa ter. Cada pessoa que passa por este processo terá um calendário e um procedimento diferentes.",
+    },
+  };
+  const ourContent = our[language];
+
   return (
     <>
       <IHeroServices />
@@ -238,35 +291,23 @@ const IServices = ({ language }) => {
         {/* 4 Emojis */}
 
         {/* How it works */}
-        <ImgContent img={coWorkersImg} title2="How It Works">
-          <p className={`${styles.sectionText}`}>
-            Join the growing list of satisfied clients who have benefited from
-            our expertise in the EB-3 Unskilled Visa process. We specialize in
-            connecting employers with highly skilled foreign nationals, bridging
-            the gap in the American workforce and helping to drive your business
-            forward. Trust us to simplify the process and deliver the results
-            you need to succeed.
-          </p>
-          <div className="flex flex-col items-start ml-4 mt-4">
+        <ImgContent img={coWorkersImg} title2={howContent.title1}>
+          <p className={`${styles.sectionText}`}>{howContent.p1}</p>
+          <div className="flex flex-col items-start ml-4 mt-4 text-left">
             <p>
-              <span className="font-bold">1.</span> Determine your eligibility
-              and select an employer sponsor
+              <span className="font-bold">1.</span> {howContent.dot1}
             </p>
             <p>
-              <span className="font-bold">2.</span> File and apply for the
-              process with our partner attorneys
+              <span className="font-bold">2.</span> {howContent.dot2}
             </p>
             <p>
-              <span className="font-bold">3.</span> Get your Green Card or work
-              authorization
+              <span className="font-bold">3.</span> {howContent.dot3}
             </p>
             <p>
-              <span className="font-bold">4.</span> Begin working for your
-              employer
+              <span className="font-bold">4.</span> {howContent.dot4}
             </p>
             <p>
-              <span className="font-bold">5.</span> Live in the U.S.A as an
-              immigrant visa holder!
+              <span className="font-bold">5.</span> {howContent.dot5}
             </p>
           </div>
         </ImgContent>
@@ -274,25 +315,15 @@ const IServices = ({ language }) => {
         {/* Our expertise */}
         <ImgContent
           img={especialistImg}
-          title1="Successful EB-3 Cases with EB-3 Workforce Solutions"
-          title2="Our Expertise"
+          title1={ourContent.title1}
+          title2={ourContent.title2}
         >
-          <p className={`${styles.sectionText} mb-6`}>
-            Our goal is the same as our clients: for them to receive their U.S.
-            Green Card through the EB-3 Unskilled Visa program.
-          </p>
-          <p className={`${styles.sectionText} `}>
-            We have had several instances that were successful. In order to
-            showcase the diverse experiences of someone going through this
-            procedure, EB-3 Workforce Solutions has analyzed the best course of
-            action for the different staffing needs that your business might
-            have. Everybody who goes through this process will have a different
-            timetable and procedure.
-          </p>
+          <p className={`${styles.sectionText} mb-6`}>{ourContent.p1}</p>
+          <p className={`${styles.sectionText} `}>{ourContent.p2}</p>
         </ImgContent>
         <IFormContact color="primary" language={language} />
 
-        <Divider />
+        <Divider language={language} />
       </ISection>
     </>
   );
