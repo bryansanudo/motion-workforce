@@ -234,7 +234,7 @@ const IServices = ({ language }) => {
           <p className={`${styles.sectionTitleText}`}>{whatContent.p1}</p>
         </TitleContent>
 
-        <FourIcons />
+        <FourIcons language={language} />
         {/* 4 Emojis */}
 
         {/* How it works */}
@@ -290,7 +290,7 @@ const IServices = ({ language }) => {
             timetable and procedure.
           </p>
         </ImgContent>
-        <IFormContact color="primary" />
+        <IFormContact color="primary" language={language} />
 
         <Divider />
       </ISection>

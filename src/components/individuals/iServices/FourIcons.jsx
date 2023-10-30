@@ -9,26 +9,49 @@ import { motion } from "framer-motion";
 import { staggerContainer } from "@/utils/motion";
 import { fadeIn, zoomIn } from "@/utils/motion";
 
-const FourIcons = () => {
+const FourIcons = ({ language }) => {
+  const four = {
+    en: {
+      title1: "Recruit and vet employer sponsors",
+      title2: "Case management services",
+      title3: "Attorney pairing",
+      title4: "Relocation services",
+    },
+    es: {
+      title1: "Reclutar y examinar a los empleadores patrocinadores",
+      title2: "Servicios de gestión de casos",
+      title3: "Emparejamiento de abogados",
+      title4: "Servicios de reubicación",
+    },
+    por: {
+      title1: "Recrutar e examinar os empregadores patrocinadores",
+      title2: "Serviços de gestão de processos",
+      title3: "Emparelhamento de advogados",
+      title4: "Serviços de relocalização",
+    },
+  };
+
+  const fourContent = four[language];
+
   const icons = [
     {
       id: 1,
-      title: "Recruit and vet employer sponsors",
+      title: fourContent.title1,
       icon: recruit,
     },
     {
       id: 2,
-      title: "Case management services",
+      title: fourContent.title2,
       icon: caseImg,
     },
     {
       id: 3,
-      title: "Attorney pairing",
+      title: fourContent.title3,
       icon: attorney,
     },
     {
       id: 4,
-      title: "Relocation services",
+      title: fourContent.title4,
       icon: relocation,
     },
   ];
