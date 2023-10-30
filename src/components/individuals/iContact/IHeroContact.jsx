@@ -1,6 +1,19 @@
 import React from "react";
 
-const IHeroContact = () => {
+const IHeroContact = ({ language }) => {
+  const contact = {
+    en: {
+      h1: "Contact Us",
+    },
+    es: {
+      h1: "Contacto",
+    },
+    por: {
+      h1: "Contacto",
+    },
+  };
+  const contactContent = contact[language];
+
   return (
     <>
       <div
@@ -14,7 +27,7 @@ const IHeroContact = () => {
         <div className="hero-content text-center text-white">
           <div className="max-w-5xl">
             <h1 className="my-5 lg:text-5xl md:text-3xl text-2xl font-bold tracking-wider">
-              CONTACT US
+              {contactContent.h1}
             </h1>
           </div>
         </div>

@@ -189,7 +189,7 @@ const IServices = ({ language }) => {
 
   return (
     <>
-      <IHeroServices />
+      <IHeroServices language={language} />
 
       <ISection>
         <TitleContent title={eb3Content.title1}>

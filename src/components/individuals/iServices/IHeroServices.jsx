@@ -1,6 +1,18 @@
 import React from "react";
 
-const IHeroServices = () => {
+const IHeroServices = ({ language }) => {
+  const services = {
+    en: {
+      h1: "Services",
+    },
+    es: {
+      h1: "Servicios",
+    },
+    por: {
+      h1: "Serviços",
+    },
+  };
+  const servicesContent = services[language];
   return (
     <div
       className="hero min-h-[60vh] "
@@ -13,7 +25,7 @@ const IHeroServices = () => {
       <div className="hero-content text-center text-white">
         <div className="max-w-5xl">
           <h2 className="my-5 lg:text-5xl md:text-3xl text-2xl font-bold tracking-wider">
-            SERVICES
+            {servicesContent.h1}
           </h2>
         </div>
       </div>

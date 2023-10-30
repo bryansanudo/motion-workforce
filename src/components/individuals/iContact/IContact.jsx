@@ -149,7 +149,7 @@ const IContact = ({ language }) => {
 
   return (
     <>
-      <IHeroContact />
+      <IHeroContact language={language} />
       <ISection title="Contact" color="primary">
         {/* Feel free to apply */}
         <TitleContent title={feelContent.title1}>

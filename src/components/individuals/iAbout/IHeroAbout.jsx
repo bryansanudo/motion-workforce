@@ -1,6 +1,18 @@
 import React from "react";
 
-const IHeroAbout = () => {
+const IHeroAbout = ({ language }) => {
+  const about = {
+    en: {
+      h1: "About Us",
+    },
+    es: {
+      h1: "Acerca de",
+    },
+    por: {
+      h1: "Sobre nós",
+    },
+  };
+  const aboutContent = about[language];
   return (
     <>
       <div
@@ -14,7 +26,7 @@ const IHeroAbout = () => {
         <div className="hero-content text-center text-white">
           <div className="max-w-5xl">
             <h1 className="my-5 lg:text-5xl md:text-3xl text-2xl font-bold tracking-wider">
-              ABOUT US
+              {aboutContent.h1}
             </h1>
           </div>
         </div>

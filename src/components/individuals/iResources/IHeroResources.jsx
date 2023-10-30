@@ -1,9 +1,21 @@
 import { useEffect } from "react";
 
-const IHeroResources = () => {
+const IHeroResources = ({ language }) => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  const resources = {
+    en: {
+      h1: "Resources",
+    },
+    es: {
+      h1: "Recursos",
+    },
+    por: {
+      h1: "Recursos",
+    },
+  };
+  const resourcesContent = resources[language];
   return (
     <div
       className="hero min-h-[60vh] "
@@ -16,7 +28,7 @@ const IHeroResources = () => {
       <div className="hero-content text-center text-white">
         <div className="max-w-5xl">
           <h2 className="my-5 lg:text-5xl md:text-3xl text-2xl font-bold tracking-wider">
-            RESOURCES
+            {resourcesContent.h1}
           </h2>
         </div>
       </div>

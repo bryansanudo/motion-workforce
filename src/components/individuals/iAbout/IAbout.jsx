@@ -86,7 +86,7 @@ const IAbout = ({ language }) => {
 
   return (
     <>
-      <IHeroAbout />
+      <IHeroAbout language={language} />
       <ISection>
         {/* Our Speciality */}
         <ImgContent
