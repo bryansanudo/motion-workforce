@@ -58,10 +58,10 @@ const FourIcons = ({ language }) => {
 
   return (
     <motion.div
-      variants={staggerContainer}
+      /* variants={staggerContainer}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}
+      viewport={{ once: false, amount: 0.25 }} */
       className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-4 gap-4  "
     >
       {icons.map(({ title, icon, id }) => (

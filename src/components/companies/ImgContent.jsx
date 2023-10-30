@@ -5,10 +5,10 @@ import { staggerContainer, slideIn } from "@/utils/motion";
 const ImgContent = ({ img, title1, title2, children }) => {
   return (
     <motion.div
-      variants={staggerContainer()}
+      /* variants={staggerContainer()}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: true, amount: 0.25 }}
+      viewport={{ once: true, amount: 0.25 }} */
       className="flex items-center justify-center gap-6 md:gap-20 flex-col md:flex-row my-10  mx-6 max-w-7xl"
     >
       <motion.div

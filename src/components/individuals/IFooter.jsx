@@ -7,10 +7,10 @@ import { Link } from "react-router-dom";
 const IFooter = () => {
   return (
     <motion.div
-      variants={staggerContainer()}
+    /* variants={staggerContainer()}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: true, amount: 0.25 }}
+      viewport={{ once: true, amount: 0.25 }} */
     >
       <motion.footer
         /* variants={slideIn("left", "tween", 0.2, 1)} */
