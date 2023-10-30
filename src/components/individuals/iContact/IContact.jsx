@@ -5,40 +5,110 @@ import IFormContact from "@/components/individuals/IFormContact";
 import TitleContent from "@/components/individuals/TitleContent";
 import { styles } from "@/styles";
 
-const IContact = () => {
+const IContact = ({ language }) => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
+  const step = {
+    en: {
+      t1: "Complete the Online Questionnaire",
+      s1: "Fill out this form to confirm your eligibility for the EB3 Visa.",
+      t2: "Upload Documents",
+      s2: "To complete your profile, upload your passport and US Visa.",
+      t3: "Offering Selection",
+      s3: "Choose the job and location from the current available positions offered by our partner employers.",
+      t4: "Sign contract and pay Initial fee",
+      s4: "A contract will be sent to you for signature and first payment to BDV will need to be made.",
+      t5: "Get Updates on your Process",
+      s5: "As the employer processes your applications, your BDV portal will be updated.",
+    },
+    es: {
+      t1: "Rellene el cuestionario en línea",
+      s1: "Rellene este formulario para confirmar su elegibilidad para el visado EB3",
+      t2: "Subir Documentos",
+      s2: "Para completar su perfil, cargue su pasaporte y su visado de EE.UU.",
+      t3: "Selección de Oferta",
+      s3: "Elija el trabajo y la ubicación entre los puestos disponibles actualmente ofrecidos por nuestros empleadores asociados",
+      t4: "Firmar contrato y pagar cuota inicial",
+      s4: "Se le enviará un contrato para su firma y deberá realizar el primer pago a BDV",
+      t5: "Recibir actualizaciones sobre su proceso",
+      s5: "A medida que el empleador procese sus solicitudes, su portal BDV será actualizado",
+    },
+    por: {
+      t1: "Preencher o questionário em linha",
+      s1: "Preencha este formulário para confirmar a sua elegibilidade para o visto EB3",
+      t2: "Carregar documentos",
+      s2: "Para completar o seu perfil, carregue o seu passaporte e o seu visto dos EUA.",
+      t3: "Seleção da oferta",
+      s3: "Escolha o emprego e o local de trabalho entre as vagas atualmente disponíveis oferecidas pelos nossos empregadores parceiros.",
+      t4: "Assinar contrato e pagar a taxa inicial",
+      s4: "Ser-lhe-á enviado um contrato para assinatura e será necessário efetuar o primeiro pagamento à BDV",
+      t5: "Obter actualizações sobre o seu processo",
+      s5: "À medida que a entidade patronal processa os seus pedidos, o seu portal da BDV será atualizado",
+    },
+  };
+  const stepContent = step[language];
+
+  const feel = {
+    en: {
+      title1:
+        "Feel free to apply without the need for any previous experience!",
+      p1: "Are you keen on obtaining a U.S. Permanent Resident Card (Green Card) for yourself and your family? MCC USA collaborates with U.S. corporations that are willing to support your Green Card application in return for your commitment to work with them for at least one year.",
+    },
+    es: {
+      title1:
+        "No dude en presentar su solicitud sin necesidad de tener experiencia previa.",
+      p1: "¿Está interesado en obtener la Tarjeta de Residente Permanente de los EE.UU. (Green Card) para usted y su familia? MCC USA colabora con empresas estadounidenses que están dispuestas a apoyar tu solicitud de Tarjeta Verde a cambio de que te comprometas a trabajar con ellas durante al menos un año.",
+    },
+    por: {
+      title1: "Pode candidatar-se sem necessidade de experiência prévia!",
+      p1: "Está interessado em obter um Cartão de Residente Permanente dos EUA (Green Card) para si e para a sua família? O MCC USA colabora com empresas americanas que estão dispostas a apoiar o seu pedido de Green Card em troca do seu compromisso de trabalhar com elas durante pelo menos um ano.",
+    },
+  };
+  const feelContent = feel[language];
+
+  const we = {
+    en: {
+      title1: "We are open Monday through Friday from 9:00am-5:00pm",
+      p1: "You can contact us through multiple channels, including phone, email, live chat, and our website's contact form",
+    },
+    es: {
+      title1: "Estamos abiertos de lunes a viernes de 9:00 a 17:00.",
+      p1: "Puede ponerse en contacto con nosotros por teléfono, correo electrónico, chat en directo o a través del formulario de contacto de nuestro sitio web.",
+    },
+    por: {
+      title1: "Estamos abertos de segunda a sexta-feira, das 9:00 às 17:00",
+      p1: "Pode contactar-nos através de vários canais, incluindo telefone, e-mail, chat ao vivo e o formulário de contacto do nosso sítio Web",
+    },
+  };
+  const weContent = we[language];
+
   const steps = [
     {
       id: 1,
-      title: "Complete the Online Questionnaire",
-      subtitle:
-        "Fill out this form to confirm your eligibility for the EB3 Visa.",
+      title: stepContent.t1,
+      subtitle: stepContent.s1,
     },
     {
       id: 2,
-      title: "Upload Documents",
-      subtitle: "To complete your profile, upload your passport and US Visa.",
+      title: stepContent.t2,
+      subtitle: stepContent.s2,
     },
     {
       id: 3,
-      title: "Offering Selection",
-      subtitle:
-        "Choose the job and location from the current available positions offered by our partner employers.",
+      title: stepContent.t3,
+      subtitle: stepContent.s3,
     },
     {
       id: 4,
-      title: "Sign contract and pay Initial fee",
-      subtitle:
-        "A contract will be sent to you for signature and first payment to BDV will need to be made.",
+      title: stepContent.t4,
+      subtitle: stepContent.s4,
     },
     {
       id: 5,
-      title: "Get Updates on your Process",
-      subtitle:
-        "As the employer processes your applications, your BDV portal will be updated.",
+      title: stepContent.t5,
+      subtitle: stepContent.s5,
     },
   ];
 
@@ -81,15 +151,9 @@ const IContact = () => {
     <>
       <IHeroContact />
       <ISection title="Contact" color="primary">
-        {/* History of EB-3 Solutions */}
-        <TitleContent title="Feel free to apply without the need for any previous experience!">
-          <p className={`${styles.sectionTitleText}`}>
-            Are you keen on obtaining a U.S. Permanent Resident Card (Green
-            Card) for yourself and your family? MCC USA collaborates with U.S.
-            corporations that are willing to support your Green Card application
-            in return for your commitment to work with them for at least one
-            year.
-          </p>
+        {/* Feel free to apply */}
+        <TitleContent title={feelContent.title1}>
+          <p className={`${styles.sectionTitleText}`}>{feelContent.p1}</p>
         </TitleContent>
 
         <iframe
@@ -167,14 +231,11 @@ const IContact = () => {
           </div>
         </TitleContent> */}
 
-        <TitleContent title="We are open Monday through Friday from 9:00am-5:00pm">
-          <p className={`${styles.sectionTitleText}`}>
-            You can contact us through multiple channels, including phone,
-            email, live chat, and our website's contact form
-          </p>
+        <TitleContent title={weContent.title1}>
+          <p className={`${styles.sectionTitleText}`}>{weContent.p1}</p>
         </TitleContent>
 
-        <IFormContact color="primary" />
+        <IFormContact color="primary" language={language} />
         {/* <div className="mb-16" /> */}
       </ISection>
     </>

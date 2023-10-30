@@ -27,7 +27,7 @@ const Individuals = ({ language, setLanguage }) => {
           path="/individuals/home"
           element={<IHome language={language} />}
         />
-        <Route path="/companies/home" element={<CHome />} />
+        <Route path="/companies/home" element={<CHome language={language} />} />
         <Route
           path="/individuals/about"
           element={<IAbout language={language} />}
@@ -41,9 +41,15 @@ const Individuals = ({ language, setLanguage }) => {
           path="/individuals/resources"
           element={<IResources language={language} />}
         />
-        <Route path="/individuals/contact" element={<IContact />} />
+        <Route
+          path="/individuals/contact"
+          element={<IContact language={language} />}
+        />
 
-        <Route path="/individuals/vacancies" element={<IVacancies />} />
+        <Route
+          path="/individuals/vacancies"
+          element={<IVacancies language={language} />}
+        />
 
         {/*  <Route path="/individuals/vacancies/subway" element={<Subway />} />
         <Route path="/individuals/vacancies/chula" element={<Chula />} />
