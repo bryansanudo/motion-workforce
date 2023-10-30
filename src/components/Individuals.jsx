@@ -37,7 +37,10 @@ const Individuals = ({ language, setLanguage }) => {
           element={<IServices language={language} />}
         />
         <Route path="/individuals/histories" element={<IHistories />} />
-        <Route path="/individuals/resources" element={<IResources />} />
+        <Route
+          path="/individuals/resources"
+          element={<IResources language={language} />}
+        />
         <Route path="/individuals/contact" element={<IContact />} />
 
         <Route path="/individuals/vacancies" element={<IVacancies />} />
