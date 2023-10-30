@@ -89,6 +89,7 @@ const IHome = ({ language }) => {
     },
   };
   const eb3Content = eb3[language];
+
   const looking = {
     en: {
       p1: "Discover the pathway to your American dream with our company! Say goodbye to the uncertainty of the immigration journey and hello to a dedicated team of professionals eager to assist you. Our partners are carefully selected to ensure a smooth process and unwavering commitment to your immigration goals. Trust us to guide you on the path to the American Dream.",

@@ -9,10 +9,81 @@ import Divider from "@/components/individuals/IDivider";
 import TitleContent from "@/components/individuals/TitleContent";
 import { styles } from "@/styles";
 
-const IAbout = () => {
+const IAbout = ({ language }) => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const our = {
+    en: {
+      title1: "Successful EB-3 Cases with EB-3 Workforce Solutions",
+      title2: "Our Specialty",
+      p1: "Our objective is the same as that of our clients: obtaining their U.S. Green Card via the EB-3 Unskilled Visa program.",
+      p2: "Our recruitment and client engagement specialists have extensive experience in the entire EB-3 process. We have partnered with immigration attorneys who have over 25 years of experience in the field of immigration law and have successfully obtained permanent residency status for hundreds of EB-3 applicants.",
+    },
+    es: {
+      title1: "Casos EB-3 exitosos con EB-3 Workforce Solutions",
+      title2: "Nuestra especialidad",
+      p1: "Nuestro objetivo es el mismo que el de nuestros clientes: obtener su tarjeta verde estadounidense a través del programa EB-3 Unskilled Visa.",
+      p2: "Nuestros especialistas en contratación y compromiso con el cliente tienen una amplia experiencia en todo el proceso EB-3. Nos hemos asociado con abogados de inmigración que tienen más de 25 años de experiencia en el campo de la ley de inmigración y han obtenido con éxito el estatus de residencia permanente para cientos de solicitantes EB-3.",
+    },
+    por: {
+      title1:
+        "Casos de EB-3 bem sucedidos com as Soluções de Força de Trabalho EB-3",
+      title2: "A nossa especialidade",
+      p1: "O nosso objetivo é o mesmo que o dos nossos clientes: obter o seu Green Card dos EUA através do programa de vistos EB-3 Unskilled.",
+      p2: "Os nossos especialistas em recrutamento e envolvimento do cliente têm uma vasta experiência em todo o processo EB-3. Estabelecemos parcerias com advogados de imigração que têm mais de 25 anos de experiência no campo da lei de imigração e obtiveram com sucesso o estatuto de residência permanente para centenas de candidatos EB-3.",
+    },
+  };
+  const ourContent = our[language];
+
+  const cards = {
+    en: {
+      title1:
+        "We have built strong relationships with current and former Government officials.",
+
+      p1: "50 +Countries represented throughout the globe",
+      p2: "A large number of client green card approvals were granted in the year 2022, excluding dependents.",
+    },
+    es: {
+      title1:
+        "Hemos establecido sólidas relaciones con funcionarios y ex funcionarios del Gobierno.",
+
+      p1: "Más de 50 países representados en todo el mundo",
+      p2: "En el año 2022 se concedió un gran número de permisos de residencia a clientes, excluidos los dependientes.",
+    },
+    por: {
+      title1:
+        "Construímos fortes relações com actuais e antigos funcionários públicos.",
+
+      p1: "50 +Países representados em todo o mundo",
+      p2: "Um grande número de aprovações de green cards de clientes foi concedido no ano de 2022, excluindo os dependentes.",
+    },
+  };
+  const cardsContent = cards[language];
+
+  const history = {
+    en: {
+      title1: "History of EB-3",
+      p1: "The EB-3 Green Card Program has had a substantial effect on the American labor market. By concentrating on offering U.S. companies alternatives for hiring entry-level workers, the EB-3 Green Card Program strives to become a top supplier of unskilled labor solutions to American firms.",
+      p2: "To help non-immigrant visa holders change their visa status, and assist immigrants in achieving an EB-3 permanent residence Green Card, the program collaborates with some of the leading immigration law firms in the nation. By offering these services, the EB-3 Green Card Program hes been essential in assisting foreign nationals and those with non-immigrant visas to become lawful permanent residents of the United States.",
+      p3: "The EB-3 Green Card Program assists American companies in hiring the qualified personnel they require to expand and prosper. It has assisted in addressing the persistent lack of unskilled employees in the American labor market by acting as a link between American firms and overseas workers. The program has established a solid reputation as a reliable source of talent acquisition due to its commitment to quality and its desire to see U.S. businesses prosper.",
+    },
+    es: {
+      title1: "Historia del EB-3",
+      p1: "El Programa de la Tarjeta Verde EB-3 ha tenido un efecto sustancial en el mercado laboral estadounidense. Al concentrarse en ofrecer a las empresas estadounidenses alternativas para la contratación de trabajadores de nivel básico, el Programa de Tarjeta Verde EB-3 se esfuerza por convertirse en uno de los principales proveedores de soluciones de mano de obra no cualificada para las empresas estadounidenses.",
+      p2: "Para ayudar a los titulares de visados de no inmigrante a cambiar su situación de visado y asistir a los inmigrantes en la obtención de la tarjeta verde de residencia permanente EB-3, el programa colabora con algunos de los principales bufetes de abogados de inmigración del país. Al ofrecer estos servicios, el Programa de Tarjeta Verde EB-3 ha sido esencial para ayudar a los extranjeros y a los titulares de visados de no inmigrante a convertirse en residentes permanentes legales de los Estados Unidos.",
+      p3: "El Programa de la Tarjeta Verde EB-3 ayuda a las empresas estadounidenses a contratar al personal cualificado que necesitan para expandirse y prosperar. Ha contribuido a paliar la persistente falta de empleados no cualificados en el mercado laboral estadounidense actuando como enlace entre las empresas estadounidenses y los trabajadores extranjeros. El programa se ha labrado una sólida reputación como fuente fiable de adquisición de talentos gracias a su compromiso con la calidad y su deseo de ver prosperar a las empresas estadounidenses.",
+    },
+    por: {
+      title1: "História do EB-3",
+      p1: "O Programa EB-3 Green Card tem tido um efeito substancial no mercado de trabalho americano. Ao concentrar-se em oferecer às empresas americanas alternativas para a contratação de trabalhadores de nível básico, o Programa EB-3 Green Card esforça-se por se tornar um fornecedor de topo de soluções de mão de obra não qualificada para as empresas americanas.",
+      p2: "Para ajudar os titulares de vistos de não-imigrante a alterar o seu estatuto de visto e ajudar os imigrantes a obter um Green Card de residência permanente EB-3, o programa colabora com algumas das principais empresas de advogados de imigração do país. Ao oferecer estes serviços, o Programa Green Card EB-3 tem sido essencial para ajudar os cidadãos estrangeiros e aqueles com vistos de não-imigrante a tornarem-se residentes permanentes legais nos Estados Unidos.",
+      p3: "O Programa Green Card EB-3 ajuda as empresas americanas a contratar o pessoal qualificado de que necessitam para se expandirem e prosperarem. Tem ajudado a resolver a persistente falta de trabalhadores não qualificados no mercado de trabalho americano, actuando como um elo de ligação entre as empresas americanas e os trabalhadores estrangeiros. O programa estabeleceu uma sólida reputação como uma fonte fiável de aquisição de talentos devido ao seu compromisso com a qualidade e ao seu desejo de ver as empresas americanas prosperarem.",
+    },
+  };
+  const historyContent = history[language];
+
   return (
     <>
       <IHeroAbout />
@@ -20,75 +91,36 @@ const IAbout = () => {
         {/* Our Speciality */}
         <ImgContent
           img={contactImg}
-          title1="Successful EB-3 Cases with EB-3 Workforce Solutions"
-          title2="Our Specialty"
+          title1={ourContent.title1}
+          title2={ourContent.title2}
         >
-          <p className={`${styles.sectionText} mb-6`}>
-            Our objective is the same as that of our clients: obtaining their
-            U.S. Green Card via the EB-3 Unskilled Visa program.
-          </p>
-          <p className={`${styles.sectionText}`}>
-            Our recruitment and client engagement specialists have extensive
-            experience in the entire EB-3 process. We have partnered with
-            immigration attorneys who have over 25 years of experience in the
-            field of immigration law and have successfully obtained permanent
-            residency status for hundreds of EB-3 applicants.
-          </p>
+          <p className={`${styles.sectionText} mb-6`}>{ourContent.p1}</p>
+          <p className={`${styles.sectionText}`}>{ourContent.p2}</p>
         </ImgContent>
 
         {/* 2 Columns contend */}
-        <TitleContent
-          title="We have built strong relationships with current and former
-              Government officials."
-        >
+        <TitleContent title={cardsContent.title1}>
           <div className="flex flex-col md:flex-row items-center w-full justify-between   gap-10 xl:w-[1080px] lg:w-[900px] md:w-[700px] ">
             <div className="shadow-black shadow-md rounded-3xl md:w-[600px] md:h-[300px] w-[200px]  flex flex-col items-center justify-center gap-6 p-3">
               <GiWorld className="text-7xl text-primary" />
-              <p className="font-bold">
-                50 +Countries represented throughout the globe{" "}
-              </p>
+              <p className="font-bold">{cardsContent.p1}</p>
             </div>
             <div className="shadow-black shadow-md rounded-3xl md:w-[600px] md:h-[300px] w-[200px]  flex flex-col items-center justify-center gap-6 p-3">
               <BsFillPersonVcardFill className="text-7xl text-primary" />
-              <p className="font-bold">
-                A large number of client green card approvals were granted in
-                the year 2022, excluding dependents.{" "}
-              </p>
+              <p className="font-bold">{cardsContent.p2}</p>
             </div>
           </div>
         </TitleContent>
 
         {/* History of EB-3 Solutions */}
 
-        <TitleContent title="History of EB-3 ">
-          <p className={`${styles.sectionTitleText}`}>
-            The EB-3 Green Card Program has had a substantial effect on the
-            American labor market. By concentrating on offering U.S. companies
-            alternatives for hiring entry-level workers, the EB-3 Green Card
-            Program strives to become a top supplier of unskilled labor
-            solutions to American firms.
-          </p>
-          <p className={`${styles.sectionTitleText}`}>
-            To help non-immigrant visa holders change their visa status, and
-            assist immigrants in achieving an EB-3 permanent residence Green
-            Card, the program collaborates with some of the leading immigration
-            law firms in the nation. By offering these services, the EB-3 Green
-            Card Program hes been essential in assisting foreign nationals and
-            those with non-immigrant visas to become lawful permanent residents
-            of the United States.
-          </p>
-          <p className={`${styles.sectionTitleText}`}>
-            The EB-3 Green Card Program assists American companies in hiring the
-            qualified personnel they require to expand and prosper. It has
-            assisted in addressing the persistent lack of unskilled employees in
-            the American labor market by acting as a link between American firms
-            and overseas workers. The program has established a solid reputation
-            as a reliable source of talent acquisition due to its commitment to
-            quality and its desire to see U.S. businesses prosper.
-          </p>
+        <TitleContent title={historyContent.title1}>
+          <p className={`${styles.sectionTitleText}`}>{historyContent.p1}</p>
+          <p className={`${styles.sectionTitleText}`}>{historyContent.p2}</p>
+          <p className={`${styles.sectionTitleText}`}>{historyContent.p3}</p>
         </TitleContent>
 
-        <Divider />
+        <Divider language={language} />
       </ISection>
     </>
   );
