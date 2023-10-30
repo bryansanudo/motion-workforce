@@ -68,7 +68,7 @@ const Individuals = ({ language, setLanguage }) => {
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms-services" element={<TermsOfService />} />
       </Routes>
-      <IFooter />
+      <IFooter language={language} />
     </>
   );
 };
