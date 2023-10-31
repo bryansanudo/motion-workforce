@@ -37,6 +37,17 @@ const IFormContact = ({ color, language = "en" }) => {
       questions: "As suas perguntas",
       submit: "enviar agora",
     },
+    fr: {
+      title1: "Prenez contact avec nous dès aujourd'hui !",
+      title2:
+        "Remplissez le formulaire ci-dessous et nous vous contacterons dans les plus brefs délais",
+      name: "Nom",
+      lastName: "Nom de famille",
+      email: "Email",
+      phone: "Phone",
+      questions: "Vos questions",
+      submit: "soumettre",
+    },
   };
   const formContent = form[language];
   return (

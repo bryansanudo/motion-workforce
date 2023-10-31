@@ -4,6 +4,7 @@ import { Link, NavLink } from "react-router-dom";
 import enImg from "@/assets/icons/en.png";
 import esImg from "@/assets/icons/es.png";
 import porImg from "@/assets/icons/por.png";
+import frImg from "@/assets/icons/fr.png";
 import giphy from "@/assets/icons/giphy.gif";
 import logo from "@/assets/logo.png";
 
@@ -30,6 +31,16 @@ const INavbar = ({ setLanguage, language }) => {
       looking: "En busca de Empleados",
     },
     por: {
+      home: "casa",
+      about: "sobre",
+      services: "serviços",
+      resources: "recursos",
+      contact: "contacto",
+      vacancies: "vagas",
+      language: "língua",
+      looking: "à procura de empregados",
+    },
+    fr: {
       home: "casa",
       about: "sobre",
       services: "serviços",
@@ -97,6 +108,8 @@ const INavbar = ({ setLanguage, language }) => {
     languageIcon = esImg;
   } else if (language === "por") {
     languageIcon = porImg;
+  } else if (language === "fr") {
+    languageIcon = frImg;
   }
 
   return (
@@ -139,7 +152,7 @@ const INavbar = ({ setLanguage, language }) => {
               {navbarContent.looking}
             </button>
           </Link>
-          {/* <div className="flex  gap-2 md:flex-row items-center justify-center">
+          <div className="flex  gap-2 md:flex-row items-center justify-center">
             <select
               value={language}
               onChange={(e) => changeLanguage(e.target.value)}
@@ -148,9 +161,10 @@ const INavbar = ({ setLanguage, language }) => {
               <option value="en">English</option>
               <option value="es">Español</option>
               <option value="por">Portuguese</option>
+              <option value="fr">Frances</option>
             </select>
             <img src={languageIcon} className="w-6 h-6" alt="" />
-          </div> */}
+          </div>
         </div>
       </div>
       <div

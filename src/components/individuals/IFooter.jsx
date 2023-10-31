@@ -51,6 +51,21 @@ const IFooter = ({ language }) => {
       u2: "Política de privacidade",
       u3: "Termos de serviços",
     },
+    fr: {
+      p: "A EB-3 Workforce Solutions não é um escritório de advogados e não presta aconselhamento jurídico. A sua comunicação com a EB-3 Workforce Solutions não cria uma relação advogado-cliente e não está protegida pelo privilégio advogado-cliente.",
+      h1: "LINKS RÁPIDOS",
+      l1: "Início",
+      l2: "Sobre",
+      l3: "Serviços",
+      l4: "Recursos",
+      l5: "Contacto",
+      l6: "Vagas",
+      h2: "Contacte-nos",
+      h3: "Legal",
+      u1: "Direitos de autor © 2023 Todos os direitos reservados",
+      u2: "Política de privacidade",
+      u3: "Termos de serviços",
+    },
   };
   const footerContent = footer[language];
 

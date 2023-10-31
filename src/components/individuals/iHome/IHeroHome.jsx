@@ -39,6 +39,19 @@ const messages = {
     "Alcance o impensável: Residência nos EUA através do Visto EB-3.",
     "A sua viagem para um futuro melhor começa com um visto EB-3",
   ],
+  fr: [
+    "Débloquez votre rêve américain : Choisissez la voie du visa EB-3 dès aujourd'hui",
+    "Pourquoi se contenter de moins ? Améliorez votre avenir avec un visa EB-3",
+    "Ouvrez les portes aux États-Unis - Faites du visa EB-3 votre clé",
+
+    "Entrez dans un monde d'opportunités : Obtenez votre visa EB-3 maintenant",
+    "Visa EB-3 : Votre porte d'entrée vers la résidence permanente et au-delà",
+    "Découvrez le chemin le plus rapide vers votre vie américaine avec un visa EB-3",
+    "Tracez votre route vers le succès : Le visa EB-3 vous attend",
+    "Faites partie de l'histoire de la croissance de l'Amérique avec un visa EB-3",
+    "Réalisez l'impensable : La résidence aux États-Unis grâce au visa EB-3",
+    "Votre voyage vers un avenir meilleur commence avec un visa EB-3",
+  ],
 };
 
 const IHeroHome = ({ language }) => {

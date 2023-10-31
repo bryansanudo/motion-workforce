@@ -36,6 +36,11 @@ const IHome = ({ language }) => {
       title2: "James Baker, CPA",
       p1: "James está à frente de diferentes empresas nos EUA, servindo corporações internacionais e empresários internacionais com diferentes serviços e empresas. James aliou-se a investidores silenciosos para criar a EB-3 Workforce Solutions, uma empresa que liga empregadores que enfrentam uma escassez crónica de trabalhadores não qualificados a trabalhadores imigrantes dispostos a candidatar-se a um Green Card dos EUA através do programa de vistos EB-3.",
     },
+    fr: {
+      title1: "Rencontre avec le fondateur",
+      title2: "James Baker, CPA",
+      p1: "James est à la tête de plusieurs entreprises aux États-Unis, au service de sociétés internationales et d'entrepreneurs internationaux avec différents services et entreprises. James s'est allié à des investisseurs silencieux pour créer EB-3 Workforce solutions, une société qui met en relation des employeurs confrontés à une pénurie chronique de travailleurs non qualifiés avec des employés immigrés désireux de demander une carte verte américaine dans le cadre du programme de visa EB-3.",
+    },
   };
   const jamesContent = james[language];
 
@@ -51,6 +56,10 @@ const IHome = ({ language }) => {
     por: {
       h1: "Comece a sua viagem!",
       p: "Contactar-nos",
+    },
+    fr: {
+      h1: "Commencez votre voyage !",
+      p: "Appelez-nous",
     },
   };
   const dividerStartContent = dividerStart[language];
@@ -74,6 +83,12 @@ const IHome = ({ language }) => {
       p1: "Se se encontrar numa situação em que procura uma oportunidade significativa para uma vida e uma carreira melhores nos Estados Unidos, ou se estiver a enfrentar desafios para navegar no complexo processo de imigração e nos custos associados, então temos a solução perfeita para si.",
       p2: "Apresentamos o Programa de Vistos EB-3, uma solução de imigração a longo prazo concebida especificamente para pessoas como você. Esta opção de Green Card baseada no emprego foi concebida para responder aos seus objectivos de imigração e proporcionar-lhe o caminho que necessita para os Estados Unidos.",
     },
+    fr: {
+      title1: "Nous contacter",
+      title2: "Vous voulez en savoir plus ?",
+      p1: "Si vous vous trouvez dans une situation où vous cherchez une opportunité significative pour une vie et une carrière meilleures aux États-Unis, ou si vous avez des difficultés à naviguer dans le processus d'immigration complexe et les coûts associés, alors nous avons la solution parfaite pour vous.",
+      p2: "Nous vous présentons le programme de visa EB-3, une solution d'immigration à long terme conçue spécialement pour des personnes comme vous. Cette carte verte basée sur l'emploi est conçue pour répondre à vos objectifs en matière d'immigration et vous offrir la voie d'accès aux États-Unis dont vous avez besoin.",
+    },
   };
   const wantContent = want[language];
 
@@ -87,6 +102,9 @@ const IHome = ({ language }) => {
     por: {
       p1: "Na EB-3 Workforce Solutions, compreendemos a importância de procurar uma vida melhor e oportunidades de carreira nos Estados Unidos. É por isso que oferecemos uma solução única para os seus sonhos de imigração - o programa de vistos EB-3. A nossa equipa dedicada está empenhada em ajudar os indivíduos interessados que estão ansiosos por contribuir positivamente para os EUA. Com um processo de candidatura meticuloso e uma rede de especialistas de imigração de topo, garantimos que tem o melhor apoio disponível para a sua viagem com o Visto EB-3. Diga adeus às incertezas do processo de imigração e olá a um futuro mais brilhante com a EB-3 Workforce Solutions.",
     },
+    fr: {
+      p1: "Chez EB-3 Workforce Solutions, nous comprenons l'importance de la recherche d'une vie meilleure et d'opportunités de carrière aux États-Unis. C'est pourquoi nous vous proposons une solution unique pour réaliser vos rêves d'immigration : le programme de visa EB-3. Notre équipe dévouée s'engage à aider les personnes intéressées qui souhaitent apporter une contribution positive aux États-Unis. Grâce à un processus de demande méticuleux et à un réseau d'experts en immigration de premier ordre, nous nous assurons que vous bénéficiez du meilleur soutien possible pour votre voyage vers le visa EB-3. Dites au revoir aux incertitudes du processus d'immigration et bonjour à un avenir meilleur avec EB-3 Workforce Solutions.",
+    },
   };
   const eb3Content = eb3[language];
 
@@ -99,6 +117,9 @@ const IHome = ({ language }) => {
     },
     por: {
       p1: "Descubra o caminho para o seu sonho americano com a nossa empresa! Diga adeus à incerteza da viagem de imigração e olá a uma equipa dedicada de profissionais ansiosos por o ajudar. Os nossos parceiros são cuidadosamente seleccionados para garantir um processo tranquilo e um compromisso inabalável com os seus objectivos de imigração. Confie em nós para o guiarmos no caminho para o sonho americano.",
+    },
+    fr: {
+      p1: "Découvrez la voie de votre rêve américain avec notre société ! Dites adieu à l'incertitude du voyage d'immigration et bonjour à une équipe dévouée de professionnels désireux de vous aider. Nos partenaires sont soigneusement sélectionnés pour garantir un processus sans heurts et un engagement sans faille à l'égard de vos objectifs d'immigration. Faites-nous confiance pour vous guider sur le chemin du rêve américain.",
     },
   };
   const lookingContent = looking[language];

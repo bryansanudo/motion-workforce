@@ -14,6 +14,10 @@ const IDivider = ({ language = "en" }) => {
       p1: "ENTRE EM CONTACTO HOJE MESMO!",
       p2: "DISPONÍVEL 24/7",
     },
+    fr: {
+      p1: "CONTACTEZ-NOUS DÈS AUJOURD'HUI !",
+      p2: "DISPONIBLE  24/7",
+    },
   };
   const dividerContent = divider[language];
 
