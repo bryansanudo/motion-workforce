@@ -51,22 +51,14 @@ const Individuals = ({ language, setLanguage }) => {
           element={<IVacancies language={language} />}
         />
 
-        {/*  <Route path="/individuals/vacancies/subway" element={<Subway />} />
-        <Route path="/individuals/vacancies/chula" element={<Chula />} />
-        <Route path="/individuals/vacancies/karst" element={<Karst />} />
-        <Route path="/individuals/vacancies/kuz" element={<Kuz />} />
-        <Route path="/individuals/vacancies/midnight" element={<Midnight />} />
-        <Route path="/individuals/vacancies/mult" element={<Mult />} />
         <Route
-          path="/individuals/vacancies/stoughton"
-          element={<Stoughton />}
+          path="/privacy-policy"
+          element={<PrivacyPolicy language={language} />}
         />
         <Route
-          path="/individuals/vacancies/wilderness"
-          element={<Wilderness />}
-        /> */}
-        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-        <Route path="/terms-services" element={<TermsOfService />} />
+          path="/terms-services"
+          element={<TermsOfService language={language} />}
+        />
       </Routes>
       <IFooter language={language} />
     </>
