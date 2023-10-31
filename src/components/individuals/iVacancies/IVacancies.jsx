@@ -169,14 +169,14 @@ const IVacancies = () => {
                           <div className="w-1/2 ">
                             <div className="flex flex-col  items-center justify-center gap-4 mb-10">
                               <h3 className="font-bold text-lg">{v1}</h3>
-                              <p className="py-4 badge badge-primary badge-outline ">
+                              {/* <p className="py-4 badge badge-primary badge-outline ">
                                 {usd1}
-                              </p>
+                              </p> */}
                             </div>
 
                             <div className="flex flex-col items-center justify-center gap-4">
                               <h3 className="font-bold text-lg">{v2}</h3>
-                              <p className={`${style} py-4`}>{usd2}</p>
+                              {/*  <p className={`${style} py-4`}>{usd2}</p> */}
                             </div>
                           </div>
 
