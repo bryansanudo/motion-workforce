@@ -41,14 +41,14 @@ const INavbar = ({ setLanguage, language }) => {
       looking: "à procura de empregados",
     },
     fr: {
-      home: "casa",
-      about: "sobre",
-      services: "serviços",
-      resources: "recursos",
-      contact: "contacto",
-      vacancies: "vagas",
-      language: "língua",
-      looking: "à procura de empregados",
+      home: "Accueil",
+      about: "A propos de",
+      services: "Services",
+      resources: "Ressources",
+      contact: "Contact",
+      vacancies: "Offres d'emploi",
+      language: "langue",
+      looking: "à la recherche d'employés",
     },
   };
   const navbarContent = navbar[language];

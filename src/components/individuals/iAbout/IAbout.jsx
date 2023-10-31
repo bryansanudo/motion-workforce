@@ -34,6 +34,12 @@ const IAbout = ({ language }) => {
       p1: "O nosso objetivo é o mesmo que o dos nossos clientes: obter o seu Green Card dos EUA através do programa de vistos EB-3 Unskilled.",
       p2: "Os nossos especialistas em recrutamento e envolvimento do cliente têm uma vasta experiência em todo o processo EB-3. Estabelecemos parcerias com advogados de imigração que têm mais de 25 anos de experiência no campo da lei de imigração e obtiveram com sucesso o estatuto de residência permanente para centenas de candidatos EB-3.",
     },
+    fr: {
+      title1: "Cas EB-3 réussis avec EB-3 Workforce Solutions",
+      title2: "Notre spécialité",
+      p1: "Notre objectif est le même que celui de nos clients : obtenir leur carte verte américaine via le programme EB-3 Unskilled Visa",
+      p2: "Nos spécialistes du recrutement et de l'engagement des clients ont une grande expérience de l'ensemble du processus EB-3. Nous nous sommes associés à des avocats spécialisés en droit de l'immigration qui ont plus de 25 ans d'expérience dans ce domaine et qui ont réussi à obtenir le statut de résident permanent pour des centaines de candidats EB-3",
+    },
   };
   const ourContent = our[language];
 
@@ -59,6 +65,13 @@ const IAbout = ({ language }) => {
       p1: "50 +Países representados em todo o mundo",
       p2: "Um grande número de aprovações de green cards de clientes foi concedido no ano de 2022, excluindo os dependentes.",
     },
+    fr: {
+      title1:
+        "Nous avons établi de solides relations avec des fonctionnaires actuels et anciens.",
+
+      p1: "50 + pays représentés dans le monde entier",
+      p2: "Un grand nombre d'approbations de cartes vertes de clients ont été accordées au cours de l'année 2022, à l'exclusion des personnes à charge",
+    },
   };
   const cardsContent = cards[language];
 
@@ -80,6 +93,12 @@ const IAbout = ({ language }) => {
       p1: "O Programa EB-3 Green Card tem tido um efeito substancial no mercado de trabalho americano. Ao concentrar-se em oferecer às empresas americanas alternativas para a contratação de trabalhadores de nível básico, o Programa EB-3 Green Card esforça-se por se tornar um fornecedor de topo de soluções de mão de obra não qualificada para as empresas americanas.",
       p2: "Para ajudar os titulares de vistos de não-imigrante a alterar o seu estatuto de visto e ajudar os imigrantes a obter um Green Card de residência permanente EB-3, o programa colabora com algumas das principais empresas de advogados de imigração do país. Ao oferecer estes serviços, o Programa Green Card EB-3 tem sido essencial para ajudar os cidadãos estrangeiros e aqueles com vistos de não-imigrante a tornarem-se residentes permanentes legais nos Estados Unidos.",
       p3: "O Programa Green Card EB-3 ajuda as empresas americanas a contratar o pessoal qualificado de que necessitam para se expandirem e prosperarem. Tem ajudado a resolver a persistente falta de trabalhadores não qualificados no mercado de trabalho americano, actuando como um elo de ligação entre as empresas americanas e os trabalhadores estrangeiros. O programa estabeleceu uma sólida reputação como uma fonte fiável de aquisição de talentos devido ao seu compromisso com a qualidade e ao seu desejo de ver as empresas americanas prosperarem.",
+    },
+    fr: {
+      title1: "Histoire de EB-3",
+      p1: "Le programme de carte verte EB-3 a eu un effet substantiel sur le marché du travail américain. En se concentrant sur l'offre de solutions alternatives aux entreprises américaines pour l'embauche de travailleurs débutants, le programme de carte verte EB-3 s'efforce de devenir un fournisseur de premier plan de solutions de main-d'œuvre non qualifiée pour les entreprises américaines",
+      p2: "Pour aider les détenteurs de visas non-immigrants à modifier leur statut et les immigrants à obtenir une carte verte de résidence permanente EB-3, le programme collabore avec certains des principaux cabinets d'avocats spécialisés dans l'immigration du pays. En offrant ces services, le programme de carte verte EB-3 a joué un rôle essentiel en aidant les ressortissants étrangers et les titulaires de visas de non-immigrant à devenir des résidents permanents légitimes aux États-Unis",
+      p3: "Le programme de carte verte EB-3 aide les entreprises américaines à recruter le personnel qualifié dont elles ont besoin pour se développer et prospérer. Il a permis de remédier au manque persistant d'employés non qualifiés sur le marché du travail américain en servant de lien entre les entreprises américaines et les travailleurs étrangers. Le programme s'est forgé une solide réputation en tant que source fiable d'acquisition de talents grâce à son engagement en faveur de la qualité et à son désir de voir les entreprises américaines prospérer",
     },
   };
   const historyContent = history[language];

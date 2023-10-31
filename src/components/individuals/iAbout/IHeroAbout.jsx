@@ -11,6 +11,9 @@ const IHeroAbout = ({ language }) => {
     por: {
       h1: "Sobre nós",
     },
+    fr: {
+      h1: "À propos de nous",
+    },
   };
   const aboutContent = about[language];
   return (
