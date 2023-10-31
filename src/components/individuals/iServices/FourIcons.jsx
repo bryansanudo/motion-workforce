@@ -29,6 +29,12 @@ const FourIcons = ({ language }) => {
       title3: "Emparelhamento de advogados",
       title4: "Serviços de relocalização",
     },
+    fr: {
+      title1: "Recruter et contrôler les employeurs parrains",
+      title2: "Services de gestion des dossiers",
+      title3: "Jumelage d'avocats",
+      title4: "Services de relocalisation",
+    },
   };
 
   const fourContent = four[language];

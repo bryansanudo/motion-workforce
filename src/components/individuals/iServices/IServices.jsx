@@ -43,6 +43,11 @@ const IServices = ({ language }) => {
       title2: "Cronograma típico do processamento consular",
       title3: "Calendário típico de ajustamento do estatuto",
     },
+    fr: {
+      title1: "Visa EB-3 pour les travailleurs non qualifiés",
+      title2: "Délai type de traitement consulaire",
+      title3: "Ajustement du statut Délai type",
+    },
   };
   const eb3Content = eb3[language];
 
@@ -61,6 +66,11 @@ const IServices = ({ language }) => {
       title1: "Sucesso de longa data",
       p1: 'O Visto EB-3 "Outros Trabalhadores", criado pelo Governo dos EUA, oferece uma oportunidade para os cidadãos estrangeiros trabalharem em posições com escassez crónica de mão de obra. Com uma atribuição anual de 40.000 vistos, o programa EB-3 é uma solução valiosa para muitos. No entanto, o aspeto mais difícil do processo é encontrar um empregador que esteja disposto e seja capaz de o patrocinar. É aqui que entra a EB-3 Workforce Solutions. Estabelecemos parcerias com empregadores qualificados, garantindo um processo de patrocínio tranquilo e bem-sucedido para todas as partes envolvidas.',
       p2: 'O Visto EB-3 "Outros Trabalhadores" é uma óptima maneira de se tornar um residente permanente dos Estados Unidos. Pode obter este visto alterando o seu estatuto ou passando pelo processamento consular no seu país de origem. Se se qualificar, o mesmo acontece com o seu cônjuge e quaisquer filhos solteiros com menos de 21 anos.',
+    },
+    fr: {
+      title1: "Un succès de longue date",
+      p1: "Le visa EB-3 'Autres travailleurs', créé par le gouvernement américain, offre aux ressortissants étrangers la possibilité de travailler dans des postes connaissant une pénurie chronique de main-d'œuvre. Avec une allocation annuelle de 40 000 visas, le programme EB-3 est une solution précieuse pour beaucoup. Cependant, l'aspect le plus difficile du processus est de trouver un employeur qui soit prêt et capable de parrainer. C'est là que EB-3 Workforce Solutions intervient. Nous travaillons en partenariat avec des employeurs qualifiés, garantissant ainsi un processus de parrainage fluide et fructueux pour toutes les parties concernées",
+      p2: "Le visa EB-3 'Autres travailleurs' est un excellent moyen de devenir résident permanent aux États-Unis. Vous pouvez obtenir ce visa en changeant de statut ou en passant par les services consulaires de votre pays d'origine. Si vous remplissez les conditions requises, il en va de même pour votre conjoint et vos enfants célibataires de moins de 21 ans",
     },
   };
   const longstandingContent = longstanding[language];
@@ -93,6 +103,15 @@ const IServices = ({ language }) => {
       dot5: "Pode ajustar o seu estatuto de visto dentro dos USA",
       dot6: "Pode candidatar-se a partir do seu país de origem",
     },
+    fr: {
+      title1: "Qui est éligible à l'EB-3 ?",
+      dot1: "Aucune condition de diplôme n'est requise",
+      dot2: "Aucune expérience professionnelle préalable n'est nécessaire",
+      dot3: "Il ne faut pas être surqualifié",
+      dot4: "Nécessité d'un parrainage par l'employeur",
+      dot5: "Vous pouvez ajuster votre statut de visa à l'intérieur des États-Unis",
+      point6: "Vous pouvez faire votre demande depuis votre pays d'origine",
+    },
   };
   const whoContent = who[language];
 
@@ -115,6 +134,12 @@ const IServices = ({ language }) => {
       p2: 'A Lei da Imigração de 1990 criou um programa chamado "Employment-Based Visas", que permite às empresas americanas patrocinar trabalhadores estrangeiros que queiram trabalhar e sejam qualificados para o fazer. Existem cinco tipos de vistos EB. Os dois primeiros requerem trabalho qualificado e muita escolaridade, enquanto parte do terceiro tipo (o EB-3) é para pessoas que podem fazer trabalho não qualificado para os seus futuros empregadores.',
       p3: 'O processo do visto EB-3 "Other Worker" conduz diretamente à residência permanente nos EUA, e as condições são melhores do que a maioria das outras formas de lá chegar.',
     },
+    fr: {
+      title1: "Pourquoi ce processus fonctionne-t-il ?",
+      p1: "Les employeurs ont plus de mal que jamais à trouver des personnes pour occuper leurs emplois peu qualifiés. Les secteurs tels que le nettoyage, la restauration, l'emballage et le stockage ont été les plus durement touchés. Au lieu de fermer leurs portes, de nombreuses entreprises ont essayé de trouver des moyens créatifs de recruter du personnel. De nombreux employeurs ont trouvé utile de parrainer des immigrants potentiels désireux d'occuper des postes vacants à l'aide d'un visa EB-3 pour travailleurs non qualifiés",
+      p2: "La loi sur l'immigration de 1990 a mis en place un programme appelé 'Visas basés sur l'emploi', qui permet aux entreprises américaines de parrainer des travailleurs étrangers qui souhaitent travailler et qui sont qualifiés pour le faire. Il existe cinq types de visas EB. Les deux premiers requièrent un travail qualifié et beaucoup d'études, tandis qu'une partie du troisième type (EB-3) est destinée aux personnes qui peuvent effectuer un travail non qualifié pour leur futur employeur",
+      p3: "Le processus d'obtention du visa EB-3 'Autre travailleur' mène directement à la résidence permanente aux États-Unis, et les conditions sont meilleures que la plupart des autres moyens d'y parvenir",
+    },
   };
   const whyContent = why[language];
 
@@ -130,6 +155,10 @@ const IServices = ({ language }) => {
     por: {
       title1: "O que fazemos",
       p1: "Experimente um processo sem falhas na obtenção de trabalhadores com o visto EB-3 com o nosso apoio abrangente. Desde o início, a nossa equipa dedica-se a encontrar e examinar potenciais candidatos e a preparar a sua empresa para o patrocínio. E não paramos por aí - mesmo após a aprovação do Green Card, continuamos a prestar assistência durante a transição para o trabalho e o emprego contínuo. Seja nosso parceiro e experimente a paz de espírito que advém do facto de ter especialistas ao seu lado em cada etapa do processo.",
+    },
+    fr: {
+      title1: "Ce que nous faisons",
+      p1: "Faites l'expérience d'un processus transparent pour obtenir des travailleurs titulaires d'un visa EB-3 grâce à notre soutien complet. Dès le début, notre équipe se consacre à la recherche et à l'examen des candidats potentiels, et à la préparation de votre entreprise en vue du parrainage. Et nous ne nous arrêtons pas là - même après l'approbation de la carte verte, nous continuons à fournir une assistance tout au long de la transition vers le travail et de l'emploi continu. En vous associant à nous, vous bénéficierez de la tranquillité d'esprit que procure le fait d'avoir des experts à vos côtés à chaque étape du processus",
     },
   };
   const whatContent = what[language];
@@ -162,6 +191,15 @@ const IServices = ({ language }) => {
       dot4: "Começar a trabalhar para o seu empregador",
       dot5: "Viver nos EUA como portador de um visto de imigrante!",
     },
+    fr: {
+      title1: "Comment ça marche",
+      p1: "Rejoignez la liste croissante de clients satisfaits qui ont bénéficié de notre expertise dans le processus d'obtention du visa EB-3 pour travailleurs non qualifiés. Nous sommes spécialisés dans la mise en relation d'employeurs avec des ressortissants étrangers hautement qualifiés, ce qui permet de combler les lacunes de la main-d'œuvre américaine et d'aider votre entreprise à progresser. Faites-nous confiance pour simplifier le processus et obtenir les résultats dont vous avez besoin pour réussir",
+      dot1: "Determine your eligibility and select an employer sponsor",
+      dot2: "Déposez votre dossier et demandez la procédure avec nos avocats partenaires",
+      dot3: "Obtenir votre carte verte ou votre autorisation de travail",
+      dot4: "Commencer à travailler pour votre employeur",
+      dot5: "Vivre aux États-Unis en tant que détenteur d'un visa d'immigrant",
+    },
   };
   const howContent = how[language];
   const our = {
@@ -183,6 +221,12 @@ const IServices = ({ language }) => {
       title2: "A nossa experiência",
       p1: "O nosso objetivo é o mesmo que o dos nossos clientes: que eles recebam o seu Green Card dos EUA através do programa de vistos EB-3 Unskilled.",
       p2: "Tivemos vários casos que foram bem sucedidos. A fim de mostrar as diversas experiências de alguém que passa por este procedimento, a EB-3 Workforce Solutions analisou o melhor curso de ação para as diferentes necessidades de pessoal que a sua empresa possa ter. Cada pessoa que passa por este processo terá um calendário e um procedimento diferentes.",
+    },
+    fr: {
+      title1: "Des cas EB-3 réussis grâce à EB-3 Workforce Solutions",
+      title2: "Notre expertise",
+      p1: "Notre objectif est le même que celui de nos clients : qu'ils reçoivent leur carte verte américaine par le biais du programme de visa EB-3 pour travailleurs non qualifiés",
+      p2: "Nous avons eu plusieurs cas de réussite. Afin de présenter les diverses expériences d'une personne passant par cette procédure, EB-3 Workforce Solutions a analysé le meilleur plan d'action pour les différents besoins en personnel que votre entreprise pourrait avoir. Chaque personne qui passe par ce processus aura un calendrier et une procédure différents",
     },
   };
   const ourContent = our[language];

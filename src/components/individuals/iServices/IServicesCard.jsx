@@ -30,6 +30,14 @@ const IServicesCard = ({ language }) => {
       title3: "Processo versátil",
       p3: "Os candidatos podem completar este processo a partir dos Estados Unidos, se viverem nos EUA com um tipo de visto diferente, ou a partir do seu país de origem ou onde residem atualmente.",
     },
+    fr: {
+      title1: "Succès historique",
+      p1: "La loi sur l'immigration et la nationalité, adoptée en 1990, a créé le programme de visa EB-3 pour les travailleurs non qualifiés",
+      title2: "Opportunity Awaits",
+      p2: "Tout le monde peut participer à ce programme. Il n'y a pas de conditions préalables en matière d'éducation ou de compétences pour postuler.",
+      title3: "Versatile Process",
+      p3: "Les candidats peuvent suivre cette procédure depuis les États-Unis, s'ils y vivent avec un autre type de visa, ou depuis leur pays d'origine ou l'endroit où ils résident actuellement",
+    },
   };
   const servicesContent = services[language];
 
