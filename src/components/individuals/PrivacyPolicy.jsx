@@ -2,299 +2,229 @@ import ISection from "@/components/individuals/ISection";
 import TitleContent from "@/components/individuals/TitleContent";
 import { styles } from "@/styles";
 import { useEffect } from "react";
-const PrivacyPolicy = () => {
+const PrivacyPolicy = ({ language }) => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  const privacy = {
+    en: {
+      t0: "Privacy Policy",
+      p0: "BDV Solutions, LLC (“BDV Solutions”) provides this Privacy Policy to inform you about our practices concerning the collection, use and disclosure of your information. By using the website located at www.bdvsolutions.com (including all subdomains) (the “Site”) or the services provided by BDV Solutions (the “Services”), you agree to the information practices described in this Privacy Policy. If you do not agree to the terms of this Privacy Policy, you may not access or use the Site or Services. This Privacy Policy is incorporated into and subject to the Terms of Use by BDV Solutions. If you purchase Services that include independent attorney review, your relationship with the independent attorney will be governed by your agreement with that attorney.BDV SOLUTIONS IS NOT A LAW FIRM, DOES NOT PROVIDE LEGAL ADVICE AND IS NOT A SUBSTITUTE FOR THE ADVICE OF AN ATTORNEY. YOUR USE OF THE SITE AND SERVICES, AND YOUR COMMUNICATION WITH BDV SOLUTIONS, DOES NOT CREATE AN ATTORNEY-CLIENT RELATIONSHIP. YOUR COMMUNICATIONS WITH BDV SOLUTIONS ARE NOT PROTECTED BY THE ATTORNEY-CLIENT PRIVILEGE. YOUR COMMUNICATIONS WITH THE INDEPENDENT ATTORNEY ARE GOVERNED BY YOUR AGREEMENT WITH THAT ATTORNEY.Information We Collect",
+      t1: "Personal Information",
+      p1: "When you use the Site or Services, we collect certain information from you which can be used to contact or identify you, including, but not limited to, your name, gender, date of birth, telephone number, postal address, and email address (“Identity Information”). If you place an order for Services and/or pay a fee, we will collect additional payment and billing information from you, including, but not limited to, your credit/debit card information or bank account information (“Billing Information”). If you place an order for Services, you may also be required to provide information or documents necessary for preparation or filing of forms or applications to be submitted to government agencies, and if you file an application, we may receive from the government a unique receipt number assigned to your application (“Application Information”). Together, your Identity Information, Billing Information and Application Information are referred to as “Personal Information.”",
+      t2: "Usage Data",
+      p2: "We also automatically collect certain information regarding your access to and use of the Site and Services. This information includes, but is not limited to, your IP address, browser type, referring website URLs, log files, pages on the Site that you visit, and links you click on (“Usage Data”).",
+      t3: "Cookies",
+      p3: "Like many websites, we utilize devices to recognize you when you visit the Site, track your interactions with the Site, and personalize your experience. These include devices such as cookies, web beacons, pixels and similar devices. Cookies are small data files we transfer to your computer hard drive. We utilize some cookies that remain on your computer after you leave the Site so that we can recognize you when you return and provide a more personalized and helpful experience. We also utilize session cookies to enable certain features of the Site, to better understand how you interact with the Site and to monitor use of the Site by BDV Solutions users and web traffic routing on the Site. Session cookies are deleted from your computer when you log off from the Site and close your browser. You maintain control over some of the information we collect through the use of cookies, and you can set your preferences regarding the use of cookies through your browser settings. If you choose not to accept cookies, you may not be able to access portions of the Site or all functionality of the Services.",
+      t4: "EU Lawful Grounds",
+      p4: "If you reside in the European Economic Area or Switzerland (collectively the “EU”), we rely on the following lawful grounds under the General Data Protection Regulation (“GDPR”) to process (collect, store, and use) your personal data contained in Personal Information and Usage Data: (a) it is necessary for the performance of a contract with you; (b) our legitimate interests; and (c) your consent. If you are a customer, the lawful ground for processing your personal data is necessity in performing our contract to provide the Services to you; our legitimate interest in understanding, improving, and promoting our services; and your consent. If you visit or use our website, the lawful ground for processing your personal data is our legitimate interest in understanding how users interact with our website to improve our website and Services, and your consent.",
+      t5: "Use of Information We Collect 2.1. Account Creation",
+      p5: "We use information you submit to us at the time of account registration, such as your name and email address, and any updated information you subsequently submit, such as a new email address, to create and maintain your account.",
+      t6: "Operation and Improvement of Our Business",
+      p6: "We use your information, including Personal Information, primarily to operate our business and provide the Services to you, including the completion of immigration forms. We use such information to personalize the Services we provide to you. We may use your information to verify your identity, for fraud prevention, to enforce the Terms of Service and to protect the integrity of the Site. We may also use your information to develop new features or Services and to improve the quality of our Services.",
+      t7: "Customer Service and Technical Support",
+      p7: "We may use your information, including Personal Information, to respond to questions you have regarding use of our Services or to provide technical assistance.",
+      t8: "Communications with You",
+      p8: "We may contact you using the contact information you provide in order to respond to inquiries you send to us, to communicate with you regarding our Services and the services of our partners, and to market our Services, or those of our partners, to you. If you are in the EU, we will only use your contact information to communicate with you regarding our partners’ services with your prior consent.",
+      t9: "Internal Research",
+      p9: "We may use information about you and other users, in aggregate form, for our own internal research and analytical purposes. For example, we may use certain types of your information to understand which features of our Services are being used most frequently.",
+      t10: "Application Status",
+      p10: "We may use your government receipt number from time to time to check your application status, so that we may provide you with pertinent general information about the steps in the application process. If, at any time, you do not want BDV Solutions to retain your government receipt number or to check your application status, let us know by contacting us at processing@bdvsolutions.com",
+      t11: "Your Privacy Rights (Information Sharing and Disclosure)",
+      p11: "BDV Solutions does not share your Personal Information with third parties for their marketing purposes without your consent.",
+      t12: "Upon Consent",
+      p12: "We may share your information, including Personal Information, with third parties if you provide us with authorization to do so.",
+      t13: "Service Providers",
+      p13: "We may share your Personal Information with third-party service providers, but only to the extent necessary for them to assist us in providing our Services. For example, if you purchase Services, we will share your Billing Information with third-party payment processors to the extent necessary to process your payment. We require all third-party service providers to protect the security of your Personal Information, to keep your Personal Information confidential, and to use such information for no other purposes.",
+      t14: "Responses to Legal Process, Subpoenas or Court Orders",
+      p14: "We will not voluntarily disclose your Personal Information. However, we may disclose your Personal Information as required by law, such as in response to a court order, subpoena, or similar legal process legally requiring us to produce the information. If legally permitted and feasible, we will give you notice of our receipt of a demand for your Personal Information and provide you a reasonable time in which to seek to quash such demand in court, or otherwise obtain a withdrawal or modification of the demand, before complying with the demand.",
+      t15: "Business Transfers",
+      p15: "Your Personal Information may be included in the event that some or all of our assets are sold, assigned or transferred in connection with a merger, acquisition, reorganization or sale of assets, or in the event of bankruptcy. As a general matter, however, an acquiring party cannot retroactively change the Privacy Policy that was in place when BDV Solutions collected your Personal Information.",
+      k1: "Academic Research",
+      k2: "5.1. EU Data Transfer and Individual Rights Data Transfer Notice",
+      k3: "Individual Rights",
+      l1: "We may share non-personally identifiable and non-privileged information about you and other users, in aggregate form, to third-party academic researchers. We require all third-party researchers to use such anonymized information for no purposes other than academic research. For example, we may use certain types of non-personally identifiable and non-privileged information to help researchers study factors that reduce barriers facing applicants navigating the immigration system. If you are in the EU, we will only share your non-privileged information with such academic researchers with your consent.",
+      l2: "Policy Regarding Children Our Site and Services are not intended for persons under 18 years of age, and we do not knowingly collect Personal Information from persons under 18 years of age. If you are a parent or guardian and believe that your child has provided us with Personal Information without your consent, please contact us at processing@bdvsolutions.com. If we become aware that a person under 18 years of age has provided us with Personal Information, we will delete such information from our files.",
+      l3: "We are located in the United States and transfer your personal data for processing in the United States. We make the transfer to the United States in the absence of an adequacy decision because it is necessary for the performance of a contract with you, or with your explicit consent.",
+      l4: "We are located in the United States and transfer your personal data for processing in the United States. We make the transfer to the United States in the absence of an adequacy decision because it is necessary for the performance of a contract with you, or with your explicit consent.",
+      l5: "This includes, but is not limited to, encryption, access control and audit logging on Personal Information. However, no method of transmission over the internet or method of storage is 100% secure. We cannot guarantee that our security measures will prevent our computer systems from being accessed illegally, nor can we guarantee that the information on our computer systems will not be viewed or stolen. ACCORDINGLY, BDV SOLUTIONS DISCLAIMS ALL LIABILITY FOR THE THEFT, INTERCEPTION, LOSS, OR UNAUTHORIZED ACCESS TO DAMAGE TO YOUR INFORMATION. YOU ACKNOWLEDGE THAT USE OF THE SITE AND SERVICES IS AT YOUR OWN RISK.",
+      l6: "Google Analytics We use Google Analytics to collect information about use of the Site. Google Analytics collects information such as how often users visit the Site, what pages they visit when they do so, and what other websites they used prior to coming to the Site. We use the information we get from Google Analytics to improve the Site and Services. Google Analytics collects only the IP address assigned to you on the date you visit this site, rather than your name or other Personal Information. We do not combine the information collected through the use of Google Analytics with personally identifiable information. Although Google Analytics plants a permanent cookie on your web browser to identify you as a unique user the next time you visit this site, the cookie cannot be used by anyone but Google. Google’s ability to use and share information collected by Google Analytics about your visits to this site is restricted by the Google Analytics Terms of Use and the Google Privacy Policy. You can prevent Google Analytics from recognizing you on return visits to this site by disabling cookies on your browser.Changes to Privacy Policy BDV Solutions may make changes to this Privacy Policy at any time. If we make any material changes we will notify you via email (sent to the e-mail address specified in your account) or by posting the revised Privacy Policy on the Site prior to any changes becoming effective. You should review our Privacy Policy each time you access the Site or use the Services. Your continued use of the Site or Services following the posting of any changes or notice to you of the changes constitutes your agreement to such changes.Retention of Personal Information At a minimum, we will retain your Personal Information for as long as it may be needed to provide you Service and as needed to comply with our legal obligations. Unless you request deletion of your Personal Information sooner, we may hold any of your Personal Information which may be used to provide future Services for up to ten years. Upon request, BDV Solutions will inform you about whether we hold any of your Personal Information. You may terminate your account and request deletion of your Personal Information by contacting us at processing@bdvsolutions.com. In some situations, we may be legally required to retain your Personal Information or for other reasons will not be able to comply with a request to delete data.",
+    },
+    es: {
+      t0: "Política de Privacidad",
+      p0: 'BDV Solutions, LLC ("BDV Solutions") proporciona esta Política de Privacidad para informarle sobre nuestras prácticas relativas a la recogida, uso y divulgación de su información. Al utilizar el sitio web ubicado en www.bdvsolutions.com (incluyendo todos los subdominios) (el "Sitio") o los servicios prestados por BDV Solutions (los "Servicios"), usted acepta las prácticas de información descritas en esta Política de Privacidad. Si no está de acuerdo con los términos de esta Política de Privacidad, no podrá acceder o utilizar el Sitio o los Servicios. Esta Política de Privacidad está incorporada y sujeta a las Condiciones de Uso de BDV Solutions. Si usted compra Servicios que incluyen la revisión de un abogado independiente, su relación con el abogado independiente se regirá por su acuerdo con ese abogado.BDV SOLUTIONS NO ES UN BUFETE DE ABOGADOS, NO PROPORCIONA ASESORAMIENTO LEGAL Y NO SUSTITUYE EL ASESORAMIENTO DE UN ABOGADO. SU USO DEL SITIO Y LOS SERVICIOS, Y SU COMUNICACIÓN CON BDV SOLUTIONS, NO CREA UNA RELACIÓN ABOGADO-CLIENTE. SUS COMUNICACIONES CON BDV SOLUTIONS NO ESTÁN PROTEGIDAS POR EL PRIVILEGIO ABOGADO-CLIENTE. SUS COMUNICACIONES CON EL ABOGADO INDEPENDIENTE ESTÁN REGIDAS POR SU ACUERDO CON ESE ABOGADO.Información que Recopilamos ',
+      t1: "Información personal",
+      p1: 'Cuando utiliza el Sitio o los Servicios, recabamos determinada información suya que puede utilizarse para ponernos en contacto con usted o identificarle, incluidos, entre otros, su nombre, sexo, fecha de nacimiento, número de teléfono, dirección postal y dirección de correo electrónico ("Información de Identidad").Si realiza un pedido de Servicios y/o paga una cuota, recopilaremos información adicional sobre el pago y la facturación, incluidos, entre otros, los datos de su tarjeta de crédito/débito o de su cuenta bancaria ("Información de facturación").Si realiza un pedido de Servicios, es posible que también se le pida que proporcione información o documentos necesarios para la preparación o presentación de formularios o solicitudes que deban presentarse ante organismos gubernamentales, y si presenta una solicitud, es posible que recibamos del gobierno un número de recibo único asignado a su solicitud ("Información de solicitud").En conjunto, su Información de Identidad, Información de Facturación e Información de Solicitud se denominan "Información Personal"',
+      t2: "Datos de uso",
+      p2: 'También recopilamos automáticamente cierta información relativa a su acceso y uso del Sitio y los Servicios. Esta información incluye, entre otros, su dirección IP, tipo de navegador, URL de sitios web de referencia, archivos de registro, páginas del Sitio que visita y enlaces en los que hace clic ("Datos de uso")',
+      t3: "Cookies",
+      p3: "Como muchos sitios web, utilizamos dispositivos para reconocerle cuando visita el Sitio, rastrear sus interacciones con el Sitio y personalizar su experiencia. Entre estos dispositivos se incluyen cookies, balizas web, píxeles y dispositivos similares. Las cookies son pequeños archivos de datos que transferimos al disco duro de su ordenador. Utilizamos algunas cookies que permanecen en su ordenador después de que abandone el Sitio para que podamos reconocerle cuando vuelva y ofrecerle una experiencia más personalizada y útil. También utilizamos cookies de sesión para habilitar ciertas características del Sitio, para entender mejor cómo interactúa con el Sitio y para controlar el uso del Sitio por los usuarios de BDV Solutions y el enrutamiento del tráfico web en el Sitio. Las cookies de sesión se borran de su ordenador cuando se desconecta del Sitio y cierra su navegador. Usted mantiene el control sobre parte de la información que recogemos a través del uso de cookies, y puede establecer sus preferencias sobre el uso de cookies a través de la configuración de su navegador. Si decide no aceptar las cookies, es posible que no pueda acceder a partes del Sitio o a todas las funciones de los Servicios",
+      t4: "Motivos legales de la UE",
+      p4: 'Si reside en el Espacio Económico Europeo o en Suiza (colectivamente, la "UE"), nos basamos en los siguientes motivos legítimos en virtud del Reglamento General de Protección de Datos ("RGPD") para procesar (recopilar, almacenar y utilizar) sus datos personales contenidos en la Información personal y los Datos de uso: (a) es necesario para la ejecución de un contrato con usted; (b) nuestros intereses legítimos; y (c) su consentimiento. Si es usted cliente, el motivo legal para procesar sus datos personales es la necesidad de ejecutar nuestro contrato para prestarle los Servicios; nuestro interés legítimo en comprender, mejorar y promocionar nuestros servicios; y su consentimiento. Si visita o utiliza nuestro sitio web, el motivo legítimo para el tratamiento de sus datos personales es nuestro interés legítimo en comprender cómo interactúan los usuarios con nuestro sitio web para mejorar nuestro sitio web y nuestros Servicios, y su consentimiento',
+      t5: "Uso de la información que recopilamos 2.1. Creación de cuenta",
+      p5: "Utilizamos la información que nos envía en el momento de registrar la cuenta, como su nombre y dirección de correo electrónico, y cualquier información actualizada que nos envíe posteriormente, como una nueva dirección de correo electrónico, para crear y mantener su cuenta",
+      t6: "Funcionamiento y mejora de nuestro negocio",
+      p6: "Utilizamos su información, incluida la Información Personal, principalmente para operar nuestro negocio y proporcionarle los Servicios, incluida la cumplimentación de formularios de inmigración. Utilizamos dicha información para personalizar los Servicios que le prestamos. Podemos utilizar su información para verificar su identidad, para la prevención del fraude, para hacer cumplir las Condiciones del Servicio y para proteger la integridad del Sitio. También podemos utilizar su información para desarrollar nuevas funciones o Servicios y para mejorar la calidad de nuestros Servicios",
+      t7: "Servicio de atención al cliente y asistencia técnica",
+      p7: "Podemos utilizar su información, incluida la Información Personal, para responder a las preguntas que tenga sobre el uso de nuestros Servicios o para proporcionar asistencia técnica",
+      t8: "Comunicaciones con usted",
+      p8: "Podemos ponernos en contacto con usted utilizando la información de contacto que nos facilite para responder a las consultas que nos envíe, para comunicarnos con usted en relación con nuestros Servicios y los servicios de nuestros socios, y para comercializar nuestros Servicios, o los de nuestros socios, con usted. Si se encuentra en la UE, sólo utilizaremos su información de contacto para comunicarnos con usted en relación con los servicios de nuestros socios con su consentimiento previo",
+      t9: "Investigación interna",
+      p9: "Podemos utilizar información sobre usted y otros usuarios, de forma agregada, para nuestra propia investigación interna y con fines analíticos. Por ejemplo, podemos utilizar ciertos tipos de su información para entender qué características de nuestros Servicios se utilizan con más frecuencia",
+      t10: "Estado de la solicitud",
+      p10: "Podemos utilizar su número de recibo del gobierno de vez en cuando para comprobar el estado de su solicitud, para que podamos proporcionarle información general pertinente sobre los pasos en el proceso de solicitud. Si, en cualquier momento, no desea que BDV Solutions conserve su número de recibo del gobierno o compruebe el estado de su solicitud, háganoslo saber poniéndose en contacto con nosotros en processing@bdvsolutions.com",
+      t11: "Sus derechos de privacidad (intercambio y divulgación de información)",
+      p11: "BDV Solutions no comparte su Información Personal con terceros para sus fines de marketing sin su consentimiento",
+      t12: "Previo Consentimiento",
+      p12: "Podemos compartir su información, incluyendo Información Personal, con terceros si usted nos proporciona autorización para hacerlo",
+      t13: "Proveedores de servicios",
+      p13: "Podemos compartir su Información Personal con terceros proveedores de servicios, pero sólo en la medida necesaria para que nos ayuden a prestar nuestros Servicios. Por ejemplo, si compra Servicios, compartiremos su Información de facturación con procesadores de pagos externos en la medida necesaria para procesar su pago. Exigimos a todos los proveedores de servicios externos que protejan la seguridad de sus Datos Personales, que los mantengan confidenciales y que no los utilicen para ningún otro fin",
+      t14: "Respuestas a procesos legales, citaciones u órdenes judiciales",
+      p14: "No revelaremos voluntariamente sus Datos Personales. Sin embargo, podemos revelar sus Datos Personales por imperativo legal, como en respuesta a una orden judicial, citación o proceso legal similar que nos obligue legalmente a presentar la información. Si la ley lo permite y es factible, le notificaremos la recepción de una solicitud de sus datos personales y le concederemos un plazo razonable para solicitar la anulación de dicha solicitud ante un tribunal, o para obtener la retirada o modificación de la solicitud, antes de cumplir con la misma",
+      t15: "Transferencias comerciales",
+      p15: "Su Información Personal puede ser incluida en el caso de que algunos o todos nuestros activos sean vendidos, cedidos o transferidos en relación con una fusión, adquisición, reorganización o venta de activos, o en caso de quiebra. Como cuestión general, sin embargo, una parte adquirente no puede cambiar retroactivamente la Política de Privacidad que estaba en vigor cuando BDV Solutions recogió su Información Personal",
+      k1: "Investigación académica",
+      k2: "5.1. Transferencia de datos de la UE y derechos individuales Notificación de transferencia de datos",
+      k3: "Derechos individuales",
+      l1: "Podemos compartir información no identificable personalmente y no privilegiada sobre usted y otros usuarios, en forma agregada, con investigadores académicos de terceros. Exigimos a todos los investigadores externos que utilicen dicha información anonimizada únicamente con fines de investigación académica. Por ejemplo, podemos utilizar ciertos tipos de información no identificable personalmente y no privilegiada para ayudar a los investigadores a estudiar los factores que reducen las barreras a las que se enfrentan los solicitantes a la hora de navegar por el sistema de inmigración. Si se encuentra en la UE, sólo compartiremos su información no privilegiada con dichos investigadores académicos con su consentimiento",
+      l2: "Política relativa a menores Nuestro Sitio y Servicios no están destinados a personas menores de 18 años, y no recopilamos conscientemente Información Personal de personas menores de 18 años. Si usted es padre o tutor y cree que su hijo nos ha proporcionado Información Personal sin su consentimiento, póngase en contacto con nosotros en processing@bdvsolutions.com. Si tenemos conocimiento de que una persona menor de 18 años nos ha proporcionado Información Personal, eliminaremos dicha información de nuestros archivos",
+      l3: "Estamos ubicados en Estados Unidos y transferimos sus datos personales para su tratamiento en Estados Unidos. Realizamos la transferencia a Estados Unidos en ausencia de una decisión de adecuación porque es necesaria para la ejecución de un contrato con usted, o con su consentimiento explícito",
+      l4: "Estamos ubicados en Estados Unidos y transferimos sus datos personales para su tratamiento en Estados Unidos. Realizamos la transferencia a Estados Unidos en ausencia de una decisión de adecuación porque es necesaria para la ejecución de un contrato con usted, o con su consentimiento explícito",
+      l5: "Esto incluye, entre otros, el cifrado, el control de acceso y el registro de auditoría de la Información Personal. Sin embargo, ningún método de transmisión por Internet o método de almacenamiento es 100% seguro. No podemos garantizar que nuestras medidas de seguridad impidan el acceso ilegal a nuestros sistemas informáticos, ni podemos garantizar que la información de nuestros sistemas informáticos no sea vista o robada. EN CONSECUENCIA, BDV SOLUTIONS DECLINA TODA RESPONSABILIDAD POR EL ROBO, LA INTERCEPTACIÓN, LA PÉRDIDA O EL ACCESO NO AUTORIZADO A SU INFORMACIÓN. USTED RECONOCE QUE EL USO DEL SITIO Y DE LOS SERVICIOS CORRE POR SU CUENTA Y RIESGO",
+      l6: "Google Analytics Utilizamos Google Analytics para recopilar información sobre el uso del Sitio. Google Analytics recopila información como la frecuencia con la que los usuarios visitan el Sitio, qué páginas visitan cuando lo hacen y qué otros sitios web utilizaron antes de llegar al Sitio. Utilizamos la información que obtenemos de Google Analytics para mejorar el Sitio y los Servicios. Google Analytics sólo recopila la dirección IP que se le asignó en la fecha en que visitó este sitio, y no su nombre ni ningún otro dato personal. No combinamos la información recopilada mediante el uso de Google Analytics con información personal identificable. Aunque Google Analytics planta una cookie permanente en su navegador web para identificarle como usuario único la próxima vez que visite este sitio, la cookie no puede ser utilizada por nadie más que Google. La capacidad de Google para utilizar y compartir la información recopilada por Google Analytics sobre sus visitas a este sitio está restringida por las Condiciones de Uso de Google Analytics y la Política de Privacidad de Google. Puede evitar que Google Analytics le reconozca en visitas posteriores a este sitio desactivando las cookies en su navegador.Cambios en la Política de Privacidad BDV Solutions puede realizar cambios en esta Política de Privacidad en cualquier momento. Si hacemos algún cambio material se lo notificaremos por correo electrónico (enviado a la dirección de correo electrónico especificada en su cuenta) o mediante la publicación de la Política de Privacidad revisada en el Sitio antes de que cualquier cambio entre en vigor. Debe revisar nuestra Política de Privacidad cada vez que acceda al Sitio o utilice los Servicios. Su uso continuado del Sitio o de los Servicios tras la publicación de cualquier cambio o notificación de los mismos constituye su aceptación de dichos cambios.Retención de Información Personal Como mínimo, retendremos su Información Personal durante el tiempo que sea necesario para proporcionarle el Servicio y según sea necesario para cumplir con nuestras obligaciones legales. A menos que usted solicite la eliminación de su Información Personal antes, podemos mantener cualquiera de su Información Personal que pueda ser utilizada para proporcionar futuros Servicios durante un máximo de diez años. Si lo solicita, BDV Solutions le informará sobre si conservamos alguno de sus Datos Personales. Usted puede cancelar su cuenta y solicitar la eliminación de su Información Personal poniéndose en contacto con nosotros en processing@bdvsolutions.com. En algunas situaciones, es posible que estemos legalmente obligados a conservar sus Datos Personales o que, por otros motivos, no podamos atender una solicitud de eliminación de datos. ",
+    },
+    por: {
+      t0: "Política de Privacidade",
+      p0: 'A BDV Solutions, LLC ("BDV Solutions") fornece esta Política de Privacidade para o informar sobre as nossas práticas relativas à recolha, utilização e divulgação das suas informações. Ao utilizar o sítio Web localizado em www.bdvsolutions.com (incluindo todos os subdomínios) (o "Sítio") ou os serviços fornecidos pela BDV Solutions (os "Serviços"), o utilizador concorda com as práticas de informação descritas na presente Política de Privacidade. Se não concordar com os termos desta Política de Privacidade, o utilizador não pode aceder ou utilizar o Site ou os Serviços. Esta Política de Privacidade está incorporada e sujeita aos Termos de Utilização da BDV Solutions. A BDV SOLUTIONS NÃO É UMA SOCIEDADE DE ADVOGADOS, NÃO FORNECE CONSULTORIA JURÍDICA E NÃO SUBSTITUI A CONSULTORIA DE UM ADVOGADO. A SUA UTILIZAÇÃO DO SITE E DOS SERVIÇOS, E A SUA COMUNICAÇÃO COM A BDV SOLUTIONS, NÃO CRIA UMA RELAÇÃO ADVOGADO-CLIENTE. AS SUAS COMUNICAÇÕES COM A BDV SOLUTIONS NÃO ESTÃO PROTEGIDAS PELO PRIVILÉGIO ADVOGADO-CLIENTE. AS SUAS COMUNICAÇÕES COM O ADVOGADO INDEPENDENTE SÃO REGIDAS PELO SEU CONTRATO COM ESSE ADVOGADO.Informações que recolhemos',
+      t1: "Informações pessoais",
+      p1: 'Quando utiliza o Sítio ou os Serviços, recolhemos determinadas informações suas que podem ser utilizadas para o contactar ou identificar, incluindo, entre outras, o seu nome, sexo, data de nascimento, número de telefone, endereço postal e endereço de correio eletrónico ("Informações de identidade"). Se o utilizador efetuar uma encomenda de Serviços e/ou pagar uma taxa, recolheremos informações adicionais de pagamento e faturação, incluindo, entre outras, as informações do cartão de crédito/débito ou da conta bancária ("Informações de faturação"). Se o utilizador efetuar uma encomenda de Serviços, poderá também ser-lhe pedido que forneça informações ou documentos necessários para a preparação ou preenchimento de formulários ou candidaturas a apresentar a agências governamentais e, se apresentar uma candidatura, poderemos receber do governo um número de recibo único atribuído à sua candidatura ("Informações de candidatura"). Em conjunto, os seus Dados de Identidade, Dados de Faturação e Dados de Candidatura são designados por "Dados Pessoais',
+      t2: "Dados de utilização",
+      p2: 'Também recolhemos automaticamente determinadas informações relativas ao seu acesso e utilização do Site e dos Serviços. Estas informações incluem, mas não se limitam a, o seu endereço IP, tipo de browser, URLs de sites de referência, ficheiros de registo, páginas do Site que visita e ligações em que clica ("Dados de Utilização")',
+      t3: "Cookies",
+      p3: "Tal como muitos sítios Web, utilizamos dispositivos para o reconhecer quando visita o Sítio, controlar as suas interacções com o Sítio e personalizar a sua experiência. Estes incluem dispositivos como cookies, web beacons, píxeis e dispositivos semelhantes. Os cookies são pequenos ficheiros de dados que transferimos para o disco rígido do seu computador. Utilizamos alguns cookies que permanecem no seu computador depois de sair do Site para que possamos reconhecê-lo quando regressar e proporcionar uma experiência mais personalizada e útil. Também utilizamos cookies de sessão para ativar determinadas funcionalidades do Site, para compreender melhor a forma como interage com o Site e para monitorizar a utilização do Site pelos utilizadores da BDV Solutions e o encaminhamento do tráfego web no Site. Os cookies de sessão são eliminados do computador do utilizador quando este termina a sessão no Sítio e fecha o browser. O utilizador mantém o controlo sobre algumas das informações que recolhemos através da utilização de cookies e pode definir as suas preferências relativamente à utilização de cookies através das definições do seu browser. Se optar por não aceitar cookies, poderá não conseguir aceder a partes do Sítio ou a todas as funcionalidades dos Serviços.",
+      t4: "Fundamentos legais da UE",
+      p4: 'Se residir no Espaço Económico Europeu ou na Suíça (coletivamente, a "UE"), baseamo-nos nos seguintes fundamentos legais ao abrigo do Regulamento Geral de Proteção de Dados ("RGPD") para processar (recolher, armazenar e utilizar) os seus dados pessoais contidos nas Informações Pessoais e nos Dados de Utilização: (a) é necessário para a execução de um contrato consigo; (b) os nossos interesses legítimos; e (c) o seu consentimento. Se o utilizador for um cliente, o fundamento legal para o processamento dos seus dados pessoais é a necessidade de executar o nosso contrato para lhe fornecer os Serviços; o nosso interesse legítimo em compreender, melhorar e promover os nossos serviços; e o seu consentimento. Se visitar ou utilizar o nosso sítio Web, o fundamento jurídico para o tratamento dos seus dados pessoais é o nosso interesse legítimo em compreender como os utilizadores interagem com o nosso sítio Web para melhorar o nosso sítio Web e os nossos Serviços, e o seu consentimento',
+      t5: "Utilização das informações que recolhemos 2.1. Criação de conta",
+      p5: "Utilizamos as informações que nos envia no momento do registo da conta, como o seu nome e endereço de e-mail, e quaisquer informações actualizadas que envie posteriormente, como um novo endereço de e-mail, para criar e manter a sua conta.",
+      t6: "Funcionamento e melhoria da nossa atividade",
+      p6: "Utilizamos as suas informações, incluindo Informações Pessoais, principalmente para operar o nosso negócio e fornecer-lhe os Serviços, incluindo o preenchimento de formulários de imigração. Utilizamos essas informações para personalizar os Serviços que lhe prestamos. Poderemos utilizar as suas informações para verificar a sua identidade, para a prevenção de fraudes, para fazer cumprir os Termos de Serviço e para proteger a integridade do Site. Também podemos utilizar as suas informações para desenvolver novas funcionalidades ou Serviços e para melhorar a qualidade dos nossos Serviços.",
+      t7: "Serviço de Apoio ao Cliente e Suporte Técnico",
+      p7: "Podemos utilizar as suas informações, incluindo Informações Pessoais, para responder a questões que tenha relativamente à utilização dos nossos Serviços ou para prestar assistência técnica.",
+      t8: "Comunicações com o utilizador",
+      p8: "Poderemos contactá-lo utilizando as informações de contacto que nos fornecer para responder às questões que nos enviar, para comunicar consigo sobre os nossos Serviços e os serviços dos nossos parceiros e para comercializar os nossos Serviços ou os dos nossos parceiros. Se estiver na UE, só utilizaremos as suas informações de contacto para comunicar consigo sobre os serviços dos nossos parceiros com o seu consentimento prévio",
+      t9: "Investigação interna",
+      p9: "Podemos utilizar informações sobre o utilizador e outros utilizadores, de forma agregada, para os nossos próprios fins internos de investigação e análise. Por exemplo, podemos utilizar determinados tipos de informações do utilizador para compreender quais as funcionalidades dos nossos Serviços que estão a ser utilizadas com maior frequência.",
+      t10: "Estado da candidatura",
+      p10: "Poderemos utilizar o seu número de recibo do governo ocasionalmente para verificar o estado da sua candidatura, de modo a podermos fornecer-lhe informações gerais pertinentes sobre os passos do processo de candidatura. Se, em qualquer altura, não pretender que a BDV Solutions guarde o seu número de recibo do governo ou que verifique o estado da sua candidatura, informe-nos contactando-nos através do endereço processing@bdvsolutions.com",
+      t11: "Os seus direitos de privacidade (partilha e divulgação de informações)",
+      p11: "A BDV Solutions não partilha as suas informações pessoais com terceiros para fins de marketing sem o seu consentimento",
+      t12: "Com o seu consentimento",
+      p12: "Podemos partilhar as suas informações, incluindo Informações Pessoais, com terceiros se nos der autorização para o fazer.",
+      t13: "Prestadores de serviços",
+      p13: "Podemos partilhar as suas Informações Pessoais com terceiros prestadores de serviços, mas apenas na medida do necessário para nos ajudarem a prestar os nossos Serviços. Por exemplo, se comprar Serviços, partilharemos as suas Informações de faturação com processadores de pagamentos terceiros na medida do necessário para processar o seu pagamento. Exigimos que todos os fornecedores de serviços terceiros protejam a segurança das suas Informações Pessoais, mantenham as suas Informações Pessoais confidenciais e não utilizem essas informações para outros fins",
+      t14: "Respostas a processos legais, intimações ou ordens judiciais",
+      p14: "Não divulgaremos voluntariamente as suas Informações Pessoais. No entanto, podemos divulgar as suas Informações Pessoais conforme exigido por lei, tal como em resposta a uma ordem judicial, intimação ou processo legal semelhante que exija legalmente a apresentação das informações. Se for legalmente permitido e exequível, notificá-lo-emos da receção de um pedido de divulgação das suas Informações Pessoais e dar-lhe-emos um prazo razoável para tentar anular esse pedido em tribunal, ou obter uma retirada ou modificação do pedido, antes de o cumprirmos",
+      t15: "Transferências comerciais",
+      p15: "As suas Informações Pessoais podem ser incluídas na eventualidade de alguns ou todos os nossos activos serem vendidos, cedidos ou transferidos no âmbito de uma fusão, aquisição, reorganização ou venda de activos, ou em caso de falência. No entanto, de um modo geral, uma parte adquirente não pode alterar retroativamente a Política de Privacidade que estava em vigor quando a BDV Solutions recolheu as suas Informações Pessoais",
+      k1: "Investigação académica",
+      k2: "5.1. Transferência de dados da UE e direitos individuais Aviso de transferência de dados",
+      k3: "Direitos individuais",
+      l1: "Podemos partilhar informações não identificáveis pessoalmente e não privilegiadas sobre si e outros utilizadores, de forma agregada, com investigadores académicos terceiros. Exigimos que todos os investigadores terceiros utilizem essas informações anonimizadas para outros fins que não a investigação académica. Por exemplo, podemos utilizar determinados tipos de informações não identificáveis pessoalmente e não privilegiadas para ajudar os investigadores a estudar factores que reduzem as barreiras que os candidatos enfrentam ao navegar no sistema de imigração. Se estiver na UE, só partilharemos as suas informações não privilegiadas com esses investigadores académicos com o seu consentimento",
+      l2: "Política relativa a crianças O nosso Site e Serviços não se destinam a pessoas com menos de 18 anos de idade e não recolhemos intencionalmente informações pessoais de pessoas com menos de 18 anos de idade. Se for pai ou tutor e acreditar que o seu filho nos forneceu Informações Pessoais sem o seu consentimento, contacte-nos através do endereço processing@bdvsolutions.com. Se tivermos conhecimento de que uma pessoa com menos de 18 anos de idade nos forneceu Informações Pessoais, eliminaremos essas informações dos nossos ficheiros",
+      l3: "Estamos localizados nos Estados Unidos e transferimos os seus dados pessoais para serem processados nos Estados Unidos. Efectuamos a transferência para os Estados Unidos na ausência de uma decisão de adequação porque é necessária para a execução de um contrato consigo, ou com o seu consentimento explícito.",
+      l4: "Estamos situados nos Estados Unidos e transferimos os seus dados pessoais para serem tratados nos Estados Unidos. Efectuamos a transferência para os Estados Unidos na ausência de uma decisão de adequação porque é necessária para a execução de um contrato consigo, ou com o seu consentimento explícito",
+      l5: "Isto inclui, mas não se limita a, encriptação, controlo de acesso e registo de auditoria das Informações Pessoais. No entanto, nenhum método de transmissão através da Internet ou método de armazenamento é 100% seguro. Não podemos garantir que as nossas medidas de segurança impeçam que os nossos sistemas informáticos sejam acedidos ilegalmente, nem podemos garantir que as informações nos nossos sistemas informáticos não sejam visualizadas ou roubadas. POR CONSEGUINTE, A BDV SOLUTIONS DECLINA QUALQUER RESPONSABILIDADE PELO ROUBO, INTERCEPÇÃO, PERDA OU ACESSO NÃO AUTORIZADO A DANOS NAS SUAS INFORMAÇÕES. O UTILIZADOR RECONHECE QUE A UTILIZAÇÃO DO SITE E DOS SERVIÇOS É FEITA POR SUA CONTA E RISCO.",
+      l6: "Google Analytics Utilizamos o Google Analytics para recolher informações sobre a utilização do Sítio. O Google Analytics recolhe informações como a frequência com que os utilizadores visitam o Sítio, as páginas que visitam quando o fazem e os outros sítios Web que utilizaram antes de chegarem ao Sítio. Utilizamos as informações que obtemos do Google Analytics para melhorar o Site e os Serviços. O Google Analytics recolhe apenas o endereço IP atribuído ao utilizador na data em que visita este site, e não o seu nome ou outras Informações Pessoais. Não combinamos as informações recolhidas através da utilização do Google Analytics com informações de identificação pessoal. Apesar de o Google Analytics instalar um cookie permanente no seu browser para o identificar como um utilizador único na próxima vez que visitar este site, o cookie não pode ser utilizado por mais ninguém a não ser a Google. A capacidade da Google de utilizar e partilhar informações recolhidas pelo Google Analytics sobre as visitas do utilizador a este site é restringida pelos Termos de Utilização do Google Analytics e pela Política de Privacidade da Google. O utilizador pode impedir que o Google Analytics o reconheça em visitas de retorno a este site, desactivando os cookies no seu navegador.Alterações à Política de Privacidade A BDV Solutions pode fazer alterações a esta Política de Privacidade a qualquer momento. Se fizermos quaisquer alterações materiais, notificá-lo-emos por e-mail (enviado para o endereço de e-mail especificado na sua conta) ou publicando a Política de Privacidade revista no Site antes de quaisquer alterações entrarem em vigor. O utilizador deve rever a nossa Política de Privacidade sempre que aceder ao Site ou utilizar os Serviços. A utilização continuada do Site ou dos Serviços após a publicação de quaisquer alterações ou a notificação ao utilizador das alterações constitui o seu acordo com essas alterações.Retenção de informações pessoais No mínimo, reteremos as suas Informações Pessoais durante o tempo necessário para lhe fornecer o Serviço e conforme necessário para cumprir as nossas obrigações legais. A menos que o utilizador solicite a eliminação das suas informações pessoais mais cedo, poderemos reter quaisquer informações pessoais que possam ser utilizadas para fornecer serviços futuros durante um período máximo de dez anos. Mediante pedido, a BDV Solutions informará o utilizador sobre se detém alguma das suas informações pessoais. O utilizador pode encerrar a sua conta e solicitar a eliminação das suas Informações Pessoais, contactando-nos através do endereço processing@bdvsolutions.com. Nalgumas situações, podemos ser legalmente obrigados a reter as suas Informações Pessoais ou, por outras razões, não poderemos dar seguimento a um pedido de eliminação de dados. ",
+    },
+  };
+  const privacyContent = privacy[language];
   return (
     <ISection>
       <div className="mt-20">
-        <TitleContent title="Privacy Policy">
+        <TitleContent title={privacyContent.t0}>
           <div className={`${styles.sectionTitleText} `}>
-            BDV Solutions, LLC (“BDV Solutions”) provides this Privacy Policy to
-            inform you about our practices concerning the collection, use and
-            disclosure of your information. By using the website located at
-            www.bdvsolutions.com (including all subdomains) (the “Site”) or the
-            services provided by BDV Solutions (the “Services”), you agree to
-            the information practices described in this Privacy Policy. If you
-            do not agree to the terms of this Privacy Policy, you may not access
-            or use the Site or Services. This Privacy Policy is incorporated
-            into and subject to the Terms of Use by BDV Solutions. If you
-            purchase Services that include independent attorney review, your
-            relationship with the independent attorney will be governed by your
-            agreement with that attorney.BDV SOLUTIONS IS NOT A LAW FIRM, DOES
-            NOT PROVIDE LEGAL ADVICE AND IS NOT A SUBSTITUTE FOR THE ADVICE OF
-            AN ATTORNEY. YOUR USE OF THE SITE AND SERVICES, AND YOUR
-            COMMUNICATION WITH BDV SOLUTIONS, DOES NOT CREATE AN ATTORNEY-CLIENT
-            RELATIONSHIP. YOUR COMMUNICATIONS WITH BDV SOLUTIONS ARE NOT
-            PROTECTED BY THE ATTORNEY-CLIENT PRIVILEGE. YOUR COMMUNICATIONS WITH
-            THE INDEPENDENT ATTORNEY ARE GOVERNED BY YOUR AGREEMENT WITH THAT
-            ATTORNEY.Information We Collect 1.1. Personal InformationWhen you
-            use the Site or Services, we collect certain information from you
-            which can be used to contact or identify you, including, but not
-            limited to, your name, gender, date of birth, telephone number,
-            postal address, and email address (“Identity Information”). If you
-            place an order for Services and/or pay a fee, we will collect
-            additional payment and billing information from you, including, but
-            not limited to, your credit/debit card information or bank account
-            information (“Billing Information”). If you place an order for
-            Services, you may also be required to provide information or
-            documents necessary for preparation or filing of forms or
-            applications to be submitted to government agencies, and if you file
-            an application, we may receive from the government a unique receipt
-            number assigned to your application (“Application Information”).
-            Together, your Identity Information, Billing Information and
-            Application Information are referred to as “Personal Information.”
+            {privacyContent.p0}
           </div>
           <div className={`${styles.sectionTitleText} `}>
-            <p className="font-bold">1.2. Usage Data</p>
-            We also automatically collect certain information regarding your
-            access to and use of the Site and Services. This information
-            includes, but is not limited to, your IP address, browser type,
-            referring website URLs, log files, pages on the Site that you visit,
-            and links you click on (“Usage Data”).
+            <p className="font-bold">1.1.{privacyContent.t1}</p>
+            {privacyContent.p1}
           </div>
           <div className={`${styles.sectionTitleText} `}>
-            <p className="font-bold">1.3. Cookies</p>
-            Like many websites, we utilize devices to recognize you when you
-            visit the Site, track your interactions with the Site, and
-            personalize your experience. These include devices such as cookies,
-            web beacons, pixels and similar devices. Cookies are small data
-            files we transfer to your computer hard drive. We utilize some
-            cookies that remain on your computer after you leave the Site so
-            that we can recognize you when you return and provide a more
-            personalized and helpful experience. We also utilize session cookies
-            to enable certain features of the Site, to better understand how you
-            interact with the Site and to monitor use of the Site by BDV
-            Solutions users and web traffic routing on the Site. Session cookies
-            are deleted from your computer when you log off from the Site and
-            close your browser. You maintain control over some of the
-            information we collect through the use of cookies, and you can set
-            your preferences regarding the use of cookies through your browser
-            settings. If you choose not to accept cookies, you may not be able
-            to access portions of the Site or all functionality of the Services.
+            <p className="font-bold">1.2.{privacyContent.t2}</p>
+            {privacyContent.p2}
           </div>
           <div className={`${styles.sectionTitleText} `}>
-            <p className="font-bold">1.4. EU Lawful Grounds</p>
-            If you reside in the European Economic Area or Switzerland
-            (collectively the “EU”), we rely on the following lawful grounds
-            under the General Data Protection Regulation (“GDPR”) to process
-            (collect, store, and use) your personal data contained in Personal
-            Information and Usage Data: (a) it is necessary for the performance
-            of a contract with you; (b) our legitimate interests; and (c) your
-            consent. If you are a customer, the lawful ground for processing
-            your personal data is necessity in performing our contract to
-            provide the Services to you; our legitimate interest in
-            understanding, improving, and promoting our services; and your
-            consent. If you visit or use our website, the lawful ground for
-            processing your personal data is our legitimate interest in
-            understanding how users interact with our website to improve our
-            website and Services, and your consent.
+            <p className="font-bold">1.3.{privacyContent.t3}</p>
+            {privacyContent.p3}
           </div>
           <div className={`${styles.sectionTitleText} `}>
-            <p className="font-bold">
-              Use of Information We Collect 2.1. Account Creation
-            </p>
-            We use information you submit to us at the time of account
-            registration, such as your name and email address, and any updated
-            information you subsequently submit, such as a new email address, to
-            create and maintain your account.
+            <p className="font-bold">1.4. {privacyContent.t4}</p>
+            {privacyContent.p4}
           </div>
           <div className={`${styles.sectionTitleText} `}>
-            <p className="font-bold">
-              2.2. Operation and Improvement of Our Business
-            </p>
-            We use your information, including Personal Information, primarily
-            to operate our business and provide the Services to you, including
-            the completion of immigration forms. We use such information to
-            personalize the Services we provide to you. We may use your
-            information to verify your identity, for fraud prevention, to
-            enforce the Terms of Service and to protect the integrity of the
-            Site. We may also use your information to develop new features or
-            Services and to improve the quality of our Services.
+            <p className="font-bold">{privacyContent.t5}</p>
+            {privacyContent.p5}
           </div>
           <div className={`${styles.sectionTitleText} `}>
-            <p className="font-bold">
-              2.3. Customer Service and Technical Support
-            </p>
-            We may use your information, including Personal Information, to
-            respond to questions you have regarding use of our Services or to
-            provide technical assistance.
+            <p className="font-bold">{privacyContent.t6}</p>
+            {privacyContent.p6}
           </div>
           <div className={`${styles.sectionTitleText} `}>
-            <p className="font-bold">2.4. Communications with You</p>
-            We may contact you using the contact information you provide in
-            order to respond to inquiries you send to us, to communicate with
-            you regarding our Services and the services of our partners, and to
-            market our Services, or those of our partners, to you. If you are in
-            the EU, we will only use your contact information to communicate
-            with you regarding our partners’ services with your prior consent
+            <p className="font-bold">{privacyContent.t7}</p>
+            {privacyContent.p7}
           </div>
           <div className={`${styles.sectionTitleText} `}>
-            <p className="font-bold">2.5. Internal Research</p>
-            We may use information about you and other users, in aggregate form,
-            for our own internal research and analytical purposes. For example,
-            we may use certain types of your information to understand which
-            features of our Services are being used most frequently.
+            <p className="font-bold">2.4. {privacyContent.t8}</p>
+            {privacyContent.p8}
           </div>
           <div className={`${styles.sectionTitleText} `}>
-            <p className="font-bold">2.6. Application Status</p>
-            We may use your government receipt number from time to time to check
-            your application status, so that we may provide you with pertinent
-            general information about the steps in the application process. If,
-            at any time, you do not want BDV Solutions to retain your government
-            receipt number or to check your application status, let us know by
-            contacting us at processing@bdvsolutions.com
+            <p className="font-bold">{privacyContent.t9}</p>
+            {privacyContent.p9}
           </div>
           <div className={`${styles.sectionTitleText} `}>
-            <p className="font-bold">
-              3.1. Your Privacy Rights (Information Sharing and Disclosure)
-            </p>
-            BDV Solutions does not share your Personal Information with third
-            parties for their marketing purposes without your consent.
+            <p className="font-bold">2.6. {privacyContent.t10}</p>
+            {privacyContent.p10}
+          </div>
+          <div className={`${styles.sectionTitleText} text-left `}>
+            <p className="font-bold">{privacyContent.t11}</p>
+            {privacyContent.p11}
           </div>
           <div className={`${styles.sectionTitleText} `}>
-            <p className="font-bold">3.2. Upon Consent</p>
-            We may share your information, including Personal Information, with
-            third parties if you provide us with authorization to do so.
+            <p className="font-bold">3.2. {privacyContent.t12}</p>
+            {privacyContent.p12}
           </div>
           <div className={`${styles.sectionTitleText} `}>
-            <p className="font-bold">3.3. Service Providers</p>
-            We may share your Personal Information with third-party service
-            providers, but only to the extent necessary for them to assist us in
-            providing our Services. For example, if you purchase Services, we
-            will share your Billing Information with third-party payment
-            processors to the extent necessary to process your payment. We
-            require all third-party service providers to protect the security of
-            your Personal Information, to keep your Personal Information
-            confidential, and to use such information for no other purposes.
+            <p className="font-bold">3.3. {privacyContent.t13}</p>
+            {privacyContent.p13}
           </div>
           <div className={`${styles.sectionTitleText} `}>
-            <p className="font-bold">
-              3.4. Responses to Legal Process, Subpoenas or Court Orders
-            </p>
-            We will not voluntarily disclose your Personal Information. However,
-            we may disclose your Personal Information as required by law, such
-            as in response to a court order, subpoena, or similar legal process
-            legally requiring us to produce the information. If legally
-            permitted and feasible, we will give you notice of our receipt of a
-            demand for your Personal Information and provide you a reasonable
-            time in which to seek to quash such demand in court, or otherwise
-            obtain a withdrawal or modification of the demand, before complying
-            with the demand.
-          </div>
-        </TitleContent>
-        <TitleContent>
-          <div className={`${styles.sectionTitleText} `}>
-            <p className="font-bold">3.5. Business Transfers</p>
-            Your Personal Information may be included in the event that some or
-            all of our assets are sold, assigned or transferred in connection
-            with a merger, acquisition, reorganization or sale of assets, or in
-            the event of bankruptcy. As a general matter, however, an acquiring
-            party cannot retroactively change the Privacy Policy that was in
-            place when BDV Solutions collected your Personal Information.
+            <p className="font-bold">3.4. {privacyContent.t14}</p>
+            {privacyContent.p14}
           </div>
           <div className={`${styles.sectionTitleText} `}>
-            <p className="font-bold">3.6. Academic Research</p>
-            We may share non-personally identifiable and non-privileged
-            information about you and other users, in aggregate form, to
-            third-party academic researchers. We require all third-party
-            researchers to use such anonymized information for no purposes other
-            than academic research. For example, we may use certain types of
-            non-personally identifiable and non-privileged information to help
-            researchers study factors that reduce barriers facing applicants
-            navigating the immigration system. If you are in the EU, we will
-            only share your non-privileged information with such academic
-            researchers with your consent.
+            <p className="font-bold">3.5. {privacyContent.t15}</p>
+            {privacyContent.p15}
           </div>
           <div className={`${styles.sectionTitleText} `}>
-            Policy Regarding Children Our Site and Services are not intended for
-            persons under 18 years of age, and we do not knowingly collect
-            Personal Information from persons under 18 years of age. If you are
-            a parent or guardian and believe that your child has provided us
-            with Personal Information without your consent, please contact us at
-            processing@bdvsolutions.com. If we become aware that a person under
-            18 years of age has provided us with Personal Information, we will
-            delete such information from our files.
+            <p className="font-bold">3.6. {privacyContent.k1}</p>
+            {privacyContent.l1}
           </div>
           <div className={`${styles.sectionTitleText} `}>
-            <p className="font-bold">
-              EU Data Transfer and Individual Rights 5.1. Data Transfer Notice
-            </p>
-            We are located in the United States and transfer your personal data
-            for processing in the United States. We make the transfer to the
-            United States in the absence of an adequacy decision because it is
-            necessary for the performance of a contract with you, or with your
-            explicit consent.
+            {privacyContent.l2}
           </div>
           <div className={`${styles.sectionTitleText} `}>
-            <p className="font-bold">5.2. Individual Rights</p>
-            If you are located in the EU, you may use your account to access,
-            correct, or change Personal Information that you have provided to
-            us. You may also email us at processing@bdvsolutions.com to request
-            access to, transfer of, and rectification or erasure of your
-            Personal Information or restriction of processing; and to object to
-            processing. In the email, specify the nature of your request and the
-            information that is the subject of your request. We will respond to
-            your request within 30 days.If we are processing your personal data
-            based upon the lawful ground of your consent, you have the right to
-            withdraw your consent for such processing at any time without
-            affecting the lawfulness of the processing based on consent before
-            it is withdrawn. To withdraw consent, email us at
-            processing@bdvsolutions.com.Security We have put in place physical,
-            electronic and managerial procedures to protect the security of the
-            information we collect, both during transmission and once received.
+            <p className="font-bold">{privacyContent.k2}</p>
+            {privacyContent.l3}
           </div>
           <div className={`${styles.sectionTitleText} `}>
-            This includes, but is not limited to, encryption, access control and
-            audit logging on Personal Information. However, no method of
-            transmission over the internet or method of storage is 100% secure.
-            We cannot guarantee that our security measures will prevent our
-            computer systems from being accessed illegally, nor can we guarantee
-            that the information on our computer systems will not be viewed or
-            stolen. ACCORDINGLY, BDV SOLUTIONS DISCLAIMS ALL LIABILITY FOR THE
-            THEFT, INTERCEPTION, LOSS, OR UNAUTHORIZED ACCESS TO DAMAGE TO YOUR
-            INFORMATION. YOU ACKNOWLEDGE THAT USE OF THE SITE AND SERVICES IS AT
-            YOUR OWN RISK.
+            <p className="font-bold">5.2. {privacyContent.k3}</p>
+            {privacyContent.l4}
           </div>
           <div className={`${styles.sectionTitleText} `}>
-            Google Analytics We use Google Analytics to collect information
-            about use of the Site. Google Analytics collects information such as
-            how often users visit the Site, what pages they visit when they do
-            so, and what other websites they used prior to coming to the Site.
-            We use the information we get from Google Analytics to improve the
-            Site and Services. Google Analytics collects only the IP address
-            assigned to you on the date you visit this site, rather than your
-            name or other Personal Information. We do not combine the
-            information collected through the use of Google Analytics with
-            personally identifiable information. Although Google Analytics
-            plants a permanent cookie on your web browser to identify you as a
-            unique user the next time you visit this site, the cookie cannot be
-            used by anyone but Google. Google’s ability to use and share
-            information collected by Google Analytics about your visits to this
-            site is restricted by the Google Analytics Terms of Use and the
-            Google Privacy Policy. You can prevent Google Analytics from
-            recognizing you on return visits to this site by disabling cookies
-            on your browser.Changes to Privacy Policy BDV Solutions may make
-            changes to this Privacy Policy at any time. If we make any material
-            changes we will notify you via email (sent to the e-mail address
-            specified in your account) or by posting the revised Privacy Policy
-            on the Site prior to any changes becoming effective. You should
-            review our Privacy Policy each time you access the Site or use the
-            Services. Your continued use of the Site or Services following the
-            posting of any changes or notice to you of the changes constitutes
-            your agreement to such changes.Retention of Personal Information At
-            a minimum, we will retain your Personal Information for as long as
-            it may be needed to provide you Service and as needed to comply with
-            our legal obligations. Unless you request deletion of your Personal
-            Information sooner, we may hold any of your Personal Information
-            which may be used to provide future Services for up to ten years.
-            Upon request, BDV Solutions will inform you about whether we hold
-            any of your Personal Information. You may terminate your account and
-            request deletion of your Personal Information by contacting us at
-            processing@bdvsolutions.com. In some situations, we may be legally
-            required to retain your Personal Information or for other reasons
-            will not be able to comply with a request to delete data.
+            {privacyContent.l5}
+          </div>
+          <div className={`${styles.sectionTitleText} `}>
+            {privacyContent.l6}
           </div>
         </TitleContent>
       </div>
