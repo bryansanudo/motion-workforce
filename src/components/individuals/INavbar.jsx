@@ -179,7 +179,7 @@ const INavbar = ({ setLanguage, language }) => {
   return (
     <>
       <div className="fixed w-full h-24 bg-gray-400 text-white z-20">
-        <div className="flex justify-between gap-4 items-center lg:mx-10 px-3 h-full">
+        <div className="flex justify-between gap-[6px] items-center lg:mx-10   h-full">
           <Link to="/individuals/home">
             <img
               src={logo}
@@ -232,7 +232,7 @@ const INavbar = ({ setLanguage, language }) => {
           <details className="dropdown dropdown-end ">
             <summary
               onClick={handleDropdown}
-              className="uppercase font-bold flex  items-center justify-center gap-2 cursor-pointer"
+              className="uppercase font-bold flex  items-center justify-center gap-1 cursor-pointer"
             >
               {language}
               <img src={languageIcon} className="w-6 h-6" alt="" />
