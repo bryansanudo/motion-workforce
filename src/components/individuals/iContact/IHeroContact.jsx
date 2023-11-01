@@ -11,6 +11,9 @@ const IHeroContact = ({ language }) => {
     por: {
       h1: "Contacto",
     },
+    fr: {
+      h1: "Nous contacter",
+    },
   };
   const contactContent = contact[language];
 

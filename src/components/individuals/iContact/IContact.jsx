@@ -12,6 +12,7 @@ const IContact = ({ language }) => {
 
   const step = {
     en: {
+      title: "Steps for the On-boarding Process",
       t1: "Complete the Online Questionnaire",
       s1: "Fill out this form to confirm your eligibility for the EB3 Visa.",
       t2: "Upload Documents",
@@ -24,6 +25,7 @@ const IContact = ({ language }) => {
       s5: "As the employer processes your applications, your BDV portal will be updated.",
     },
     es: {
+      title: "Pasos para el proceso de incorporación",
       t1: "Rellene el cuestionario en línea",
       s1: "Rellene este formulario para confirmar su elegibilidad para el visado EB3",
       t2: "Subir Documentos",
@@ -36,6 +38,7 @@ const IContact = ({ language }) => {
       s5: "A medida que el empleador procese sus solicitudes, su portal BDV será actualizado",
     },
     por: {
+      title: "Etapas do processo de integração",
       t1: "Preencher o questionário em linha",
       s1: "Preencha este formulário para confirmar a sua elegibilidade para o visto EB3",
       t2: "Carregar documentos",
@@ -46,6 +49,19 @@ const IContact = ({ language }) => {
       s4: "Ser-lhe-á enviado um contrato para assinatura e será necessário efetuar o primeiro pagamento à BDV",
       t5: "Obter actualizações sobre o seu processo",
       s5: "À medida que a entidade patronal processa os seus pedidos, o seu portal da BDV será atualizado",
+    },
+    fr: {
+      title: "Étapes du processus d'intégration",
+      t1: "Compléter le questionnaire en ligne",
+      s1: "Remplissez ce formulaire pour confirmer votre éligibilité au visa EB3",
+      t2: "Télécharger les documents",
+      s2: "Pour compléter votre profil, téléchargez votre passeport et votre visa américain",
+      t3: "Offering Selection",
+      s3: "Choisissez l'emploi et le lieu de travail parmi les postes actuellement disponibles proposés par nos employeurs partenaires",
+      t4: "Signez le contrat et payez les frais initiaux",
+      s4: "Un contrat vous sera envoyé pour signature et un premier paiement devra être effectué à la BDV",
+      t5: "Obtenez des mises à jour sur votre processus",
+      s5: "Au fur et à mesure que l'employeur traite vos demandes, votre portail BDV sera mis à jour",
     },
   };
   const stepContent = step[language];
@@ -65,6 +81,10 @@ const IContact = ({ language }) => {
       title1: "Pode candidatar-se sem necessidade de experiência prévia!",
       p1: "Está interessado em obter um Cartão de Residente Permanente dos EUA (Green Card) para si e para a sua família? O MCC USA colabora com empresas americanas que estão dispostas a apoiar o seu pedido de Green Card em troca do seu compromisso de trabalhar com elas durante pelo menos um ano.",
     },
+    fr: {
+      title1: "N'hésitez pas à postuler sans expérience préalable ! ",
+      p1: "Souhaitez-vous obtenir une carte de résident permanent aux États-Unis (carte verte) pour vous et votre famille ? MCC USA collabore avec des entreprises américaines qui sont prêtes à soutenir votre demande de carte verte en échange de votre engagement à travailler avec elles pendant au moins un an",
+    },
   };
   const feelContent = feel[language];
 
@@ -80,6 +100,10 @@ const IContact = ({ language }) => {
     por: {
       title1: "Estamos abertos de segunda a sexta-feira, das 9:00 às 17:00",
       p1: "Pode contactar-nos através de vários canais, incluindo telefone, e-mail, chat ao vivo e o formulário de contacto do nosso sítio Web",
+    },
+    fr: {
+      title1: "Nous sommes ouverts du lundi au vendredi de 9h00 à 17h00",
+      p1: "Vous pouvez nous contacter par différents moyens, notamment par téléphone, par courrier électronique, par chat en direct et par le biais du formulaire de contact de notre site web",
     },
   };
   const weContent = we[language];
@@ -177,7 +201,7 @@ const IContact = ({ language }) => {
         ></iframe>
         {/* steps */}
 
-        <TitleContent title="Steps for the On-boarding Process">
+        <TitleContent title={stepContent.title}>
           <ul className="steps steps-vertical text-lg  lg:steps-horizontal px-4 md:mx-32">
             {steps.map(({ id, title, subtitle }) => {
               // Genera un id único para cada elemento de la lista
