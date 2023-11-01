@@ -14,6 +14,9 @@ const IHeroResources = ({ language }) => {
     por: {
       h1: "Recursos",
     },
+    fr: {
+      h1: "Ressources",
+    },
   };
   const resourcesContent = resources[language];
   return (
