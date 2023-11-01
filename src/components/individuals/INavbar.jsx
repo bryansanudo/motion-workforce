@@ -249,7 +249,7 @@ const INavbar = ({ setLanguage, language }) => {
                   className="flex items-center justify-center gap-4 hover:scale-110 duration-500 rounded-box p-2"
                 >
                   <img src={enImg} className="h-6 w-6" alt="" />
-                  <button>{menuContent.en}</button>
+                  <button>English</button>
                 </div>
               </li>
               <li>
@@ -260,8 +260,8 @@ const INavbar = ({ setLanguage, language }) => {
                   }}
                   className="flex items-center justify-center gap-4 hover:scale-110 duration-500 rounded-box p-2"
                 >
-                  <img src={esImg} className="h-6 w-6" alt="" />
-                  <button>{menuContent.es}</button>
+                  <img src={esImg} className="h-7 w-7" alt="" />
+                  <button>Spanish</button>
                 </div>
               </li>
               <li>
@@ -273,7 +273,7 @@ const INavbar = ({ setLanguage, language }) => {
                   className="flex items-center justify-center gap-4 hover:scale-110 duration-500 rounded-box p-2"
                 >
                   <img src={porImg} className="h-6 w-6" alt="" />
-                  <button>{menuContent.por}</button>
+                  <button>Português</button>
                 </div>
               </li>
               <li>
@@ -285,7 +285,7 @@ const INavbar = ({ setLanguage, language }) => {
                   className="flex items-center justify-center gap-4 hover:scale-110 duration-500 rounded-box p-2"
                 >
                   <img src={frImg} className="h-6 w-6" alt="" />
-                  <button>{menuContent.fr}</button>
+                  <button>Français</button>
                 </div>
               </li>
             </ul>
