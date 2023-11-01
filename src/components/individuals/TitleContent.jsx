@@ -5,10 +5,10 @@ import { staggerContainer, zoomIn } from "@/utils/motion";
 const TitleContent = ({ title, children }) => {
   return (
     <motion.div
-    /* variants={staggerContainer()}
+      variants={staggerContainer()}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: true, amount: 0.25 }} */
+      viewport={{ once: true, amount: 0.25 }}
     >
       <motion.div
         variants={zoomIn(0, 1)}

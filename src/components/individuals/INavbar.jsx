@@ -152,7 +152,7 @@ const INavbar = ({ setLanguage, language }) => {
               {navbarContent.looking}
             </button>
           </Link>
-          <div className="flex  gap-2 md:flex-row items-center justify-center">
+          {/* <div className="flex  gap-2 md:flex-row items-center justify-center">
             <select
               value={language}
               onChange={(e) => changeLanguage(e.target.value)}
@@ -164,7 +164,7 @@ const INavbar = ({ setLanguage, language }) => {
               <option value="fr">Frances</option>
             </select>
             <img src={languageIcon} className="w-6 h-6" alt="" />
-          </div>
+          </div> */}
         </div>
       </div>
       <div
