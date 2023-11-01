@@ -142,18 +142,22 @@ const INavbar = ({ setLanguage, language }) => {
 
   const en = () => {
     setLanguage("en");
+    setDropdown(true);
   };
 
   const es = () => {
     setLanguage("es");
+    setDropdown(true);
   };
 
   const por = () => {
     setLanguage("por");
+    setDropdown(true);
   };
 
   const fr = () => {
     setLanguage("fr");
+    setDropdown(true);
   };
 
   /*   const changeLanguage = (newLanguage) => {
