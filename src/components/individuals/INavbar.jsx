@@ -165,15 +165,20 @@ const INavbar = ({ setLanguage, language }) => {
   }; */
 
   let languageIcon;
+  let languageText;
 
   if (language === "en") {
     languageIcon = enImg;
+    languageText = "EN";
   } else if (language === "es") {
     languageIcon = esImg;
+    languageText = "ES";
   } else if (language === "por") {
     languageIcon = porImg;
+    languageText = "PT";
   } else if (language === "fr") {
     languageIcon = frImg;
+    languageText = "FR";
   }
 
   return (
@@ -234,7 +239,7 @@ const INavbar = ({ setLanguage, language }) => {
               onClick={handleDropdown}
               className="uppercase font-bold flex  items-center justify-center gap-1 cursor-pointer"
             >
-              {language}
+              {languageText}
               <img src={languageIcon} className="w-6 h-6" alt="" />
               {dropdown ? <IoMdArrowDropdown /> : <IoMdArrowDropup />}
             </summary>
