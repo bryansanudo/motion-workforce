@@ -61,6 +61,22 @@ const HorizontalProcess = ({ language }) => {
       m14: "Mês 14",
       p14: "Carta verde emitida",
     },
+    fr: {
+      m1: "Mois 1",
+      p1: "Labor Certification filed once employer obtains DOL prevailing wage",
+      m6: "Mois 6",
+      p6: "Labor Certification Approved + Consular fees",
+      m7: "Mois 7",
+      p7: "I-140 Filed, I-485 Filed, I-765 Filed",
+      m8: "Mois 8",
+      p8: "I-140 Approved",
+      m10: "Mois 10",
+      p10: "L'employé peut commencer à travailler pour l'employeur parrain",
+      m13: "Mois 13",
+      p13: "Entretien I-485",
+      m14: "Mois 14",
+      p14: "Carte verte délivrée",
+    },
   };
   const adjustmentContent = adjustment[language];
   return (

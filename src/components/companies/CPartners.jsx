@@ -18,6 +18,9 @@ const CPartners = ({ language }) => {
     por: {
       title1: "Os nossos patrocinadores de confiança",
     },
+    fr: {
+      title1: "Nos employeurs de confiance",
+    },
   };
   const partnersContent = partners[language];
 

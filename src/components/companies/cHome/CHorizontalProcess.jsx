@@ -75,6 +75,26 @@ const CHorizontalProcess = ({ language }) => {
       m18: "Mês 18",
       p18: "Carta verde emitida",
     },
+    fr: {
+      m1: "Mois 1",
+      p1: "Labor Certification filed once employer obtains DOL prevailing wage",
+      m6: "Mois 6",
+      p6: "Labor Certification Approved",
+      m7: "Mois 7",
+      p7: "Dependent fees due I-140 Filed",
+      m8: "Mois 8",
+      p8: "I-140 Approved",
+      m10: "Mois 10",
+      p10: "DS-260",
+      m15: "Mois 15",
+      p15: "Entretien prévu",
+      m16: "Mois 16",
+      p16: "EB-3 visa interview at usconsulate in your home country",
+      m17: "Mois 17",
+      p17: "Received visa and travel to us",
+      m18: "Mois 18",
+      p18: "Carte verte délivrée",
+    },
   };
   const consularContent = consular[language];
 

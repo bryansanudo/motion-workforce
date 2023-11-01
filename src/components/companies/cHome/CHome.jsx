@@ -40,6 +40,11 @@ const CHome = ({ language }) => {
       title2: "James Baker, CPA",
       p1: "James está à frente de diferentes empresas nos EUA, servindo corporações internacionais e empresários internacionais com diferentes serviços e empresas. James aliou-se a investidores silenciosos para criar a EB-3 Workforce Solutions, uma empresa que liga empregadores que enfrentam uma escassez crónica de trabalhadores não qualificados a trabalhadores imigrantes dispostos a candidatar-se a um Green Card dos EUA através do programa de vistos EB-3.",
     },
+    fr: {
+      title1: "Rencontre avec le fondateur",
+      title2: "James Baker, CPA",
+      p1: "James est à la tête de plusieurs entreprises aux États-Unis, au service de sociétés internationales et d'entrepreneurs internationaux avec différents services et entreprises. James s'est allié à des investisseurs silencieux pour créer EB-3 Workforce solutions, une société qui met en relation des employeurs confrontés à une pénurie chronique de travailleurs non qualifiés avec des employés immigrés désireux de demander une carte verte américaine dans le cadre du programme de visa EB-3.",
+    },
   };
   const jamesContent = james[language];
 
@@ -55,6 +60,10 @@ const CHome = ({ language }) => {
     por: {
       h1: "Obter trabalhadores empenhados!",
       p: "Contactar-nos",
+    },
+    fr: {
+      h1: "Des travailleurs engagés !",
+      p: "Appelez-nous",
     },
   };
   const dividerGetContent = dividerGet[language];
@@ -78,6 +87,11 @@ const CHome = ({ language }) => {
       p1: "Se se encontra numa situação em que está a lutar para encontrar um número significativo de funcionários americanos qualificados, acessíveis e altamente motivados para preencher várias posições de nível de entrada, ou se está a enfrentar desafios com uma rotatividade implacável e responsabilidades e encargos de RH esmagadores, então temos a solução perfeita para si.",
       p2: "Apresentamos o Programa de Vistos EB-3, uma solução de recrutamento a longo prazo especificamente concebida para empregadores americanos como o seu. Esta opção de Green Card baseada no emprego foi concebida para responder às suas necessidades de pessoal e fornecer a mão de obra qualificada de que necessita.",
     },
+    fr: {
+      title1: "Nous contacter",
+      title2: "Want to Know More ?",
+      p1: "Si vous vous trouvez dans une situation où vous avez du mal à trouver un nombre important de salariés américains qualifiés, accessibles et très motivés pour occuper divers postes de débutants, ou si vous êtes confronté à des défis liés à un taux de rotation incessant et à des responsabilités et charges écrasantes en matière de ressources humaines, alors nous avons la solution idéale pour vous.",
+    },
   };
   const wantContent = want[language];
 
@@ -96,6 +110,11 @@ const CHome = ({ language }) => {
       title1: "EB-3 Workforce Solutions",
 
       p1: "Na EB-3 Workforce Solutions, compreendemos a importância de encontrar trabalhadores fiáveis e dedicados. É por isso que oferecemos uma solução única para as suas necessidades de pessoal - trabalhadores com visto EB-3. A nossa equipa dedica-se a encontrar e colocar pessoal altamente qualificado que esteja empenhado em ter um impacto positivo na sua empresa. Com um rigoroso processo de seleção e uma rede de talentos de topo, garantimos que recebe a mão de obra de maior qualidade disponível. Diga adeus às dificuldades de encontrar trabalhadores empenhados e olá a um futuro brilhante com a EB-3 Workforce Solutions.",
+    },
+    fr: {
+      title1: "EB-3 Workforce Solutions",
+
+      p1: "Chez EB-3 Workforce Solutions, nous comprenons l'importance de trouver des employés fiables et dévoués. C'est pourquoi nous proposons une solution unique pour répondre à vos besoins en personnel : les travailleurs titulaires d'un visa EB-3. Notre équipe se consacre à la recherche et au placement de personnel hautement qualifié qui s'engage à avoir un impact positif sur votre entreprise. Grâce à un processus de sélection rigoureux et à un réseau de talents de premier ordre, nous vous garantissons une main-d'œuvre de la plus haute qualité. Dites adieu aux difficultés liées à la recherche de travailleurs motivés et bonjour à un avenir radieux grâce à EB-3 Workforce Solutions",
     },
   };
   const eb3Content = eb3[language];
@@ -116,6 +135,11 @@ const CHome = ({ language }) => {
 
       p1: "Descubra a solução para as suas necessidades de pessoal com a nossa empresa! Diga adeus ao incómodo de trabalhadores pouco fiáveis e olá a uma equipa de profissionais dedicados e empenhados. Os nossos trabalhadores com visto EB-3 são escolhidos a dedo para garantir um desempenho de alto nível e um empenho total nos seus projectos. Confie em nós para fornecer a força de trabalho que você merece.",
     },
+    fr: {
+      title1: "Vous avez du mal à trouver des travailleurs engagés ?",
+
+      p1: "Découvrez la solution à vos besoins en personnel avec notre entreprise ! Dites adieu aux tracas des travailleurs peu fiables et bonjour à une équipe de professionnels dévoués et engagés. Nos travailleurs titulaires d'un visa EB-3 sont triés sur le volet pour garantir des performances de premier ordre et un engagement total dans vos projets. Faites-nous confiance pour vous fournir la main-d'œuvre que vous méritez",
+    },
   };
   const strugglingContent = struggling[language];
 
@@ -135,12 +159,17 @@ const CHome = ({ language }) => {
       title2: "Cronograma típico do processamento consular",
       title3: "Calendário típico de ajustamento do estatuto",
     },
+    fr: {
+      title1: "Visa EB-3 pour les travailleurs non qualifiés",
+      title2: "Délai type de traitement consulaire",
+      title3: "Délai type pour l'adaptation du statut",
+    },
   };
   const timelineContent = timeline[language];
 
   return (
     <>
-      <CHeroHome />
+      <CHeroHome language={language} />
 
       <ISection>
         {/* James */}

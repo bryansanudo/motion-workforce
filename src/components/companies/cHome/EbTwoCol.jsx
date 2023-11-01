@@ -31,6 +31,15 @@ const EbTwoCol = ({ language }) => {
       i2: "$400-$1200",
       i3: "Para prosseguir com o Certificado de Trabalho, a conformidade com os regulamentos exige o anúncio da posição para trabalhadores dos EUA. Este processo de certificação laboral é independente da quantidade de empregados necessários.",
     },
+    fr: {
+      title1: "Visa EB-3",
+      p1: "Durée du processus",
+      p2: "Environ 18 mois",
+      p3: "La durée de traitement du programme EB-3 varie en fonction du lieu (pays d'origine) et du statut du demandeur (procédure consulaire ou ajustement du statut) et peut également dépendre du type d'industrie pour lequel le demandeur est recherché",
+      i1: "Investissement",
+      i2: "$400-$1200",
+      i3: "Afin de procéder à l'obtention du certificat de travail, la conformité aux réglementations nécessite l'annonce du poste aux travailleurs américains. Ce processus de certification de la main-d'œuvre est indépendant du nombre d'employés requis",
+    },
   };
   const colContent = col[language];
 
