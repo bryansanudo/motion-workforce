@@ -7,6 +7,7 @@ import porImg from "@/assets/icons/por.png";
 import frImg from "@/assets/icons/fr.png";
 import giphy from "@/assets/icons/giphy.gif";
 import logo from "@/assets/logo.png";
+import { IoMdArrowDropdown, IoMdArrowDropup } from "react-icons/io";
 
 const INavbar = ({ setLanguage, language }) => {
   const navbar = {
@@ -53,6 +54,34 @@ const INavbar = ({ setLanguage, language }) => {
   };
   const navbarContent = navbar[language];
 
+  const menu = {
+    en: {
+      en: "English",
+      es: "Spanish",
+      por: "Português",
+      fr: "French",
+    },
+    es: {
+      en: "Ingles",
+      es: "Español",
+      por: "Português",
+      fr: "Frances",
+    },
+    por: {
+      en: "Inglês",
+      es: "Espanhol",
+      por: "Português",
+      fr: "Francês",
+    },
+    fr: {
+      en: "Anglais",
+      es: "Espagnol",
+      por: "Português",
+      fr: "Français",
+    },
+  };
+  const menuContent = menu[language];
+
   const activeLink = ({ isActive }) =>
     isActive
       ? " relative after:content-[''] after:absolute after:left-0 after:bottom-[-3px] after:w-full after:h-[2px] after:bg-primary"
@@ -95,10 +124,41 @@ const INavbar = ({ setLanguage, language }) => {
 
   const [showLoader, setShowLoader] = useState(false);
   const [iconLoader, setIconLoader] = useState(giphy);
+  const [dropdown, setDropdown] = useState(true);
 
-  const changeLanguage = (newLanguage) => {
-    setLanguage(newLanguage);
+  const handleDropdown = () => {
+    setDropdown(!dropdown);
   };
+
+  const closeMenu = () => {
+    // Encuentra el elemento del menú de idiomas
+    const dropdown = document.querySelector(".dropdown");
+
+    if (dropdown) {
+      // Elimina el atributo 'open' para cerrar el menú
+      dropdown.removeAttribute("open");
+    }
+  };
+
+  const en = () => {
+    setLanguage("en");
+  };
+
+  const es = () => {
+    setLanguage("es");
+  };
+
+  const por = () => {
+    setLanguage("por");
+  };
+
+  const fr = () => {
+    setLanguage("fr");
+  };
+
+  /*   const changeLanguage = (newLanguage) => {
+    setLanguage(newLanguage);
+  }; */
 
   let languageIcon;
 
@@ -120,7 +180,7 @@ const INavbar = ({ setLanguage, language }) => {
             <img
               src={logo}
               alt="logo navbar"
-              className="object-contain hidden lg:block a"
+              className="object-contain hidden lg:block"
               width={250}
               height={300}
             />
@@ -152,7 +212,7 @@ const INavbar = ({ setLanguage, language }) => {
               {navbarContent.looking}
             </button>
           </Link>
-          <div className="flex  gap-2 md:flex-row items-center justify-center">
+          {/* <div className="flex  gap-2 md:flex-row items-center justify-center">
             <select
               value={language}
               onChange={(e) => changeLanguage(e.target.value)}
@@ -163,8 +223,69 @@ const INavbar = ({ setLanguage, language }) => {
               <option value="por">Portuguese</option>
               <option value="fr">Frances</option>
             </select>
-            <img src={languageIcon} className="w-6 h-6" alt="" />
-          </div>
+            
+          </div> */}
+          <details className="dropdown dropdown-end ">
+            <summary
+              onClick={handleDropdown}
+              className="uppercase font-bold flex  items-center justify-center gap-2 cursor-pointer"
+            >
+              {language}
+              <img src={languageIcon} className="w-6 h-6" alt="" />
+              {dropdown ? <IoMdArrowDropdown /> : <IoMdArrowDropup />}
+            </summary>
+
+            <ul className="flex flex-col items-start dropdown-content text-black  bg-base-100 rounded-box w-40 ">
+              <li>
+                <div
+                  onClick={() => {
+                    en();
+                    closeMenu();
+                  }}
+                  className="flex items-center justify-center gap-4 hover:scale-110 duration-500 rounded-box p-2"
+                >
+                  <img src={enImg} className="h-6 w-6" alt="" />
+                  <button>{menuContent.en}</button>
+                </div>
+              </li>
+              <li>
+                <div
+                  onClick={() => {
+                    es();
+                    closeMenu();
+                  }}
+                  className="flex items-center justify-center gap-4 hover:scale-110 duration-500 rounded-box p-2"
+                >
+                  <img src={esImg} className="h-6 w-6" alt="" />
+                  <button>{menuContent.es}</button>
+                </div>
+              </li>
+              <li>
+                <div
+                  onClick={() => {
+                    por();
+                    closeMenu();
+                  }}
+                  className="flex items-center justify-center gap-4 hover:scale-110 duration-500 rounded-box p-2"
+                >
+                  <img src={porImg} className="h-6 w-6" alt="" />
+                  <button>{menuContent.por}</button>
+                </div>
+              </li>
+              <li>
+                <div
+                  onClick={() => {
+                    fr();
+                    closeMenu();
+                  }}
+                  className="flex items-center justify-center gap-4 hover:scale-110 duration-500 rounded-box p-2"
+                >
+                  <img src={frImg} className="h-6 w-6" alt="" />
+                  <button>{menuContent.fr}</button>
+                </div>
+              </li>
+            </ul>
+          </details>
         </div>
       </div>
       <div
