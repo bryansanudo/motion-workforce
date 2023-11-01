@@ -266,7 +266,7 @@ const INavbar = ({ setLanguage, language }) => {
                   className="flex items-center justify-start gap-4 hover:bg-primary rounded-box p-2 cursor-pointer"
                 >
                   <img src={esImg} className="h-7 w-7" alt="" />
-                  <button>Spanish</button>
+                  <button>Español</button>
                 </div>
               </div>
               <div className="w-full">
