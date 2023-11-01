@@ -244,55 +244,55 @@ const INavbar = ({ setLanguage, language }) => {
               {dropdown ? <IoMdArrowDropdown /> : <IoMdArrowDropup />}
             </summary>
 
-            <ul className="flex flex-col items-start dropdown-content text-black  bg-base-100 rounded-box w-40 ">
-              <li>
+            <ul className="flex flex-col items-start dropdown-content text-black  bg-base-100 rounded-box w-36 ">
+              <div className="w-full">
                 <div
                   onClick={() => {
                     en();
                     closeMenu();
                   }}
-                  className="flex items-center justify-center gap-4 hover:scale-110 duration-500 rounded-box p-2"
+                  className="flex items-center justify-start gap-4 hover:bg-primary rounded-box p-2 cursor-pointer"
                 >
                   <img src={enImg} className="h-6 w-6" alt="" />
                   <button>English</button>
                 </div>
-              </li>
-              <li>
+              </div>
+              <div className="w-full">
                 <div
                   onClick={() => {
                     es();
                     closeMenu();
                   }}
-                  className="flex items-center justify-center gap-4 hover:scale-110 duration-500 rounded-box p-2"
+                  className="flex items-center justify-start gap-4 hover:bg-primary rounded-box p-2 cursor-pointer"
                 >
                   <img src={esImg} className="h-7 w-7" alt="" />
                   <button>Spanish</button>
                 </div>
-              </li>
-              <li>
+              </div>
+              <div className="w-full">
                 <div
                   onClick={() => {
                     por();
                     closeMenu();
                   }}
-                  className="flex items-center justify-center gap-4 hover:scale-110 duration-500 rounded-box p-2"
+                  className="flex items-center justify-start gap-4 hover:bg-primary rounded-box p-2 cursor-pointer"
                 >
                   <img src={porImg} className="h-6 w-6" alt="" />
                   <button>Português</button>
                 </div>
-              </li>
-              <li>
+              </div>
+              <div className="w-full">
                 <div
                   onClick={() => {
                     fr();
                     closeMenu();
                   }}
-                  className="flex items-center justify-center gap-4 hover:scale-110 duration-500 rounded-box p-2"
+                  className="flex items-center justify-start gap-4 hover:bg-primary rounded-box p-2 cursor-pointer"
                 >
                   <img src={frImg} className="h-6 w-6" alt="" />
                   <button>Français</button>
                 </div>
-              </li>
+              </div>
             </ul>
           </details>
         </div>
