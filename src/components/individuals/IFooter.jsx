@@ -120,10 +120,10 @@ const IFooter = ({ language }) => {
             {footerContent.h3}
           </header>
           <div className="">{footerContent.u1}</div>
-          <Link to="/privacy-policy">
+          <Link to="/individuals/privacy-policy">
             <div className="link link-hover">{footerContent.u2}</div>
           </Link>
-          <Link to="/terms-services">
+          <Link to="/individuals/terms-services">
             <div className="link link-hover">{footerContent.u3}</div>
           </Link>
         </motion.nav>

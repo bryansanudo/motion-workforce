@@ -9,7 +9,7 @@ import giphy from "@/assets/icons/giphy.gif";
 import logo from "@/assets/logo.png";
 import { IoMdArrowDropdown, IoMdArrowDropup } from "react-icons/io";
 
-const INavbar = ({ setLanguage, language }) => {
+const MailNavbar = ({ mail, setMail }) => {
   const navbar = {
     en: {
       home: "home",
@@ -18,7 +18,7 @@ const INavbar = ({ setLanguage, language }) => {
       resources: "resources",
       contact: "contact",
       vacancies: "vacancies",
-      language: "Language",
+      mail: "mail",
       looking: "Looking For Employees",
     },
     es: {
@@ -28,7 +28,7 @@ const INavbar = ({ setLanguage, language }) => {
       resources: "recursos",
       contact: "contacto",
       vacancies: "vacantes",
-      language: "Idioma",
+      mail: "Idioma",
       looking: "En busca de Empleados",
     },
     por: {
@@ -38,7 +38,7 @@ const INavbar = ({ setLanguage, language }) => {
       resources: "recursos",
       contact: "contacto",
       vacancies: "vagas",
-      language: "língua",
+      mail: "língua",
       looking: "à procura de empregados",
     },
     fr: {
@@ -48,11 +48,11 @@ const INavbar = ({ setLanguage, language }) => {
       resources: "Ressources",
       contact: "Contact",
       vacancies: "Offres d'emploi",
-      language: "langue",
+      mail: "langue",
       looking: "à la recherche d'employés",
     },
   };
-  const navbarContent = navbar[language];
+  const navbarContent = navbar[mail];
 
   const menu = {
     en: {
@@ -80,7 +80,7 @@ const INavbar = ({ setLanguage, language }) => {
       fr: "Français",
     },
   };
-  const menuContent = menu[language];
+  const menuContent = menu[mail];
 
   const activeLink = ({ isActive }) =>
     isActive
@@ -141,44 +141,44 @@ const INavbar = ({ setLanguage, language }) => {
   };
 
   const en = () => {
-    setLanguage("en");
+    setMail("en");
     setDropdown(true);
   };
 
   const es = () => {
-    setLanguage("es");
+    setMail("es");
     setDropdown(true);
   };
 
   const por = () => {
-    setLanguage("por");
+    setMail("por");
     setDropdown(true);
   };
 
   const fr = () => {
-    setLanguage("fr");
+    setMail("fr");
     setDropdown(true);
   };
 
-  /*   const changeLanguage = (newLanguage) => {
-    setLanguage(newLanguage);
+  /*   const changemail = (newmail) => {
+    setmail(newmail);
   }; */
 
-  let languageIcon;
-  let languageText;
+  let mailIcon;
+  let mailText;
 
-  if (language === "en") {
-    languageIcon = enImg;
-    languageText = "EN";
-  } else if (language === "es") {
-    languageIcon = esImg;
-    languageText = "ES";
-  } else if (language === "por") {
-    languageIcon = porImg;
-    languageText = "PT";
-  } else if (language === "fr") {
-    languageIcon = frImg;
-    languageText = "FR";
+  if (mail === "en") {
+    mailIcon = enImg;
+    mailText = "EN";
+  } else if (mail === "es") {
+    mailIcon = esImg;
+    mailText = "ES";
+  } else if (mail === "por") {
+    mailIcon = porImg;
+    mailText = "PT";
+  } else if (mail === "fr") {
+    mailIcon = frImg;
+    mailText = "FR";
   }
 
   return (
@@ -195,7 +195,7 @@ const INavbar = ({ setLanguage, language }) => {
             />
           </Link>
 
-          <div className="hidden lg:flex items-center mr-24 gap-20">
+          {/* <div className="hidden lg:flex items-center mr-24 gap-20">
             <ul className="flex gap-6">
               {links.map(({ id, link, name }) => (
                 <NavLink key={id} to={link} className={activeLink}>
@@ -205,26 +205,26 @@ const INavbar = ({ setLanguage, language }) => {
                 </NavLink>
               ))}
             </ul>
-          </div>
-          <div
+          </div> */}
+          {/* <div
             onClick={() => setIsMenuShown(!isMenuShown)}
             className="block lg:hidden cursor-pointer"
           >
             {isMenuShown ? <FaTimes size={22} /> : <FaBars size={22} />}
-          </div>
+          </div> */}
           <img
             src="/favicon.png"
             className="h-10 object-contain lg:hidden block"
           />
-          <Link to="/individuals/companies">
+          {/* <Link to="/individuals/companies">
             <button className="btn btn-secondary text-[12px] p-2 btn-outline capitalize hover:scale-105 duration-700">
               {navbarContent.looking}
             </button>
-          </Link>
+          </Link> */}
           {/* <div className="flex  gap-2 md:flex-row items-center justify-center">
             <select
-              value={language}
-              onChange={(e) => changeLanguage(e.target.value)}
+              value={mail}
+              onChange={(e) => changemail(e.target.value)}
               className="text-black rounded-xl p-1 "
             >
               <option value="en">English</option>
@@ -239,8 +239,8 @@ const INavbar = ({ setLanguage, language }) => {
               onClick={handleDropdown}
               className="uppercase font-bold flex  items-center justify-center gap-1 cursor-pointer"
             >
-              {languageText}
-              <img src={languageIcon} className="w-6 h-6" alt="" />
+              {mailText}
+              <img src={mailIcon} className="w-6 h-6" alt="" />
               {dropdown ? <IoMdArrowDropdown /> : <IoMdArrowDropup />}
             </summary>
 
@@ -297,7 +297,7 @@ const INavbar = ({ setLanguage, language }) => {
           </details>
         </div>
       </div>
-      <div
+      {/* <div
         className={`fixed w-full text-white z-10 left-0 h-fit py-12 lg:hidden flex justify-center text-center text-2xl duration-500 ${
           isMenuShown ? "top-16 rounded-b-2xl bg-gray-400 " : "top-[-100%]"
         }`}
@@ -315,9 +315,9 @@ const INavbar = ({ setLanguage, language }) => {
             </NavLink>
           ))}
         </ul>
-      </div>
+      </div> */}
     </>
   );
 };
 
-export default INavbar;
+export default MailNavbar;

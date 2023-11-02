@@ -21,42 +21,25 @@ const Individuals = ({ language, setLanguage }) => {
     <>
       <INavbar setLanguage={setLanguage} language={language} />
       <Routes>
-        <Route path="/" element={<IHome language={language} />} />
+        {/* <Route path="/" element={<IHome language={language} />} /> */}
+
+        <Route path="*" element={<IHome language={language} />} />
+        <Route path="home" element={<IHome language={language} />} />
+        <Route path="companies" element={<CHome language={language} />} />
+        <Route path="about" element={<IAbout language={language} />} />
+        <Route path="services" element={<IServices language={language} />} />
+        <Route path="histories" element={<IHistories />} />
+        <Route path="resources" element={<IResources language={language} />} />
+        <Route path="contact" element={<IContact language={language} />} />
+
+        <Route path="vacancies" element={<IVacancies language={language} />} />
 
         <Route
-          path="/individuals/home"
-          element={<IHome language={language} />}
-        />
-        <Route path="/companies/home" element={<CHome language={language} />} />
-        <Route
-          path="/individuals/about"
-          element={<IAbout language={language} />}
-        />
-        <Route
-          path="/individuals/services"
-          element={<IServices language={language} />}
-        />
-        <Route path="/individuals/histories" element={<IHistories />} />
-        <Route
-          path="/individuals/resources"
-          element={<IResources language={language} />}
-        />
-        <Route
-          path="/individuals/contact"
-          element={<IContact language={language} />}
-        />
-
-        <Route
-          path="/individuals/vacancies"
-          element={<IVacancies language={language} />}
-        />
-
-        <Route
-          path="/privacy-policy"
+          path="privacy-policy"
           element={<PrivacyPolicy language={language} />}
         />
         <Route
-          path="/terms-services"
+          path="terms-services"
           element={<TermsOfService language={language} />}
         />
       </Routes>
