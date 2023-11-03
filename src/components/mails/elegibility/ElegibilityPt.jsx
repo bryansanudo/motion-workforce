@@ -31,9 +31,15 @@ const ElegibilityPt = () => {
             e português. Se você se qualificar, poderá agendar uma consulta
             conosco para iniciar o seu caminho rumo à Residência Permanente.
           </p>
-          <button className="btn btn-primary btn-lg mb-6 capitalize text-xl">
-            Verificar minha elegibilidade
-          </button>
+          <a
+            href="https://form.jotform.com/EB3_Recruiter/eligibility-eb3wfs"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="btn btn-primary btn-lg mb-6 capitalize text-xl">
+              Verificar minha elegibilidade
+            </button>
+          </a>
           <p className={`${styles.sectionText} mt-6 mb-40 text-xl font-bold`}>
             Estamos aqui para ajudá-lo em cada passo desta jornada importante.
           </p>

@@ -36,9 +36,15 @@ const ElegibilityEs = () => {
             iniciar su camino hacia la Residencia Permanente.
           </p>
 
-          <button className="btn btn-primary btn-lg mb-6  capitalize text-xl">
-            comprobar mi elegibilidad
-          </button>
+          <a
+            href="https://form.jotform.com/EB3_Recruiter/eligibility-eb3wfs"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="btn btn-primary btn-lg mb-6  capitalize text-xl">
+              comprobar mi elegibilidad
+            </button>
+          </a>
           <p className={`${styles.sectionText} mt-6 mb-40 text-xl font-bold`}>
             Estamos aquí para ayudarle en cada paso de este importante viaje.
           </p>
