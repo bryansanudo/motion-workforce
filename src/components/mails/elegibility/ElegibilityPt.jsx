@@ -1,12 +1,36 @@
 import Section from "@/components/individuals/ISection";
+import esImg from "@/assets/icons/es.png";
+import porImg from "@/assets/icons/por.png";
+import frImg from "@/assets/icons/fr.png";
+import { NavLink } from "react-router-dom";
 
 import { styles } from "@/styles";
 
 const ElegibilityPt = () => {
+  const activeLink = ({ isActive }) =>
+    isActive ? " relative border border-primary rounded-full p-1" : "";
+
+  const links = [
+    {
+      id: 1,
+      link: "/mails/elegibility/pt",
+      img: porImg,
+    },
+    {
+      id: 2,
+      link: "/mails/elegibility/es",
+      img: esImg,
+    },
+    {
+      id: 3,
+      link: "/mails/elegibility/fr",
+      img: frImg,
+    },
+  ];
   return (
     <>
       <Section>
-        <div className="mt-40 mx-10">
+        <div className="mt-10 mx-10">
           <p className={`${styles.sectionText} mb-6 text-xl`}>
             Notamos que você está interessado no programa do Green Card EB-3 em
             2020/2021. Compreendendo a importância deste programa para o seu
@@ -40,9 +64,16 @@ const ElegibilityPt = () => {
               Verificar minha elegibilidade
             </button>
           </a>
-          <p className={`${styles.sectionText} mt-6 mb-40 text-xl font-bold`}>
+          <p className={`${styles.sectionText} mt-6 mb-10 text-xl font-bold`}>
             Estamos aqui para ajudá-lo em cada passo desta jornada importante.
           </p>
+          <div className="flex items-center justify-center my-10 gap-10">
+            {links.map(({ id, link, img }) => (
+              <NavLink key={id} to={link} className={activeLink}>
+                <img src={img} className="w-6" alt="" />
+              </NavLink>
+            ))}
+          </div>
         </div>
       </Section>
     </>

@@ -1,12 +1,36 @@
 import Section from "@/components/individuals/ISection";
+import esImg from "@/assets/icons/es.png";
+import porImg from "@/assets/icons/por.png";
+import frImg from "@/assets/icons/fr.png";
+import { NavLink } from "react-router-dom";
 
 import { styles } from "@/styles";
 
 const ElegibilityFr = () => {
+  const activeLink = ({ isActive }) =>
+    isActive ? " relative border border-primary rounded-full p-1" : "";
+
+  const links = [
+    {
+      id: 1,
+      link: "/mails/elegibility/pt",
+      img: porImg,
+    },
+    {
+      id: 2,
+      link: "/mails/elegibility/es",
+      img: esImg,
+    },
+    {
+      id: 3,
+      link: "/mails/elegibility/fr",
+      img: frImg,
+    },
+  ];
   return (
     <>
       <Section>
-        <div className="mt-40 mx-10">
+        <div className="mt-10 mx-10">
           <p className={`${styles.sectionText} mb-6 text-xl`}>
             Nous avons remarqué que vous êtes intéressé par le programme de la
             Carte Verte EB-3 en 2020/2021. Compte tenu de l'importance de ce
@@ -43,10 +67,17 @@ const ElegibilityFr = () => {
               Vérifier mon éligibilité
             </button>
           </a>
-          <p className={`${styles.sectionText} mt-6 mb-40 text-xl font-bold`}>
+          <p className={`${styles.sectionText} mt-6 mb-10 text-xl font-bold`}>
             Nous sommes là pour vous aider à chaque étape de ce voyage
             important.
           </p>
+          <div className="flex items-center justify-center my-10 gap-10">
+            {links.map(({ id, link, img }) => (
+              <NavLink key={id} to={link} className={activeLink}>
+                <img src={img} className="w-6" alt="" />
+              </NavLink>
+            ))}
+          </div>
         </div>
       </Section>
     </>
