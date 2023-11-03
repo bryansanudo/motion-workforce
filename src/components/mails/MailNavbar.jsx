@@ -18,7 +18,7 @@ const MailNavbar = () => {
             <img
               src={logo}
               alt="logo navbar"
-              className="object-contain w-60 h-60 lg:w-72 lg:h-72 hover:scale-110 duration-700 "
+              className="object-contain w-60  lg:w-72  hover:scale-110 duration-700 "
               width={250}
               height={300}
             />
