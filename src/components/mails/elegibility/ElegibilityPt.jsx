@@ -2,6 +2,7 @@ import Section from "@/components/individuals/ISection";
 import esImg from "@/assets/icons/es.png";
 import porImg from "@/assets/icons/por.png";
 import frImg from "@/assets/icons/fr.png";
+import enImg from "@/assets/icons/en.png";
 import { NavLink } from "react-router-dom";
 
 import { styles } from "@/styles";
@@ -25,6 +26,11 @@ const ElegibilityPt = () => {
       id: 3,
       link: "/mails/elegibility/fr",
       img: frImg,
+    },
+    {
+      id: 4,
+      link: "/mails/elegibility/en",
+      img: enImg,
     },
   ];
   return (
