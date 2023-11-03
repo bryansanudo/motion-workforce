@@ -12,7 +12,7 @@ import { IoMdArrowDropdown, IoMdArrowDropup } from "react-icons/io";
 const MailNavbar = () => {
   return (
     <>
-      <div className="fixed w-full h-24  text-white z-20">
+      <div className="w-full h-24  text-white z-20">
         <div className="flex justify-center gap-[6px] items-center lg:mx-10   h-full">
           <a href="http://eb3wfs.com" target="_blank" rel="noopener noreferrer">
             <img
