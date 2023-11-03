@@ -54,9 +54,9 @@ const ElegibilityEs = () => {
           </p>
           <p className={`${styles.sectionText} text-xl mb-10`}>
             Para saber si cumples los requisitos para esta increíble oferta,
-            rellena el siguiente formulario, disponible en inglés, español y
-            portugués. Si califica, podrá programar una cita con nosotros para
-            iniciar su camino hacia la Residencia Permanente.
+            rellena el siguiente formulario, disponible en Inglés, Español,
+            Portugués y Frances. Si califica, podrá programar una cita con
+            nosotros para iniciar su camino hacia la Residencia Permanente.
           </p>
 
           <a

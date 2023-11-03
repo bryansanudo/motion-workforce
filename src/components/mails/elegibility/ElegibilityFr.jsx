@@ -51,12 +51,13 @@ const ElegibilityFr = () => {
             avenir aux États-Unis, et nous avons conçu cette offre en pensant à
             des candidats comme vous.
           </p>
-          <p className={`${styles.sectionText} text-xl mb-10`}>
-            Pour vérifier si vous remplissez les critères de cette incroyable
-            offre, veuillez remplir le formulaire ci-dessous, disponible en
-            anglais, en espagnol et en portugais. Si vous êtes admissible, vous
-            pourrez prendre rendez-vous avec nous pour entamer votre parcours
-            vers la Résidence Permanente.
+          <p className={`${styles.sectionText} text-lg mb-10`}>
+            Pour savoir si vous pouvez bénéficier de cette offre exceptionnelle,
+            remplissez le formulaire ci-dessous, disponible en anglais,
+            espagnol, portugais et français. Si vous remplissez les conditions
+            requises, vous pourrez prendre rendez-vous avec nous pour commencer
+            votre parcours vers la résidence permanente. commencer votre
+            parcours vers la résidence permanente.
           </p>
           <a
             href="https://form.jotform.com/EB3_Recruiter/eligibility-eb3wfs"
@@ -67,7 +68,7 @@ const ElegibilityFr = () => {
               Vérifier mon éligibilité
             </button>
           </a>
-          <p className={`${styles.sectionText} mt-6 mb-10 text-xl font-bold`}>
+          <p className={`${styles.sectionText} mt-6 mb-10 text-lg font-bold`}>
             Nous sommes là pour vous aider à chaque étape de ce voyage
             important.
           </p>

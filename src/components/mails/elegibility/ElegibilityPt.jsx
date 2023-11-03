@@ -50,10 +50,10 @@ const ElegibilityPt = () => {
             você em mente.
           </p>
           <p className={`${styles.sectionText} text-xl mb-10`}>
-            Para verificar se você cumpre os requisitos para esta incrível
-            oferta, preencha o formulário abaixo, disponível em inglês, espanhol
-            e português. Se você se qualificar, poderá agendar uma consulta
-            conosco para iniciar o seu caminho rumo à Residência Permanente.
+            Para saber se tem direito a esta fantástica oferta, preencha o
+            formulário abaixo, disponível em inglês, espanhol, português e
+            francês. Se se qualificar, poderá marcar uma consulta connosco para
+            iniciar o seu iniciar o seu caminho para a Residência Permanente.
           </p>
           <a
             href="https://form.jotform.com/EB3_Recruiter/eligibility-eb3wfs"
