@@ -217,7 +217,7 @@ const INavbar = ({ setLanguage, language }) => {
             className="h-10 object-contain lg:hidden block"
           />
           <Link to="/individuals/companies">
-            <button className="btn btn-secondary text-[12px] p-2 btn-outline capitalize hover:scale-105 duration-700">
+            <button className="btn btn-secondary text-[12px] p-2 btn-outline capitalize hover:scale-105 duration-700 mr-4">
               {navbarContent.looking}
             </button>
           </Link>
@@ -234,7 +234,7 @@ const INavbar = ({ setLanguage, language }) => {
             </select>
             
           </div> */}
-          <details className="dropdown dropdown-end ">
+          {/* <details className="dropdown dropdown-end ">
             <summary
               onClick={handleDropdown}
               className="uppercase font-bold flex  items-center justify-center gap-1 cursor-pointer"
@@ -294,7 +294,7 @@ const INavbar = ({ setLanguage, language }) => {
                 </div>
               </div>
             </ul>
-          </details>
+          </details> */}
         </div>
       </div>
       <div
