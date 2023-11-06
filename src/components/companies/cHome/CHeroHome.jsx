@@ -54,6 +54,21 @@ const messages = {
 };
 
 const CHeroHome = ({ language }) => {
+  const btn = {
+    en: {
+      title: "Yes, Teach Me How!",
+    },
+    es: {
+      title: "Sí, ¡enséñame cómo!",
+    },
+    por: {
+      title: "Sim, ensina-me como!",
+    },
+    fr: {
+      title: "Oui, apprenez-moi à faire !",
+    },
+  };
+  const btnContent = btn[language];
   const [randomMessage, setRandomMessage] = useState("");
 
   useEffect(() => {
@@ -82,7 +97,7 @@ const CHeroHome = ({ language }) => {
 
             <Link to="teach me s" smooth duration={500}>
               <button className="btn hover:scale-105 btn-secondary capitalize tracking-wider">
-                Yes, teach me how!
+                {btnContent.title}
               </button>
             </Link>
           </div>
