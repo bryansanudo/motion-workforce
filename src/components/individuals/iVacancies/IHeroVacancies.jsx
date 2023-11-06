@@ -1,6 +1,21 @@
 import React from "react";
 
-const IHeroVacancies = () => {
+const IHeroVacancies = ({ language }) => {
+  const vacancies = {
+    en: {
+      h1: "Vacancies",
+    },
+    es: {
+      h1: "Vacantes",
+    },
+    por: {
+      h1: "Vagas",
+    },
+    fr: {
+      h1: "Postes Vacants",
+    },
+  };
+  const vacanciesContent = vacancies[language];
   return (
     <>
       <div
@@ -14,7 +29,7 @@ const IHeroVacancies = () => {
         <div className="hero-content text-center text-white">
           <div className="max-w-5xl">
             <h1 className="my-5 lg:text-5xl md:text-3xl text-2xl font-bold">
-              VACANCIES
+              {vacanciesContent.h1}
             </h1>
           </div>
         </div>

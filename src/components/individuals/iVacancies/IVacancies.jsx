@@ -2,6 +2,7 @@ import ISection from "@/components/individuals/ISection";
 import IHeroVacancies from "@/components/individuals/iVacancies/IHeroVacancies";
 import { styles } from "@/styles";
 import { GrLocation } from "react-icons/gr";
+import { MdPeopleAlt } from "react-icons/md";
 import { Link } from "react-router-dom";
 
 import chulaLogo from "@/assets/partners/chula-logo.png";
@@ -9,6 +10,7 @@ import lestersLogo from "@/assets/partners/lesters-logo.png";
 import stoughtonLogo from "@/assets/partners/stoughton-logo.png";
 import subwayLogo from "@/assets/partners/subway-logo.png";
 import transportationLogo from "@/assets/partners/transportation-logo.png";
+import andersonLogo from "@/assets/partners/anderson-logo.png";
 import travelkuzLogo from "@/assets/partners/travelkuz-logo-bg.png";
 import wildernessLogo from "@/assets/partners/wilderness-logo.png";
 import kartsLogo from "@/assets/partners/karst-logo.png";
@@ -28,9 +30,14 @@ const IVacancies = ({ language }) => {
         "Occupying 600 acres, Wilderness Resort is the largest water park resort in the United States, located in the world capital of water parks, Wisconsin Dells!",
       chula_des:
         "Chula Vista Resort offers over 200,000 square feet of water parks, top-notch spas, culinary delights in one of the most outstanding chophouses in the USA, and even an 18-hole golf course!",
+      transportation_des:
+        "Chartering a Vehicle. Where would you like to go? We offer a full line of charter bus services, utilizing coach style and school buses.",
+      anderson_des:
+        "Since 1937, Anderson Coach & Travel has been at the forefront of the motorcoach industry. As a charter bus company serving PA, OH, NY and beyond, we are known for our large fleet of comfortable vehicles, friendly and skilled bus drivers, and a history of service that can only be provided by a family-owned and operated company. ",
       button: "View Details",
-      location: "Ubicaciones",
-      website: "Página web",
+      location: "Locations",
+      vacancies: "Vacancies",
+      website: "Website",
     },
     es: {
       stoughton_des:
@@ -45,9 +52,14 @@ const IVacancies = ({ language }) => {
         "Ocupando 600 acres, Wilderness Resort es el mayor complejo de parques acuáticos de Estados Unidos, situado en la capital mundial de los parques acuáticos, ¡Wisconsin Dells!",
       chula_des:
         "Chula Vista Resort ofrece más de 200.000 pies cuadrados de parques acuáticos, spas de primera categoría, delicias culinarias en una de las chophouses más destacadas de EE. UU., ¡e incluso un campo de golf de 18 hoyos!",
+      transportation_des:
+        "Alquilar un vehículo. ¿A dónde quiere ir? Ofrecemos una línea completa de servicios de autobuses chárter, utilizando autobuses de estilo autocar y autobuses escolares.",
+      anderson_des:
+        "Desde 1937, Anderson Coach & Travel ha estado a la vanguardia de la industria del autocar. Como una empresa de autobuses chárter que sirve PA, OH, NY y más allá, somos conocidos por nuestra gran flota de vehículos confortables, conductores de autobuses amables y cualificados, y una historia de servicio que sólo puede ser proporcionada por una empresa familiar y operada.",
       button: "Ver detalles",
-      location: "Locations",
-      website: "Website",
+      location: "Ubicaciones",
+      vacancies: "Vacantes",
+      website: "Página Web",
     },
     por: {
       stoughton_des:
@@ -62,8 +74,13 @@ const IVacancies = ({ language }) => {
         "Ocupando 600 acres, o Wilderness Resort é o maior parque aquático dos Estados Unidos, localizado na capital mundial dos parques aquáticos, Wisconsin Dells!",
       chula_des:
         "O Chula Vista Resort oferece mais de 200.000 pés quadrados de parques aquáticos, spas de primeira linha, delícias culinárias numa das mais notáveis chophouses dos EUA e até um campo de golfe de 18 buracos!",
+      transportation_des:
+        "Aluguer de um veículo. Para onde gostaria de ir? Oferecemos uma linha completa de serviços de autocarros fretados, utilizando autocarros escolares e de estilo autocarro.",
+      anderson_des:
+        "Desde 1937, a Anderson Coach & Travel tem estado na vanguarda da indústria de autocarros. Como empresa de autocarros fretados que serve PA, OH, NY e outros países, somos conhecidos pela nossa grande frota de veículos confortáveis, condutores de autocarros simpáticos e competentes e um historial de serviços que só pode ser prestado por uma empresa familiar.",
       button: "Ver detalhes",
       location: "Localizações",
+      vacancies: "Vagas",
       website: "Sítio Web",
     },
     fr: {
@@ -79,8 +96,13 @@ const IVacancies = ({ language }) => {
         "Wilderness Resort est le plus grand parc aquatique des États-Unis, situé dans la capitale mondiale des parcs aquatiques, Wisconsin Dells, et s'étend sur 600 hectares",
       chula_des:
         "Chula Vista Resort offre plus de 200 000 pieds carrés de parcs aquatiques, des spas de premier ordre, des délices culinaires dans l'un des chophouses les plus remarquables des États-Unis, et même un terrain de golf de 18 trous !",
+      transportation_des:
+        "Affrètement d'un véhicule. Où voulez-vous aller ? Nous proposons une gamme complète de services d'affrètement d'autobus, utilisant des autobus scolaires et des autocars.",
+      anderson_des:
+        "Depuis 1937, Anderson Coach & Travel est à l'avant-garde de l'industrie de l'autocar. En tant que compagnie de bus charter desservant la Pennsylvanie, l'Ohio, l'État de New York et au-delà, nous sommes connus pour notre vaste flotte de véhicules confortables, nos chauffeurs de bus sympathiques et compétents, et notre histoire de service qui ne peut être fournie que par une entreprise familiale.",
       button: "Voir les détails",
       location: "Localisation des sites",
+      vacancies: "Postes Vacants",
       website: "Site web",
     },
   };
@@ -90,16 +112,13 @@ const IVacancies = ({ language }) => {
     {
       id: 1,
       logo: stoughtonLogo,
-      category: "tourism",
       name: "Stoughton Trailers",
       description: positionsContent.stoughton_des,
-      location: "Stoughton, WI",
-      button: "/individuals/vacancies/stoughton",
+      location: "Stoughton, Wisconsin",
       website: "https://www.stoughtontrailers.com/",
       v1: "Assembler",
-      usd1: "$ 15 USD / Hour",
     },
-    {
+    /* {
       id: 2,
       logo: travelkuzLogo,
       category: "tourism",
@@ -110,23 +129,18 @@ const IVacancies = ({ language }) => {
       website: "https://www.travelkuz.com/",
       v1: "General Labor",
       usd1: "$ 15 USD / Hour",
-    },
+    }, */
 
     {
       id: 4,
       logo: subwayLogo,
-      category: "tourism",
       name: "Subway",
       description: positionsContent.subway_des,
-      location: "Anchorage, AK.",
-      l2: "Fairbanksm Ak.",
-      l3: "Chicago Area.",
-      button: "/individuals/vacancies/subway",
+      location: "Anchorage, Alaska",
       website: "https://www.subway.com/es-co",
       v1: "Sandwich Artist",
-      usd1: "$ 15 USD / Hour",
     },
-    {
+    /* {
       id: 3,
       logo: kartsLogo,
       category: "tourism",
@@ -137,42 +151,50 @@ const IVacancies = ({ language }) => {
       website: "https://karststage.com/",
       v1: "General Labor",
       usd1: "$ 15 USD / Hour",
-    },
+    }, */
 
     {
       id: 6,
       logo: wildernessLogo,
-      category: "tourism",
       name: "Wilderness Resort",
-      location: "Wisconsin Dells, WI",
+      location: "Wisconsin Dells, Wisconsin",
       description: positionsContent.wilder_des,
-      button: "/individuals/vacancies/wilderness",
       website: "https://www.wildernessresort.com/",
-      v1: "Housekeeper",
-      usd1: "$ 15 USD / Hour",
-      v2: "Lifeguard",
-      usd2: "$ 15 USD / Hour",
-      style: "badge badge-primary badge-outline",
+      v1: "Room Attendant",
+      v2: "Water Park Attendant",
     },
     {
       id: 7,
       logo: chulaLogo,
-      category: "tourism",
       name: "Chula Vista",
       description: positionsContent.chula_des,
-      location: "Wisconsin Dells, WI",
-      button: "/individuals/vacancies/chula",
+      location: "Wisconsin Dells, Wisconsin",
       website: "https://chulavistaresort.com/",
-      v1: "Housekeeper",
-      usd1: "$ 15 USD / Hour",
-      v2: "Lifeguard",
-      usd2: "$ 15 USD / Hour",
-      style: "badge badge-primary badge-outline",
+      v1: "Room Attendant",
+      v2: "Water Park Attendant",
+    },
+    {
+      id: 8,
+      logo: transportationLogo,
+      name: "AA Transportation",
+      description: positionsContent.transportation_des,
+      location: "Shrewsbury, Massachusetts",
+      website: "https://aatransportation.com/",
+      v1: "General Labor",
+    },
+    {
+      id: 9,
+      logo: andersonLogo,
+      name: "Anderson Coach",
+      description: positionsContent.anderson_des,
+      location: "Greenville, Pennsylvania",
+      website: "https://www.goanderson.com/",
+      v1: "General Labor",
     },
   ];
   return (
     <>
-      <IHeroVacancies />
+      <IHeroVacancies language={language} />
       <ISection>
         <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-10 grid-cols-1 my-10 mx-6  ">
           {vacancies.map(
@@ -230,22 +252,20 @@ const IVacancies = ({ language }) => {
                           </button>
                         </form>
 
-                        <div className="flex flex-col md:flex-row items-start justify-center">
-                          {/* works */}
-                          <div className="w-1/2 ">
-                            <div className="flex flex-col  items-center justify-center gap-4 mb-10">
-                              <h3 className="font-bold text-lg">{v1}</h3>
-                              {/* <p className="py-4 badge badge-primary badge-outline ">
-                                {usd1}
-                              </p> */}
+                        <div className="flex flex-col gap-6  items-start justify-center">
+                          {/* Vacancies */}
+                          <div className="w-1/2 flex  flex-col items-center justify-center gap-2 ">
+                            <div className="flex items-center justify-center gap-2">
+                              <MdPeopleAlt />
+                              <p className="font-bold">
+                                {positionsContent.vacancies}
+                              </p>
                             </div>
-
-                            <div className="flex flex-col items-center justify-center gap-4">
-                              <h3 className="font-bold text-lg">{v2}</h3>
-                              {/*  <p className={`${style} py-4`}>{usd2}</p> */}
+                            <div className="flex flex-col items-center justify-center">
+                              <p>{v1}</p>
+                              <p>{v2}</p>
                             </div>
                           </div>
-
                           {/* locations */}
                           <div className="w-1/2 flex  flex-col items-center justify-center gap-2 ">
                             <div className="flex items-center justify-center gap-2">
@@ -256,8 +276,6 @@ const IVacancies = ({ language }) => {
                             </div>
                             <div className="flex flex-col items-center justify-center">
                               <p>{location}</p>
-                              <p>{l2}</p>
-                              <p>{l3}</p>
                             </div>
                           </div>
                         </div>
@@ -266,7 +284,7 @@ const IVacancies = ({ language }) => {
                           <a href={website} target="_blank">
                             <img
                               src={logo}
-                              className="h-20 w-20 object-contain "
+                              className="h-20 w-20 object-contain mx-auto "
                               alt=""
                             />
                             <span className="link link-hover hover:text-primary">
