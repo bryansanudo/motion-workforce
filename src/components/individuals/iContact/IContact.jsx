@@ -75,7 +75,7 @@ const IContact = ({ language }) => {
     es: {
       title1:
         "No dude en presentar su solicitud sin necesidad de tener experiencia previa.",
-      p1: "¿Está interesado en obtener la Tarjeta de Residente Permanente de los EE.UU. (Green Card) para usted y su familia? MCC USA colabora con empresas estadounidenses que están dispuestas a apoyar tu solicitud de Tarjeta Verde a cambio de que te comprometas a trabajar con ellas durante al menos un año.",
+      p1: "¿Está interesado en obtener la Tarjeta de Residente Permanente de los EE.UU. (Green Card) para usted y su familia? MCC USA colabora con empresas estadounidenses que están dispuestas a apoyar tu solicitud de Green Card a cambio de que te comprometas a trabajar con ellas durante al menos un año.",
     },
     por: {
       title1: "Pode candidatar-se sem necessidade de experiência prévia!",

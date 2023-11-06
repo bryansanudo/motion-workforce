@@ -53,7 +53,7 @@ const CHorizontalProcess = ({ language }) => {
       m17: "Mes 17",
       p17: "Recibimos el visado y viajamos",
       m18: "Mes 18",
-      p18: "Tarjeta verde expedida",
+      p18: "Green Card expedida",
     },
     por: {
       m1: "Mês 1",

@@ -10,6 +10,7 @@ import IFormContact from "@/components/individuals/IFormContact";
 import contactImg from "@/assets/contact2.jpg";
 import Divider from "@/components/individuals/IDivider";
 import ImgContent from "@/components/individuals/ImgContent";
+import IconWpp from "@/components/icons/IconWpp";
 
 import TitleContent from "@/components/individuals/TitleContent";
 import { styles } from "@/styles";
@@ -24,12 +25,12 @@ const IHome = ({ language }) => {
     en: {
       title1: "Meet The Founder",
       title2: "James Baker, CPA",
-      p1: "James is the head of different companies around the US, serving international Corporations and international entrepreneurs with different services and companies. James allied with silent investors to create EB-3 Workforce solutions, a company that connects employers which are facing a chronic shortage of unskilled workers with immigrant employees willing to apply for a US Green Card through the EB-3 Visa program.",
+      p1: "James is the head of different companies around the US, serving international Corporations and international entrepreneurs with different services and companies. James allied with silent investors to create EB-3 Workforce Solutions, a company that connects employers which are facing a chronic shortage of unskilled workers with immigrant employees willing to apply for a US Green Card through the EB-3 Visa program.",
     },
     es: {
       title1: "Conozca al fundador",
       title2: "James Baker, CPA",
-      p1: "James dirige diferentes empresas en EE.UU. que prestan servicios a corporaciones y empresarios internacionales. James se alió con inversores silenciosos para crear EB-3 Workforce solutions, una empresa que pone en contacto a empresarios que se enfrentan a una escasez crónica de trabajadores no cualificados con empleados inmigrantes dispuestos a solicitar una tarjeta verde estadounidense a través del programa de visados EB-3.",
+      p1: "James dirige diferentes empresas en EE.UU. que prestan servicios a corporaciones y empresarios internacionales. James se alió con inversores silenciosos para crear EB-3 Workforce Solutions, una empresa que pone en contacto a empresarios que se enfrentan a una escasez crónica de trabajadores no cualificados con empleados inmigrantes dispuestos a solicitar una Green Card estadounidense a través del programa de visados EB-3.",
     },
     por: {
       title1: "Conheça o fundador",
@@ -39,26 +40,26 @@ const IHome = ({ language }) => {
     fr: {
       title1: "Rencontre avec le fondateur",
       title2: "James Baker, CPA",
-      p1: "James est à la tête de plusieurs entreprises aux États-Unis, au service de sociétés internationales et d'entrepreneurs internationaux avec différents services et entreprises. James s'est allié à des investisseurs silencieux pour créer EB-3 Workforce solutions, une société qui met en relation des employeurs confrontés à une pénurie chronique de travailleurs non qualifiés avec des employés immigrés désireux de demander une carte verte américaine dans le cadre du programme de visa EB-3.",
+      p1: "James est à la tête de plusieurs entreprises aux États-Unis, au service de sociétés internationales et d'entrepreneurs internationaux avec différents services et entreprises. James s'est allié à des investisseurs silencieux pour créer EB-3 Workforce Solutions, une société qui met en relation des employeurs confrontés à une pénurie chronique de travailleurs non qualifiés avec des employés immigrés désireux de demander une carte verte américaine dans le cadre du programme de visa EB-3.",
     },
   };
   const jamesContent = james[language];
 
   const dividerStart = {
     en: {
-      h1: "Start Your Journey!",
+      h1: "Start Your Journey! Contact Us:",
       p: "Call Us",
     },
     es: {
-      h1: "Comience su viaje",
+      h1: "¡Comience su viaje! Póngase en contacto con nosotros:",
       p: "Llámanos",
     },
     por: {
-      h1: "Comece a sua viagem!",
+      h1: "Comece a sua viagem! Contacte-nos:",
       p: "Contactar-nos",
     },
     fr: {
-      h1: "Commencez votre voyage !",
+      h1: "Commencez votre voyage! Contactez nous :",
       p: "Appelez-nous",
     },
   };
@@ -74,8 +75,8 @@ const IHome = ({ language }) => {
     es: {
       title1: "Contacte con nosotros",
       title2: "¿Quiere saber más?",
-      p1: "Si usted se encuentra en una situación en la que está buscando una oportunidad significativa para una vida mejor y una carrera en los Estados Unidos, o si se enfrentan a desafíos en la navegación por el complejo proceso de inmigración y los costos asociados, entonces tenemos la solución perfecta para usted",
-      p2: "Presentamos el programa de visados EB-3, una solución de inmigración a largo plazo diseñada específicamente para personas como usted. Esta opción de Tarjeta Verde basada en el empleo está diseñada para abordar sus objetivos de inmigración y proporcionarle el camino que necesita hacia los Estados Unidos.",
+      p1: "Si usted se encuentra en una situación en la que está buscando una oportunidad significativa para una vida mejor y una carrera en los Estados Unidos, o si se enfrenta a desafíos en la navegación por el complejo proceso de inmigración y los costos asociados, entonces tenemos la solución perfecta para usted",
+      p2: "Presentamos el programa de visados EB-3, una solución de inmigración a largo plazo diseñada específicamente para personas como usted. Esta opción de Green Card basada en el empleo está diseñada para abordar sus objetivos de inmigración y proporcionarle el camino que necesita hacia los Estados Unidos.",
     },
     por: {
       title1: "Contactar-nos",
@@ -97,7 +98,7 @@ const IHome = ({ language }) => {
       p1: "At EB-3 Workforce Solutions, we understand the significance of pursuing a better life and career opportunities in the United States. That's why we provide a unique solution to your immigration dreams - the EB-3 Visa program. Our dedicated team is committed to assisting interested individuals who are eager to contribute positively to the U.S. With a meticulous application process and a network of top-notch immigration experts, we ensure that you have the best support available for your EB-3 Visa journey. Say goodbye to the uncertainties of the immigration process and hello to a brighter future with EB-3 Workforce Solutions.",
     },
     es: {
-      p1: "En EB-3 Workforce Solutions, entendemos la importancia de buscar una vida mejor y oportunidades de carrera en los Estados Unidos. Es por eso que ofrecemos una solución única a sus sueños de inmigración - el programa de Visa EB-3. Nuestro equipo dedicado está comprometido a ayudar a las personas interesadas que están deseosas de contribuir positivamente a los EE.UU. Con un meticuloso proceso de solicitud y una red de expertos en inmigración de primera categoría, nos aseguramos de que usted tenga el mejor apoyo disponible para su viaje de Visa EB-3. Diga adiós a las incertidumbres del proceso de inmigración y hola a un futuro más brillante con EB-3 Workforce Solutions.",
+      p1: "En EB-3 Workforce Solutions, entendemos la importancia de buscar una vida mejor y oportunidades de carrera en los Estados Unidos. Es por eso que ofrecemos una solución única a sus sueños de inmigración - el programa de Visa EB-3. Nuestro equipo dedicado está comprometido a ayudar a las personas interesadas que están deseosas de contribuir positivamente a los EE.UU. Con un meticuloso proceso de solicitud y una red de expertos en inmigración de primera categoría, nos aseguramos de que usted tenga el mejor apoyo disponible para su viaje de Visa EB-3. Diga adiós a la incertidumbre del proceso de inmigración y hola a un futuro más brillante con EB-3 Workforce Solutions.",
     },
     por: {
       p1: "Na EB-3 Workforce Solutions, compreendemos a importância de procurar uma vida melhor e oportunidades de carreira nos Estados Unidos. É por isso que oferecemos uma solução única para os seus sonhos de imigração - o programa de vistos EB-3. A nossa equipa dedicada está empenhada em ajudar os indivíduos interessados que estão ansiosos por contribuir positivamente para os EUA. Com um processo de candidatura meticuloso e uma rede de especialistas de imigração de topo, garantimos que tem o melhor apoio disponível para a sua viagem com o Visto EB-3. Diga adeus às incertezas do processo de imigração e olá a um futuro mais brilhante com a EB-3 Workforce Solutions.",
@@ -144,24 +145,29 @@ const IHome = ({ language }) => {
         <div className="flex items-center justify-center gap-6 md:gap-40 p-6 flex-col md:flex-row bg-gray-100 w-full ">
           <h1 className="text-4xl font-bold">{dividerStartContent.h1}</h1>
 
-          <a href="tel:+573055641311">
-            <div className="flex flex-col items-center justify-center gap-4 text-xl font-bold hover:scale-110 duration-500">
-              <div className="flex items-center justify-center gap-4">
-                <div className="bg-white p-3 rounded-full  ">
+          <div className="flex flex-col items-center justify-center gap-4 text-xl font-bold ">
+            <div className="flex items-center justify-center gap-4">
+              <a href="tel:+13055641311">
+                <div className="bg-white p-3 rounded-full hover:scale-110 duration-500  ">
                   <BiPhoneCall className="text-4xl text-primary" />
                 </div>
-                <p>{dividerStartContent.p}</p>
-              </div>
-              <p>(305) 564-1311</p>
+              </a>
+              <a href="https://wa.me/c/12403437282" target="_blank">
+                <div className="bg-white p-3 rounded-full hover:scale-110 duration-500 cursor-pointer   ">
+                  <IconWpp className="h-9 w-9 text-primary" />
+                </div>
+              </a>
             </div>
-          </a>
+            <a href="tel:+13055641311">
+              <p>+1 (305) 564-1311</p>
+            </a>
+          </div>
           <a href="mailto:recruiter@eb3wfs.com">
             <div className="flex flex-col items-center justify-center gap-4 font-bold text-xl hover:scale-110 duration-500">
               <div className="flex items-center justify-center gap-4">
                 <div className="bg-white p-3 rounded-full ">
                   <AiOutlineMail className="text-primary text-4xl" />
                 </div>
-                <p>Email</p>
               </div>
               <p>recruiter@eb3wfs.com</p>
             </div>

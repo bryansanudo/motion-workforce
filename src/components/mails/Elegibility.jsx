@@ -11,8 +11,8 @@ const Elegibility = ({ mail, setMail }) => {
       p6: "We're here to assist you every step of the way as you navigate this inportant journey.",
     },
     es: {
-      p1: "Nos hemos dado cuenta de que está interesado en el programa de la Tarjeta Verde EB-3 en 2020/2021. Entendiendo la importancia de este programa para su futuro, estamos llegando a usted con una oferta exclusiva, por tiempo limitado, hecha a su medida",
-      p2: "Estamos encantados de ofrecerle la oportunidad de solicitar un programa de Tarjeta Verde EB3 a tan solo el 35% de la tarifa típica de mercado que le pueden haber cotizado en 2020/2021",
+      p1: "Nos hemos dado cuenta de que está interesado en el programa de la Green Card EB-3 en 2020/2021. Entendiendo la importancia de este programa para su futuro, estamos llegando a usted con una oferta exclusiva, por tiempo limitado, hecha a su medida",
+      p2: "Estamos encantados de ofrecerle la oportunidad de solicitar un programa de Green Card EB3 a tan solo el 35% de la tarifa típica de mercado que le pueden haber cotizado en 2020/2021",
       p3: "Esta es una oportunidad sin igual para asegurar su futuro en los Estados Unidos, y hemos diseñado esta oferta pensando en aspirantes como usted",
       p4: "Para saber si cumples los requisitos para esta increíble oferta, rellena el siguiente formulario, disponible en inglés, español y portugués",
       p5: "Si reúne los requisitos, podrá concertar una cita con nosotros para iniciar su camino hacia la Residencia Permanente",

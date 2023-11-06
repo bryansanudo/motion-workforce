@@ -38,9 +38,7 @@ const ElegibilityEs = () => {
         <div className="mt-10 mx-10">
           <p className={`${styles.sectionText} mb-6 text-xl`}>
             Nos hemos dado cuenta de que estuvo interesado en el{" "}
-            <span className="font-bold">
-              programa de la Tarjeta Verde EB-3{" "}
-            </span>
+            <span className="font-bold">programa de la Green Card EB-3 </span>
             en 2020/2021. Entendiendo la importancia de este programa para su
             futuro, estamos llegando con una oferta exclusiva,{" "}
             <span className="font-bold">
@@ -49,8 +47,8 @@ const ElegibilityEs = () => {
           </p>
           <p className={`${styles.sectionText} mb-6 text-xl`}>
             Nos complace ofrecerle la oportunidad de solicitar un{" "}
-            <span className="font-bold">programa de Tarjeta Verde EB3</span> a
-            solo el 35% de la tarifa típica del mercado que le hayan cotizado en
+            <span className="font-bold">programa de Green Card EB3</span> a solo
+            el 35% de la tarifa típica del mercado que le hayan cotizado en
             2020/2021.
           </p>
           <p className={`${styles.sectionText} mb-6 text-xl font-bold`}>

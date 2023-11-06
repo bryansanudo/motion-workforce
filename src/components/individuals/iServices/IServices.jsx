@@ -150,7 +150,7 @@ const IServices = ({ language }) => {
     },
     es: {
       title1: "¿Qué hacemos?",
-      p1: "Experimente un proceso fluido en la obtención de trabajadores con visado EB-3 con nuestro apoyo integral. Desde el principio, nuestro equipo se dedica a encontrar y examinar candidatos potenciales, y a preparar a su empresa para el patrocinio. Y no nos detenemos ahí - incluso después de que se apruebe su Tarjeta Verde, continuamos proporcionando asistencia a lo largo de la transición al trabajo y el empleo en curso. Asóciese con nosotros y experimente la tranquilidad de tener expertos a su lado en cada paso del camino.",
+      p1: "Experimente un proceso fluido en la obtención de trabajadores con visado EB-3 con nuestro apoyo integral. Desde el principio, nuestro equipo se dedica a encontrar y examinar candidatos potenciales, y a preparar a su empresa para el patrocinio. Y no nos detenemos ahí - incluso después de que se apruebe su Green Card, continuamos proporcionando asistencia a lo largo de la transición al trabajo y el empleo en curso. Asóciese con nosotros y experimente la tranquilidad de tener expertos a su lado en cada paso del camino.",
     },
     por: {
       title1: "O que fazemos",
@@ -178,7 +178,7 @@ const IServices = ({ language }) => {
       p1: "Únase a la creciente lista de clientes satisfechos que se han beneficiado de nuestra experiencia en el proceso del visado EB-3 no cualificado. Nos especializamos en poner en contacto a empleadores con extranjeros altamente calificados, cubriendo la brecha en la fuerza laboral estadounidense y ayudando a impulsar su negocio. Confíe en nosotros para simplificar el proceso y obtener los resultados que necesita para tener éxito.",
       dot1: "Determine su elegibilidad y seleccione un empleador patrocinador",
       dot2: "Presentar y solicitar el proceso con nuestros abogados asociados",
-      dot3: "Obtenga su Tarjeta Verde o autorización de trabajo",
+      dot3: "Obtenga su Green Card o autorización de trabajo",
       dot4: "Comience a trabajar para su empleador",
       dot5: "Viva en los EE.UU. como titular de un visado de inmigrante",
     },
@@ -212,7 +212,7 @@ const IServices = ({ language }) => {
     es: {
       title1: "Casos EB-3 exitosos con EB-3 Workforce Solutions",
       title2: "Nuestra Experiencia",
-      p1: "Nuestro objetivo es el mismo que el de nuestros clientes: que reciban su Tarjeta Verde de los EE.UU. a través del programa de Visa EB-3 No Calificada.",
+      p1: "Nuestro objetivo es el mismo que el de nuestros clientes: que reciban su Green Card de los EE.UU. a través del programa de Visa EB-3 No Calificada.",
       p2: "Hemos tenido varios casos que fueron exitosos. Con el fin de mostrar las diversas experiencias de alguien que pasa por este procedimiento, EB-3 Workforce Solutions ha analizado el mejor curso de acción para las diferentes necesidades de personal que su empresa pueda tener. Cada persona que pasa por este proceso tendrá un calendario y procedimiento diferente.",
     },
     por: {

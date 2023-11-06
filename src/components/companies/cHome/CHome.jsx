@@ -33,7 +33,7 @@ const CHome = ({ language }) => {
     es: {
       title1: "Conozca al fundador",
       title2: "James Baker, CPA",
-      p1: "James dirige diferentes empresas en EE.UU. que prestan servicios a corporaciones y empresarios internacionales. James se alió con inversores silenciosos para crear EB-3 Workforce solutions, una empresa que pone en contacto a empresarios que se enfrentan a una escasez crónica de trabajadores no cualificados con empleados inmigrantes dispuestos a solicitar una tarjeta verde estadounidense a través del programa de visados EB-3.",
+      p1: "James dirige diferentes empresas en EE.UU. que prestan servicios a corporaciones y empresarios internacionales. James se alió con inversores silenciosos para crear EB-3 Workforce solutions, una empresa que pone en contacto a empresarios que se enfrentan a una escasez crónica de trabajadores no cualificados con empleados inmigrantes dispuestos a solicitar una Green Card estadounidense a través del programa de visados EB-3.",
     },
     por: {
       title1: "Conheça o fundador",
@@ -79,7 +79,7 @@ const CHome = ({ language }) => {
       title1: "Contacte con nosotros",
       title2: "¿Quiere saber más?",
       p1: "Si se encuentra en una situación en la que está luchando por encontrar un número significativo de empleados estadounidenses cualificados, accesibles y altamente motivados para cubrir varios puestos de nivel inicial, o si se enfrenta a retos con una rotación implacable y unas responsabilidades y cargas de RRHH abrumadoras, entonces tenemos la solución perfecta para usted.",
-      p2: "Presentamos el Programa de Visados EB-3, una solución de dotación de personal a largo plazo diseñada específicamente para empresarios estadounidenses como usted. Esta opción de Tarjeta Verde basada en el empleo está diseñada para satisfacer sus necesidades de personal y proporcionarle la mano de obra cualificada que necesita.",
+      p2: "Presentamos el Programa de Visados EB-3, una solución de dotación de personal a largo plazo diseñada específicamente para empresarios estadounidenses como usted. Esta opción de Green Card basada en el empleo está diseñada para satisfacer sus necesidades de personal y proporcionarle la mano de obra cualificada que necesita.",
     },
     por: {
       title1: "Contactar-nos",
