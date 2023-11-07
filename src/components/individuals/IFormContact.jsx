@@ -38,7 +38,7 @@ const IFormContact = ({ color, language = "en" }) => {
       submit: "enviar agora",
     },
     fr: {
-      title1: "Prenez contact avec nous dès aujourd'hui !",
+      title1: "Prenez contact avec nous dès aujourd'hui!",
       title2:
         "Remplissez le formulaire ci-dessous et nous vous contacterons dans les plus brefs délais",
       name: "Nom",
@@ -53,7 +53,7 @@ const IFormContact = ({ color, language = "en" }) => {
   return (
     <TitleContent>
       <h2
-        className={`from-${color} font-bold text-2xl text-center p-3 text-transparent bg-clip-text  bg-gradient-to-r  to-gray-500  md:text-4xl tracking-wider `}
+        className={`from-${color} font-bold text-2xl text-center p-3 text-transparent bg-clip-text  bg-gradient-to-r  to-gray-500  md:text-4xl tracking-wider capitalize `}
       >
         {formContent.title1}
       </h2>
@@ -102,7 +102,9 @@ const IFormContact = ({ color, language = "en" }) => {
             className={` textarea textarea-bordered w-auto`}
             placeholder={formContent.questions}
           />
-          <button className={`btn btn-${color}`}>{formContent.submit}</button>
+          <button className={`btn btn-${color} capitalize`}>
+            {formContent.submit}
+          </button>
         </div>
       </form>
     </TitleContent>

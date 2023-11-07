@@ -208,8 +208,10 @@ const IResources = ({ language }) => {
   return (
     <>
       <IHeroResources language={language} />
-      <ISection title="Resources" color="primary">
-        <p className={`${styles.titleText} mt-6`}>{faqContent.title1}</p>
+      <ISection>
+        <p className={`${styles.titleText} mt-6 capitalize`}>
+          {faqContent.title1}
+        </p>
         <div className="flex flex-col items-center justify-center  my-10  w-[280px] md:w-[500px] lg:w-[900px]  ">
           {questions.map(({ id, question, answer }) => (
             <div

@@ -135,7 +135,7 @@ const IServices = ({ language }) => {
       p3: 'O processo do visto EB-3 "Other Worker" conduz diretamente à residência permanente nos EUA, e as condições são melhores do que a maioria das outras formas de lá chegar.',
     },
     fr: {
-      title1: "Pourquoi ce processus fonctionne-t-il ?",
+      title1: "Pourquoi ce processus fonctionne-t-il?",
       p1: "Les employeurs ont plus de mal que jamais à trouver des personnes pour occuper leurs emplois peu qualifiés. Les secteurs tels que le nettoyage, la restauration, l'emballage et le stockage ont été les plus durement touchés. Au lieu de fermer leurs portes, de nombreuses entreprises ont essayé de trouver des moyens créatifs de recruter du personnel. De nombreux employeurs ont trouvé utile de parrainer des immigrants potentiels désireux d'occuper des postes vacants à l'aide d'un visa EB-3 pour travailleurs non qualifiés",
       p2: "La loi sur l'immigration de 1990 a mis en place un programme appelé 'Visas basés sur l'emploi', qui permet aux entreprises américaines de parrainer des travailleurs étrangers qui souhaitent travailler et qui sont qualifiés pour le faire. Il existe cinq types de visas EB. Les deux premiers requièrent un travail qualifié et beaucoup d'études, tandis qu'une partie du troisième type (EB-3) est destinée aux personnes qui peuvent effectuer un travail non qualifié pour leur futur employeur",
       p3: "Le processus d'obtention du visa EB-3 'Autre travailleur' mène directement à la résidence permanente aux États-Unis, et les conditions sont meilleures que la plupart des autres moyens d'y parvenir",

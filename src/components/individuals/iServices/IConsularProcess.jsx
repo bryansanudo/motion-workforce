@@ -73,7 +73,7 @@ const IConsularProcess = ({ language }) => {
       m17: "Mês 17",
       p17: "Visto recebido e viagem até nós",
       m18: "Mês 18",
-      p18: "Carta verde emitida",
+      p18: "Green Card emitida",
     },
     fr: {
       m1: "Mois 1",

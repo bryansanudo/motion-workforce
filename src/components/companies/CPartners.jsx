@@ -28,7 +28,9 @@ const CPartners = ({ language }) => {
     <>
       <div className="container mx-auto ">
         <div className="w-11/12 xl:w-2/3 lg:w-2/3 md:w-2/3 mx-auto mt-10 ">
-          <h1 className={`${styles.cTitleText}`}>{partnersContent.title1}</h1>
+          <h1 className={`${styles.cTitleText} capitalize `}>
+            {partnersContent.title1}
+          </h1>
         </div>
         <div className="my-10 px-15 flex flex-wrap">
           <div className="w-6/12 xl:w-1/4 lg:w-1/4 md:w-1/4 flex justify-center  xl:pb-10 pb-16 items-center px-6 md:px-0">

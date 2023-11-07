@@ -43,7 +43,7 @@ const HorizontalProcess = ({ language }) => {
       m13: "Mes 13",
       p13: "Entrevista I-485",
       m14: "Mes 14",
-      p14: "Carta Verde expedida",
+      p14: "Green Card expedida",
     },
     por: {
       m1: "Mês 1",
@@ -59,7 +59,7 @@ const HorizontalProcess = ({ language }) => {
       m13: "Mês 13",
       p13: "Entrevista I-485",
       m14: "Mês 14",
-      p14: "Carta verde emitida",
+      p14: "Green Card emitida",
     },
     fr: {
       m1: "Mois 1",

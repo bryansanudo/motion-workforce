@@ -86,7 +86,7 @@ const IHome = ({ language }) => {
     },
     fr: {
       title1: "Nous contacter",
-      title2: "Vous voulez en savoir plus ?",
+      title2: "Vous voulez en savoir plus?",
       p1: "Si vous vous trouvez dans une situation où vous cherchez une opportunité significative pour une vie et une carrière meilleures aux États-Unis, ou si vous avez des difficultés à naviguer dans le processus d'immigration complexe et les coûts associés, alors nous avons la solution parfaite pour vous.",
       p2: "Nous vous présentons le programme de visa EB-3, une solution d'immigration à long terme conçue spécialement pour des personnes comme vous. Cette carte verte basée sur l'emploi est conçue pour répondre à vos objectifs en matière d'immigration et vous offrir la voie d'accès aux États-Unis dont vous avez besoin.",
     },
@@ -111,15 +111,19 @@ const IHome = ({ language }) => {
 
   const looking = {
     en: {
+      title: "Looking To Start Your American Dream?",
       p1: "Discover the pathway to your American dream with our company! Say goodbye to the uncertainty of the immigration journey and hello to a dedicated team of professionals eager to assist you. Our partners are carefully selected to ensure a smooth process and unwavering commitment to your immigration goals. Trust us to guide you on the path to the American Dream.",
     },
     es: {
+      title: "¿Quiere iniciar su sueño americano?",
       p1: "¡Descubra el camino hacia su sueño americano con nuestra empresa! Diga adiós a la incertidumbre del viaje de la inmigración y hola a un equipo dedicado de profesionales deseosos de ayudarle. Nuestros socios son cuidadosamente seleccionados para garantizar un proceso fluido y un compromiso inquebrantable con sus objetivos de inmigración. Confíe en nosotros para guiarle en el camino hacia el sueño americano.",
     },
     por: {
+      title: "Quer começar o seu sonho americano?",
       p1: "Descubra o caminho para o seu sonho americano com a nossa empresa! Diga adeus à incerteza da viagem de imigração e olá a uma equipa dedicada de profissionais ansiosos por o ajudar. Os nossos parceiros são cuidadosamente seleccionados para garantir um processo tranquilo e um compromisso inabalável com os seus objectivos de imigração. Confie em nós para o guiarmos no caminho para o sonho americano.",
     },
     fr: {
+      title: "Vous souhaitez réaliser votre rêve américain ?",
       p1: "Découvrez la voie de votre rêve américain avec notre société ! Dites adieu à l'incertitude du voyage d'immigration et bonjour à une équipe dévouée de professionnels désireux de vous aider. Nos partenaires sont soigneusement sélectionnés pour garantir un processus sans heurts et un engagement sans faille à l'égard de vos objectifs d'immigration. Faites-nous confiance pour vous guider sur le chemin du rêve américain.",
     },
   };
@@ -143,7 +147,9 @@ const IHome = ({ language }) => {
 
         {/* Divider committed workers */}
         <div className="flex items-center justify-center gap-6 md:gap-40 p-6 flex-col md:flex-row bg-gray-100 w-full ">
-          <h1 className="text-4xl font-bold">{dividerStartContent.h1}</h1>
+          <h1 className="text-4xl font-bold capitalize">
+            {dividerStartContent.h1}
+          </h1>
 
           <div className="flex flex-col items-center justify-center gap-4 text-xl font-bold ">
             <div className="flex items-center justify-center gap-4">
@@ -194,11 +200,7 @@ const IHome = ({ language }) => {
 
         {/* Looking to Start
 your American Dream?*/}
-        <ImgContent
-          img={contactImg}
-          title2="Looking to Start
-          your American Dream?"
-        >
+        <ImgContent img={contactImg} title2={lookingContent.title}>
           <p className={`${styles.sectionText}`}>{lookingContent.p1}</p>
         </ImgContent>
 

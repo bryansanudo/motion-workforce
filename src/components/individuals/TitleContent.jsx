@@ -14,7 +14,9 @@ const TitleContent = ({ title, children }) => {
         variants={zoomIn(0, 1)}
         className="flex flex-col gap-6 my-10 items-center justify-center mx-6"
       >
-        <p className={`${styles.titleText} max-w-[700px] `}>{title}</p>
+        <p className={`${styles.titleText} max-w-[700px] capitalize `}>
+          {title}
+        </p>
         {children}
       </motion.div>
     </motion.div>

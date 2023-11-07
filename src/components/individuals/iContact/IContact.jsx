@@ -70,20 +70,20 @@ const IContact = ({ language }) => {
     en: {
       title1:
         "Feel free to apply without the need for any previous experience!",
-      p1: "Are you keen on obtaining a U.S. Permanent Resident Card (Green Card) for yourself and your family? MCC USA collaborates with U.S. corporations that are willing to support your Green Card application in return for your commitment to work with them for at least one year.",
+      p1: "Are you keen on obtaining a U.S. Permanent Resident Card (Green Card) for yourself and your family? EB3 Workforce Solutions collaborates with U.S. corporations that are willing to support your Green Card application in return for your commitment to work with them for at least one year.",
     },
     es: {
       title1:
-        "No dude en presentar su solicitud sin necesidad de tener experiencia previa.",
-      p1: "¿Está interesado en obtener la Tarjeta de Residente Permanente de los EE.UU. (Green Card) para usted y su familia? MCC USA colabora con empresas estadounidenses que están dispuestas a apoyar tu solicitud de Green Card a cambio de que te comprometas a trabajar con ellas durante al menos un año.",
+        "¡No dude en presentar su solicitud sin necesidad de tener experiencia previa!",
+      p1: "¿Está interesado en obtener la Tarjeta de Residente Permanente de los EE.UU. (Green Card) para usted y su familia? EB3 Workforce Solutions colabora con empresas estadounidenses que están dispuestas a apoyar tu solicitud de Green Card a cambio de que te comprometas a trabajar con ellas durante al menos un año.",
     },
     por: {
       title1: "Pode candidatar-se sem necessidade de experiência prévia!",
-      p1: "Está interessado em obter um Cartão de Residente Permanente dos EUA (Green Card) para si e para a sua família? O MCC USA colabora com empresas americanas que estão dispostas a apoiar o seu pedido de Green Card em troca do seu compromisso de trabalhar com elas durante pelo menos um ano.",
+      p1: "Está interessado em obter um Cartão de Residente Permanente dos EUA (Green Card) para si e para a sua família? O EB3 Workforce Solutions colabora com empresas americanas que estão dispostas a apoiar o seu pedido de Green Card em troca do seu compromisso de trabalhar com elas durante pelo menos um ano.",
     },
     fr: {
-      title1: "N'hésitez pas à postuler sans expérience préalable ! ",
-      p1: "Souhaitez-vous obtenir une carte de résident permanent aux États-Unis (carte verte) pour vous et votre famille ? MCC USA collabore avec des entreprises américaines qui sont prêtes à soutenir votre demande de carte verte en échange de votre engagement à travailler avec elles pendant au moins un an",
+      title1: "N'hésitez pas à postuler sans expérience préalable!",
+      p1: "Souhaitez-vous obtenir une carte de résident permanent aux États-Unis (carte verte) pour vous et votre famille ? EB3 Workforce Solutions collabore avec des entreprises américaines qui sont prêtes à soutenir votre demande de carte verte en échange de votre engagement à travailler avec elles pendant au moins un an",
     },
   };
   const feelContent = feel[language];

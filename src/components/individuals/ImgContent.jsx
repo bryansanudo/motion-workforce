@@ -28,10 +28,10 @@ const ImgContent = ({ img, title1, title2, children }) => {
         variants={slideIn("right", "tween", 0.2, 1)}
       >
         <div className="text-center mb-10">
-          <p className="md:text-2xl text-xl text-gray-400 font-bold">
+          <p className="md:text-2xl text-xl text-gray-400 font-bold capitalize">
             {title1}
           </p>
-          <p className={`${styles.titleText}`}>{title2}</p>
+          <p className={`${styles.titleText} capitalize`}>{title2}</p>
         </div>
         {children}
       </motion.div>

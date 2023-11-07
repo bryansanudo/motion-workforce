@@ -18,6 +18,7 @@ import CPartners from "@/components/companies/CPartners";
 import CHorizontalProcess from "@/components/companies/cHome/CHorizontalProcess";
 import HorizontalProcess from "@/components/companies/cHome/HorizontalProcess";
 import IFormContact from "@/components/individuals/IFormContact";
+import IconWpp from "@/components/icons/IconWpp";
 
 const CHome = ({ language }) => {
   useEffect(() => {
@@ -50,19 +51,19 @@ const CHome = ({ language }) => {
 
   const dividerGet = {
     en: {
-      h1: "Get Committed Workers!",
+      h1: "Get Committed Workers! Contact Us: ",
       p: "Call Us",
     },
     es: {
-      h1: "Consigue trabajadores comprometidos",
+      h1: "Consigue trabajadores comprometidos Póngase en contacto con nosotros:",
       p: "Llámanos",
     },
     por: {
-      h1: "Obter trabalhadores empenhados!",
+      h1: "Obter trabalhadores empenhados! Contactar-nos:",
       p: "Contactar-nos",
     },
     fr: {
-      h1: "Des travailleurs engagés !",
+      h1: "Des travailleurs engagés! Contactez-nous :",
       p: "Appelez-nous",
     },
   };
@@ -136,7 +137,7 @@ const CHome = ({ language }) => {
       p1: "Descubra a solução para as suas necessidades de pessoal com a nossa empresa! Diga adeus ao incómodo de trabalhadores pouco fiáveis e olá a uma equipa de profissionais dedicados e empenhados. Os nossos trabalhadores com visto EB-3 são escolhidos a dedo para garantir um desempenho de alto nível e um empenho total nos seus projectos. Confie em nós para fornecer a força de trabalho que você merece.",
     },
     fr: {
-      title1: "Vous avez du mal à trouver des travailleurs engagés ?",
+      title1: "Vous avez du mal à trouver des travailleurs engagés?",
 
       p1: "Découvrez la solution à vos besoins en personnel avec notre entreprise ! Dites adieu aux tracas des travailleurs peu fiables et bonjour à une équipe de professionnels dévoués et engagés. Nos travailleurs titulaires d'un visa EB-3 sont triés sur le volet pour garantir des performances de premier ordre et un engagement total dans vos projets. Faites-nous confiance pour vous fournir la main-d'œuvre que vous méritez",
     },
@@ -185,25 +186,33 @@ const CHome = ({ language }) => {
 
         {/* Divider committed workers */}
         <div className="flex items-center justify-center gap-6 md:gap-40 p-6 flex-col md:flex-row bg-gray-100 w-full ">
-          <h1 className="text-4xl font-bold">{dividerGetContent.h1}</h1>
-          <a href="tel:+573055641311">
-            <div className="flex flex-col items-center justify-center gap-4 text-xl font-bold hover:scale-110 duration-500 ">
-              <div className="flex items-center justify-center gap-4">
-                <div className="bg-white p-3 rounded-full ">
+          <h1 className="text-4xl font-bold capitalize">
+            {dividerGetContent.h1}
+          </h1>
+
+          <div className="flex flex-col items-center justify-center gap-4 text-xl font-bold ">
+            <div className="flex items-center justify-center gap-4">
+              <a href="tel:+13055641311">
+                <div className="bg-white p-3 rounded-full hover:scale-110 duration-500  ">
                   <BiPhoneCall className="text-4xl text-secondary" />
                 </div>
-                <p>{dividerGetContent.p}</p>
-              </div>
-              <p>(305) 564-1311</p>
+              </a>
+              <a href="https://wa.me/c/12403437282" target="_blank">
+                <div className="bg-white p-3 rounded-full hover:scale-110 duration-500 cursor-pointer   ">
+                  <IconWpp className="h-9 w-9 text-secondary" />
+                </div>
+              </a>
             </div>
-          </a>
+            <a href="tel:+13055641311">
+              <p>+1 (305) 564-1311</p>
+            </a>
+          </div>
           <a href="mailto:recruiter@eb3wfs.com">
             <div className="flex flex-col items-center justify-center gap-4 font-bold text-xl hover:scale-110 duration-500">
               <div className="flex items-center justify-center gap-4">
                 <div className="bg-white p-3 rounded-full ">
                   <AiOutlineMail className="text-secondary text-4xl" />
                 </div>
-                <p>Email</p>
               </div>
               <p>recruiter@eb3wfs.com</p>
             </div>

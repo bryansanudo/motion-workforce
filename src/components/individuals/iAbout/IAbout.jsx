@@ -17,7 +17,7 @@ const IAbout = ({ language }) => {
   const our = {
     en: {
       title1: "Successful EB-3 Cases with EB-3 Workforce Solutions",
-      title2: "Our Specialty",
+      title2: "Our Speciality",
       p1: "Our objective is the same as that of our clients: obtaining their U.S. Green Card via the EB-3 Unskilled Visa program.",
       p2: "Our recruitment and client engagement specialists have extensive experience in the entire EB-3 process. We have partnered with immigration attorneys who have over 25 years of experience in the field of immigration law and have successfully obtained permanent residency status for hundreds of EB-3 applicants.",
     },
@@ -49,25 +49,25 @@ const IAbout = ({ language }) => {
         "We have built strong relationships with current and former Government officials.",
 
       p1: "50 +Countries represented throughout the globe",
-      p2: "A large number of client green card approvals were granted in the year 2022, excluding dependents.",
+      p2: "A large number of client green card approvals were granted in the year 2022, excluding dependents",
     },
     es: {
       title1:
         "Hemos establecido sólidas relaciones con funcionarios y ex funcionarios del Gobierno.",
 
       p1: "Más de 50 países representados en todo el mundo",
-      p2: "En el año 2022 se concedió un gran número de permisos de residencia a clientes, excluidos los dependientes.",
+      p2: "En el año 2022 se concedió un gran número de permisos de residencia a clientes, excluidos los dependientes",
     },
     por: {
       title1:
         "Construímos fortes relações com actuais e antigos funcionários públicos.",
 
       p1: "50 +Países representados em todo o mundo",
-      p2: "Um grande número de aprovações de green cards de clientes foi concedido no ano de 2022, excluindo os dependentes.",
+      p2: "Um grande número de aprovações de green cards de clientes foi concedido no ano de 2022, excluindo os dependentes",
     },
     fr: {
       title1:
-        "Nous avons établi de solides relations avec des fonctionnaires actuels et anciens.",
+        "Nous avons établi de solides relations avec des fonctionnaires actuels et anciens",
 
       p1: "50 + pays représentés dans le monde entier",
       p2: "Un grand nombre d'approbations de cartes vertes de clients ont été accordées au cours de l'année 2022, à l'exclusion des personnes à charge",
