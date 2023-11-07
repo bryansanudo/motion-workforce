@@ -28,7 +28,7 @@ const CDivider = ({ language = "en" }) => {
           <p className="text-white font-bold">{dividerContent.p1}</p>
         </div>
         <div className=" w-full md:py-8 py-4 hover:scale-110 duration-500">
-          <a href="tel:+573055641311">
+          <a href="tel:+13055641311">
             <p className="text-white font-bold">+1 (305) 564-1311</p>
             <p className="text-sm font-normal text-white">
               {dividerContent.p2}

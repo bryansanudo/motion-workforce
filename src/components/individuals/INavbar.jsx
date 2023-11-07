@@ -234,7 +234,7 @@ const INavbar = ({ setLanguage, language }) => {
             </select>
             
           </div> */}
-          <details className="dropdown dropdown-end ">
+          {/* <details className="dropdown dropdown-end ">
             <summary
               onClick={handleDropdown}
               className="uppercase font-bold flex  items-center justify-center gap-1 cursor-pointer"
@@ -294,7 +294,7 @@ const INavbar = ({ setLanguage, language }) => {
                 </div>
               </div>
             </ul>
-          </details>
+          </details> */}
         </div>
       </div>
       <div
