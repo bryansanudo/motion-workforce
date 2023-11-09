@@ -195,7 +195,7 @@ const INavbar = ({ setLanguage, language }) => {
             />
           </Link>
 
-          {/* <div className="hidden lg:flex items-center mr-24 gap-20">
+          <div className="hidden lg:flex items-center mr-24 gap-20">
             <ul className="flex gap-6">
               {links.map(({ id, link, name }) => (
                 <NavLink key={id} to={link} className={activeLink}>
@@ -205,7 +205,7 @@ const INavbar = ({ setLanguage, language }) => {
                 </NavLink>
               ))}
             </ul>
-          </div> */}
+          </div>
           <div
             onClick={() => setIsMenuShown(!isMenuShown)}
             className="block lg:hidden cursor-pointer"
@@ -216,23 +216,9 @@ const INavbar = ({ setLanguage, language }) => {
             src="/favicon.png"
             className="h-10 object-contain lg:hidden block"
           />
+
           <Link to="/individuals/companies">
-            <button className="btn btn-secondary text-[12px] p-2 capitalize hover:scale-105 duration-700 mr-4 hover:animate-pulse">
-              {navbarContent.looking}
-            </button>
-          </Link>
-          <Link to="/individuals/companies">
-            <button className="btn btn-secondary text-[12px] p-2 capitalize  duration-700 mr-4 hover:animate-bounce">
-              {navbarContent.looking}
-            </button>
-          </Link>
-          <Link to="/individuals/companies">
-            <button className="btn btn-secondary text-[12px] p-2 capitalize hover:scale-105 duration-700 mr-4 hover:bg-gradient-to-r hover:to-secondary hover:from-gray-500">
-              {navbarContent.looking}
-            </button>
-          </Link>
-          <Link to="/individuals/companies">
-            <button className="btn btn-secondary text-[12px] p-2 capitalize hover:scale-105 duration-700 mr-4 hover:bg-gradient-to-r hover:to-secondary hover:from-primary">
+            <button className="btn btn-secondary text-[12px] p-2 capitalize hover:scale-105 duration-500 mr-4 hover:bg-gradient-to-r hover:to-secondary hover:from-primary">
               {navbarContent.looking}
             </button>
           </Link>
