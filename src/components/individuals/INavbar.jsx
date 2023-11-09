@@ -19,7 +19,7 @@ const INavbar = ({ setLanguage, language }) => {
       contact: "contact",
       vacancies: "vacancies",
       language: "Language",
-      looking: "Looking For Employees",
+      looking: "Looking For Employees?",
     },
     es: {
       home: "Inicio",
@@ -29,7 +29,7 @@ const INavbar = ({ setLanguage, language }) => {
       contact: "contacto",
       vacancies: "vacantes",
       language: "Idioma",
-      looking: "Buscando Empleados?",
+      looking: "¿Buscando Empleados?",
     },
     por: {
       home: "casa",
@@ -39,7 +39,7 @@ const INavbar = ({ setLanguage, language }) => {
       contact: "contacto",
       vacancies: "vagas",
       language: "língua",
-      looking: "à procura de empregados",
+      looking: "à procura de empregados?",
     },
     fr: {
       home: "Accueil",
@@ -49,7 +49,7 @@ const INavbar = ({ setLanguage, language }) => {
       contact: "Contact",
       vacancies: "Offres d'emploi",
       language: "langue",
-      looking: "à la recherche d'employés",
+      looking: "à la recherche d'employés?",
     },
   };
   const navbarContent = navbar[language];
@@ -195,7 +195,7 @@ const INavbar = ({ setLanguage, language }) => {
             />
           </Link>
 
-          <div className="hidden lg:flex items-center mr-24 gap-20">
+          {/* <div className="hidden lg:flex items-center mr-24 gap-20">
             <ul className="flex gap-6">
               {links.map(({ id, link, name }) => (
                 <NavLink key={id} to={link} className={activeLink}>
@@ -205,7 +205,7 @@ const INavbar = ({ setLanguage, language }) => {
                 </NavLink>
               ))}
             </ul>
-          </div>
+          </div> */}
           <div
             onClick={() => setIsMenuShown(!isMenuShown)}
             className="block lg:hidden cursor-pointer"
@@ -217,10 +217,26 @@ const INavbar = ({ setLanguage, language }) => {
             className="h-10 object-contain lg:hidden block"
           />
           <Link to="/individuals/companies">
-            <button className="btn btn-secondary text-[12px] p-2  capitalize hover:scale-105 duration-700 mr-4">
+            <button className="btn btn-secondary text-[12px] p-2 capitalize hover:scale-105 duration-700 mr-4 hover:animate-pulse">
               {navbarContent.looking}
             </button>
           </Link>
+          <Link to="/individuals/companies">
+            <button className="btn btn-secondary text-[12px] p-2 capitalize  duration-700 mr-4 hover:animate-bounce">
+              {navbarContent.looking}
+            </button>
+          </Link>
+          <Link to="/individuals/companies">
+            <button className="btn btn-secondary text-[12px] p-2 capitalize hover:scale-105 duration-700 mr-4 hover:bg-gradient-to-r hover:to-secondary hover:from-gray-500">
+              {navbarContent.looking}
+            </button>
+          </Link>
+          <Link to="/individuals/companies">
+            <button className="btn btn-secondary text-[12px] p-2 capitalize hover:scale-105 duration-700 mr-4 hover:bg-gradient-to-r hover:to-secondary hover:from-primary">
+              {navbarContent.looking}
+            </button>
+          </Link>
+
           {/* <div className="flex  gap-2 md:flex-row items-center justify-center">
             <select
               value={language}
