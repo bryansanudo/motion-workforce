@@ -217,7 +217,7 @@ const INavbar = ({ setLanguage, language }) => {
             className="h-10 object-contain lg:hidden block"
           />
           <Link to="/individuals/companies">
-            <button className="btn btn-secondary text-[12px] p-2 btn-outline capitalize hover:scale-105 duration-700 mr-4">
+            <button className="btn btn-secondary text-[12px] p-2  capitalize hover:scale-105 duration-700 mr-4">
               {navbarContent.looking}
             </button>
           </Link>
