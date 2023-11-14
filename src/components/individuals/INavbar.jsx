@@ -216,87 +216,75 @@ const INavbar = ({ setLanguage, language }) => {
             src="/favicon.png"
             className="h-10 object-contain lg:hidden block"
           />
+          <div className="flex items-center">
+            <Link to="/individuals/companies">
+              <button className="btn btn-secondary text-[12px] p-2 capitalize hover:scale-105 duration-500 mr-4 hover:bg-gradient-to-r hover:to-secondary hover:from-primary">
+                {navbarContent.looking}
+              </button>
+            </Link>
 
-          <Link to="/individuals/companies">
-            <button className="btn btn-secondary text-[12px] p-2 capitalize hover:scale-105 duration-500 mr-4 hover:bg-gradient-to-r hover:to-secondary hover:from-primary">
-              {navbarContent.looking}
-            </button>
-          </Link>
+            <details className="dropdown dropdown-end ">
+              <summary
+                onClick={handleDropdown}
+                className="uppercase font-bold flex  items-center justify-center gap-1 cursor-pointer"
+              >
+                {languageText}
+                <img src={languageIcon} className="w-6 h-6" alt="" />
+                {dropdown ? <IoMdArrowDropdown /> : <IoMdArrowDropup />}
+              </summary>
 
-          {/* <div className="flex  gap-2 md:flex-row items-center justify-center">
-            <select
-              value={language}
-              onChange={(e) => changeLanguage(e.target.value)}
-              className="text-black rounded-xl p-1 "
-            >
-              <option value="en">English</option>
-              <option value="es">Español</option>
-              <option value="por">Portuguese</option>
-              <option value="fr">Frances</option>
-            </select>
-            
-          </div> */}
-          <details className="dropdown dropdown-end ">
-            <summary
-              onClick={handleDropdown}
-              className="uppercase font-bold flex  items-center justify-center gap-1 cursor-pointer"
-            >
-              {languageText}
-              <img src={languageIcon} className="w-6 h-6" alt="" />
-              {dropdown ? <IoMdArrowDropdown /> : <IoMdArrowDropup />}
-            </summary>
-
-            <ul className="flex flex-col items-start dropdown-content text-black  bg-base-100 rounded-box w-36 ">
-              <div className="w-full">
-                <div
-                  onClick={() => {
-                    en();
-                    closeMenu();
-                  }}
-                  className="flex items-center justify-start gap-4 hover:bg-primary rounded-box p-2 cursor-pointer"
-                >
-                  <img src={enImg} className="h-6 w-6" alt="" />
-                  <button>English</button>
+              <ul className="flex flex-col items-start dropdown-content text-black  bg-base-100 rounded-box w-36 ">
+                <div className="w-full">
+                  <div
+                    onClick={() => {
+                      en();
+                      closeMenu();
+                    }}
+                    className="flex items-center justify-start gap-4 hover:bg-primary rounded-box p-2 cursor-pointer"
+                  >
+                    <img src={enImg} className="h-6 w-6" alt="" />
+                    <button>English</button>
+                  </div>
                 </div>
-              </div>
-              <div className="w-full">
-                <div
-                  onClick={() => {
-                    es();
-                    closeMenu();
-                  }}
-                  className="flex items-center justify-start gap-4 hover:bg-primary rounded-box p-2 cursor-pointer"
-                >
-                  <img src={esImg} className="h-7 w-7" alt="" />
-                  <button>Español</button>
+                <div className="w-full">
+                  <div
+                    onClick={() => {
+                      es();
+                      closeMenu();
+                    }}
+                    className="flex items-center justify-start gap-4 hover:bg-primary rounded-box p-2 cursor-pointer"
+                  >
+                    <img src={esImg} className="h-7 w-7" alt="" />
+                    <button>Español</button>
+                  </div>
                 </div>
-              </div>
-              <div className="w-full">
-                <div
-                  onClick={() => {
-                    por();
-                    closeMenu();
-                  }}
-                  className="flex items-center justify-start gap-4 hover:bg-primary rounded-box p-2 cursor-pointer"
-                >
-                  <img src={porImg} className="h-6 w-6" alt="" />
-                  <button>Português</button>
+                <div className="w-full">
+                  <div
+                    onClick={() => {
+                      por();
+                      closeMenu();
+                    }}
+                    className="flex items-center justify-start gap-4 hover:bg-primary rounded-box p-2 cursor-pointer"
+                  >
+                    <img src={porImg} className="h-6 w-6" alt="" />
+                    <button>Português</button>
+                  </div>
                 </div>
-              </div>
-              <div className="w-full">
-                <div
-                  onClick={() => {
-                    fr();
-                    closeMenu();
-                  }}
-                  className="flex items-center justify-start gap-4 hover:bg-primary rounded-box p-2 cursor-pointer"
-                >
-                  <img src={frImg} className="h-6 w-6" alt="" />
-                  <button>Français</button>
+                <div className="w-full">
+                  <div
+                    onClick={() => {
+                      fr();
+                      closeMenu();
+                    }}
+                    className="flex items-center justify-start gap-4 hover:bg-primary rounded-box p-2 cursor-pointer"
+                  >
+                    <img src={frImg} className="h-6 w-6" alt="" />
+                    <button>Français</button>
+                  </div>
                 </div>
-              </div>
-            </ul>
-          </details>
+              </ul>
+            </details>
+          </div>
         </div>
       </div>
       <div
