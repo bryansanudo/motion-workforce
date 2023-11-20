@@ -209,7 +209,7 @@ const IResources = ({ language }) => {
     <>
       <IHeroResources language={language} />
       <ISection>
-        <div className="flex justify-center">
+        {/*  <div className="flex justify-center">
           <iframe
             style={{
               width: "400px",
@@ -217,7 +217,7 @@ const IResources = ({ language }) => {
             }}
             src="https://app.fastbots.ai/embed/clp49y8mo01zcppb2l06ww4s1"
           ></iframe>
-        </div>
+        </div> */}
         <p className={`${styles.titleText} mt-6 capitalize`}>
           {faqContent.title1}
         </p>
