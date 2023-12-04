@@ -123,14 +123,14 @@ const IFooter = ({ language }) => {
           <p className="tracking-wider text-left max-w-[550px]">
             {footerContent.p}
           </p>
-          <div className="flex items-center w-full   justify-center gap-5 mx-auto mt-6">
+          <div className="flex items-center w-full    gap-1  mt-6">
             {socials.map(({ id, logo, link }) => (
               <a key={id} href={link} target="_blank">
                 <div
-                  className={` h-[30px] w-[30px]  md:w-[64px] md:h-[64px] mask mask-hexagon-2 ${styles.flexCenter} hover:bg-primary group  duration-700 cursor-pointer bg-dimBlue`}
+                  className={` h-[30px] w-[30px]  md:w-[44px] md:h-[44px] rounded-lg ${styles.flexCenter} hover:scale-105 group  duration-300 cursor-pointer bg-primary`}
                 >
                   {/*                 <FaLinkedinIn className="dark:text-white text-2xl" /> */}
-                  <span className="group-hover:text-white duration-300 text-black text-lg md:text-2xl">
+                  <span className="group-hover: duration-300 text-white text-lg md:text-2xl">
                     {logo}
                   </span>
                 </div>
