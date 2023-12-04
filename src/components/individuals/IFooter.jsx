@@ -118,7 +118,7 @@ const IFooter = ({ language }) => {
             width={300}
             height={300}
             alt="logo footer"
-            className="rounded-3xl  object-contain  "
+            className="  object-contain  "
           />
           <p className="tracking-wider text-left max-w-[550px]">
             {footerContent.p}
