@@ -10,6 +10,7 @@ const styles = {
 
   sectionTitleText:
     "max-w-[1080px] md:text-left text-center tracking-wider mx-auto",
+  flexCenter: "flex justify-center items-center",
 
   titleText:
     "font-bold text-2xl text-center p-3 text-transparent bg-clip-text  bg-gradient-to-r from-primary to-gray-500  md:text-4xl tracking-wider",

@@ -3,7 +3,10 @@ import logoImg from "@/assets/logo.png";
 import { motion } from "framer-motion";
 import { staggerContainer, slideIn, zoomIn } from "@/utils/motion";
 import { Link } from "react-router-dom";
+import { FaLinkedinIn, FaFacebookF, FaTiktok } from "react-icons/fa";
 
+import { FaInstagram, FaXTwitter } from "react-icons/fa6";
+import { styles } from "@/styles";
 const IFooter = ({ language }) => {
   const footer = {
     en: {
@@ -69,6 +72,34 @@ const IFooter = ({ language }) => {
   };
   const footerContent = footer[language];
 
+  const socials = [
+    {
+      id: 1,
+      logo: <FaFacebookF />,
+      link: "https://www.facebook.com/eb3wfs",
+    },
+    {
+      id: 2,
+      logo: <FaInstagram />,
+      link: "https://www.instagram.com/eb3wfs/",
+    },
+    {
+      id: 3,
+      logo: <FaXTwitter />,
+      link: "https://twitter.com/eb3wfs",
+    },
+    {
+      id: 4,
+      logo: <FaLinkedinIn />,
+      link: "https://www.linkedin.com/company/eb3wfs",
+    },
+    {
+      id: 5,
+      logo: <FaTiktok />,
+      link: "https://www.tiktok.com/@eb3wfs",
+    },
+  ];
+
   return (
     <motion.div
     /* variants={staggerContainer()}
@@ -92,6 +123,20 @@ const IFooter = ({ language }) => {
           <p className="tracking-wider text-left max-w-[550px]">
             {footerContent.p}
           </p>
+          <div className="flex items-center w-full   justify-center gap-5 mx-auto mt-6">
+            {socials.map(({ id, logo, link }) => (
+              <a key={id} href={link} target="_blank">
+                <div
+                  className={` h-[30px] w-[30px]  md:w-[64px] md:h-[64px] mask mask-hexagon-2 ${styles.flexCenter} hover:bg-primary group  duration-700 cursor-pointer bg-dimBlue`}
+                >
+                  {/*                 <FaLinkedinIn className="dark:text-white text-2xl" /> */}
+                  <span className="group-hover:text-white duration-300 text-black text-lg md:text-2xl">
+                    {logo}
+                  </span>
+                </div>
+              </a>
+            ))}
+          </div>
         </aside>
 
         <motion.nav variants={zoomIn(0, 1)}>
