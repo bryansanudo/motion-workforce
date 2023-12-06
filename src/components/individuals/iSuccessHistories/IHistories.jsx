@@ -60,23 +60,24 @@ const IHistories = () => {
         <EmployerTimeline />
         <TitleContent>
           <p className={`${styles.sectionTitleText}`}>
-            This BDV Solutions client worked at a fast food restaurant in the
-            mid-west United States. She worked for her employer for slightly
-            over a year and was one of the first EB3 workers to begin work at
-            that employer. Her employer declared her one of the best workers
-            their restaurant has ever had. After she finished working, her
-            employer actually treated her out to dinner. In addition, her
-            employer also graciously supported her husband’s entrepreneurial
-            endeavors. Now, some of her family is starting their Green Card
-            journey with BDV Solutions.
+            This EB-3 Workforce Solutions client worked at a fast food
+            restaurant in the mid-west United States. She worked for her
+            employer for slightly over a year and was one of the first EB3
+            workers to begin work at that employer. Her employer declared her
+            one of the best workers their restaurant has ever had. After she
+            finished working, her employer actually treated her out to dinner.
+            In addition, her employer also graciously supported her husband’s
+            entrepreneurial endeavors. Now, some of her family is starting their
+            Green Card journey with EB-3 Workforce Solutions.
           </p>
           <p className={`${styles.sectionTitleText}`}>
             This situation is a testament to the wonderful employers that we
             work with. The EB-3 employees don’t get special treatment and are
             held to the same standards as every other employee at the
             organization, but the employers we work with do care about the
-            success that BDV Solutions clients have in this program. They
-            celebrate green card approvals with the BDV team and BDV clients.
+            success that EB-3 Workforce Solutions clients have in this program.
+            They celebrate green card approvals with the BDV team and BDV
+            clients.
           </p>
           <p className={`${styles.sectionTitleText}`}>
             While this client is moving on to other work opportunities, some of
