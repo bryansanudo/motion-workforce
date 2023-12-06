@@ -21,7 +21,7 @@ const IFooter = ({ language }) => {
       h2: "Contact Us",
       h3: "Legal",
       u1: "Copyright © 2023 All Right Reserved",
-      u2: "Privacy policy",
+      u2: "Privacy Policy",
       u3: "Terms of Services",
     },
     es: {
@@ -36,7 +36,7 @@ const IFooter = ({ language }) => {
       h2: "Contacto",
       h3: "Aviso legal",
       u1: "Copyright © 2023 Todos los derechos reservados",
-      u2: "Política de privacidad",
+      u2: "Política de Privacidad",
       u3: "Condiciones del servicio",
     },
     por: {
@@ -51,7 +51,7 @@ const IFooter = ({ language }) => {
       h2: "Contacte-nos",
       h3: "Legal",
       u1: "Direitos de autor © 2023 Todos os direitos reservados",
-      u2: "Política de privacidade",
+      u2: "Política de Privacidade",
       u3: "Termos de serviços",
     },
     fr: {
@@ -66,7 +66,7 @@ const IFooter = ({ language }) => {
       h2: "Nous contacter",
       h3: "Mentions légales",
       u1: "Copyright © 2023 Tous droits réservés",
-      u2: "Politique de confidentialité",
+      u2: "Politique de Ponfidentialité",
       u3: "Conditions d'utilisation",
     },
   };
