@@ -24,8 +24,8 @@ const IHistories = () => {
             at many different stages in their lives. The EB-3 program kickstarts
             opportunity in the United States by providing a U.S. Green Card to
             the main applicant and their dependents. Read about some of our
-            client's experiences with this Green Card process with BDV
-            Solutions. No two cases are the same!
+            client's experiences with this Green Card process with EB-3
+            Workforce Solutions Solutions. No two cases are the same!
           </p>
           <p className={`${styles.sectionTitleText}`}>
             How does this process actually work for people? How long will the
@@ -42,9 +42,9 @@ const IHistories = () => {
             This process gave this father the opportunity to get himself, his
             wife, and his young kids a U.S. Green Card. The COVID-19 pandemic
             put significant delays on getting a decision after their visa
-            interview, but thanks to the BDV team fighting for their case, as
-            the embassy began to open back up, the whole family got their visas
-            approved.
+            interview, but thanks to the EB-3 Workforce Solutions team fighting
+            for their case, as the embassy began to open back up, the whole
+            family got their visas approved.
           </p>
           <p className={`${styles.sectionTitleText}`}>
             They now are building a new life in the United States and are
@@ -76,8 +76,8 @@ const IHistories = () => {
             held to the same standards as every other employee at the
             organization, but the employers we work with do care about the
             success that EB-3 Workforce Solutions clients have in this program.
-            They celebrate green card approvals with the BDV team and BDV
-            clients.
+            They celebrate green card approvals with the EB-3 Workforce
+            Solutions team and EB-3 Workforce Solutions clients.
           </p>
           <p className={`${styles.sectionTitleText}`}>
             While this client is moving on to other work opportunities, some of

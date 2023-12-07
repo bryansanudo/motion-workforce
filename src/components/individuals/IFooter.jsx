@@ -66,7 +66,7 @@ const IFooter = ({ language }) => {
       h2: "Nous contacter",
       h3: "Mentions légales",
       u1: "Copyright © 2023 Tous droits réservés",
-      u2: "Politique de Ponfidentialité",
+      u2: "Politique de Confidentialité",
       u3: "Conditions d'utilisation",
     },
   };

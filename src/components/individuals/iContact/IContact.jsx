@@ -20,9 +20,9 @@ const IContact = ({ language }) => {
       t3: "Offering Selection",
       s3: "Choose the job and location from the current available positions offered by our partner employers.",
       t4: "Sign contract and pay Initial fee",
-      s4: "A contract will be sent to you for signature and first payment to BDV will need to be made.",
+      s4: "A contract will be sent to you for signature and first payment to EB-3 Workforce Solutions will need to be made.",
       t5: "Get Updates on your Process",
-      s5: "As the employer processes your applications, your BDV portal will be updated.",
+      s5: "As the employer processes your applications, your EB-3 Workforce Solutions portal will be updated.",
     },
     es: {
       title: "Pasos para el proceso de incorporación",
@@ -33,9 +33,9 @@ const IContact = ({ language }) => {
       t3: "Selección de Oferta",
       s3: "Elija el trabajo y la ubicación entre los puestos disponibles actualmente ofrecidos por nuestros empleadores asociados",
       t4: "Firmar contrato y pagar cuota inicial",
-      s4: "Se le enviará un contrato para su firma y deberá realizar el primer pago a BDV",
+      s4: "Se le enviará un contrato para su firma y deberá realizar el primer pago a EB-3 Workforce Solutions",
       t5: "Recibir actualizaciones sobre su proceso",
-      s5: "A medida que el empleador procese sus solicitudes, su portal BDV será actualizado",
+      s5: "A medida que el empleador procese sus solicitudes, su portal EB-3 Workforce Solutions será actualizado",
     },
     por: {
       title: "Etapas do processo de integração",
@@ -46,9 +46,9 @@ const IContact = ({ language }) => {
       t3: "Seleção da oferta",
       s3: "Escolha o emprego e o local de trabalho entre as vagas atualmente disponíveis oferecidas pelos nossos empregadores parceiros.",
       t4: "Assinar contrato e pagar a taxa inicial",
-      s4: "Ser-lhe-á enviado um contrato para assinatura e será necessário efetuar o primeiro pagamento à BDV",
+      s4: "Ser-lhe-á enviado um contrato para assinatura e será necessário efetuar o primeiro pagamento à EB-3 Workforce Solutions",
       t5: "Obter actualizações sobre o seu processo",
-      s5: "À medida que a entidade patronal processa os seus pedidos, o seu portal da BDV será atualizado",
+      s5: "À medida que a entidade patronal processa os seus pedidos, o seu portal da EB-3 Workforce Solutions será atualizado",
     },
     fr: {
       title: "Étapes du processus d'intégration",
@@ -59,9 +59,9 @@ const IContact = ({ language }) => {
       t3: "Offering Selection",
       s3: "Choisissez l'emploi et le lieu de travail parmi les postes actuellement disponibles proposés par nos employeurs partenaires",
       t4: "Signez le contrat et payez les frais initiaux",
-      s4: "Un contrat vous sera envoyé pour signature et un premier paiement devra être effectué à la BDV",
+      s4: "Un contrat vous sera envoyé pour signature et un premier paiement devra être effectué à la EB-3 Workforce Solutions",
       t5: "Obtenez des mises à jour sur votre processus",
-      s5: "Au fur et à mesure que l'employeur traite vos demandes, votre portail BDV sera mis à jour",
+      s5: "Au fur et à mesure que l'employeur traite vos demandes, votre portail EB-3 Workforce Solutions sera mis à jour",
     },
   };
   const stepContent = step[language];
@@ -70,20 +70,20 @@ const IContact = ({ language }) => {
     en: {
       title1:
         "Feel free to apply without the need for any previous experience!",
-      p1: "Are you keen on obtaining a U.S. Permanent Resident Card (Green Card) for yourself and your family? EB3 Workforce Solutions collaborates with U.S. corporations that are willing to support your Green Card application in return for your commitment to work with them for at least one year.",
+      p1: "Are you keen on obtaining a U.S. Permanent Resident Card (Green Card) for yourself and your family? EB-3 Workforce Solutions collaborates with U.S. corporations that are willing to support your Green Card application in return for your commitment to work with them for at least one year.",
     },
     es: {
       title1:
         "¡No dude en presentar su solicitud sin necesidad de tener experiencia previa!",
-      p1: "¿Está interesado en obtener la Tarjeta de Residente Permanente de los EE.UU. (Green Card) para usted y su familia? EB3 Workforce Solutions colabora con empresas estadounidenses que están dispuestas a apoyar tu solicitud de Green Card a cambio de que te comprometas a trabajar con ellas durante al menos un año.",
+      p1: "¿Está interesado en obtener la Tarjeta de Residente Permanente de los EE.UU. (Green Card) para usted y su familia? EB-3 Workforce Solutions colabora con empresas estadounidenses que están dispuestas a apoyar tu solicitud de Green Card a cambio de que te comprometas a trabajar con ellas durante al menos un año.",
     },
     por: {
       title1: "Pode candidatar-se sem necessidade de experiência prévia!",
-      p1: "Está interessado em obter um Cartão de Residente Permanente dos EUA (Green Card) para si e para a sua família? O EB3 Workforce Solutions colabora com empresas americanas que estão dispostas a apoiar o seu pedido de Green Card em troca do seu compromisso de trabalhar com elas durante pelo menos um ano.",
+      p1: "Está interessado em obter um Cartão de Residente Permanente dos EUA (Green Card) para si e para a sua família? O EB-3 Workforce Solutions colabora com empresas americanas que estão dispostas a apoiar o seu pedido de Green Card em troca do seu compromisso de trabalhar com elas durante pelo menos um ano.",
     },
     fr: {
       title1: "N'hésitez pas à postuler sans expérience préalable!",
-      p1: "Souhaitez-vous obtenir une carte de résident permanent aux États-Unis (carte verte) pour vous et votre famille ? EB3 Workforce Solutions collabore avec des entreprises américaines qui sont prêtes à soutenir votre demande de carte verte en échange de votre engagement à travailler avec elles pendant au moins un an",
+      p1: "Souhaitez-vous obtenir une carte de résident permanent aux États-Unis (carte verte) pour vous et votre famille ? EB-3 Workforce Solutions collabore avec des entreprises américaines qui sont prêtes à soutenir votre demande de carte verte en échange de votre engagement à travailler avec elles pendant au moins un an",
     },
   };
   const feelContent = feel[language];
