@@ -3,7 +3,7 @@ import logoImg from "@/assets/logo.png";
 import { motion } from "framer-motion";
 import { staggerContainer, slideIn, zoomIn } from "@/utils/motion";
 import { Link } from "react-router-dom";
-import { FaLinkedinIn, FaFacebookF, FaTiktok } from "react-icons/fa";
+import { FaLinkedinIn, FaFacebookF, FaTiktok, FaYoutube } from "react-icons/fa";
 
 import { FaInstagram, FaXTwitter } from "react-icons/fa6";
 import { styles } from "@/styles";
@@ -98,6 +98,11 @@ const IFooter = ({ language }) => {
       logo: <FaTiktok />,
       link: "https://www.tiktok.com/@eb3wfs",
     },
+    {
+      id: 6,
+      logo: <FaYoutube />,
+      link: "https://www.youtube.com/channel/UCfxU5idccR3tODIifeTQevA",
+    },
   ];
 
   return (
@@ -154,7 +159,7 @@ const IFooter = ({ language }) => {
           <header className="footer-title text-black font-extrabold">
             {footerContent.h2}
           </header>
-          <p className="">(305) 564-1311</p>
+          <p className="">+1(305) 564-1311</p>
           <p className="">recruiter@eb3wfs.com</p>
           <p className="">EB3WFS LLC</p>
           <p className="">777 Brickell Avenue Suite 500</p>
