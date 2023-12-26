@@ -15,7 +15,7 @@ import IconWpp from "@/components/icons/IconWpp";
 import TitleContent from "@/components/individuals/TitleContent";
 import { styles } from "@/styles";
 import { useEffect } from "react";
-
+import usa3 from "@/assets/usa3.jpg";
 const IHome = ({ language }) => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -23,24 +23,24 @@ const IHome = ({ language }) => {
 
   const james = {
     en: {
-      title1: "Meet The Founder",
-      title2: "James Baker, CPA",
-      p1: "James is the head of different companies around the US, serving international Corporations and international entrepreneurs with different services and companies. James allied with silent investors to create EB-3 Workforce Solutions, a company that connects employers which are facing a chronic shortage of unskilled workers with immigrant employees willing to apply for a US Green Card through the EB-3 Visa program.",
+      title2: "Meet The Team",
+      p1: "EB-3 Workforce Solutions, spearheaded by a visionary leader, is at the forefront of addressing the workforce needs of various industries across the United States. With a keen focus on serving international corporations and entrepreneurs, our founder played a pivotal role in establishing and steering multiple companies nationwide. ",
+      p2: "Partnering strategically with silent investors, EB-3 Workforce Solutions has emerged as a trailblazer in connecting employers grappling with a persistent shortage of unskilled workers to immigrant candidates eager to pursue a US Green Card through the EB-3 Visa program. Our commitment to facilitating mutually beneficial employment relationships remains unwavering as we continue to bridge the gap between employers and prospective immigrant employees.",
     },
     es: {
-      title1: "Conozca al fundador",
-      title2: "James Baker, CPA",
-      p1: "James dirige diferentes empresas en EE.UU. que prestan servicios a corporaciones y empresarios internacionales. James se alió con inversores silenciosos para crear EB-3 Workforce Solutions, una empresa que pone en contacto a empresarios que se enfrentan a una escasez crónica de trabajadores no cualificados con empleados inmigrantes dispuestos a solicitar una Green Card estadounidense a través del programa de visados EB-3.",
+      title2: "Conozca al equipo",
+      p1: "EB-3 Workforce Solutions, encabezada por un líder visionario, está a la vanguardia de la respuesta a las necesidades de mano de obra de diversas industrias en todo Estados Unidos. Con un gran enfoque en el servicio a corporaciones y empresarios internacionales, nuestro fundador desempeñó un papel fundamental en el establecimiento y dirección de múltiples empresas en todo el país. ",
+      p2: "Asociándose estratégicamente con inversores silenciosos, EB-3 Workforce Solutions ha surgido como pionera en la conexión de empleadores que lidian con una persistente escasez de trabajadores no cualificados con candidatos inmigrantes deseosos de obtener una tarjeta verde estadounidense a través del programa de visados EB-3. Nuestro compromiso es facilitar una mano de obra mutuamente beneficiosa para todos. Nuestro compromiso de facilitar relaciones laborales mutuamente beneficiosas sigue siendo inquebrantable a medida que continuamos tendiendo puentes entre los empleadores y los posibles empleados inmigrantes.",
     },
     por: {
-      title1: "Conheça o fundador",
-      title2: "James Baker, CPA",
-      p1: "James está à frente de diferentes empresas nos EUA, servindo corporações internacionais e empresários internacionais com diferentes serviços e empresas. James aliou-se a investidores silenciosos para criar a EB-3 Workforce Solutions, uma empresa que liga empregadores que enfrentam uma escassez crónica de trabalhadores não qualificados a trabalhadores imigrantes dispostos a candidatar-se a um Green Card dos EUA através do programa de vistos EB-3.",
+      title2: "Conheça a equipa",
+      p1: "A EB-3 Workforce Solutions, liderada por um líder visionário, está na vanguarda da resposta às necessidades de mão de obra de várias indústrias nos Estados Unidos. Com um grande enfoque na prestação de serviços a empresas e empresários internacionais, o nosso fundador desempenhou um papel fundamental na criação e direção de várias empresas a nível nacional. ",
+      p2: "Em parceria estratégica com investidores silenciosos, a EB-3 Workforce Solutions surgiu como pioneira na ligação entre empregadores que lutam com uma escassez persistente de trabalhadores não qualificados e candidatos imigrantes ansiosos por obter um Green Card dos EUA através do programa de vistos EB-3. O nosso compromisso de facilitar relações de emprego mutuamente benéficas permanece inabalável à medida que continuamos a fazer a ponte entre empregadores e potenciais empregados imigrantes.",
     },
     fr: {
-      title1: "Rencontre avec le fondateur",
-      title2: "James Baker, CPA",
-      p1: "James est à la tête de plusieurs entreprises aux États-Unis, au service de sociétés internationales et d'entrepreneurs internationaux avec différents services et entreprises. James s'est allié à des investisseurs silencieux pour créer EB-3 Workforce Solutions, une société qui met en relation des employeurs confrontés à une pénurie chronique de travailleurs non qualifiés avec des employés immigrés désireux de demander une carte verte américaine dans le cadre du programme de visa EB-3.",
+      title2: "Rencontrer l'équipe",
+      p1: "EB-3 Workforce Solutions, dirigée par un leader visionnaire, est en première ligne pour répondre aux besoins en main-d'œuvre de diverses industries à travers les États-Unis. Notre fondateur a joué un rôle essentiel dans la création et la direction de plusieurs entreprises à l'échelle nationale, en mettant l'accent sur le service aux entreprises et aux entrepreneurs internationaux. ",
+      p2: "Grâce à un partenariat stratégique avec des investisseurs silencieux, EB-3 Workforce Solutions est devenu un pionnier dans la mise en relation d'employeurs confrontés à une pénurie persistante de travailleurs non qualifiés avec des candidats à l'immigration désireux d'obtenir une carte verte américaine par le biais du programme de visa EB-3. Notre engagement à faciliter des relations de travail mutuellement bénéfiques reste inébranlable, car nous continuons à combler le fossé entre les employeurs et les candidats à l'immigration.",
     },
   };
   const jamesContent = james[language];
@@ -138,11 +138,12 @@ const IHome = ({ language }) => {
         <div name="teach me" className="pt-20" />
 
         <ImgContent
-          img={JamesBg}
+          img={usa3}
           title1={jamesContent.title1}
           title2={jamesContent.title2}
         >
           <p className={`${styles.sectionText}`}>{jamesContent.p1}</p>
+          <p className={`${styles.sectionText} mt-2`}>{jamesContent.p2}</p>
         </ImgContent>
 
         {/* Divider committed workers */}
