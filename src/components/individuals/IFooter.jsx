@@ -101,7 +101,7 @@ const IFooter = ({ language }) => {
     {
       id: 6,
       logo: <FaYoutube />,
-      link: "https://www.youtube.com/channel/UCfxU5idccR3tODIifeTQevA",
+      link: "https://www.youtube.com/@eb3wfs",
     },
   ];
 
@@ -144,7 +144,7 @@ const IFooter = ({ language }) => {
           </div>
         </aside>
 
-        <motion.nav variants={zoomIn(0, 1)}>
+        {/*  <motion.nav variants={zoomIn(0, 1)}>
           <header className="footer-title text-black font-extrabold">
             {footerContent.h1}
           </header>
@@ -154,7 +154,7 @@ const IFooter = ({ language }) => {
           <a className="link link-hover">{footerContent.l4}</a>
           <a className="link link-hover">{footerContent.l5}</a>
           <a className="link link-hover">{footerContent.l6}</a>
-        </motion.nav>
+        </motion.nav> */}
         <motion.nav variants={zoomIn(0.5, 1)}>
           <header className="footer-title text-black font-extrabold">
             {footerContent.h2}

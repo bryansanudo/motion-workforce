@@ -116,21 +116,27 @@ const IVacancies = ({ language }) => {
       description: positionsContent.stoughton_des,
       location: "Stoughton, Wisconsin",
       website: "https://www.stoughtontrailers.com/",
-      v1: "Assembler",
+      v1: "Assembler - US $18 Hour",
     },
-    /* {
+    {
       id: 2,
       logo: travelkuzLogo,
-      category: "tourism",
       name: "Travel Kuz",
       description: positionsContent.travel_des,
-      location: "Gill, MA",
+      location: "Gill, Massachusetts",
       button: "/individuals/vacancies/kuz",
       website: "https://www.travelkuz.com/",
-      v1: "General Labor",
-      usd1: "$ 15 USD / Hour",
-    }, */
-
+      v1: "General Labor - US $15 Hour ",
+    },
+    {
+      id: 3,
+      logo: kartsLogo,
+      name: "Karst Stage",
+      description: positionsContent.karst_des,
+      location: "Bozeman, Montana",
+      website: "https://karststage.com/",
+      v1: "General Labor - US $15 Hour ",
+    },
     {
       id: 4,
       logo: subwayLogo,
@@ -138,21 +144,17 @@ const IVacancies = ({ language }) => {
       description: positionsContent.subway_des,
       location: "Anchorage, Alaska",
       website: "https://www.subway.com/es-co",
-      v1: "Sandwich Artist",
+      v1: "Sandwich Artist - US $15 Hour",
     },
-    /* {
-      id: 3,
-      logo: kartsLogo,
-      category: "tourism",
-      name: "Karst Stage",
-      description: positionsContent.karst_des,
-      location: "Bozeman, MO",
-      button: "/individuals/vacancies/karst",
-      website: "https://karststage.com/",
-      v1: "General Labor",
-      usd1: "$ 15 USD / Hour",
-    }, */
-
+    {
+      id: 4,
+      logo: subwayLogo,
+      name: "Midnight Sun",
+      description: positionsContent.subway_des,
+      location: "Fairbanks, Alaska",
+      website: "https://www.subway.com/es-co",
+      v1: "Sandwich Artist - US $15 Hour",
+    },
     {
       id: 6,
       logo: wildernessLogo,
@@ -160,8 +162,8 @@ const IVacancies = ({ language }) => {
       location: "Wisconsin Dells, Wisconsin",
       description: positionsContent.wilder_des,
       website: "https://www.wildernessresort.com/",
-      v1: "Room Attendant",
-      v2: "Water Park Attendant",
+      v1: "Housekeeper - US $16 Hour",
+      v2: "Lifeguard - US $13 Hour",
     },
     {
       id: 7,
@@ -170,10 +172,19 @@ const IVacancies = ({ language }) => {
       description: positionsContent.chula_des,
       location: "Wisconsin Dells, Wisconsin",
       website: "https://chulavistaresort.com/",
-      v1: "Room Attendant",
-      v2: "Water Park Attendant",
+      v1: "Housekeeper - US $16 Hour",
+      v2: "Lifeguard - US $13 Hour",
     },
     {
+      id: 10,
+      logo: subwayLogo,
+      name: "Mult Entities",
+      description: positionsContent.subway_des,
+      location: "Chigaco Area",
+      website: "https://www.subway.com/es-co",
+      v1: "Sandwich Artist - US $13 Hour",
+    },
+    /* {
       id: 8,
       logo: transportationLogo,
       name: "AA Transportation",
@@ -181,8 +192,8 @@ const IVacancies = ({ language }) => {
       location: "Shrewsbury, Massachusetts",
       website: "https://aatransportation.com/",
       v1: "General Labor",
-    },
-    {
+    }, */
+    /* {
       id: 9,
       logo: andersonLogo,
       name: "Anderson Coach",
@@ -190,7 +201,7 @@ const IVacancies = ({ language }) => {
       location: "Greenville, Pennsylvania",
       website: "https://www.goanderson.com/",
       v1: "General Labor",
-    },
+    }, */
   ];
   return (
     <>
@@ -261,7 +272,7 @@ const IVacancies = ({ language }) => {
                                 {positionsContent.vacancies}
                               </p>
                             </div>
-                            <div className="flex flex-col items-center justify-center">
+                            <div className="flex flex-col  md:w-[250px] items-center justify-center">
                               <p>{v1}</p>
                               <p>{v2}</p>
                             </div>
