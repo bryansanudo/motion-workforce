@@ -83,11 +83,11 @@ const IFooter = ({ language }) => {
       logo: <FaInstagram />,
       link: "https://www.instagram.com/eb3wfs/",
     },
-    {
+    /* {
       id: 3,
       logo: <FaXTwitter />,
       link: "https://twitter.com/eb3wfs",
-    },
+    }, */
     {
       id: 4,
       logo: <FaLinkedinIn />,
