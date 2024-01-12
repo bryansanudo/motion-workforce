@@ -6,6 +6,7 @@ import { AiOutlineMail } from "react-icons/ai";
 import { BiPhoneCall } from "react-icons/bi";
 import ITestimonials from "@/components/individuals/iHome/ITestimonials";
 import { RxGear } from "react-icons/rx";
+import CFAQ from "@/components/companies/cHome/CFAQ";
 
 import contactImg from "@/assets/contact2.jpg";
 import Divider from "@/components/companies/CDivider";
@@ -255,6 +256,7 @@ const CHome = ({ language }) => {
       <ISection>
         <Divider language={language} />
         <CPartners language={language} />
+        <CFAQ language={language} />
         <IFormContact color="secondary" language={language} />
 
         <Divider language={language} />

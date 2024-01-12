@@ -1,26 +1,30 @@
 import ISection from "@/components/individuals/ISection";
 import IHeroResources from "@/components/individuals/iResources/IHeroResources";
 import { styles } from "@/styles";
-import News from "@/components/individuals/IResources/News";
 
-const IResources = ({ language }) => {
+const CFAQ = ({ language }) => {
   const faq = {
     en: {
       title1: "Frequently Asked Questions",
-      q1: "What is the EB-3 visa category and who is eligible for it?",
-      a1: "The EB-3 visa category is an employment-based immigration visa for skilled workers, professionals, and unskilled workers. Eligible individuals must have a job offer and a labor certification from the Department of Labor.",
-      q2: "What is the processing time for an EB-3 visa and how can it be expedited?",
-      a2: "The processing time for an EB-3 visa can vary and can take several months to several years. There is no way to expedite the process other than through premium processing, which can take 15 calendar days.",
-      q3: "What is the difference between EB-3 and other employment-based visas?",
-      a3: "The main difference is the level of skill required for the job offer. EB-3 visas are for less skilled workers, while EB-1 visas are for individuals with extraordinary ability, EB-2 visas are for individuals with advanced degrees or exceptional ability, and EB-4 visas are for religious workers.",
-      q4: "What are the requirements for an EB-3 petition and what documents are needed?",
-      a4: "The requirements include a job offer, a labor certification, and an approved Form I-140, Immigrant Petition for Alien Worker. Other required documents include evidence of the individual's qualifications, education, and work experience.",
 
-      q12: "How can I get in touch with EB-3 Workforce Solutions for more information or to start the application process?",
-      a12: "Please complete the following Form: https://form.jotform.com/Eb3wfs/eligibility-eb3wfs or send us a message on our WhatsApp line: https://wa.link/z853s6 and we will assist you shortly.",
+      q13: "What is the EB-3 Visa program, and how can it help my company find qualified workers?",
+      a13: "The EB-3 Visa program is an employment-based immigration initiative that allows U.S. companies to sponsor foreign workers to obtain a Green Card (permanent residency). This helps your company fill positions facing a chronic shortage of unskilled workers by connecting employers with immigrant employees willing to apply for a Green Card through the EB-3 program. This provides a long-term solution to your qualified workforce needs.",
+      q6: "How can an employer recruit foreign workers through the EB-3 process and what are the prevailing wage requirements?",
+      a6: "An employer can recruit foreign workers by advertising the job opportunity and obtaining a labor certification from the Department of Labor. The employer must pay the prevailing wage for the position, which is the average wage paid to similarly employed workers in the geographic area.",
+      q8: "Are we going to sponsor their Visa?",
+      a8: "As part of the process with the US Department of Labor you agree to employ the applicant for a minimum of one year, and the applicant as well is required to maintain employment with the employer for a minimum of 12 months.",
+      q7: "Do they have clean records? They need to pass alcohol and drug test before we accept their applications.",
+      a7: "he various governmental entities involved in the approval process of the green card for the EB3 process require that applicants have no criminal records in any country they have ever lived, in addition, the United States Department of Customs and Immigration Services also preforms an extensive background check, including previous stays in the US.",
 
-      q14: "What is the typical process and timeframe for obtaining a Green Card through the EB-3 program?",
-      a14: "The process of obtaining a Green Card through the EB-3 program generally consists of several steps, including obtaining a labor certification, filing a foreign worker petition, and finally, the issuance of the Green Card. The typical timeframe for this process can vary depending on the applicant's location, application status, and industry type. Generally, it takes around 18 months, but this time can vary. It's important to consult with EB-3 Workforce Solutions for a more precise estimate based on your situation.",
+      q9: "Do I get to choose the applicants? I need applicants who speak, write and understand English.",
+      a9: "You are required by law to chose the applicant, neither we nor any other agency or individual is allowed to select the employees for you. As part of our pre-screening process we require the applicants to perform language tests to ascertain English proficiency.",
+      q10: "Can I get only experienced workers (have worked in warehouse, restaurants, etc)?",
+      a10: "The EB3 process is for “other” types of employees, those without degree or substantial previous work experience. However, you are allowed to require that an applicant for a particular position has previous work experience for that position i.e. cooks, warehouse workers etc.",
+      q11: "Who will interview the applicants? What's the process of the interview?",
+      a11: "The initial screening of the applicants will be done by our recruitment specialist to ascertain ability and qualification for the EB3 process. Interviews for the actual positions are being done, and in fact have to be done by the employer.",
+
+      q5: "What happens if the employee terminates employment before the EB-3 visa expires?",
+      a5: "If the employee terminates employment before the EB-3 visa expires, the visa will no longer be valid and the worker will have to depart the US.",
     },
     es: {
       title1: "Preguntas frecuentes",
@@ -121,34 +125,44 @@ const IResources = ({ language }) => {
 
   const questions = [
     {
-      id: 1,
-      question: faqContent.q1,
-      answer: faqContent.a1,
+      id: 13,
+      question: faqContent.q13,
+      answer: faqContent.a13,
     },
     {
-      id: 2,
-      question: faqContent.q2,
-      answer: faqContent.a2,
+      id: 6,
+      question: faqContent.q6,
+      answer: faqContent.a6,
     },
     {
-      id: 3,
-      question: faqContent.q3,
-      answer: faqContent.a3,
+      id: 8,
+      question: faqContent.q8,
+      answer: faqContent.a8,
     },
     {
-      id: 4,
-      question: faqContent.q4,
-      answer: faqContent.a4,
+      id: 7,
+      question: faqContent.q7,
+      answer: faqContent.a7,
     },
     {
-      id: 12,
-      question: faqContent.q12,
-      answer: faqContent.a12,
+      id: 9,
+      question: faqContent.q9,
+      answer: faqContent.a9,
     },
     {
-      id: 14,
-      question: faqContent.q14,
-      answer: faqContent.a14,
+      id: 10,
+      question: faqContent.q10,
+      answer: faqContent.a10,
+    },
+    {
+      id: 11,
+      question: faqContent.q11,
+      answer: faqContent.a11,
+    },
+    {
+      id: 5,
+      question: faqContent.q5,
+      answer: faqContent.a5,
     },
   ];
 
@@ -165,7 +179,7 @@ const IResources = ({ language }) => {
             src="https://app.fastbots.ai/embed/clp49y8mo01zcppb2l06ww4s1"
           ></iframe>
         </div> */}
-        <p className={`${styles.titleText} mt-6 capitalize`}>
+        <p className={`${styles.cTitleText} mt-6 capitalize`}>
           {faqContent.title1}
         </p>
         <div className="flex flex-col items-center justify-center  my-10  w-[280px] md:w-[500px] lg:w-[900px]  ">
@@ -173,7 +187,7 @@ const IResources = ({ language }) => {
             <div
               key={id}
               tabIndex={0}
-              className="collapse collapse-arrow border border-primary bg-base-100 rounded-box w-full "
+              className="collapse collapse-arrow border border-secondary bg-base-100 rounded-box w-full "
             >
               <div
                 className={`${styles.sectionText} collapse-title  font-bold `}
@@ -187,11 +201,8 @@ const IResources = ({ language }) => {
           ))}
         </div>
       </ISection>
-      <ISection>
-        <News />
-      </ISection>
     </>
   );
 };
 
-export default IResources;
+export default CFAQ;
