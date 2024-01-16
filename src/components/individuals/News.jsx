@@ -1,9 +1,8 @@
-"use client";
-
 import React, { useState, useEffect } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 import { styles } from "@/styles";
+import ISection from "@/components/individuals/iSection";
 
 const News = () => {
   const rss = [
@@ -3457,9 +3456,14 @@ const News = () => {
   }, [filterWord]);
 
   return (
-    <div className="w-[280px] md:w-[500px] lg:w-[900px] mx-auto px-6">
-      <p className={`${styles.titleText} mb-4  capitalize`}>Immigration News</p>
-      {/* <div className="mb-4">
+    <>
+      <div className="pt-40"></div>
+      <ISection title="News">
+        <div className="max-w-[1000px] mx-4 ">
+          <p className={`${styles.titleText} mb-4  capitalize`}>
+            Immigration News
+          </p>
+          {/* <div className="mb-4">
         <input
           type="text"
           id="filterInput"
@@ -3470,62 +3474,67 @@ const News = () => {
         />
       </div> */}
 
-      {currentItems.map(({ guid, title, content_html, url }) => (
-        <div key={guid} className="flex  flex-col border-b pt-10 mb-4   w-full">
-          <div
-            className={`tracking-wider w-full text-left font-bold hover:border-b hover:border-primary hover:text-primary mb-3`}
-          >
-            <a target="_blank" href={url}>
-              {title}
-            </a>
-          </div>
+          {currentItems.map(({ guid, title, content_html, url }) => (
+            <div
+              key={guid}
+              className="flex  flex-col border-b pt-10 mb-4   w-full"
+            >
+              <div
+                className={`tracking-wider w-full md:text-left font-bold hover:border-b hover:border-primary hover:text-primary mb-3`}
+              >
+                <a target="_blank" href={url}>
+                  {title}
+                </a>
+              </div>
 
-          <p className={`   w-full md:text-left  tracking-wider    mb-3`}>
-            {content_html}
-          </p>
-        </div>
-      ))}
-
-      <div className="hidden md:flex my-20 items-center w-full justify-center gap-4 ">
-        <button className="" onClick={prevPage}>
-          <FaArrowLeft className="dark:text-white" />
-        </button>
-
-        {Array.from({
-          length: Math.ceil(feed.length / itemsPerPage),
-        }).map((_, index) => (
-          <div
-            className={`cursor-pointer rounded-full h-8 w-8 flex items-center justify-center ${
-              currentPage === index + 1 ? "bg-primary" : "bg-gray-600"
-            }  `}
-            key={index}
-            onClick={() => paginate(index + 1)}
-          >
-            <button className={` text-white`}>{index + 1}</button>
-          </div>
-        ))}
-
-        <button className="" onClick={nextPage}>
-          <FaArrowRight className="dark:text-white" />
-        </button>
-      </div>
-      <div className="flex items-center justify-start w-full py-10 gap-2 md:hidden">
-        <p className={``}>Current Page</p>
-        <select
-          value={currentPage}
-          onChange={(e) => paginate(parseInt(e.target.value, 10))}
-          className="dark:bg-gray-800 dark:text-white px-2 py-1 border rounded"
-        >
-          {Array.from({
-            length: Math.ceil(feed.length / itemsPerPage),
-          }).map((_, index) => (
-            <option key={index} value={index + 1}>
-              {index + 1}
-            </option>
+              <p className={`   w-full md:text-left  tracking-wider    mb-3`}>
+                {content_html}
+              </p>
+            </div>
           ))}
-        </select>
-      </div>
-    </div>
+
+          <div className="hidden md:flex my-20 items-center w-full justify-center gap-4 ">
+            <button className="" onClick={prevPage}>
+              <FaArrowLeft className="dark:text-white" />
+            </button>
+
+            {Array.from({
+              length: Math.ceil(feed.length / itemsPerPage),
+            }).map((_, index) => (
+              <div
+                className={`cursor-pointer rounded-full h-8 w-8 flex items-center justify-center ${
+                  currentPage === index + 1 ? "bg-primary" : "bg-gray-600"
+                }  `}
+                key={index}
+                onClick={() => paginate(index + 1)}
+              >
+                <button className={` text-white`}>{index + 1}</button>
+              </div>
+            ))}
+
+            <button className="" onClick={nextPage}>
+              <FaArrowRight className="dark:text-white" />
+            </button>
+          </div>
+          <div className="flex items-center justify-start w-full py-10 gap-2 md:hidden">
+            <p className={``}>Current Page</p>
+            <select
+              value={currentPage}
+              onChange={(e) => paginate(parseInt(e.target.value, 10))}
+              className="dark:bg-gray-800 dark:text-white px-2 py-1 border rounded"
+            >
+              {Array.from({
+                length: Math.ceil(feed.length / itemsPerPage),
+              }).map((_, index) => (
+                <option key={index} value={index + 1}>
+                  {index + 1}
+                </option>
+              ))}
+            </select>
+          </div>
+        </div>
+      </ISection>
+    </>
   );
 };
 

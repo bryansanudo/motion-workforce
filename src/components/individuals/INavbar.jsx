@@ -18,6 +18,7 @@ const INavbar = ({ setLanguage, language }) => {
       resources: "resources",
       contact: "contact",
       vacancies: "vacancies",
+      news: "News",
       language: "Language",
       looking: "Looking For Employees?",
     },
@@ -119,6 +120,11 @@ const INavbar = ({ setLanguage, language }) => {
       id: 7,
       link: "/individuals/vacancies",
       name: navbarContent.vacancies,
+    },
+    {
+      id: 8,
+      link: "/individuals/news",
+      name: navbarContent.news,
     },
   ];
 

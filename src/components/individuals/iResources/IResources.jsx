@@ -1,7 +1,6 @@
 import ISection from "@/components/individuals/ISection";
 import IHeroResources from "@/components/individuals/iResources/IHeroResources";
 import { styles } from "@/styles";
-import News from "@/components/individuals/IResources/News";
 
 const IResources = ({ language }) => {
   const faq = {
@@ -186,9 +185,6 @@ const IResources = ({ language }) => {
             </div>
           ))}
         </div>
-      </ISection>
-      <ISection>
-        <News />
       </ISection>
     </>
   );

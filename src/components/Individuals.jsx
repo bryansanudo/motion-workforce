@@ -11,6 +11,7 @@ import IHistories from "@/components/individuals/iSuccessHistories/IHistories";
 import IResources from "@/components/individuals/iResources/IResources";
 import IContact from "@/components/individuals/iContact/IContact";
 import IVacancies from "@/components/individuals/iVacancies/IVacancies";
+import News from "@/components/individuals/News";
 
 import CHome from "@/components/companies/cHome/CHome";
 import PrivacyPolicy from "@/components/individuals/PrivacyPolicy";
@@ -33,6 +34,7 @@ const Individuals = ({ language, setLanguage }) => {
         <Route path="contact" element={<IContact language={language} />} />
 
         <Route path="vacancies" element={<IVacancies language={language} />} />
+        <Route path="news" element={<News language={language} />} />
 
         <Route
           path="privacy-policy"
