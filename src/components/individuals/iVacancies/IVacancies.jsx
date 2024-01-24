@@ -118,7 +118,7 @@ const IVacancies = ({ language }) => {
       website: "https://www.stoughtontrailers.com/",
       v1: "Assembler - US $18 Hour",
     },
-    {
+    /* {
       id: 2,
       logo: travelkuzLogo,
       name: "Travel Kuz",
@@ -183,7 +183,7 @@ const IVacancies = ({ language }) => {
       location: "Chigaco Area",
       website: "https://www.subway.com/es-co",
       v1: "Sandwich Artist - US $13 Hour",
-    },
+    }, */
     /* {
       id: 8,
       logo: transportationLogo,
