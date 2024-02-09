@@ -236,9 +236,9 @@ const IServices = ({ language }) => {
       <IHeroServices language={language} />
 
       <ISection>
-        <TitleContent title={eb3Content.title1}>
+        {/*  <TitleContent title={eb3Content.title1}>
           <IServicesCard language={language} />
-        </TitleContent>
+        </TitleContent> */}
 
         {/*Timeline  Process */}
         {/* 
