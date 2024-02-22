@@ -182,7 +182,7 @@ const IHome = ({ language }) => {
         </div>
 
         {/* Want to know more */}
-
+        {/* <ITestimonials /> */}
         <ImgContent
           img={homeImg}
           title1={wantContent.title1}

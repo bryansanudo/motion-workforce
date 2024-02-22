@@ -7,12 +7,12 @@ import versatile from "@/assets/icons/versatile.jpg";
 const IServicesCard = ({ language }) => {
   const services = {
     en: {
-      title1: "Historic Success",
-      p1: "The Immigration and Nationality Act, passed in 1990, created the EB-3 Unskilled Visa program.",
-      title2: "Opportunity Awaits",
-      p2: "Anyone can participate in this program. There are no educational or skill prerequisites for applying.",
-      title3: "Versatile Process",
-      p3: "Applicants can complete this procedure either from within the United States, if they live in the US on a different type of visa, or from their country of origin or where they currently reside.",
+      title1: "Decades of Effectiveness",
+      p1: "The EB-3 Program for Unskilled Workers was created in 1990 under the Immigration and Nationality Act.",
+      title2: "Open to Anybody",
+      p2: "This program is open to all individuals, regardless of skill level or educational background, making it accessible to anyone interested in applying.",
+      title3: "Globally Availblable",
+      p3: "You have the option to complete this process either from your current country of residence or while residing within the United States.",
     },
     es: {
       title1: "Éxito histórico",
@@ -56,34 +56,36 @@ const IServicesCard = ({ language }) => {
 
         <div className="relative grid max-w-lg grid-cols-1 gap-6 mx-auto md:max-w-none lg:gap-10 md:grid-cols-3">
           {/* Card one */}
-          <div className="flex flex-col overflow-hidden shadow-md shadow-black rounded-3xl">
+          <div className="relative flex flex-col overflow-hidden shadow-md shadow-black rounded-3xl h-[250px] ">
             <div className="flex flex-col items-center justify-between flex-1 p-6 bg-white lg:py-8 lg:px-7 gap-4">
-              <img src={success} alt="" />
-
               <p className="font-bold text-2xl tracking-wider">
                 {servicesContent.title1}
               </p>
-              <p className="tracking-wider">{servicesContent.p1}</p>
+              <p className="tracking-wider absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300 mt-20 px-1">
+                {servicesContent.p1}
+              </p>
             </div>
           </div>
           {/* Card two */}
-          <div className="flex flex-col overflow-hidden shadow-md shadow-black rounded-3xl">
+          <div className="relative flex flex-col overflow-hidden shadow-md shadow-black rounded-3xl h-[250px] ">
             <div className="flex flex-col items-center justify-between flex-1 p-6 bg-white lg:py-8 lg:px-7 gap-4">
-              <img src={opportunity} alt="" />
               <p className="font-bold text-2xl tracking-wider">
                 {servicesContent.title2}
               </p>
-              <p className="tracking-wider">{servicesContent.p2}</p>
+              <p className="tracking-wider absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300 mt-10 px-1">
+                {servicesContent.p2}
+              </p>
             </div>
           </div>
           {/* Card three */}
-          <div className="flex flex-col overflow-hidden shadow-md shadow-black rounded-3xl">
+          <div className="relative flex flex-col overflow-hidden shadow-md shadow-black rounded-3xl h-[250px] ">
             <div className="flex flex-col items-center justify-between flex-1 p-6 bg-white lg:py-8 lg:px-7 gap-4">
-              <img src={versatile} alt="" />
               <p className="font-bold text-2xl tracking-wider">
                 {servicesContent.title3}
               </p>
-              <p className="tracking-wider">{servicesContent.p3}</p>
+              <p className="tracking-wider absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300 mt-10 px-1">
+                {servicesContent.p3}
+              </p>
             </div>
           </div>
         </div>
