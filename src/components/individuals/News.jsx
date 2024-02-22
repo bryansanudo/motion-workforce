@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 import { styles } from "@/styles";
-import ISection from "@/components/individuals/iSection";
+import ISection from "@/components/individuals/ISection";
 
 const News = () => {
   const rss = [
