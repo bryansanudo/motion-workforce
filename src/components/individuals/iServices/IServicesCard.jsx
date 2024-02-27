@@ -42,21 +42,101 @@ const IServicesCard = ({ language }) => {
   const servicesContent = services[language];
 
   return (
-    <div className="flex flex-col items-center  p-2 mb-6 xl:w-[1080px] lg:w-[900px] md:w-[700px] w-full">
-      <div className="relative  md:order-2">
-        <div className="absolute -inset-x-1 inset-y-16 md:-inset-x-2 md:-inset-y-6">
-          <div
-            className="w-full h-full max-w-5xl mx-auto rounded-3xl opacity-30 blur-lg filter"
-            style={{
-              background:
-                "linear-gradient(90deg, #94171A -0.55%, #ffffff 22.86%, #000000 48.36%, #ffffff 73.33%, #94171A 99.34%)",
-            }}
-          ></div>
+    <div className="flex flex-col items-center    xl:w-[1080px] lg:w-[900px] md:w-[700px] w-full">
+      <div className=" grid  grid-cols-1 gap-6 mx-auto  md:grid-cols-2 lg:grid-cols-3 w-full ">
+        {/* flip card 1*/}
+
+        <div className="flex  flex-col justify-center ">
+          <div className="group h-[300px] bg-whit rounded-xl [perspective:800px]">
+            <div className="relative h-full w-full rounded-xl shadow-xl transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+              <div className="absolute inset-0 [backface-visibility:hidden] ">
+                {/* front content */}
+                <div className="bg-white shadow-md shadow-black  h-full w-full rounded-2xl">
+                  <div className="flex items-center justify-center h-full">
+                    <p className="font-bold text-2xl tracking-wider">
+                      {servicesContent.title1}
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className=" absolute inset-0   [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                <div className="bg-white shadow-md shadow-black  h-full w-full rounded-2xl">
+                  <div className="flex flex-col items-center justify-center h-full ">
+                    <p className="font-bold text-2xl tracking-wider mt-4">
+                      {servicesContent.title1}
+                    </p>
+                    <p className="tracking-wider   flex items-center justify-center duration-300 px-1 mt-4">
+                      {servicesContent.p1}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* flip card 2*/}
+
+        <div className="flex    flex-col justify-center ">
+          <div className="group h-[300px] bg-whit rounded-xl [perspective:800px]">
+            <div className="relative h-full w-full rounded-xl shadow-xl transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+              <div className="absolute inset-0 [backface-visibility:hidden] ">
+                {/* front content */}
+                <div className="bg-white shadow-md shadow-black  h-full w-full rounded-2xl">
+                  <div className="flex items-center justify-center h-full">
+                    <p className="font-bold text-2xl tracking-wider">
+                      {servicesContent.title2}
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className=" absolute inset-0   [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                <div className="bg-white shadow-md shadow-black  h-full w-full rounded-2xl">
+                  <div className="flex flex-col items-center justify-center h-full ">
+                    <p className="font-bold text-2xl tracking-wider mt-4">
+                      {servicesContent.title2}
+                    </p>
+                    <p className="tracking-wider   flex items-center justify-center duration-300 px-1 mt-4">
+                      {servicesContent.p2}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div className="relative grid max-w-lg grid-cols-1 gap-6 mx-auto md:max-w-none lg:gap-10 md:grid-cols-3">
-          {/* Card one */}
-          <div className="relative flex flex-col overflow-hidden shadow-md shadow-black rounded-3xl h-[250px] ">
+        {/* flip card 3*/}
+
+        <div className="flex    flex-col justify-center ">
+          <div className="group h-[300px] bg-whit rounded-xl [perspective:800px]">
+            <div className="relative h-full w-full rounded-xl shadow-xl transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+              <div className="absolute inset-0 [backface-visibility:hidden] ">
+                {/* front content */}
+                <div className="bg-white shadow-md shadow-black  h-full w-full rounded-2xl">
+                  <div className="flex items-center justify-center h-full">
+                    <p className="font-bold text-2xl tracking-wider">
+                      {servicesContent.title3}
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className=" absolute inset-0   [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                <div className="bg-white shadow-md shadow-black  h-full w-full rounded-2xl">
+                  <div className="flex flex-col items-center justify-center h-full ">
+                    <p className="font-bold text-2xl tracking-wider mt-4">
+                      {servicesContent.title3}
+                    </p>
+                    <p className="tracking-wider   flex items-center justify-center duration-300 px-1 mt-4">
+                      {servicesContent.p3}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* <div className="relative flex flex-col overflow-hidden shadow-md shadow-black rounded-3xl h-[300px] ">
             <div className="flex flex-col items-center justify-between flex-1 p-6 bg-white lg:py-8 lg:px-7 gap-4">
               <p className="font-bold text-2xl tracking-wider">
                 {servicesContent.title1}
@@ -66,8 +146,8 @@ const IServicesCard = ({ language }) => {
               </p>
             </div>
           </div>
-          {/* Card two */}
-          <div className="relative flex flex-col overflow-hidden shadow-md shadow-black rounded-3xl h-[250px] ">
+
+          <div className="relative flex flex-col overflow-hidden shadow-md shadow-black rounded-3xl h-[300px] ">
             <div className="flex flex-col items-center justify-between flex-1 p-6 bg-white lg:py-8 lg:px-7 gap-4">
               <p className="font-bold text-2xl tracking-wider">
                 {servicesContent.title2}
@@ -77,8 +157,8 @@ const IServicesCard = ({ language }) => {
               </p>
             </div>
           </div>
-          {/* Card three */}
-          <div className="relative flex flex-col overflow-hidden shadow-md shadow-black rounded-3xl h-[250px] ">
+
+          <div className="relative flex flex-col overflow-hidden shadow-md shadow-black rounded-3xl h-[300px] ">
             <div className="flex flex-col items-center justify-between flex-1 p-6 bg-white lg:py-8 lg:px-7 gap-4">
               <p className="font-bold text-2xl tracking-wider">
                 {servicesContent.title3}
@@ -87,8 +167,7 @@ const IServicesCard = ({ language }) => {
                 {servicesContent.p3}
               </p>
             </div>
-          </div>
-        </div>
+          </div> */}
       </div>
     </div>
   );
