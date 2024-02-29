@@ -238,6 +238,95 @@ const IServicesCard = ({ language }) => {
           </div>
         </div>
 
+        {/* flip card 1*/}
+
+        <div className="flex  flex-col justify-center ">
+          <div className="group h-[300px] bg-whit rounded-xl [perspective:800px]">
+            <div className="relative h-full w-full rounded-xl shadow-xl transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+              <div className="absolute inset-0 [backface-visibility:hidden] ">
+                {/* front content */}
+                <div className="bg-white shadow-md shadow-black  h-full w-full rounded-2xl">
+                  <div className="flex items-center justify-center h-full">
+                    <p className="font-bold text-2xl tracking-wider">
+                      {servicesContent.title1}
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className=" absolute inset-0   [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                <div className="bg-gradient-to-r from-primary to-gray-500 shadow-md shadow-black   h-full w-full rounded-2xl">
+                  <div className="flex flex-col items-center justify-center h-full ">
+                    <p className="font-bold text-2xl tracking-wider text-white">
+                      {servicesContent.title1}
+                    </p>
+                    <p className="tracking-wider   flex items-center justify-center duration-300 px-1 mt-4 text-white">
+                      {servicesContent.p1}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* flip card 2*/}
+        <div className="flex  flex-col justify-center ">
+          <div className="group h-[300px] bg-whit rounded-xl [perspective:800px]">
+            <div className="relative h-full w-full rounded-xl shadow-xl transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+              <div className="absolute inset-0 [backface-visibility:hidden] ">
+                {/* front content */}
+                <div className="bg-white shadow-md shadow-black  h-full w-full rounded-2xl">
+                  <div className="flex items-center justify-center h-full">
+                    <p className="font-bold text-2xl tracking-wider">
+                      {servicesContent.title2}
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className=" absolute inset-0   [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                <div className="bg-gradient-to-r from-primary to-gray-500 shadow-md shadow-black   h-full w-full rounded-2xl">
+                  <div className="flex flex-col items-center justify-center h-full ">
+                    <p className="font-bold text-2xl tracking-wider text-white">
+                      {servicesContent.title2}
+                    </p>
+                    <p className="tracking-wider   flex items-center justify-center duration-300 px-1 mt-4 text-white">
+                      {servicesContent.p2}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* flip card 3*/}
+        <div className="flex  flex-col justify-center ">
+          <div className="group h-[300px] bg-whit rounded-xl [perspective:800px]">
+            <div className="relative h-full w-full rounded-xl shadow-xl transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+              <div className="absolute inset-0 [backface-visibility:hidden] ">
+                {/* front content */}
+                <div className="bg-white shadow-md shadow-black  h-full w-full rounded-2xl">
+                  <div className="flex items-center justify-center h-full">
+                    <p className="font-bold text-2xl tracking-wider">
+                      {servicesContent.title3}
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className=" absolute inset-0   [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                <div className="bg-gradient-to-r from-primary to-gray-500 shadow-md shadow-black   h-full w-full rounded-2xl">
+                  <div className="flex flex-col items-center justify-center h-full ">
+                    <p className="font-bold text-2xl tracking-wider text-white">
+                      {servicesContent.title3}
+                    </p>
+                    <p className="tracking-wider   flex items-center justify-center duration-300 px-1 mt-4 text-white">
+                      {servicesContent.p3}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* <div className="relative flex flex-col overflow-hidden shadow-md shadow-black rounded-3xl h-[300px] ">
             <div className="flex flex-col items-center justify-between flex-1 p-6 bg-white lg:py-8 lg:px-7 gap-4">
               <p className="font-bold text-2xl tracking-wider">
