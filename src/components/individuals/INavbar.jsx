@@ -116,11 +116,11 @@ const INavbar = ({ setLanguage, language }) => {
       link: "/individuals/contact",
       name: navbarContent.contact,
     },
-    {
+    /* {
       id: 7,
       link: "/individuals/vacancies",
       name: navbarContent.vacancies,
-    },
+    }, */
     {
       id: 8,
       link: "/individuals/news",

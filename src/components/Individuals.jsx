@@ -33,7 +33,7 @@ const Individuals = ({ language, setLanguage }) => {
         <Route path="resources" element={<IResources language={language} />} />
         <Route path="contact" element={<IContact language={language} />} />
 
-        <Route path="vacancies" element={<IVacancies language={language} />} />
+        {/*  <Route path="vacancies" element={<IVacancies language={language} />} /> */}
         <Route path="news" element={<News language={language} />} />
 
         <Route
