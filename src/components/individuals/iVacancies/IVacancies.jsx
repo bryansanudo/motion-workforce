@@ -207,7 +207,7 @@ const IVacancies = ({ language }) => {
     <>
       <IHeroVacancies language={language} />
       <ISection>
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-10 grid-cols-1 my-10 mx-6  ">
+        {/* <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-10 grid-cols-1 my-10 mx-6  ">
           {vacancies.map(
             ({
               id,
@@ -241,9 +241,9 @@ const IVacancies = ({ language }) => {
                       />
                     </a>
                   </div>
-                  {/* <p className="font-bold text-xl">{name}</p> */}
+                 
                   <p className={`${styles.sectionText}`}>{description}</p>
-                  {/* <p className="badge badge-primary badge-outline capitalize">{category}</p> */}
+                 
                   <div>
                     <button
                       className="btn btn-primary uppercase btn-outline mb-6"
@@ -257,14 +257,14 @@ const IVacancies = ({ language }) => {
                     <dialog id={uniqueId} className="modal">
                       <div className="modal-box">
                         <form method="dialog">
-                          {/* if there is a button in form, it will close the modal */}
+                          
                           <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
                             ✕
                           </button>
                         </form>
 
                         <div className="flex flex-col gap-6  items-start justify-center">
-                          {/* Vacancies */}
+                          
                           <div className="w-1/2 flex  flex-col items-center justify-center gap-2 ">
                             <div className="flex items-center justify-center gap-2">
                               <MdPeopleAlt />
@@ -277,7 +277,7 @@ const IVacancies = ({ language }) => {
                               <p>{v2}</p>
                             </div>
                           </div>
-                          {/* locations */}
+                         
                           <div className="w-1/2 flex  flex-col items-center justify-center gap-2 ">
                             <div className="flex items-center justify-center gap-2">
                               <GrLocation />
@@ -310,6 +310,9 @@ const IVacancies = ({ language }) => {
               );
             }
           )}
+        </div> */}
+        <div className="h-screen flex items-center">
+          <p className={`${styles.titleText}`}>More to come soon!</p>
         </div>
       </ISection>
     </>
